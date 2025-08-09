@@ -8,18 +8,7 @@ install:
 
 # needs to run from rubycon.it
 run-local:
-    cd rubycon.it/ && bundle exec jekyll serve --port 4001
+    cd rubycon.it/ && bundle exec jekyll serve --port 4002
 
 
-
-
-ls
-cd git
-pwd
-ll
-ls -al
-cd ruby 
-ll
-l
-cd ruy  
 
