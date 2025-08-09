@@ -1,4 +1,4 @@
 [build]
   base    = "rubycon.it"
-  publish = "rubycon.it/_site"
+  publish = "_site"
   command = "bundle exec jekyll build"
