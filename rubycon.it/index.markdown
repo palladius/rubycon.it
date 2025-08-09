@@ -10,4 +10,10 @@ Join us in Rimini for an unforgettable gathering of the Ruby clan. We came, we s
 
 We are excited to announce Rubycon, a conference for Ruby enthusiasts, taking place on **🗓️ {{ site.event.date }}** in beautiful **🗺️ {{ site.event.location }}**.
 
-We have a fantastic venue for our conference. Find out more on our [venue page](./venue).
+### Venue (Tentative)
+
+**Sala Quarzo, Hotel Ambasciatori, Rimini**
+
+*(The room is still tentative and allows for 200 people)*
+
+![Sala Quarzo](assets/images/sala-quarzo.jpg)

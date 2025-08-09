@@ -36,9 +36,11 @@
       <h1>{{ site.event.name }}</h1>
       <p>{{ site.event.date }} - {{ site.event.location }}</p>
       <nav>
-        {% for item in site.navigation %}
-          <a href="{{ item.link }}">{{ item.name }}</a>
-        {% endfor %}
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/sponsors">Sponsors</a>
+        <a href="/speakers">Speakers</a>
+        <a href="/schedule">Schedule</a>
       </nav>
     </header>
     <main>
