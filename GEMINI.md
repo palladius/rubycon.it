@@ -16,6 +16,15 @@ The website needs to be static, and to have a minimal set of information for:
 * Schedule
 * some marketing material, loogistics, ..
 
+## Program 
+
+Program is designed around a Friday, probably 8 may 2026, but could change. We created this event to be fammily-friendly, for people travelling with kids and for single people to enjoy the famous Rimini nightlife. Rimini is just in front the famous "Isola delle Rose" and is the capital of the famous "Riviera Romagnola", which used to be the Copacabana of Europe in the 1970s.
+
+* Thursday afternoon: Workshops
+* Friday: big day. Single track.
+* friday eve: Toga party in a disco in the lively city of Rimini, full of joie de vivre!
+* Saturday morning (optional): trip to the mouths of the Rubicon, close to where Caesar said the famous words "alea iacta est".
+
 ## Graphics
 
 The CSS should have some sort of sea/river inspired color set, like scales of light blue.
