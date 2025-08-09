@@ -33,6 +33,20 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+navigation:
+  - name: Home
+    link: /
+  - name: About
+    link: /about
+  - name: Sponsors
+    link: /sponsors
+  - name: Speakers
+    link: /speakers
+  - name: Schedule
+    link: /schedule
+  - name: Venue
+    link: /venue
+
 # Build settings
 theme: minima
 plugins:
