@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ site.title }}</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #f0f8ff;
+        color: #333;
+      }
+      header {
+        background-color: #add8e6;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        color: #8b0000;
+      }
+      nav a {
+        color: #00008b;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+      footer {
+        background-color: #add8e6;
+        padding: 10px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>{{ site.event.name }}</h1>
+      <p>{{ site.event.date }} - {{ site.event.location }}</p>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/sponsors">Sponsors</a>
+        <a href="/speakers">Speakers</a>
+        <a href="/schedule">Schedule</a>
+      </nav>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      <p>&copy; 2025 {{ site.title }}</p>
+    </footer>
+  </body>
+</html>
