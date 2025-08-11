@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.6
+
+* [gemini] chore: rename .env to .env.public
+
 ## 0.0.5
 
 * [gemini] feat: add testing framework and fix broken links
