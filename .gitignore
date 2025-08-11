@@ -6,3 +6,4 @@ _site/
 .bundle/
 vendor/
 .echodo_history
+test/

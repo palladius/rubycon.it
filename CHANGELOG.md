@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.9
+
+* [gemini] feat: programmatically update footer version
+
 ## 0.0.8
 
 * [gemini] feat: improve header layout and style
