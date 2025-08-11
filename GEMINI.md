@@ -44,8 +44,9 @@ Ideally text will be in black or white, depending on CSS color, and have bold in
 
 ## Documentation
 
-* Whenever you do a change to the file, please update the version in `rubycon.it/_config.yml` (with semantic versioning) and `CHANGELOG.md`.
-* Since we're a few people, add the name of the coder to the changelog, like "* [riccardo] blah blah"
+* Whenever you do a change to the file, please update the `version:` field in `rubycon.it/_config.yml` (with semantic versioning) and `CHANGELOG.md`.
+* Since we're a few people, add the name of the coder to the changelog, like "* [riccardo] blah blah". Make usre to know the current developer's name, by checking `$USER`, `whoami`, and such. In unsure, ask the usre and remember until the end of the session cos its their computers.
+* if Unsure, use `just version` to retrieve current version.
 
 ## Testing
 

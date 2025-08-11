@@ -14,4 +14,5 @@ test:
     cd rubycon.it/ && bundle exec rake test
 
 
-
+version:
+    egrep "^version: " rubycon.it/_config.yml | sed 's/version: //g'
