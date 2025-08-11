@@ -30,7 +30,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
-version: 0.0.9
+version: 0.1.0
 
 navigation:
   - name: Home

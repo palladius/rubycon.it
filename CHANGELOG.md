@@ -2,12 +2,13 @@
 
 (version is now in rubycon.it/_config.yml)
 
+## 0.1.0
+
+* [gemini] feat: add emojis to event details
+
 ## 0.0.9
 
 * [gemini] feat: add emojis to navigation links and subtitle
-
-## 0.0.9
-
 * [gemini] feat: programmatically update footer version
 
 ## 0.0.8
