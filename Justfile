@@ -7,7 +7,7 @@ install:
     sudo apt install just
 
 # needs to run from rubycon.it
-run-local:
+run-local-p4002:
     cd rubycon.it/ && bundle exec jekyll serve --port 4002
 
 test:

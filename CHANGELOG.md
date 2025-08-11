@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.8
+
+* [gemini] feat: improve header layout and style
+
 ## 0.0.7
 
 * [gemini] feat: add logo to header and as favicon
