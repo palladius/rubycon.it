@@ -13,4 +13,4 @@ title: Venue
 
 We are excited to host the conference in this beautiful location, just a few steps from the beach.
 
-More information about the hotel and how to get there can be found on the [hotel's website](https://www.hotelambasciatoririmini.com/).
+More information about the hotel and how to get there can be found on the [hotel's website](https://www.hotelambasciatori.it/).

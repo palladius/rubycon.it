@@ -1,18 +1,19 @@
-# Plan for Rubycon Website
+# Testing Plan
 
-1.  **Setup Justfile:** Create a `Justfile` with commands for common tasks.
-2.  **Initial Jekyll Setup:**
-    *   Review and update `_config.yml` with the event details (name, date, location).
-    *   Create a basic layout with a sea/river inspired color scheme.
-    *   Update `index.markdown` to be a welcoming landing page.
-3.  **Create Content Pages:**
-    *   Create pages for Sponsors, Speakers (CfP), and Schedule.
-    *   Add placeholder content to each page.
-4.  **Styling:**
-    *   Create a main CSS file with the desired color scheme.
-    *   Use a dark red for headings.
-5.  **Netlify Deployment:**
-    *   Configure the project for Netlify deployment.
-    *   Update the `just push` command in the `Justfile`.
-6.  **Create Github Issues:**
-    *   Create issues for complex tasks.
+## Strategy
+
+We will use the `html-proofer` gem to test the generated HTML site. This will allow us to:
+
+*   Validate HTML and CSS.
+*   Check for broken links (internal and external).
+*   Check for missing images and favicons.
+
+## Implementation Plan
+
+1.  **Add `html-proofer` to `Gemfile`:** Add the `html-proofer` gem to the `Gemfile` to make it a project dependency.
+2.  **Create a Rake task:** Create a `Rakefile` with a task to run `html-proofer`. This will make it easy to run the tests with a simple `rake test` command.
+3.  **Configure `html-proofer`:** Configure `html-proofer` to:
+    *   Check for external links.
+    *   Ignore certain URLs if necessary (e.g., social media links that might be flaky).
+    *   Set a timeout for checking external links.
+4.  **Update `Justfile`:** Add a `test` recipe to the `Justfile` to run the Rake task. This will allow you to run the tests with `just test`.

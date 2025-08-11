@@ -10,5 +10,8 @@ install:
 run-local:
     cd rubycon.it/ && bundle exec jekyll serve --port 4002
 
+test:
+    cd rubycon.it/ && bundle exec rake test
+
 
 

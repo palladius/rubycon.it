@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.5
+
+* [gemini] feat: add testing framework and fix broken links
+
 ## 0.0.4
 
 * [riccardo] feat: add motto to header
