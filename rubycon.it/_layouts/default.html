@@ -68,7 +68,7 @@
     <header>
       <div class="logo-title">
         <img src="{{ "/assets/images/logo.png" | relative_url }}" alt="Rubycon logo">
-        <h1>{{ site.event.name }}</h1>
+        <h1>{{ site.event.name | replace: '.', '<span style="font-size: 0.5em;">.</span>' }}</h1>
       </div>
       <nav>
         <div>
@@ -88,7 +88,7 @@
         </div>
         <div class="event-details">
           <i>🎲 "Alea iacta REST"</i>
-          <p>📅 {{ site.event.date }} 🇮🇹 {{ site.event.location }}</p>
+          <p>📅 {{ site.event.date }} | 🇮🇹 {{ site.event.location }}</p>
         </div>
       </nav>
     </header>
@@ -96,7 +96,7 @@
       {{ content }}
     </main>
     <footer>
-      <p>&copy; 2025 {{ site.title }} - v{{ site.version }}</p>
+      <p>&copy; 2025 {{ site.title }} - v{{ site.site_version }}</p>
     </footer>
   </body>
 </html>

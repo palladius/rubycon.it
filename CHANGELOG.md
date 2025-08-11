@@ -2,6 +2,10 @@
 
 (version is now in rubycon.it/_config.yml)
 
+## 0.1.1
+
+* [gemini] feat: add dot to title
+
 ## 0.1.0
 
 * [gemini] feat: add emojis to event details
