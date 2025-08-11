@@ -2,6 +2,10 @@
 
 (version is now in rubycon.it/_config.yml)
 
+## 0.1.3
+
+* [gemini] fix: restore event details and fix CSS deprecation warnings
+
 ## 0.1.2
 
 * [gemini] feat: use variables for email addresses
