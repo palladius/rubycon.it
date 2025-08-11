@@ -44,9 +44,8 @@ Ideally text will be in black or white, depending on CSS color, and have bold in
 
 ## Documentation
 
-* Whenever you do a change to the file, please update VERSION (bump version in `VERSION` with semantic versioning) and `CHANGELOG.md`.
+* Whenever you do a change to the file, please update the version in `rubycon.it/_config.yml` (with semantic versioning) and `CHANGELOG.md`.
 * Since we're a few people, add the name of the coder to the changelog, like "* [riccardo] blah blah"
-* also manually update the *Footer* of the jekyll site, This is NOT DRY until I code the `cat VERSION` in the footer.
 
 ## Testing
 

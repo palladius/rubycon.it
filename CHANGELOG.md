@@ -1,5 +1,7 @@
 # Changelog
 
+(version is now in rubycon.it/_config.yml)
+
 ## 0.0.9
 
 * [gemini] feat: programmatically update footer version
