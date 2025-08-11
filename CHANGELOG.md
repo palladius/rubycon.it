@@ -4,6 +4,10 @@
 
 ## 0.0.9
 
+* [gemini] feat: add emojis to navigation links and subtitle
+
+## 0.0.9
+
 * [gemini] feat: programmatically update footer version
 
 ## 0.0.8

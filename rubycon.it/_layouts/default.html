@@ -73,11 +73,21 @@
       <nav>
         <div>
           {% for item in site.navigation %}
-            <a href="{{ item.link }}">{{ item.name }}</a>
+            <a href="{{ item.link }}">
+              {% case item.name %}
+                {% when "Home" %}🏠
+                {% when "About" %}ℹ️
+                {% when "Sponsors" %}💰
+                {% when "Speakers" %}🎤
+                {% when "Schedule" %}📅
+                {% when "Venue" %}📍
+              {% endcase %}
+              {{ item.name }}
+            </a>
           {% endfor %}
         </div>
         <div class="event-details">
-          <i>"Alea iacta REST"</i>
+          <i>🎲 "Alea iacta REST"</i>
           <p>{{ site.event.date }} - {{ site.event.location }}</p>
         </div>
       </nav>

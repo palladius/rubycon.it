@@ -9,7 +9,7 @@ title: Venue
 
 **Address:** Viale Vespucci, 22, 47921 Rimini RN, Italy
 
-**Room:** Sala Quarzo
+**Room:** [Sala Quarzo](https://www.hotelambasciatori.it/sale/sala-congressi-quarzo)
 
 We are excited to host the conference in this beautiful location, just a few steps from the beach.
 
