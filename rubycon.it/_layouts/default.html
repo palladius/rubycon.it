@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>{{ site.title }}</title>
+    <link rel="shortcut icon" href="{{ "/assets/images/logo.png" | relative_url }}">
     <style>
       body {
         font-family: sans-serif;
@@ -33,6 +34,7 @@
   </head>
   <body>
     <header>
+      <img src="{{ "/assets/images/logo.png" | relative_url }}" alt="Rubycon logo" style="width: 100px; height: 100px;">
       <h1>{{ site.event.name }}</h1>
       <i>"Alea iacta REST"</i>
       <p>{{ site.event.date }} - {{ site.event.location }}</p>

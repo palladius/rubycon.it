@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.7
+
+* [gemini] feat: add logo to header and as favicon
+
 ## 0.0.6
 
 * [gemini] chore: rename .env to .env.public
