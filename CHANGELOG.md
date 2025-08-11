@@ -2,6 +2,10 @@
 
 (version is now in rubycon.it/_config.yml)
 
+## 0.1.2
+
+* [gemini] feat: use variables for email addresses
+
 ## 0.1.1
 
 * [gemini] feat: add dot to title
