@@ -32,15 +32,16 @@ Ideally text will be in black or white, depending on CSS color, and have bold in
 
 ## Feedback loop
 
-* Before executing, create a PLAN.md, ask user to confirmm, and then re-read that plan, and execute upon it.
+* Before executing, create a `PLAN.md`, ask user to confirm, and then re-read that plan, and execute upon it.
 * Use github issues to track things to do, and complex activities.
 * Use meaningful commits.
 
 ## Push to prod
 
 * A `git commit` results in a Netlify push and deploy.
-* You can check the deployment if succesful or not, by curling/diffing the new changes on https://rubycon.netlify.app
+* You can check the deployment if successful or not, by curling/diffing the new changes on https://rubycon.netlify.app
 * Deployment takes around 5min. Deployment logs are available if you ask me. There's also an MCP server I havent configured yet.
+* DO NOT `git push` before running `just test` and confirming with user its ok to push.
 
 ## Documentation
 
