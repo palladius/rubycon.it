@@ -25,4 +25,3 @@ We have a fantastic venue for our conference. Find out more on our [venue page](
   {% endfor %}
 </div>
 
-🏛️🇲🇪⚔️🕊️
