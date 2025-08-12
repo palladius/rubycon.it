@@ -5,15 +5,17 @@ title: Schedule
 
 # Schedule
 
-## Thursday
+## 📅 Thursday 7
 
 * Afternoon: Workshops
 
-## Friday
+## Friday 8
 
-* All day: Main conference (single track)
-* Evening: Toga party!
+Motto of the day: *Audio, Video, Disco!*
 
-## Saturday
+* All day: Main conference (single track). See [Speakers](./speakers)
+* Evening: Toga party in a disco in the Riviera Romagnola.
+
+## Saturday 9
 
 * Morning (optional): Trip to the mouths of the Rubicon river.

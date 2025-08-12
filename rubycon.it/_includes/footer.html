@@ -1,4 +1,10 @@
-<footer style="background-color: #e0f2f1; padding: 10px; text-align: center; position: fixed; bottom: 0; width: 100%;">
-  <p>&copy; 2025 {{ site.title }} - v{{ site.site_version }}</p>
-  <p><a href="https://github.com/palladius/rubycon.it">GitHub</a></p>
+<footer class="site-footer">
+  <div class="social-media" style="display: inline-block; vertical-align: middle;">
+    {% for social in site.social_media %}
+      <a href="{{ social.url }}" class="social-link" title="{{ social.name }}" aria-label="{{ social.name }}">
+        {{ social.icon }}
+      </a>
+    {% endfor %}
+  </div>
+  <span style="vertical-align: middle;">&nbsp;&copy; 2025 {{ site.title }} - v{{ site.site_version }} | <a href="https://github.com/palladius/rubycon.it">GitHub</a></span>
 </footer>

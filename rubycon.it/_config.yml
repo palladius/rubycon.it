@@ -21,7 +21,7 @@
 title: Rubycon
 info_email: rubycon-organizers@googlegroups.com
 # cfp_email: cfp@rubycon.it
-site_version: '0.2.3'
+site_version: '0.2.14'
 
 event:
   name: Rubycon
@@ -34,7 +34,7 @@ social_media:
     icon: "📘"
   - name: X
     url: "https://x.com/rubycon2026"
-    icon: "❌"
+    icon: "🐦"
   - name: Bluesky
     url: "https://bsky.app/profile/rubyconitaly.bsky.social"
     icon: "🦋"

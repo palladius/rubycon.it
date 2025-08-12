@@ -2,6 +2,46 @@
 
 (version is now in rubycon.it/_config.yml)
 
+## 0.2.14
+
+* [gemini] chore: Restore Google Fonts preload and preconnect links
+
+## 0.2.12
+
+* [gemini] chore: Remove Google Fonts import from SASS
+
+## 0.2.11
+
+* [gemini] chore: Remove Google Fonts preload link
+
+## 0.2.10
+
+* [gemini] fix: Fix speakers link in schedule
+
+## 0.2.9
+
+* [gemini] feat: Make "Alea iacta REST" text bigger
+
+## 0.2.8
+
+* [gemini] fix: Center footer content and address font preload issue
+
+## 0.2.7
+
+* [gemini] feat: Arrange footer content on a single line
+
+## 0.2.6
+
+* [gemini] fix: Restore footer CSS by removing inline styles
+
+## 0.2.5
+
+* [gemini] fix: Ensure footer is correctly included in default layout
+
+## 0.2.4
+
+* [gemini] feat: Add social media links to footer
+
 ## 0.2.3
 
 * [gemini] fix: restore header styling and use include

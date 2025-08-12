@@ -17,11 +17,5 @@ We have a fantastic venue for our conference. Find out more on our [venue page](
 
 ## Follow us on social media
 
-<div class="social-media">
-  {% for social in site.social_media %}
-    <a href="{{ social.url }}" class="social-link" title="{{ social.name }}" aria-label="{{ social.name }}">
-      {{ social.icon }}
-    </a>
-  {% endfor %}
-</div>
+{% include social_links.html %}
 
