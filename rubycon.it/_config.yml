@@ -28,6 +28,28 @@ event:
   date: May 8th, 2026
   location: Rimini, Italy
 
+social_media:
+  - name: Facebook
+    url: "https://www.facebook.com/rubyconitaly"
+    icon: "📘"
+  - name: X
+    url: "https://x.com/rubycon2026"
+    icon: "❌"
+  - name: Bluesky
+    url: "https://bsky.app/profile/rubyconitaly.bsky.social"
+    icon: "🦋"
+  - name: Mastodon
+    url: "https://mastodon.social/@rubycon"
+    icon: "🐘"
+  - name: Instagram
+    url: "https://www.instagram.com/rubyconitaly/"
+    icon: "📸"
+  - name: YouTube
+    url: "https://www.youtube.com/channel/UCNqcu--Vp9H7JfGHW4TYzIw"
+    icon: "📹"
+  - name: Discord
+    url: "https://discord.gg/T43GHE6wHH"
+    icon: "👾"
 navigation:
   - name: Home
     link: /

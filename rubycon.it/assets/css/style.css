@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+}
+header {
+    background-color: #e0f2f1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+.logo-title img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+.logo-title h1 {
+    color: #8b0000;
+    margin: 0;
+    font-size: 2em;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+nav a {
+    color: #00008b;
+    text-decoration: none;
+    margin: 5px 10px;
+    font-size: 1.2em;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.event-details {
+    text-align: center;
+    margin-top: 10px;
+}
+.event-details p {
+    font-size: 1.1em;
+}
+footer {
+    background-color: #e0f2f1;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.social-media {
+    text-align: center;
+    margin: 30px 0;
+}
+.social-link {
+    display: inline-block;
+    font-size: 2em;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+.social-link:hover {
+    transform: scale(1.2);
+}
