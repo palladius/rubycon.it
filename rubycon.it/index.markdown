@@ -12,4 +12,14 @@ We are excited to announce Rubycon, a conference for Ruby enthusiasts, taking pl
 
 We have a fantastic venue for our conference. Find out more on our [venue page](./venue).
 
+## Follow us on social media
+
+<div class="social-media">
+  {% for social in site.social_media %}
+    <a href="{{ social.url }}" class="social-link" title="{{ social.name }}">
+      {{ social.icon }}
+    </a>
+  {% endfor %}
+</div>
+
 🏛️🇲🇪⚔️🕊️
