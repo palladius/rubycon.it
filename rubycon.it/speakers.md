@@ -11,11 +11,9 @@ Submit your proposal [here](cfp.html), after you've solved this:
 
 {% highlight ruby %}
 
-sentence = [ :le ,  :ct ]
+    sentence = [ :le ,  :ct ]
 
-def aXa(name)
-  "a#{name}a"
-end
+    def aXa(name)= "a#{name}a"
 
-print(sentence.map(aXa).join(" ") + "REST!")
+    print(sentence.map{|w| aXa w}.join(" ") + " REST!")
 {% endhighlight %}
