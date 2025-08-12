@@ -65,7 +65,7 @@ navigation:
     link: /venue
 
 # Build settings
-theme: jekyll-theme-cayman
+
 
 github:
   is_project_page: true
@@ -75,6 +75,7 @@ github:
   owner_url: 'https://github.com/palladius'
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
