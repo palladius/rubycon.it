@@ -21,7 +21,7 @@
 title: Rubycon
 info_email: rubycon-organizers@googlegroups.com
 # cfp_email: cfp@rubycon.it
-site_version: '0.2.14'
+site_version: '0.2.14b'
 
 event:
   name: Rubycon
