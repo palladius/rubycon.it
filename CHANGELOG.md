@@ -2,6 +2,10 @@
 
 (version is now in rubycon.it/_config.yml)
 
+## 0.2.3
+
+* [gemini] fix: restore header styling and use include
+
 ## 0.2.2
 
 * [gemini] fix: inject custom footer content into theme
