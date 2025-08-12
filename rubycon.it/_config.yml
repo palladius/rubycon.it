@@ -34,7 +34,7 @@ site_version: '0.1.1'
 
 social_media:
   - name: Facebook
-    url: "https://www.facebook.com/share/1PKmUtdUSu/"
+    url: "https://www.facebook.com/rubyconitaly"
     icon: "📘"
   - name: X
     url: "https://x.com/rubycon2026"
@@ -52,7 +52,7 @@ social_media:
     url: "https://www.youtube.com/channel/UCNqcu--Vp9H7JfGHW4TYzIw"
     icon: "📹"
   - name: Discord
-    url: "https://discord.gg/X3vvVafK"
+    url: "https://discord.gg/T43GHE6wHH"
     icon: "👾"
 navigation:
   - name: Home
