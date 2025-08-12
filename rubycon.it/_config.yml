@@ -21,7 +21,7 @@
 title: Rubycon
 info_email: rubycon-organizers@googlegroups.com
 # cfp_email: cfp@rubycon.it
-site_version: '0.1.3'
+site_version: '0.2.0'
 
 event:
   name: Rubycon
@@ -43,7 +43,7 @@ navigation:
     link: /venue
 
 # Build settings
-theme: minima
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
