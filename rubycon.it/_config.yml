@@ -66,6 +66,13 @@ navigation:
 
 # Build settings
 theme: jekyll-theme-cayman
+
+github:
+  is_project_page: true
+  repository_url: 'https://github.com/palladius/rubycon.it'
+  repository_name: 'rubycon.it'
+  owner_name: 'palladius'
+  owner_url: 'https://github.com/palladius'
 plugins:
   - jekyll-feed
 

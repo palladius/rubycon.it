@@ -7,37 +7,21 @@
   </head>
   <body>
     <header>
-      <div class="logo-title">
-        <img src="{{ "/assets/images/logo.png" | relative_url }}" alt="Rubycon logo">
-        <h1>Ruby<span style="font-size: 0.5em;">.</span>con</h1>
-      </div>
+      <img src="{{ "/assets/images/logo.png" | relative_url }}" alt="Rubycon logo" style="width: 100px; height: 100px;">
+      <h1>{{ site.event.name }}</h1>
+      <i>"Alea iacta REST"</i>
+      <p>{{ site.event.date }} - {{ site.event.location }}</p>
       <nav>
-        <div>
-          {% for item in site.navigation %}
-            <a href="{{ item.link }}">
-              {% case item.name %}
-                {% when "Home" %}🏠
-                {% when "About" %}ℹ️
-                {% when "Sponsors" %}💰
-                {% when "Speakers" %}🎤
-                {% when "Schedule" %}📅
-                {% when "Venue" %}📍
-              {% endcase %}
-              {{ item.name }}
-            </a>
-          {% endfor %}
-        </div>
-        <div class="event-details">
-          <i>🎲 "Alea iacta REST"</i>
-          <p>📅 {{ site.event.date }} | 🇮🇹 {{ site.event.location }}</p>
-        </div>
+        {% for item in site.navigation %}
+          <a href="{{ item.link }}">{{ item.name }}</a>
+        {% endfor %}
       </nav>
     </header>
     <main>
       {{ content }}
     </main>
     <footer>
-      <p>&copy; 2025 {{ site.title }} - v{{ site.site_version }}</p>
+      <p><a href="https://github.com/palladius/rubycon.it">GitHub</a></p>
     </footer>
   </body>
 </html>
