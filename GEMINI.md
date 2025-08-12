@@ -35,6 +35,7 @@ Ideally text will be in black or white, depending on CSS color, and have bold in
 * Before executing, create a `PLAN.md`, ask user to confirm, and then re-read that plan, and execute upon it.
 * Use github issues to track things to do, and complex activities.
 * Use meaningful commits.
+* Do NOT run the server yourself. all long-running events will be run by user. If you need to check log, note that `just run..` logs under `rubycon.it/log/*.log`.
 
 ## Push to prod
 

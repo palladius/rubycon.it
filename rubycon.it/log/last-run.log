@@ -1,0 +1,143 @@
+Configuration file: /Users/ricc/git/rubycon.it/rubycon.it/_config.yml
+            Source: /Users/ricc/git/rubycon.it/rubycon.it
+       Destination: /Users/ricc/git/rubycon.it/rubycon.it/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import 'jekyll-theme-cayman';
+  │         ^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    /Users/ricc/git/rubycon.it/rubycon.it/assets/css/style.scss 1:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import "normalize";
+  │         ^^^^^^^^^^^
+  ╵
+    jekyll-theme-cayman.scss 1:9                                     @import
+    /Users/ricc/git/rubycon.it/rubycon.it/assets/css/style.scss 1:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import "rouge-github";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    jekyll-theme-cayman.scss 2:9                                     @import
+    /Users/ricc/git/rubycon.it/rubycon.it/assets/css/style.scss 1:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+3 │ @import "variables";
+  │         ^^^^^^^^^^^
+  ╵
+    jekyll-theme-cayman.scss 3:9                                     @import
+    /Users/ricc/git/rubycon.it/rubycon.it/assets/css/style.scss 1:9  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use color.invert instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+50 │     background: invert($body-link-color);
+   │                 ^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    jekyll-theme-cayman.scss 50:17                                   @import
+    /Users/ricc/git/rubycon.it/rubycon.it/assets/css/style.scss 1:9  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use color.invert instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+51 │     outline: thick solid invert($body-link-color);
+   │                          ^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    jekyll-theme-cayman.scss 51:26                                   @import
+    /Users/ricc/git/rubycon.it/rubycon.it/assets/css/style.scss 1:9  root stylesheet
+                    done in 0.653 seconds.
+ Auto-regeneration: enabled for '/Users/ricc/git/rubycon.it/rubycon.it'
+LiveReload address: http://127.0.0.1:35729
+    Server address: http://127.0.0.1:4002
+  Server running... press ctrl-c to stop.
+        LiveReload: Browser connected
+      Regenerating: 1 file(s) changed at 2025-08-12 14:44:16
+                    _includes/header.html
+       Jekyll Feed: Generating feed for posts
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import 'jekyll-theme-cayman';
+  │         ^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    /Users/ricc/git/rubycon.it/rubycon.it/assets/css/style.scss 1:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import "normalize";
+  │         ^^^^^^^^^^^
+  ╵
+    jekyll-theme-cayman.scss 1:9                                     @import
+    /Users/ricc/git/rubycon.it/rubycon.it/assets/css/style.scss 1:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import "rouge-github";
+  │         ^^^^^^^^^^^^^^
+  ╵
+    jekyll-theme-cayman.scss 2:9                                     @import
+    /Users/ricc/git/rubycon.it/rubycon.it/assets/css/style.scss 1:9  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+3 │ @import "variables";
+  │         ^^^^^^^^^^^
+  ╵
+    jekyll-theme-cayman.scss 3:9                                     @import
+    /Users/ricc/git/rubycon.it/rubycon.it/assets/css/style.scss 1:9  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use color.invert instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+50 │     background: invert($body-link-color);
+   │                 ^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    jekyll-theme-cayman.scss 50:17                                   @import
+    /Users/ricc/git/rubycon.it/rubycon.it/assets/css/style.scss 1:9  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use color.invert instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+51 │     outline: thick solid invert($body-link-color);
+   │                          ^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    jekyll-theme-cayman.scss 51:26                                   @import
+    /Users/ricc/git/rubycon.it/rubycon.it/assets/css/style.scss 1:9  root stylesheet
+                    ...done in 0.193047 seconds.
+                    
+[2025-08-12 14:44:17] ERROR Errno::ECONNRESET: Connection reset by peer @ io_fillbuf - fd:26 
+	/opt/homebrew/lib/ruby/gems/3.3.0/gems/webrick-1.9.1/lib/webrick/httpserver.rb:82:in `eof?'
+	/opt/homebrew/lib/ruby/gems/3.3.0/gems/webrick-1.9.1/lib/webrick/httpserver.rb:82:in `run'
+	/opt/homebrew/lib/ruby/gems/3.3.0/gems/webrick-1.9.1/lib/webrick/server.rb:310:in `block in start_thread'
