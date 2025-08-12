@@ -55,6 +55,12 @@ Ideally text will be in black or white, depending on CSS color, and have bold in
 All test suite should be utterable from `just test`. Code should be in `test/`. We should test everything, mostly keeping in mind the production state of this. We should ensure that this website
 is up and running. Tests should be partially deterministic (from DNS assert www.rubycon.it is up and running) and partially LLM-definable ("Ensure the program is consistent and happens in year 2026").
 
+## UI
+
+If you change something about the UI, for instance testing a new skin, or the blue green banner is too high, ... please use `playwright` MCP to navigate to pages.
+* Local pages are in localhost on port 4002 as seen in the `justfile`.
+* Always confirm with user if they're satisfied before committing and pushing, as LLMs are not great at UI feedback as of today.
+
 ## Implementation
 
 For any non-trivial task you are given, do NOT jump to implementation. Instead, do this:
