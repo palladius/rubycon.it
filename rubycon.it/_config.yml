@@ -19,18 +19,14 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Rubycon
-email: info@rubycon.it
+info_email: rubycon-organizers@googlegroups.com
+# cfp_email: cfp@rubycon.it
+site_version: '0.2.0'
 
 event:
   name: Rubycon
   date: May 8th, 2026
   location: Rimini, Italy
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-
-site_version: '0.1.1'
 
 social_media:
   - name: Facebook
@@ -69,7 +65,7 @@ navigation:
     link: /venue
 
 # Build settings
-theme: minima
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 

@@ -52,3 +52,14 @@ Ideally text will be in black or white, depending on CSS color, and have bold in
 
 All test suite should be utterable from `just test`. Code should be in `test/`. We should test everything, mostly keeping in mind the production state of this. We should ensure that this website
 is up and running. Tests should be partially deterministic (from DNS assert www.rubycon.it is up and running) and partially LLM-definable ("Ensure the program is consistent and happens in year 2026").
+
+## Implementation
+
+For any non-trivial task you are given, do NOT jump to implementation. Instead, do this:
+
+1. Create a file under `doc/plans/YYYYMMDD-$short_task_name.md`.
+2. This plan should have a number of simple subtasks; you can use numbers like 1,2,3,4.. to define those.
+3. This plan should be reviewed by human, and you should NOT execute until there's quiescence (user is happy and plan is updated and LLM re-reads the edited plan).
+4. Each subtask should have TWO properties:
+   1. Be **easily testable** (the end of task 3 should be trivially testable by user with some sort of grep/curl/... or LLM).
+   2. Be **easily revertable**. We can use micro git commits across tasks, maybe using the task number in the initial part of the commit, or use Gemini CLI checkpoints.

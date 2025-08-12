@@ -2,6 +2,20 @@
 
 (version is now in rubycon.it/_config.yml)
 
+## 0.2.0
+
+* [gemini] feat: switch to Cayman theme
+* [gemini] feat: add Caesar image to home page
+* [gemini] chore: rename markdown files to md
+
+## 0.1.3
+
+* [gemini] fix: restore event details and fix CSS deprecation warnings
+
+## 0.1.2
+
+* [gemini] feat: use variables for email addresses
+
 ## 0.1.1
 
 * [gemini] feat: add dot to title
