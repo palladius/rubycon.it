@@ -3,7 +3,8 @@ require 'html-proofer'
 task :test do
   sh 'bundle exec jekyll build'
   HTMLProofer.check_directory('./_site', {
-    :url_ignore => [/linkedin.com/, /twitter.com/, /facebook.com/],
+    :url_ignore => [/linkedin.com/, /twitter.com/, /x.com/, /facebook.com/],
+    # Note that https://x.com/rubycon2026 doesnt work
     :enforce_https => true,
     :check_external_hash => true,
     :check_html => true,
