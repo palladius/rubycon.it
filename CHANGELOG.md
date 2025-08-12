@@ -2,6 +2,10 @@
 
 (version is now in rubycon.it/_config.yml)
 
+## 0.2.1
+
+* [gemini] fix: restore header and fix footer
+
 ## 0.2.0
 
 * [gemini] feat: switch to Cayman theme
