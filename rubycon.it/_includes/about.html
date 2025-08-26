@@ -7,29 +7,15 @@
         </div>
         
         <div class="grid md:grid-cols-3 gap-10">
-            <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition">
-                <div class="bg-red-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                    <i class="fas fa-code text-red-600 text-2xl"></i>
+            {% for card in site.about %}
+                <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition">
+                    <div class="bg-red-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-{{ card.icon }} text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">{{ card.title }}</h3>
+                    <p class="text-gray-600">{{ card.description }}</p>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Cutting-edge Content</h3>
-                <p class="text-gray-600">Learn about the latest trends and best practices in Ruby, Rails, and related technologies from industry leaders.</p>
-            </div>
-            
-            <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition">
-                <div class="bg-red-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                    <i class="fas fa-users text-red-600 text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">Networking</h3>
-                <p class="text-gray-600">Connect with fellow Ruby enthusiasts, potential collaborators, and employers in Italy's vibrant tech scene.</p>
-            </div>
-            
-            <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition">
-                <div class="bg-red-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                    <i class="fas fa-utensils text-red-600 text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">Italian Flair</h3>
-                <p class="text-gray-600">Enjoy authentic Italian food, wine, and culture as part of your conference experience in beautiful Florence.</p>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>

@@ -2,7 +2,7 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
-    <title>RubyCon - The Ruby Conference in Italy</title>
+    <title>{{ site.title }}</title>
     {% seo %}
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,11 +40,18 @@
     <!-- <a id="skip-to-content" href="#content">Skip to the content.</a> -->
 
     {% include header.html %}
-    {% include main.html %}
 
-    <!--<main id="content" class="main-content" role="main">
-      {{ content }}
-    </main>-->
+    <main id="content" role="main">
+      <!-- {{ content }} -->
+
+      {% include hero.html %}
+      {% include about.html %}
+      {% include speakers.html %}
+      {% include schedule.html %}
+      {% include venue.html %}
+      {% include registration.html %}
+      {% include sponsors.html %}
+    </main>
 
     {% include footer.html %}
 

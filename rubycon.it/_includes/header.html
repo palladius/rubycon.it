@@ -9,11 +9,9 @@
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-center space-x-8">
-                        <a href="#home" class="text-gray-900 hover:text-red-600 px-3 py-2 font-medium">Home</a>
-                        <a href="#about" class="text-gray-900 hover:text-red-600 px-3 py-2 font-medium">About</a>
-                        <a href="#speakers" class="text-gray-900 hover:text-red-600 px-3 py-2 font-medium">Speakers</a>
-                        <a href="#schedule" class="text-gray-900 hover:text-red-600 px-3 py-2 font-medium">Schedule</a>
-                        <a href="#venue" class="text-gray-900 hover:text-red-600 px-3 py-2 font-medium">Venue</a>
+                        {% for nav in site.navigation  %}
+                            <a href="{{ nav.link }}" class="text-gray-900 hover:text-red-600 px-3 py-2 font-medium">{{ nav.name }}</a>
+                        {% endfor %}
                         <a href="#register" class="bg-red-600 text-white px-6 py-2 rounded-md font-medium hover:bg-red-700 transition">Register</a>
                     </div>
                 </div>
@@ -27,11 +25,9 @@
         <!-- Mobile menu -->
         <div class="mobile-menu hidden md:hidden bg-white shadow-lg">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#home" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-600">Home</a>
-                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-600">About</a>
-                <a href="#speakers" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-600">Speakers</a>
-                <a href="#schedule" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-600">Schedule</a>
-                <a href="#venue" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-600">Venue</a>
+                {% for nav in site.navigation  %}
+                    <a href="{{ nav.link }}" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-600">{{ nav.name }}</a>
+                {% endfor %}
                 <a href="#register" class="block px-3 py-2 text-base font-medium text-white bg-red-600 rounded-md">Register</a>
             </div>
         </div>

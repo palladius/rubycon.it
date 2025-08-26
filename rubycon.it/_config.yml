@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Rubycon
+title: RubyCon - The Ruby Conference in Italy
 info_email: rubycon-organizers@googlegroups.com
 # cfp_email: cfp@rubycon.it
 site_version: '0.2.14b'
@@ -52,17 +52,27 @@ social_media:
     icon: "👾"
 navigation:
   - name: Home
-    link: /
+    link: "#"
   - name: About
-    link: /about
-  - name: Sponsors
-    link: /sponsors
+    link: "#about"
   - name: Speakers
-    link: /speakers
+    link: "#speakers"
   - name: Schedule
-    link: /schedule
+    link: "#schedule"
   - name: Venue
-    link: /venue
+    link: "#venue"
+  - name: Sponsors
+    link: "#sponsors"
+about:
+  - title: Cutting-edge Content
+    icon: code
+    description: Learn about the latest trends and best practices in Ruby, Rails, and related technologies from industry leaders.
+  - title: Networking
+    icon: users
+    description: Connect with fellow Ruby enthusiasts, potential collaborators, and employers in Italy's vibrant tech scene.
+  - title: Italian Flair
+    icon: utensils
+    description: Enjoy authentic Italian food, wine, and culture as part of your conference experience in beautiful Florence.
 
 # Build settings
 
