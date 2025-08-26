@@ -31,25 +31,25 @@ event:
 social_media:
   - name: Facebook
     url: "https://www.facebook.com/rubyconitaly"
-    icon: "📘"
-  - name: X
-    url: "https://x.com/rubycon2026"
-    icon: "🐦"
-  - name: Bluesky
-    url: "https://bsky.app/profile/rubyconitaly.bsky.social"
-    icon: "🦋"
+    icon: facebook
   - name: Mastodon
     url: "https://mastodon.social/@rubycon"
-    icon: "🐘"
+    icon: mastodon
   - name: Instagram
     url: "https://www.instagram.com/rubyconitaly/"
-    icon: "📸"
+    icon: instagram
   - name: YouTube
     url: "https://www.youtube.com/channel/UCNqcu--Vp9H7JfGHW4TYzIw"
-    icon: "📹"
+    icon: youtube
   - name: Discord
     url: "https://discord.gg/T43GHE6wHH"
-    icon: "👾"
+    icon: discord
+  - name: X
+    url: "https://x.com/rubycon2026"
+    icon: "x-twitter"
+  - name: Bluesky
+    url: "https://bsky.app/profile/rubyconitaly.bsky.social"
+    icon: bluesky
 navigation:
   - name: Home
     link: "#"
@@ -69,10 +69,10 @@ about:
     description: Learn about the latest trends and best practices in Ruby, Rails, and related technologies from industry leaders.
   - title: Networking
     icon: users
-    description: Connect with fellow Ruby enthusiasts, potential collaborators, and employers in Italy's vibrant tech scene.
+    description: Meet fellow Ruby developers, share ideas, and build relationships with collaborators, employers, and enthusiasts.
   - title: Italian Flair
     icon: utensils
-    description: Enjoy authentic Italian food, wine, and culture as part of your conference experience in beautiful Florence.
+    description: Experience the warmth of Italy through local culture, food, and hospitality while attending the conference in Rimini.
 
 # Build settings
 
