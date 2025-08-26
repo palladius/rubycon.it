@@ -61,8 +61,8 @@ navigation:
     link: "#schedule"
   - name: venue
     link: "#venue"
-  - name: sponsors
-    link: "#sponsors"
+  # - name: sponsors
+  #   link: "#sponsors"
 about:
   - title: ruby at the core
     icon: code

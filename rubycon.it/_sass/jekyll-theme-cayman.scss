@@ -56,10 +56,6 @@ body {
 a {
   color: $body-link-color;
   text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
 .btn {
