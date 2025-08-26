@@ -1,14 +1,14 @@
-<footer class="bg-gray-900 text-white py-12">
+<footer class="bg-red-950 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
                 <div>
                     <div class="flex items-center mb-4">
-                        <span class="text-xl font-bold">Ruby<span class="text-red-600">Con</span></span>
+                        <span class="text-xl font-bold">Ruby<span class="text-yellow-300">Con</span></span>
                     </div>
-                    <p class="text-gray-400 mb-4">The premier Ruby conference in Italy, bringing together developers, companies, and enthusiasts.</p>
+                    <p class="text-gray-300 mb-4">The premier Ruby conference in Italy, bringing together developers, companies, and enthusiasts.</p>
                     <div class="flex space-x-4">
                         {% for social in site.social_media %}
-                            <a href="{{ social.url }}" class="text-gray-400 hover:text-white" target="_blank">
+                            <a href="{{ social.url }}" class="text-gray-300 hover:text-white" target="_blank">
                                 <i class="fab fa-{{ social.icon }} text-xl"></i>
                             </a>
                         {% endfor %}
@@ -19,7 +19,7 @@
                     <h3 class="text-lg font-bold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
                         {% for nav in site.navigation %}
-                            <li><a href="{{ nav.link }}" class="text-gray-400 hover:text-white">{{ nav.name }}</a></li>
+                            <li><a href="{{ nav.link }}" class="text-gray-300 hover:text-white">{{ nav.name }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>
@@ -27,11 +27,11 @@
                 <div>
                     <h3 class="text-lg font-bold mb-4">Information</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Code of Conduct</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Travel & Accommodation</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Sponsorship</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Volunteer</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Code of Conduct</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">FAQ</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Travel & Accommodation</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Sponsorship</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Volunteer</a></li>
                     </ul>
                 </div>
                 
@@ -40,25 +40,25 @@
                     <ul class="space-y-2">
                         <li class="flex items-start">
                             <i class="fas fa-envelope text-red-600 mt-1 mr-3"></i>
-                            <a href="mailto:info@rubyitalia.com" class="text-gray-400 hover:text-white">info@rubyitalia.com</a>
+                            <a href="mailto:info@rubyitalia.com" class="text-gray-300 hover:text-white">info@rubyitalia.com</a>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-phone-alt text-red-600 mt-1 mr-3"></i>
-                            <span class="text-gray-400">+39 123 456 7890</span>
+                            <span class="text-gray-300">+39 123 456 7890</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-map-marker-alt text-red-600 mt-1 mr-3"></i>
-                            <span class="text-gray-400">Rimini, Italy</span>
+                            <span class="text-gray-300">Rimini, Italy</span>
                         </li>
                     </ul>
                 </div>
             </div>
             
-            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Ruby Italia. All rights reserved.</p>
+            <div class="border-t border-gray-600 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300 mb-4 md:mb-0">© 2023 Ruby Italia. All rights reserved.</p>
                 <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
-                    <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+                    <a href="#" class="text-gray-300 hover:text-white">Privacy Policy</a>
+                    <a href="#" class="text-gray-300 hover:text-white">Terms of Service</a>
                 </div>
             </div>
         </div>

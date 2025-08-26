@@ -11,10 +11,19 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        body{
+             font-family: "Cinzel", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+        }
         .hero-gradient {
-            background: linear-gradient(135deg, #e11d48 0%, #7c2d12 100%);
+            background: linear-gradient(135deg, #930221 0%, #511400 100%);
         }
         .speaker-card:hover {
             transform: translateY(-10px);

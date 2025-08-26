@@ -64,13 +64,13 @@ navigation:
   - name: Sponsors
     link: "#sponsors"
 about:
-  - title: Cutting-edge Content
+  - title: Ruby at the core
     icon: code
     description: Learn about the latest trends and best practices in Ruby, Rails, and related technologies from industry leaders.
-  - title: Networking
+  - title: Community connections
     icon: users
     description: Meet fellow Ruby developers, share ideas, and build relationships with collaborators, employers, and enthusiasts.
-  - title: Italian Flair
+  - title: Italian atmosphere
     icon: utensils
     description: Experience the warmth of Italy through local culture, food, and hospitality while attending the conference in Rimini.
 
