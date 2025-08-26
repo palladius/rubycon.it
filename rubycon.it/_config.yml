@@ -25,8 +25,8 @@ site_version: '0.2.14b'
 
 event:
   name: Rubycon
-  date: May 8th, 2026
-  location: Rimini, Italy
+  date: may 8th, 2026
+  location: rimini, italy
 
 social_media:
   - name: Facebook
@@ -51,28 +51,28 @@ social_media:
     url: "https://bsky.app/profile/rubyconitaly.bsky.social"
     icon: bluesky
 navigation:
-  - name: Home
+  - name: home
     link: "#"
-  - name: About
+  - name: about
     link: "#about"
-  - name: Speakers
+  - name: speakers
     link: "#speakers"
-  - name: Schedule
+  - name: schedule
     link: "#schedule"
-  - name: Venue
+  - name: venue
     link: "#venue"
-  - name: Sponsors
+  - name: sponsors
     link: "#sponsors"
 about:
-  - title: Ruby at the core
+  - title: ruby at the core
     icon: code
-    description: Learn about the latest trends and best practices in Ruby, Rails, and related technologies from industry leaders.
-  - title: Community connections
+    description: learn about the latest trends and best practices in ruby, rails, and related technologies from industry leaders.
+  - title: community connections
     icon: users
-    description: Meet fellow Ruby developers, share ideas, and build relationships with collaborators, employers, and enthusiasts.
-  - title: Italian atmosphere
+    description: meet fellow ruby developers, share ideas, and build relationships with collaborators, employers, and enthusiasts.
+  - title: italian atmosphere
     icon: utensils
-    description: Experience the warmth of Italy through local culture, food, and hospitality while attending the conference in Rimini.
+    description: experience the warmth of Italy through local culture, food, and hospitality while attending the conference in Rimini.
 
 # Build settings
 
