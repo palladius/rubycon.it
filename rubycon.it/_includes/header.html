@@ -1,10 +1,39 @@
 <header class="page-header" role="banner">
-      <div class="logo-title" style="display: flex; align-items: center;">
-        <img src="{{ "/assets/images/logo.png" | relative_url }}" alt="Rubycon logo" style="width: 50px; height: 50px;">
-        <h1>Ruby<span style="font-size: 0.5em;">.</span>con</h1>
-      </div>
-      <div class="event-details" style="text-align: center;">
-          <i style="font-size: 2em;">🎲 "Alea iacta REST"</i>
-          <p>📅 {{ site.event.date }} | 🇮🇹 {{ site.event.location }}</p>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                     <img src="{{ "/assets/images/logo.png" | relative_url }}" alt="Rubycon logo" style="width: 50px; height: 50px;">
+                    <span class="text-xl font-bold text-gray-900">Ruby<span class="text-red-600">Con</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="#home" class="text-gray-900 hover:text-red-600 px-3 py-2 font-medium">Home</a>
+                        <a href="#about" class="text-gray-900 hover:text-red-600 px-3 py-2 font-medium">About</a>
+                        <a href="#speakers" class="text-gray-900 hover:text-red-600 px-3 py-2 font-medium">Speakers</a>
+                        <a href="#schedule" class="text-gray-900 hover:text-red-600 px-3 py-2 font-medium">Schedule</a>
+                        <a href="#venue" class="text-gray-900 hover:text-red-600 px-3 py-2 font-medium">Venue</a>
+                        <a href="#register" class="bg-red-600 text-white px-6 py-2 rounded-md font-medium hover:bg-red-700 transition">Register</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 rounded-md text-gray-700 hover:text-red-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-    </header>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-600">Home</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-600">About</a>
+                <a href="#speakers" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-600">Speakers</a>
+                <a href="#schedule" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-600">Schedule</a>
+                <a href="#venue" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-600">Venue</a>
+                <a href="#register" class="block px-3 py-2 text-base font-medium text-white bg-red-600 rounded-md">Register</a>
+            </div>
+        </div>
+    </nav>
+</header>
