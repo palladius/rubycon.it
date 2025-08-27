@@ -52,7 +52,7 @@ social_media:
     icon: bluesky
 navigation:
   - name: home
-    link: "#"
+    link: "#home"
   - name: about
     link: "#about"
   - name: speakers
