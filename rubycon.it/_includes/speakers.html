@@ -6,10 +6,10 @@
             <p class="text-xl max-w-3xl mx-auto">learn from some of the brightest minds in the ruby community from italy and beyond.</p>
         </div>
         
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {% for speaker in site.speakers %}
             <div class="speaker-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                <div class="relative">
+                <div class="relative" data-aos="fade-up">
                     <img src="{{ speaker.avatar | relative_url }}" alt="rubycon logo" class="w-full h-64 object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
                     <div class="absolute bottom-4 left-4">
@@ -17,7 +17,7 @@
                         <p class="text-red-200">{{ speaker.role }}</p>
                     </div>
                 </div>
-                <div class="p-6">
+                <div class="p-6" data-aos="fade-up">
                     <p class="text-gray-600 mb-4">{{ speaker.description }}</p>
                     <div class="flex space-x-2">
                         {% for key in speaker.keys %}

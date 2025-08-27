@@ -61,10 +61,10 @@ navigation:
     link: "#schedule"
   - name: venue
     link: "#venue"
+  - name: sponsors
+    link: "#sponsors"
   - name: newsletter
-    link: "#registration"
-  # - name: sponsors
-  #   link: "#sponsors"
+    link: "#newsletter"
 about:
   - title: ruby at the core
     icon: code
@@ -150,6 +150,9 @@ schedule:
         description: "Toga Party!"
         full_name: 'All Attendees'
         key:
+sponsors:
+  #- logo: 
+
 
 # Build settings
 

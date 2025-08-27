@@ -6,9 +6,9 @@
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">a day with learning, networking, and ruby goodness.</p>
         </div>
         
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
             {% for day in site.schedule %}
-                <div class="border-b border-gray-200">
+                <div class="border-b border-gray-200" data-aos="fade-up">
                     {% if site.schedule.size > 1 %}
                         <button class="schedule-day-toggle w-full px-6 py-4 text-left font-bold text-xl bg-gray-100 hover:bg-gray-200 transition flex justify-between items-center">
                             <span>{{ day.title }}</span>

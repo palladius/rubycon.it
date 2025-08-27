@@ -30,13 +30,13 @@
         section{
             scroll-margin-top: 80px;
         }
-        section:nth-of-type(odd), footer {
+        section:nth-of-type(odd):not(#newsletter), footer {
             background: linear-gradient(135deg, #500011 0%, #2b0b01 100%);
         }
-        section:nth-of-type(even), header{
+        section:nth-of-type(even), header, #newsletter{
             background-color: #f4f1ed;
         }
-        section:nth-of-type(odd){
+        section:nth-of-type(odd):not(#newsletter){
             color: white
         }
         .speaker-card:hover {
@@ -72,8 +72,8 @@
       {% include speakers.html %}
       {% include schedule.html %}
       {% include venue.html %}
-      {% include registration.html %}
       {% include sponsors.html %}
+      {% include newsletter.html %}
     </main>
 
     {% include footer.html %}

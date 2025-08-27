@@ -6,9 +6,9 @@
             <p class="text-xl text-gray-800 max-w-3xl mx-auto">join us for a full day dedicated to ruby inspiring talks from italian and international speakers, sharing ideas and experiences from the ruby world.</p>
         </div>
         
-        <div class="grid md:grid-cols-3 gap-10" data-aos="fade-up">
+        <div class="grid md:grid-cols-3 gap-10">
             {% for card in site.about %}
-                <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition" data-aos="fade-up">
                     <div class="bg-red-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
                         <i class="fas fa-{{ card.icon }} text-red-800 text-2xl"></i>
                     </div>
