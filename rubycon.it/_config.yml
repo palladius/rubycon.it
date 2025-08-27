@@ -94,18 +94,62 @@ speakers:
 schedule:
   - title: 'day 1 - may 8'
     events:
-      - clock: '00:00 - 00:00'
-        description: 'tbd'
-        full_name: 'Julius Caesar'
+      - clock: '09:00 - 10:00'
+        description: 'Check-in & Welcome Coffee'
+        full_name: 'All Attendees'
+        key: 'Networking'
+      - clock: '10:00 - 10:30'
+        description: 'Opening Keynote'
+        full_name: 'TBD'
         key: 
-      - clock: '00:00 - 00:00'
-        description: 'tbd'
-        full_name: 'Julius Caesar'
-        key: 
-      - clock: '00:00 - 00:00'
-        description: 'tbd'
-        full_name: 'Julius Caesar'
-        key: 
+      - clock: '10:30 - 11:15'
+        description: 'First Speech'
+        full_name: 'TBD'
+        key:
+      - clock: '11:15 - 11:30'
+        description: 'Coffee Break'
+        full_name: 'All Attendees'
+        key:
+      - clock: '11:30 - 12:15'
+        description: 'Second Speech'
+        full_name: 'TBD'
+        key:
+      - clock: '12:15 - 13:00'
+        description: 'Third Speech'
+        full_name: 'TBD'
+        key:
+      - clock: '13:00 - 14:30'
+        description: 'Lunch Break & Networking'
+        full_name: 'All Attendees'
+        key:
+      - clock: '14:30 - 15:15'
+        description: 'Fourth Speech'
+        full_name: 'TBD'
+        key:
+      - clock: '15:15 - 16:00'
+        description: 'Fifth Speech'
+        full_name: 'TBD'
+        key:
+      - clock: '16:00 - 16:15'
+        description: 'Coffee Break'
+        full_name: 'All Attendees'
+        key:
+      - clock: '16:15 - 17:00'
+        description: 'Sixth Speech'
+        full_name: 'TBD'
+        key:
+      - clock: '17:00 - 17:45'
+        description: 'Seventh Speech'
+        full_name: 'TBD'
+        key:
+      - clock: '17:45 - 18:00'
+        description: "It's a wrap!"
+        full_name: 'All Attendees'
+        key:
+      - clock: '20:00 - 1:00'
+        description: "Toga Party!"
+        full_name: 'All Attendees'
+        key:
 
 # Build settings
 
