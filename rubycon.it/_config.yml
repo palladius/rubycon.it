@@ -44,7 +44,7 @@ social_media:
   - name: Discord
     url: "https://discord.gg/T43GHE6wHH"
     icon: discord
-  - name: X
+  - name: X-twitter
     url: "https://x.com/rubycon2026"
     icon: "x-twitter"
   - name: Bluesky
@@ -61,6 +61,8 @@ navigation:
     link: "#schedule"
   - name: venue
     link: "#venue"
+  - name: newsletter
+    link: "#registration"
   # - name: sponsors
   #   link: "#sponsors"
 about:
@@ -73,6 +75,37 @@ about:
   - title: italian atmosphere
     icon: utensils
     description: experience the warmth of Italy through local culture, food, and hospitality while attending the conference in Rimini.
+speakers:
+  - avatar: '/assets/images/logo/0_0.jpeg'
+    full_name: Julius Caesar
+    role: senior ruby developer @company
+    description: TBD
+    keys: [ruby, ruby on rails]
+  - avatar: '/assets/images/logo/0_1.jpeg'
+    full_name: Julius Caesar
+    role: senior ruby developer @company
+    description: TBD
+    keys: [ruby, ruby on rails]
+  - avatar: '/assets/images/logo/0_2.jpeg'
+    full_name: Julius Caesar
+    role: senior ruby developer @company
+    description: TBD
+    keys: [ruby, ruby on rails]
+schedule:
+  - title: 'day 1 - may 8'
+    events:
+      - clock: '00:00 - 00:00'
+        description: 'tbd'
+        full_name: 'Julius Caesar'
+        key: 
+      - clock: '00:00 - 00:00'
+        description: 'tbd'
+        full_name: 'Julius Caesar'
+        key: 
+      - clock: '00:00 - 00:00'
+        description: 'tbd'
+        full_name: 'Julius Caesar'
+        key: 
 
 # Build settings
 

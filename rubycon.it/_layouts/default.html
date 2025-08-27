@@ -7,7 +7,7 @@
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
@@ -17,17 +17,27 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        * {
-            cursor: url('{{ "/assets/images/cursor-helmet.png" | relative_url }}'), auto;
+        html {
+            scroll-behavior: smooth;
         }
         body{
-             font-family: "Cinzel", serif;
+            font-family: "Cinzel", serif;
             font-optical-sizing: auto;
             font-weight: 500;
             font-style: normal;
+            text-transform: lowercase;
         }
-        .hero-gradient {
+        section{
+            scroll-margin-top: 80px;
+        }
+        section:nth-of-type(odd), footer {
             background: linear-gradient(135deg, #500011 0%, #2b0b01 100%);
+        }
+        section:nth-of-type(even), header{
+            background-color: #f4f1ed;
+        }
+        section:nth-of-type(odd){
+            color: white
         }
         .speaker-card:hover {
             transform: translateY(-10px);
@@ -82,28 +92,6 @@
                 
                 content.classList.toggle('hidden');
                 icon.classList.toggle('rotate-180');
-            });
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    if (!document.querySelector('.mobile-menu').classList.contains('hidden')) {
-                        document.querySelector('.mobile-menu').classList.add('hidden');
-                    }
-                }
             });
         });
     </script>
