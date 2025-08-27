@@ -44,7 +44,7 @@ social_media:
   - name: Discord
     url: "https://discord.gg/T43GHE6wHH"
     icon: discord
-  - name: X
+  - name: X-twitter
     url: "https://x.com/rubycon2026"
     icon: "x-twitter"
   - name: Bluesky
@@ -61,6 +61,8 @@ navigation:
     link: "#schedule"
   - name: venue
     link: "#venue"
+  - name: newsletter
+    link: "#registration"
   # - name: sponsors
   #   link: "#sponsors"
 about:
