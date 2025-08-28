@@ -7,4 +7,4 @@ This is the page being rendered into:
 
 * 🏛️ https://rubycon.netlify.app/
 * 🕊️ and  http://rubycon.me/
-* 🇲🇪⚔️ and soon https://rubycon.it/  incoming....
+* 🇲🇪⚔️ and https://rubycon.it/
