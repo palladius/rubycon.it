@@ -97,7 +97,7 @@ schedule:
       - clock: '09:00 - 10:00'
         description: 'Check-in & Welcome Coffee'
         full_name: 'All Attendees'
-        key: 'Networking'
+        tag: 'Networking'
       - clock: '10:00 - 10:30'
         description: 'Opening Keynote'
         full_name: 'TBD'
