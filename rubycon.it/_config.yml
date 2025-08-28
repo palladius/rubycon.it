@@ -67,7 +67,7 @@ navigation:
     link: "#newsletter"
 about:
   - title: ruby at the core
-    icon: code
+    icon: gem
     description: learn about the latest trends and best practices in ruby, rails, and related technologies from industry leaders.
   - title: community connections
     icon: users
