@@ -101,55 +101,67 @@ schedule:
       - clock: '10:00 - 10:30'
         description: 'Opening Keynote'
         full_name: 'TBD'
-        key: 
+        tag: 
       - clock: '10:30 - 11:15'
         description: 'First Speech'
         full_name: 'TBD'
-        key:
+        tag:
       - clock: '11:15 - 11:30'
         description: 'Coffee Break'
         full_name: 'All Attendees'
-        key:
+        tag:
       - clock: '11:30 - 12:15'
         description: 'Second Speech'
         full_name: 'TBD'
-        key:
+        tag:
       - clock: '12:15 - 13:00'
         description: 'Third Speech'
         full_name: 'TBD'
-        key:
+        tag:
       - clock: '13:00 - 14:30'
         description: 'Lunch Break & Networking'
         full_name: 'All Attendees'
-        key:
+        tag:
       - clock: '14:30 - 15:15'
         description: 'Fourth Speech'
         full_name: 'TBD'
-        key:
+        tag:
       - clock: '15:15 - 16:00'
         description: 'Fifth Speech'
         full_name: 'TBD'
-        key:
+        tag:
       - clock: '16:00 - 16:15'
         description: 'Coffee Break'
         full_name: 'All Attendees'
-        key:
+        tag:
       - clock: '16:15 - 17:00'
         description: 'Sixth Speech'
         full_name: 'TBD'
-        key:
+        tag:
       - clock: '17:00 - 17:45'
         description: 'Seventh Speech'
         full_name: 'TBD'
-        key:
+        tag:
       - clock: '17:45 - 18:00'
         description: "It's a wrap!"
         full_name: 'All Attendees'
-        key:
+        tag:
       - clock: '20:00 - 1:00'
         description: "Toga Party!"
         full_name: 'All Attendees'
-        key:
+        tag:
+venue:
+   img: "/assets/images/ambasciatori.jpg"
+   title: 'hotel ambasciatori'
+   description: 'located in the heart of rimini, hotel ambasciatori offers modern facilities in an elegant seaside setting, just steps away from the beach and the city’s main attractions.'
+   maps_path: "https://www.google.com/maps/place/hotel+ambasciatori+rimini/@44.0687726,12.5775295,17z/data=!3m1!4b1!4m9!3m8!1s0x132cc377163d5c69:0x342e6d3ad7ed633a!5m2!4m1!1i2!8m2!3d44.0687688!4d12.5801044!16s%2fg%2f1tl1f3gh?entry=ttu&g_ep=egoymdi1mdgxos4wikxmdsoasafqaw%3d%3d"
+   info:
+    - content: 'viale vespucci, 22, 47921 rimini rn, italy'
+      icon: map-marker-alt
+    - content: 'only a short walk from rimini train station'
+      icon: subway
+    - content: 'conference attendees can enjoy comfortable accommodation directly at the venue'
+      icon: hotel
 sponsors:
   #- logo: 
 

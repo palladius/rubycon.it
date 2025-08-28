@@ -1,84 +1,41 @@
-<section id="venue" class="py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16" data-aos="fade-up">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">iv. &nbsp;venue</h2>
-            <div class="w-20 h-1 bg-red-800 mx-auto mb-6"></div>
-            <p class="text-xl max-w-3xl mx-auto">experience ruby italia in the beautiful city of rimini, italy.</p>
+{% capture content %}
+    <div class="flex flex-col lg:flex-row gap-10 items-center">
+        <div class="lg:w-1/2" data-aos="fade-up">
+            <div class="rounded-lg overflow-hidden shadow-lg" id="velue-images">
+                <img src="{{ site.venue.img | relative_url }}" alt="hotel" class="w-full h-70 object-cover" alt="rimini venue" class="w-full h-full object-cover">
+            </div>
         </div>
         
-        <div class="flex flex-col lg:flex-row gap-10 items-center">
-            <div class="lg:w-1/2" data-aos="fade-up">
-                <div class="rounded-lg overflow-hidden shadow-lg" id="velue-images">
-                    <img src="{{ "/assets/images/ambasciatori.jpg" | relative_url }}" alt="hotel" class="w-full h-70 object-cover" alt="rimini venue" class="w-full h-full object-cover">
-                </div>
+        <div class="lg:w-1/2" data-aos="fade-up">
+            <h3 class="text-2xl font-bold mb-4">{{ site.venue.title }}</h3>
+            <p class="mb-6">{{ site.venue.description }}</p>
+            
+            <div class="space-y-4">
+                {% for info in site.venue.info %}
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <i class="fas fa-{{ info.icon }} text-yellow-400"></i>
+                        </div>
+                        <div class="ml-3">
+                            <p>{{ info.content }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
             </div>
             
-            <div class="lg:w-1/2" data-aos="fade-up">
-                <h3 class="text-2xl font-bold mb-4">hotel ambasciatori</h3>
-                <p class="mb-6">located in the heart of rimini, hotel ambasciatori offers modern facilities in an elegant seaside setting, just steps away from the beach and the city’s main attractions.</p>
-                
-                <div class="space-y-4">
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 mt-1">
-                            <i class="fas fa-map-marker-alt text-yellow-400"></i>
-                        </div>
-                        <div class="ml-3">
-                            <p>viale vespucci, 22, 47921 rimini rn, italy</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 mt-1">
-                            <i class="fas fa-subway text-yellow-400"></i>
-                        </div>
-                        <div class="ml-3">
-                            <p>only a short walk from rimini train station</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 mt-1">
-                            <i class="fas fa-hotel text-yellow-400"></i>
-                        </div>
-                        <div class="ml-3">
-                            <p>conference attendees can enjoy comfortable accommodation directly at the venue</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="mt-8">
-                    <a href="https://www.google.com/maps/place/hotel+ambasciatori+rimini/@44.0687726,12.5775295,17z/data=!3m1!4b1!4m9!3m8!1s0x132cc377163d5c69:0x342e6d3ad7ed633a!5m2!4m1!1i2!8m2!3d44.0687688!4d12.5801044!16s%2fg%2f1tl1f3gh?entry=ttu&g_ep=egoymdi1mdgxos4wikxmdsoasafqaw%3d%3d" target="_blank" class="inline-flex items-center text-yellow-400 font-bold hover:text-red-800">
-                        open in google maps
-                        <i class="fas fa-external-link-alt ml-2"></i>
-                    </a>
-                </div>
+            <div class="mt-8">
+                <a href="{{ site.venue.maps_path }}" target="_blank" class="inline-flex items-center text-yellow-400 font-bold hover:text-red-800">
+                    open in google maps
+                    <i class="fas fa-external-link-alt ml-2"></i>
+                </a>
             </div>
         </div>
-        
-        <!-- <div class="mt-16">
-            <h3 class="text-2xl font-bold mb-6 text-center">explore rimini</h3>
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-gray-50 p-6 rounded-lg text-center">
-                    <i class="fas fa-utensils text-3xl text-red-800 mb-4"></i>
-                    <h4 class="font-bold mb-2">food & wine</h4>
-                    <p class="text-gray-600">experience authentic tuscan cuisine and world-famous wines.</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg text-center">
-                    <i class="fas fa-landmark text-3xl text-red-800 mb-4"></i>
-                    <h4 class="font-bold mb-2">art & history</h4>
-                    <p class="text-gray-600">visit the uffizi gallery, accademia, and other cultural landmarks.</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg text-center">
-                    <i class="fas fa-shopping-bag text-3xl text-red-800 mb-4"></i>
-                    <h4 class="font-bold mb-2">shopping</h4>
-                    <p class="text-gray-600">discover italian fashion and leather goods in the historic center.</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg text-center">
-                    <i class="fas fa-train text-3xl text-red-800 mb-4"></i>
-                    <h4 class="font-bold mb-2">day trips</h4>
-                    <p class="text-gray-600">easy access to siena, pisa, and the chianti wine region.</p>
-                </div>
-            </div>
-        </div> -->
     </div>
-</section>
+{% endcapture %}
+
+{% include section.html
+    id="venue" 
+    title="iv. &nbsp;venue" 
+    description="experience ruby italia in the beautiful city of rimini, italy."
+    content=content
+%}

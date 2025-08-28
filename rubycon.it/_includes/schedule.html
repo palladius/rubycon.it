@@ -1,45 +1,44 @@
-<section id="schedule" class="py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16" data-aos="fade-up">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">iii. &nbsp;event schedule</h2>
-            <div class="w-20 h-1 bg-red-800 mx-auto mb-6"></div>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">a day with learning, networking, and ruby goodness.</p>
-        </div>
-        
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-            {% for day in site.schedule %}
-                <div class="border-b border-gray-200" data-aos="fade-up">
-                    {% if site.schedule.size > 1 %}
-                        <button class="schedule-day-toggle w-full px-6 py-4 text-left font-bold text-xl bg-gray-100 hover:bg-gray-200 transition flex justify-between items-center">
-                            <span>{{ day.title }}</span>
-                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
-                        </button>
-                    {% endif %}
-                    <div class="schedule-day-content px-6 py-4">
-                        {% for event in day.events %}
-                            <div class="schedule-item border-l-4 border-red-800 pl-4 transition" data-aos="fade-right" data-aos-once="true">
-                                <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-                                    <div class="mb-2 md:mb-0">
-                                        <span class="text-sm text-gray-500">{{ event.clock }}</span>
-                                        <h3 class="text-xl font-bold">{{ event.description }}</h3>
-                                        <p class="text-gray-600">{{ event.full_name }}</p>
-                                    </div>
-                                    {% if key.present? %}
-                                        <span class="bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full self-start md:self-center">{{ key }}</span>
-                                    {% endif %}
+{% capture content %}
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        {% for day in site.schedule %}
+            <div class="border-b border-gray-200" data-aos="fade-up">
+                {% if site.schedule.size > 1 %}
+                    <button class="schedule-day-toggle w-full px-6 py-4 text-left font-bold text-xl bg-gray-100 hover:bg-gray-200 transition flex justify-between items-center">
+                        <span>{{ day.title }}</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                {% endif %}
+                <div class="schedule-day-content px-6 py-4">
+                    {% for event in day.events %}
+                        <div class="schedule-item border-l-4 border-red-800 pl-4 transition" data-aos="fade-right" data-aos-once="true">
+                            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                                <div class="mb-2 md:mb-0">
+                                    <span class="text-sm text-gray-500">{{ event.clock }}</span>
+                                    <h3 class="text-xl font-bold">{{ event.description }}</h3>
+                                    <p class="text-gray-600">{{ event.full_name }}</p>
                                 </div>
+                                {% if event.tag %}
+                                    <span class="bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full self-start md:self-center">{{ event.tag }}</span>
+                                {% endif %}
                             </div>
-                            <br>
-                        {% endfor %}
-                    </div>
+                        </div>
+                        <br>
+                    {% endfor %}
                 </div>
-            {% endfor %}
-        </div>
-
-        <!-- <div class="text-center mt-12">
-            <a href="#" class="inline-block bg-red-900 text-white px-8 py-3 rounded-md font-bold hover:bg-red-800 transition">
-                download full schedule (pdf)
-            </a>
-        </div> -->
+            </div>
+        {% endfor %}
     </div>
-</section>
+
+    <!-- <div class="text-center mt-12">
+        <a href="#" class="inline-block bg-red-900 text-white px-8 py-3 rounded-md font-bold hover:bg-red-800 transition">
+            download full schedule (pdf)
+        </a>
+    </div> -->
+{% endcapture %}
+
+{% include section.html
+    id="schedule" 
+    title="iii. &nbsp;event schedule" 
+    description="a day with learning, networking, and ruby goodness."
+    content=content
+%}
