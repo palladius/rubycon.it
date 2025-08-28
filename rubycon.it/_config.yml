@@ -105,7 +105,7 @@ schedule:
       - clock: '10:30 - 11:15'
         description: 'First Speech'
         full_name: 'TBD'
-        tag: 'Speech"
+        tag: 'speech'
       - clock: '11:15 - 11:30'
         description: 'Coffee Break'
         full_name: 'All Attendees'
