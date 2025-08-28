@@ -1,6 +1,6 @@
 <header class="sticky top-0 z-50">
     <!-- navigation -->
-    <nav class="shadow-lg">
+    <nav class="shadow-lg relative">
         <div class="px-4 mx-auto">
             <div class="flex justify-between h-20 items-center">
                 <div class="flex-shrink-0 flex items-center">
@@ -27,7 +27,7 @@
             </div>
         </div>
         <!-- mobile menu -->
-        <div class="mobile-menu hidden md:hidden bg-white shadow-lg">
+        <div class="mobile-menu hidden md:hidden bg-white shadow-lg absolute text-center" style="width: 100%;">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 {% for nav in site.navigation  %}
                     <a href="{{ nav.link }}" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-800">{{ nav.name }}</a>
