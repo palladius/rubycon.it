@@ -1,23 +1,71 @@
 {% capture content %}
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-        {% for sponsor in site.sponsors %}
-           <div class="flex justify-center p-6 bg-gray-50 rounded-lg h-32 shadow">
-               <img src="{{ sponsor.logo }}" alt="ruby" class="h-16 object-contain sh" style="mix-blend-mode: darken;">
-           </div>
-        {% endfor %}
+    <div class="max-w-4xl mx-auto">
+        <div class="mb-4 border-b border-gray-200">
+            <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+                <li class="mr-2" role="presentation">
+                    <button class="inline-block p-4 rounded-t-lg border-b-2" id="imperator-tab" data-tabs-target="#imperator" type="button" role="tab" aria-controls="imperator" aria-selected="false">Imperator</button>
+                </li>
+                <li class="mr-2" role="presentation">
+                    <button class="inline-block p-4 rounded-t-lg border-b-2" id="consul-tab" data-tabs-target="#consul" type="button" role="tab" aria-controls="consul" aria-selected="false">Consul</button>
+                </li>
+                <li role="presentation">
+                    <button class="inline-block p-4 rounded-t-lg border-b-2" id="mecenas-tab" data-tabs-target="#mecenas" type="button" role="tab" aria-controls="mecenas" aria-selected="false">Mecenas</button>
+                </li>
+            </ul>
+        </div>
+        <div id="myTabContent">
+            <div class="hidden p-4 rounded-lg bg-gray-50" id="imperator" role="tabpanel" aria-labelledby="imperator-tab">
+                <p class="text-gray-500">This is the Imperator sponsorship tier. You can add your content here.</p>
+                <div class="mt-4">
+                    <img src="{{ '/assets/videos/the_gem_transforms_into_a_perfect_diamond-shaped.gif' | relative_url }}" alt="Animated GIF of a gem transforming into a diamond">
+                </div>
+            </div>
+            <div class="hidden p-4 rounded-lg bg-gray-50" id="consul" role="tabpanel" aria-labelledby="consul-tab">
+                <p class="text-gray-500">This is the Consul sponsorship tier. You can add your content here.</p>
+            </div>
+            <div class="hidden p-4 rounded-lg bg-gray-50" id="mecenas" role="tabpanel" aria-labelledby="mecenas-tab">
+                <p class="text-gray-500">This is the Mecenas sponsorship tier. You can add your content here.</p>
+            </div>
+        </div>
     </div>
-
-    <!-- <div class="text-center mt-12">
-        <a href="#" class="inline-flex items-center text-red-600 font-bold hover:text-red-800">
-            become a sponsor
-            <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-    </div> -->
 {% endcapture %}
 
 {% include section.html
     id="sponsors"
     title="v. &nbsp;our sponsors"
-    description="sponsors' list coming soon! If you are interested, contact us at rubycon-organizers@googlegroups.com"
+    description="We are looking for sponsors. If you are interested, contact us at rubycon-organizers@googlegroups.com"
     content=content
 %}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('[data-tabs-target]');
+    const tabContents = document.querySelectorAll('[role="tabpanel"]');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = document.querySelector(tab.dataset.tabsTarget);
+
+            tabs.forEach(t => {
+                t.setAttribute('aria-selected', 'false');
+                t.classList.remove('border-red-600', 'text-red-600');
+                t.classList.add('hover:text-gray-600', 'hover:border-gray-300');
+            });
+
+            tab.setAttribute('aria-selected', 'true');
+            tab.classList.add('border-red-600', 'text-red-600');
+            tab.classList.remove('hover:text-gray-600', 'hover:border-gray-300');
+
+            tabContents.forEach(c => {
+                c.classList.add('hidden');
+            });
+
+            target.classList.remove('hidden');
+        });
+    });
+
+    // Activate the first tab by default
+    if (tabs.length > 0) {
+        tabs[0].click();
+    }
+});
+</script>

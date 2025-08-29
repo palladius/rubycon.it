@@ -3,3 +3,7 @@
 
 @import 'jekyll-theme-cayman';
 // @import "{{ site.theme }}";
+
+[data-tabs-target] {
+    cursor: pointer;
+}
