@@ -78,15 +78,22 @@ about:
     icon: utensils
     description: experience the warmth of Italy through local culture, food, and hospitality while attending the conference in Rimini.
 speakers:
-  - avatar: '/assets/images/speakers/carmine-paolino.jpg'
-    full_name: Carmine Paolino
-    role: senior ruby developer @'Chat with Work'
-    description: Ruby_LLM maintainer, async ruby promoter
-    keys: [async ruby, ruby on rails,  ruby_llm]
+  # - avatar: '/assets/images/speakers/carmine-paolino.jpg'
+  #   full_name: Carmine Paolino
+  #   role: senior ruby developer @'Chat with Work'
+  #   description: Founder and CEO of Chat with Work. Ruby_LLM maintainer # , async ruby promoter
+  #   keys: [async ruby, ruby on rails,  ruby_llm]
+
+  # https://en.wikipedia.org/wiki/Crossing_the_Rubicon
+  - avatar: '/assets/images/logo/0_0.jpeg'
+    full_name: Julius Caesar
+    role: senior ruby developer @company
+    description: The crossing of the river Rubicon from the north by Julius Caesar was in early January 49 BC. The exact date is unknown. Scholars usually place it on the night of 10 and 11 January because of the speeds at which messengers could travel at that time. It is often asserted that Caesar's crossing of the river precipitated Caesar's civil war, but Caesar's forces had already crossed into Italy and occupied Ariminum (Rimini) the previous day.
+    keys: [ruby, ruby on rails]
   - avatar: '/assets/images/logo/0_1.jpeg'
     full_name: Crixus
     role: Frontend developer @Spartacus Inc.
-    description: TBD
+    description: Crixus (died 72 BC) was a Gallic gladiator and military leader in the Third Servile War between the Roman Republic and rebel slaves. Born in Gaul, he was enslaved by the Romans under unknown circumstances and trained as a gladiator in Capua. His name means "one with curly hair" in Gaulish.
     keys: [ruby, ruby on rails, gladiator]
   # https://la.wikipedia.org/wiki/Gaius_Cilnius_Maecenas
   - avatar: '/assets/images/logo/0_2.jpeg'
