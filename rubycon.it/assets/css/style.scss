@@ -29,7 +29,7 @@ section:nth-of-type(even), header, #newsletter, .mobile-menu{
     background-color: $background-secondary;
 }
 section:nth-of-type(odd):not(#newsletter){
-    color: white
+    color: white;
 }
 .speaker-card{
     background-color: $background-secondary;
