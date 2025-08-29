@@ -78,11 +78,11 @@ about:
     icon: utensils
     description: experience the warmth of Italy through local culture, food, and hospitality while attending the conference in Rimini.
 speakers:
-  - avatar: '/assets/images/logo/0_0.jpeg'
-    full_name: Julius Caesar
-    role: senior ruby developer @company
-    description: TBD
-    keys: [ruby, ruby on rails]
+  - avatar: '/assets/images/speakers/carmine-paolino.jpg'
+    full_name: Carmine Paolino
+    role: senior ruby developer @'Chat with Work'
+    description: Ruby_LLM maintainer, async ruby promoter
+    keys: [async ruby, ruby on rails,  ruby_llm]
   - avatar: '/assets/images/logo/0_1.jpeg'
     full_name: Crixus
     role: Frontend developer @Spartacus Inc.
