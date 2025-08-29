@@ -19,13 +19,9 @@
   </head>
   <script type="text/javascript" src="https://embeds.iubenda.com/widgets/f9366748-cc05-49e5-a769-aabeb9bdd190.js"></script>
   <body>
-    <!-- <a id="skip-to-content" href="#content">Skip to the content.</a> -->
-
     {% include header.html %}
 
     <main id="content" role="main">
-      <!-- {{ content }} -->
-
       {% include hero.html %}
       {% include about.html %}
       {% include speakers.html %}
@@ -38,16 +34,6 @@
     {% include footer.html %}
 
     <script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
-            document.querySelector('.mobile-menu').classList.toggle('hidden');
-        });
-        document.querySelectorAll('.mobile-menu a').forEach(button => {
-            button.addEventListener('click', function(){
-                document.querySelector('.mobile-menu').classList.toggle('hidden');
-            })
-        })
-
         // Schedule day toggle
         document.querySelectorAll('.schedule-day-toggle').forEach(button => {
             button.addEventListener('click', function() {
