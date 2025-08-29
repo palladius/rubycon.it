@@ -20,8 +20,7 @@
                     </div>
                 </div>
                 <div class="lg:hidden">
-                    <button class="mobile-menu-button p-2 rounded-md text-gray-700 hover:text-red-800 focus:outline-none"
-                            onclick="document.querySelector('.mobile-menu').classList.toggle('hidden')">
+                    <button class="mobile-menu-button p-2 rounded-md text-gray-700 hover:text-red-800 focus:outline-none">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -31,8 +30,7 @@
         <div class="mobile-menu hidden md:hidden shadow-lg absolute text-center" style="width: 100%;">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 {% for nav in site.navigation  %}
-                    <a href="{{ nav.link }}" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-800"
-                       onclick="document.querySelector('.mobile-menu').classList.toggle('hidden');">
+                    <a href="{{ nav.link }}" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-800">
                         {{ nav.name }}
                     </a>
                 {% endfor %}
