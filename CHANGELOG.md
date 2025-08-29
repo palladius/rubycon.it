@@ -1,18 +1,18 @@
 # Changelog
 
-(version is now in rubycon.it/_config.yml)
+(version is now in `rubycon.it/_config.yml`)
 
 ## 0.2.17
 
-* [gemini] feat(schedule): 🗓️ Replace "coming soon" with a 3-line summary.
-* [gemini] docs: Add comment explaining how to restore the full schedule.
+* 🏛️ feat(schedule): 🗓️ Replace "coming soon" with a 3-line summary.
+* 🏛️ docs: Add comment explaining how to restore the full schedule.
 
 ## 0.2.16
 
-* [gemini] feat: Add tabbed interface for sponsorships.
-* [gemini] feat: Add animated GIF to Imperator sponsor tab.
-* [gemini] fix: Correct typo in `venue.webp` image name.
-* [gemini] feat: Temporarily hide event schedule with a "coming soon" message.
+* 🏛️ feat: Add tabbed interface for sponsorships.
+* 🏛️ feat: Add animated GIF to Imperator sponsor tab.
+* 🏛️ fix: Correct typo in `venue.webp` image name.
+* 🏛️ feat: Temporarily hide event schedule with a "coming soon" message.
 
 ## 0.2.14
 
