@@ -16,49 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        * {
-            scroll-behavior: smooth;
-            cursor: url("{{ 'assets/images/dagger.png' | relative_url }}") 12 12, auto;
-        }
-        body{
-            font-family: "Cinzel", serif;
-            font-optical-sizing: auto;
-            font-weight: 500;
-            font-style: normal;
-            text-transform: lowercase;
-        }
-        section{
-            scroll-margin-top: 80px;
-        }
-        section:nth-of-type(odd):not(#newsletter), footer {
-            background: linear-gradient(135deg, #500011 0%, #2b0b01 100%);
-        }
-        section:nth-of-type(even), header, #newsletter{
-            background-color: #f4f1ed;
-        }
-        section:nth-of-type(odd):not(#newsletter){
-            color: white
-        }
-        .speaker-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .schedule-item:hover {
-            background-color: rgba(225, 29, 72, 0.05);
-        }
-        .animate-bounce-slow {
-            animation: bounce 3s infinite;
-        }
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-15px);
-            }
-        }
-    </style>
   </head>
   <script type="text/javascript" src="https://embeds.iubenda.com/widgets/f9366748-cc05-49e5-a769-aabeb9bdd190.js"></script>
   <body>
