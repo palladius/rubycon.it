@@ -35,11 +35,11 @@
                     <ul class="space-y-2">
                         <li class="flex items-start">
                             <i class="fas fa-envelope text-yellow-400 mt-1 mr-3"></i>
-                            <a href="mailto:info@rubycon.it" class="text-gray-300 hover:text-white">info@rubycon.it</a>
+                            <a href="mailto:{{ site.info_email }}" class="text-gray-300 hover:text-white">{{ site.info_email }}</a>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-map-marker-alt text-yellow-400 mt-1 mr-3"></i>
-                            <span class="text-gray-300">Hotel Ambasciatori, Rimini, Italy</span>
+                            <span class="text-gray-300">{{ site.venue.title }}, {{ site.event.location }}</span>
                         </li>
                     </ul>
                 </div>
