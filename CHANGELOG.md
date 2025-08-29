@@ -2,6 +2,13 @@
 
 (version is now in rubycon.it/_config.yml)
 
+## 0.2.16
+
+* [gemini] feat: Add tabbed interface for sponsorships.
+* [gemini] feat: Add animated GIF to Imperator sponsor tab.
+* [gemini] fix: Correct typo in `venue.webp` image name.
+* [gemini] feat: Temporarily hide event schedule with a "coming soon" message.
+
 ## 0.2.14
 
 * [gemini] chore: Restore Google Fonts preload and preconnect links

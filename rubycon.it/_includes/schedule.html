@@ -1,4 +1,8 @@
 {% capture content %}
+    <div class="text-center text-2xl font-bold text-gray-500">
+        Schedule coming soon!
+    </div>
+    {% comment %}
     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
         {% for day in site.schedule %}
             <div class="border-b border-gray-200" data-aos="fade-up">
@@ -34,6 +38,7 @@
             download full schedule (pdf)
         </a>
     </div> -->
+    {% endcomment %}
 {% endcapture %}
 
 {% include section.html

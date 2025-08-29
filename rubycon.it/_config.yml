@@ -23,7 +23,7 @@ info_email: rubycon-organizers@googlegroups.com
 # When we have the email for the domain:
 # - info_email: info@rubycon.it
 # - cfp_email: cfp@rubycon.it
-site_version: '0.2.15'
+site_version: '0.2.16'
 
 event:
   name: Rubycon
