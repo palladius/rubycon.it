@@ -21,3 +21,7 @@ version:
 
 clean:
     cd rubycon.it/ && bundle exec jekyll clean
+
+# New Gemini feature from 28aug25 - auto edit!
+gemini:
+    gemini -c --approval-mode auto_edit

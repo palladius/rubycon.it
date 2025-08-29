@@ -8,3 +8,14 @@ This is the page being rendered into:
 * 🏛️ https://rubycon.netlify.app/
 * 🕊️ and  http://rubycon.me/
 * 🇲🇪⚔️ and soon https://rubycon.it/  incoming....
+
+## Remote sites
+
+Site is published to:
+
+* PROD:
+  * http://rubycon.me/  # secondary domain
+  * http://rubycon.it/  # advertised one
+  * http://rubycon.netlify.app/ # naked domain for netlify.
+* STAGING:
+  *

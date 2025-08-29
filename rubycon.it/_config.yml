@@ -82,15 +82,16 @@ speakers:
     description: TBD
     keys: [ruby, ruby on rails]
   - avatar: '/assets/images/logo/0_1.jpeg'
-    full_name: Julius Caesar
-    role: senior ruby developer @company
+    full_name: Crixus
+    role: Frontend developer @Spartacus Inc.
     description: TBD
-    keys: [ruby, ruby on rails]
+    keys: [ruby, ruby on rails, gladiator]
+  # https://la.wikipedia.org/wiki/Gaius_Cilnius_Maecenas
   - avatar: '/assets/images/logo/0_2.jpeg'
-    full_name: Julius Caesar
-    role: senior ruby developer @company
-    description: TBD
-    keys: [ruby, ruby on rails]
+    full_name: Gaius Cilnius Maecenas
+    role: Eques, Patronus, Minister @Romae Imperium
+    description: Gaius Cilnius Maecenas (circa 70/65–8 a.C.n.) fuit dives eques Romanus, artium patronus, amicus Octaviani Augusti, Horatii, Vergilii, et aliorum poetarum. Ex Tuscia provenit ex regia familia Etrusca. Quandam Terentiam in matrimonium duxit.
+    keys: [ruby, ruby on rails, sponsorship]
 schedule:
   - title: 'day 1 - may 8'
     events:
@@ -101,7 +102,7 @@ schedule:
       - clock: '10:00 - 10:30'
         description: 'Opening Keynote'
         full_name: 'TBD'
-        tag: 'Keynote' 
+        tag: 'Keynote'
       - clock: '10:30 - 11:15'
         description: 'First Speech'
         full_name: 'TBD'
@@ -163,7 +164,7 @@ venue:
     - content: 'conference attendees can enjoy comfortable accommodation directly at the venue'
       icon: hotel
 sponsors:
-  #- logo: 
+  #- logo:
 
 
 # Build settings
