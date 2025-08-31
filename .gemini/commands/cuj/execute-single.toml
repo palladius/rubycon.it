@@ -44,8 +44,10 @@ Depending on CUJ mode, follow one of these 2 paths:
 3. Since your STDIO is unlinked, your output should take these forms, choose a combination which suits you best:
 
 - Create a `gh` issue with the results. Consider using checklists for partially implemented stuff (eg, this is done, but this is not).
-- Create a Pull Request with the proposed changes.
+  Github repo is `github.com/palladius/rubycon.it`
+- Create a Pull Request with the proposed changes to `github.com/palladius/rubycon.it`.
 - If you do both, make sure these 2 are linked.
+- When interacting with GitHub, always add a footer `-- additum ex ♊ Gemini Interfacie Lineae Mandatorum pro $GITHUB_USERNAME`
 
 ## Input CUJ
 

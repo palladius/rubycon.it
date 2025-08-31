@@ -37,4 +37,4 @@ gemini-execute-cuj-test:
 
 # To be used in GH actions or otherwise headless environments.
 gemini-execute-cuj-test-daemon:
-    CUJ_MODE=DAEMON gemini -p -y  '/cuj:execute-single cuj04'
+    CUJ_MODE=DAEMON gemini -y -c -p '/cuj:execute-single cuj04'
