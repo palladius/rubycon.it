@@ -7,7 +7,7 @@
                     </div>
                     <p class="text-gray-300 mb-4">the premier ruby conference in italy, bringing together developers, companies, and enthusiasts.</p>
                 </div>
-                
+
                 <div>
                     <h3 class="text-lg font-bold mb-4">quick links</h3>
                     <ul class="space-y-2">
@@ -16,14 +16,14 @@
                         {% endfor %}
                     </ul>
                 </div>
-                
+
                 <div>
                     <h3 class="text-lg font-bold mb-4">social</h3>
                     <ul class="space-y-2">
-                         {% for social in site.social_media %}
+                        {% for social in site.social_media %}
                             <li>
                                 <a href="{{ social.url }}" class="text-gray-300 hover:text-white" target="_blank">
-                                    <i class="fab fa-{{ social.icon }} text-md" aria-hidden="true"></i> 
+                                    <i class="fab fa-{{ social.icon }} text-md" aria-hidden="true"></i>
                                     <span aria-hidden="true">{{ social.name }}</span>
                                     <span class="sr-only">{{ social.aria_label }}</span>
                                 </a>
@@ -31,7 +31,7 @@
                         {% endfor %}
                     </ul>
                 </div>
-                
+
                 <div>
                     <h3 class="text-lg font-bold mb-4">contact</h3>
                     <ul class="space-y-2">
@@ -48,7 +48,7 @@
             </div>
 
             <div class="border-t border-gray-600 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-300 mb-4 md:mb-0">© 2026 rubycon italy. all rights reserved. (v{{ site.site_version }})</p>
+                <p class="text-gray-300 mb-4 md:mb-0">© 2026 <a href="{{ site.github.repository_url }}" class="text-gray-300 hover:text-white">{{ site.event.name }} Italy v{{ site.site_version }}</a>. All rights reserved.</p>
             </div>
         </div>
 </footer>
