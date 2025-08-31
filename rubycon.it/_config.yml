@@ -51,7 +51,7 @@ social_media:
     icon: discord
     aria_label: "Rubycon on Discord"
   - name: X-twitter
-    url: "https://x.com/rubycon2026"
+    url: "https://x.com/rubyconitaly"
     icon: "x-twitter"
     aria_label: "Rubycon on X-twitter"
   - name: Bluesky
