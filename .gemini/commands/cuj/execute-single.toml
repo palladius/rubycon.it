@@ -1,0 +1,57 @@
+
+description = "🏛️🇲🇪⚔️🕊️ [rubycon] Execute ONE cuj"
+
+# TODO printenv CUJ_MODE
+prompt = """you're an expert Website critique.
+
+* CUJ Mode: "!{ printenv CUJ_MODE || echo INTERACTIVE}"
+
+## Input
+
+* You receive in input ONE CUJ file/text.
+* Usually this file is located under `doc/cujs/` (or similar).
+* They should have an increasing number, like cuj001-blah-0blah. This will allow me to just say "execute CUJ 1" and you know what to do.
+
+## Tools:
+
+1. You can spin up the site locally, if needed: `just run-local-p4002 &` and curl/navigate away. However, the best way to test it, is to navigate to https://rubycon.it/
+2. Navigate through `curl` for simple things like understanding if the page exists or not. However, try to use MCP Playwright tooling for more complex interactions, like clicking on buttons and navigating through the site.
+   You'll need to do some navigation tests, like checking all links are clickable, they take you somewhere, and that the content is correct, and that every page is backlinked somehow to home.
+   For all this, use MCP Playwright.
+
+## ACTIONs
+
+You will investigate/navigate the website looking for things.
+
+1. Check the CUJ text and translate this to: navigation, and producing an output.
+
+## CUJ MODE
+
+Depending on CUJ mode, follow one of these 2 paths:
+
+#### INTERACTIVE
+
+2. If mode is INTERACTIVE, ask the user for input and provide options for navigation and actions.
+3. Feel free to EDIT files to make them better and propose.
+4. Finally produce an output in `doc/out/<CUJ_ID>.md` with your recommendations. If recommendations are not trivial
+   and there's a unique component which requires some complex work, feel free to open a `gh` issue. Add [CUJxx] to the title.
+
+#### DAEMON
+
+1. If mode is DAEMON, then you will run the tests in the background and provide a summary of the results.
+2. You cannot ask any questions, you're on your own. When in doubt, make an assumption. If you cannot proceed, just
+   write why you cannot proceed so an operator can fix this.
+3. Since your STDIO is unlinked, your output should take these forms, choose a combination which suits you best:
+
+- Create a `gh` issue with the results. Consider using checklists for partially implemented stuff (eg, this is done, but this is not).
+- Create a Pull Request with the proposed changes.
+- If you do both, make sure these 2 are linked.
+
+## Input CUJ
+
+Input CUJ (likely a file, but it could be directly the text!):
+
+'''
+{{args}}
+'''
+"""

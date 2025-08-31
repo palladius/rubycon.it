@@ -1,0 +1,31 @@
+{% capture speakers_content %}
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {% for speaker in site.speakers %}
+            <div class="speaker-card rounded-lg overflow-hidden shadow-md transition duration-300">
+                <div class="relative" data-aos="fade-up">
+                    <img src="{{ speaker.avatar | relative_url }}" alt="{{ speaker.full_name }}" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <h3 class="text-white text-2xl font-bold">{{ speaker.full_name }}</h3>
+                        <p class="text-red-200">{{ speaker.role }}</p>
+                    </div>
+                </div>
+                <div class="p-6" data-aos="fade-up">
+                    <p class="text-gray-600 mb-4">{{ speaker.description }}</p>
+                    <div class="flex space-x-2">
+                        {% for key in speaker.keys %}
+                            <span class="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full">{{ key }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+    </div>
+{% endcapture %}
+
+{% include section.html
+    id="speakers" 
+    title="ii. &nbsp;featured speakers" 
+    description="learn from some of the brightest minds in the ruby community from italy and beyond."
+    content=speakers_content
+%}

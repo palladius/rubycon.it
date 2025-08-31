@@ -71,3 +71,9 @@ For any non-trivial task you are given, do NOT jump to implementation. Instead, 
 4. Each subtask should have TWO properties:
    1. Be **easily testable** (the end of task 3 should be trivially testable by user with some sort of grep/curl/... or LLM).
    2. Be **easily revertable**. We can use micro git commits across tasks, maybe using the task number in the initial part of the commit, or use Gemini CLI checkpoints.
+
+## Commits
+
+* Before committing, increment site_version in `rubycon.it/_config.yml` and add the changes to `CHANGELOG.md`.
+* Use proper emojis in Roman theme. Also use semantics from `gitmoji`.
+* If an issue is mentioned, update the GH issue after commit, and add the commit hash to the comment, so its beautifully linked.

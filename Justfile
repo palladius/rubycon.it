@@ -21,3 +21,20 @@ version:
 
 clean:
     cd rubycon.it/ && bundle exec jekyll clean
+
+# New Gemini feature from 28aug25 - auto edit!
+gemini:
+    gemini -c --approval-mode auto_edit
+
+# Watches _config.yml and restarts the server on change. Requires nodemon.
+# Usage: just dev
+dev:
+    nodemon --watch rubycon.it/_config.yml --ext yml --exec "just run-local-p4002"
+
+
+gemini-execute-cuj-test:
+    CUJ_MODE=INTERACTIVE gemini -p -y '/cuj:execute-single cuj03'
+
+# To be used in GH actions or otherwise headless environments.
+gemini-execute-cuj-test-daemon:
+    CUJ_MODE=DAEMON gemini -p -y  '/cuj:execute-single cuj04'

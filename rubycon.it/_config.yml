@@ -18,51 +18,169 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Rubycon
-info_email: rubycon-organizers@googlegroups.com
-# cfp_email: cfp@rubycon.it
-site_version: '0.2.14b'
+title: RubyCon - The Ruby Conference in Italy
+# When we have the email for the domain:
+info_email: info@rubycon.it
+# - cfp_email: cfp@rubycon.it
+site_version: '0.2.19'
 
 event:
   name: Rubycon
-  date: May 8th, 2026
+  date: 8 May 2026
   location: Rimini, Italy
 
 social_media:
   - name: Facebook
     url: "https://www.facebook.com/rubyconitaly"
-    icon: "📘"
-  - name: X
-    url: "https://x.com/rubycon2026"
-    icon: "🐦"
-  - name: Bluesky
-    url: "https://bsky.app/profile/rubyconitaly.bsky.social"
-    icon: "🦋"
+    icon: facebook
+    aria_label: "Rubycon on Facebook"
   - name: Mastodon
     url: "https://mastodon.social/@rubycon"
-    icon: "🐘"
+    icon: mastodon
+    aria_label: "Rubycon on Mastodon"
   - name: Instagram
     url: "https://www.instagram.com/rubyconitaly/"
-    icon: "📸"
+    icon: instagram
+    aria_label: "Rubycon on Instagram"
   - name: YouTube
     url: "https://www.youtube.com/channel/UCNqcu--Vp9H7JfGHW4TYzIw"
-    icon: "📹"
+    icon: youtube
+    aria_label: "Rubycon on YouTube"
   - name: Discord
     url: "https://discord.gg/T43GHE6wHH"
-    icon: "👾"
+    icon: discord
+    aria_label: "Rubycon on Discord"
+  - name: X-twitter
+    url: "https://x.com/rubyconitaly"
+    icon: "x-twitter"
+    aria_label: "Rubycon on X-twitter"
+  - name: Bluesky
+    url: "https://bsky.app/profile/rubyconitaly.bsky.social"
+    icon: bluesky
+    aria_label: "Rubycon on Bluesky"
 navigation:
-  - name: Home
-    link: /
-  - name: About
-    link: /about
-  - name: Sponsors
-    link: /sponsors
-  - name: Speakers
-    link: /speakers
-  - name: Schedule
-    link: /schedule
-  - name: Venue
-    link: /venue
+  - name: home
+    link: "#home"
+  - name: about
+    link: "#about"
+  - name: speakers
+    link: "#speakers"
+  - name: schedule
+    link: "#schedule"
+  - name: venue
+    link: "#venue"
+  - name: sponsors
+    link: "#sponsors"
+  - name: newsletter
+    link: "#newsletter"
+about:
+  - title: ruby at the core
+    icon: gem
+    description: learn about the latest trends and best practices in ruby, rails, and related technologies from industry leaders.
+  - title: community connections
+    icon: users
+    description: meet fellow ruby developers, share ideas, and build relationships with collaborators, employers, and enthusiasts.
+  - title: italian atmosphere
+    icon: utensils
+    description: experience the warmth of Italy through local culture, food, and hospitality while attending the conference in Rimini.
+speakers:
+  # - avatar: '/assets/images/speakers/carmine-paolino.jpg'
+  #   full_name: Carmine Paolino
+  #   role: senior ruby developer @'Chat with Work'
+  #   description: Founder and CEO of Chat with Work. Ruby_LLM maintainer # , async ruby promoter
+  #   keys: [async ruby, ruby on rails,  ruby_llm]
+
+  # https://en.wikipedia.org/wiki/Crossing_the_Rubicon
+  - avatar: '/assets/images/logo/0_0.jpeg'
+    full_name: Julius Caesar
+    role: senior ruby developer @company
+    description: The crossing of the river Rubicon from the north by Julius Caesar was in early January 49 BC. The exact date is unknown. Scholars usually place it on the night of 10 and 11 January because of the speeds at which messengers could travel at that time. It is often asserted that Caesar's crossing of the river precipitated Caesar's civil war, but Caesar's forces had already crossed into Italy and occupied Ariminum (Rimini) the previous day.
+    keys: [ruby, ruby on rails]
+  - avatar: '/assets/images/logo/0_1.jpeg'
+    full_name: Crixus
+    role: Frontend developer @Spartacus Inc.
+    description: Crixus (died 72 BC) was a Gallic gladiator and military leader in the Third Servile War between the Roman Republic and rebel slaves. Born in Gaul, he was enslaved by the Romans under unknown circumstances and trained as a gladiator in Capua. His name means "one with curly hair" in Gaulish.
+    keys: [ruby, ruby on rails, gladiator]
+  # https://la.wikipedia.org/wiki/Gaius_Cilnius_Maecenas
+  - avatar: '/assets/images/logo/0_2.jpeg'
+    full_name: Gaius Cilnius Maecenas
+    role: Eques, Patronus, Minister @Romae Imperium
+    description: Gaius Cilnius Maecenas (circa 70/65–8 a.C.n.) fuit dives eques Romanus, artium patronus, amicus Octaviani Augusti, Horatii, Vergilii, et aliorum poetarum. Ex Tuscia provenit ex regia familia Etrusca. Quandam Terentiam in matrimonium duxit.
+    keys: [ruby, ruby on rails, sponsorship]
+schedule:
+  - title: 'day 1 - may 8'
+    events:
+      - clock: '09:00 - 10:00'
+        description: 'Check-in & Welcome Coffee'
+        full_name: 'All Attendees'
+        tag: 'Networking'
+      - clock: '10:00 - 10:30'
+        description: 'Opening Keynote'
+        full_name: 'TBD'
+        tag: 'Keynote'
+      - clock: '10:30 - 11:15'
+        description: 'First Speech'
+        full_name: 'TBD'
+        tag: 'speech'
+      - clock: '11:15 - 11:30'
+        description: 'Coffee Break'
+        full_name: 'All Attendees'
+        tag: 'Networking'
+      - clock: '11:30 - 12:15'
+        description: 'Second Speech'
+        full_name: 'TBD'
+        tag: 'Speech'
+      - clock: '12:15 - 13:00'
+        description: 'Third Speech'
+        full_name: 'TBD'
+        tag: 'Speech'
+      - clock: '13:00 - 14:30'
+        description: 'Lunch Break & Networking'
+        full_name: 'All Attendees'
+        tag: 'Networking'
+      - clock: '14:30 - 15:15'
+        description: 'Fourth Speech'
+        full_name: 'TBD'
+        tag: 'Speech'
+      - clock: '15:15 - 16:00'
+        description: 'Fifth Speech'
+        full_name: 'TBD'
+        tag: 'Speech'
+      - clock: '16:00 - 16:15'
+        description: 'Coffee Break'
+        full_name: 'All Attendees'
+        tag: 'Networking'
+      - clock: '16:15 - 17:00'
+        description: 'Sixth Speech'
+        full_name: 'TBD'
+        tag: 'Speech'
+      - clock: '17:00 - 17:45'
+        description: 'Seventh Speech'
+        full_name: 'TBD'
+        tag: 'Speech'
+      - clock: '17:45 - 18:00'
+        description: "It's a wrap!"
+        full_name: 'All Attendees'
+        tag: 'Speech'
+      - clock: '20:00 - 1:00'
+        description: "Toga Party!"
+        full_name: 'All Attendees'
+        tag: 'FUN'
+venue:
+   img: "/assets/images/ambasciatori.jpg"
+   title: 'hotel ambasciatori'
+   description: 'located in the heart of rimini, hotel ambasciatori offers modern facilities in an elegant seaside setting, just steps away from the beach and the city’s main attractions.'
+   maps_path: "https://www.google.com/maps/place/hotel+ambasciatori+rimini/@44.0687726,12.5775295,17z/data=!3m1!4b1!4m9!3m8!1s0x132cc377163d5c69:0x342e6d3ad7ed633a!5m2!4m1!1i2!8m2!3d44.0687688!4d12.5801044!16s%2fg%2f1tl1f3gh?entry=ttu&g_ep=egoymdi1mdgxos4wikxmdsoasafqaw%3d%3d"
+   info:
+    - content: 'viale vespucci, 22, 47921 rimini rn, italy'
+      icon: map-marker-alt
+    - content: 'only a short walk from rimini train station'
+      icon: subway
+    - content: 'conference attendees can enjoy comfortable accommodation directly at the venue'
+      icon: hotel
+sponsors:
+  #- logo:
+
 
 # Build settings
 

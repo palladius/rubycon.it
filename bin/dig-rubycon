@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -x
+
+dig +short www.rubycon.it
+dig +short rubycon.it
+dig +short rubycon.it NS
+dig +short rubycon.it MX
+dig +short rubycon.it SOA
+
+

@@ -1,5 +1,66 @@
 ---
 ---
 
-@import 'jekyll-theme-cayman';
-// @import "{{ site.theme }}";
+@import "variables.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;   
+}
+body{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: lowercase;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $body-text-color;
+}
+section{
+    scroll-margin-top: 80px;
+}
+section:nth-of-type(odd):not(#newsletter), footer {
+    background: $background-primary;
+}
+section:nth-of-type(even), header, #newsletter, .mobile-menu{
+    background-color: $background-secondary;
+}
+section:nth-of-type(odd):not(#newsletter){
+    color: white;
+}
+.speaker-card{
+    background-color: $background-secondary;
+}
+.speaker-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.schedule-item:hover {
+    transform: translateY(-10px);
+    background-color: rgba(225, 29, 72, 0.05);
+}
+.animate-bounce-slow {
+    animation: bounce 3s infinite;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

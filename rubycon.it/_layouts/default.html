@@ -2,27 +2,57 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
-
-{% seo %}
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
-
+    <title>{{ site.title }}</title>
+    {% seo %}
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
+  <!-- <script type="text/javascript" src="https://embeds.iubenda.com/widgets/f9366748-cc05-49e5-a769-aabeb9bdd190.js"></script> -->
+  <!-- <style>
+    *{
+      cursor: url("{{ 'assets/images/dagger.png' | relative_url }}") 12 12, auto;
+    }
+  </style> -->
   <body>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
-
     {% include header.html %}
-    {% include navigation.html %}
 
-
-    <main id="content" class="main-content" role="main">
-      {{ content }}
-
-      {% include footer.html %}
+    <main id="content" role="main">
+      {% include hero.html %}
+      {% include about.html %}
+      {% include speakers.html %}
+      {% include schedule.html %}
+      {% include venue.html %}
+      {% include sponsors.html %}
+      {% include newsletter.html %}
     </main>
+
+    {% include footer.html %}
+
+    <script>
+        // Schedule day toggle
+        document.querySelectorAll('.schedule-day-toggle').forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration: 500})
+    </script>
   </body>
 </html>

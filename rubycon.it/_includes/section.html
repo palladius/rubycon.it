@@ -1,0 +1,13 @@
+<section id="{{ include.id }}" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {% if include.title && include.description %}
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">{{ include.title }}</h2>
+                <div class="w-20 h-1 bg-red-800 mx-auto mb-6"></div>
+                <p class="text-xl max-w-3xl mx-auto">{{ include.description }}</p>
+            </div>
+        {% endif %}
+        
+        {{ include.content }}
+    </div>
+</section>

@@ -1,10 +1,54 @@
-<footer class="site-footer">
-  <div class="social-media" style="display: inline-block; vertical-align: middle;">
-    {% for social in site.social_media %}
-      <a href="{{ social.url }}" class="social-link" title="{{ social.name }}" aria-label="{{ social.name }}">
-        {{ social.icon }}
-      </a>
-    {% endfor %}
-  </div>
-  <span style="vertical-align: middle;">&nbsp;&copy; 2025 {{ site.title }} - v{{ site.site_version }} | <a href="https://github.com/palladius/rubycon.it">GitHub</a></span>
+<footer class="text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <span class="text-xl font-bold">ruby<span class="text-yellow-400">con</span> italy</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">the premier ruby conference in italy, bringing together developers, companies, and enthusiasts.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">quick links</h3>
+                    <ul class="space-y-2">
+                        {% for nav in site.navigation %}
+                            <li><a href="{{ nav.link }}" class="text-gray-300 hover:text-white">{{ nav.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">social</h3>
+                    <ul class="space-y-2">
+                         {% for social in site.social_media %}
+                            <li>
+                                <a href="{{ social.url }}" class="text-gray-300 hover:text-white" target="_blank">
+                                    <i class="fab fa-{{ social.icon }} text-md" aria-hidden="true"></i> 
+                                    <span aria-hidden="true">{{ social.name }}</span>
+                                    <span class="sr-only">{{ social.aria_label }}</span>
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-yellow-400 mt-1 mr-3"></i>
+                            <a href="mailto:{{ site.info_email }}" class="text-gray-300 hover:text-white">{{ site.info_email }}</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-yellow-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">{{ site.venue.title }}, {{ site.event.location }}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-600 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300 mb-4 md:mb-0">© 2025 rubycon italy. all rights reserved.</p>
+            </div>
+        </div>
 </footer>
