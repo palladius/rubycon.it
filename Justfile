@@ -30,3 +30,11 @@ gemini:
 # Usage: just dev
 dev:
     nodemon --watch rubycon.it/_config.yml --ext yml --exec "just run-local-p4002"
+
+
+gemini-execute-cuj-test:
+    CUJ_MODE=INTERACTIVE gemini -p -y '/cuj:execute-single cuj03'
+
+# To be used in GH actions or otherwise headless environments.
+gemini-execute-cuj-test-daemon:
+    CUJ_MODE=DAEMON gemini -p -y  '/cuj:execute-single cuj04'

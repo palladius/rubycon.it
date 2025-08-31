@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.2.19
+
+* [gemini] 🏛️ fix(accessibility): Add alt text to images and improve link descriptions.
+
 ## 0.2.17
 
 * 🏛️ feat(schedule): 🗓️ Replace "coming soon" with a 3-line summary.
