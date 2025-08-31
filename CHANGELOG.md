@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.2.22
+
+* [gemini] fix(sass): 🛠️ Resolve Sass `@import` deprecation warning by using `@use` and namespacing variables.
+
 ## 0.2.21
 
 * [gemini] feat(footer): 🏛️ Add link to GitHub repository in the footer.
