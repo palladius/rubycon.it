@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.3.1
+
+* [gemini] feat(footer): 🏛️ Added GitHub link to quick links section in footer.
+
 ## 0.3.0
 
 * [gemini] fix(css): 🛠️ Resolved Sass `@import` deprecation warning by using `@use` and namespacing variables.
