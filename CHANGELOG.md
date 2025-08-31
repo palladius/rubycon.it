@@ -2,6 +2,12 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.2.20
+
+* [gemini] feat(sponsors): 🏛️ Improved the sponsors page with a detailed prospectus.
+* [gemini] feat(about): 🏛️ Added an organizers section to the about page.
+* [gemini] fix(test): 🛠️ Fixed the build by ignoring Google Fonts in the test configuration.
+
 ## 0.2.19
 
 * [gemini] 🏛️ fix(accessibility): Add alt text to images and improve link descriptions.
