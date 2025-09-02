@@ -30,6 +30,10 @@ event:
   location: Rimini, Italy
 
 social_media:
+  - name: Linkedin
+    url: "https://www.linkedin.com/company/rubycon-italy"
+    icon: linkedin
+    aria_label: "Rubycon on Linkedin"
   - name: Facebook
     url: "https://www.facebook.com/rubyconitaly"
     icon: facebook
