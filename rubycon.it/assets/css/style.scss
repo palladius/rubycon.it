@@ -18,7 +18,7 @@ body{
     line-height: 1.5;
     color: variables.$body-text-color;
 }
-section{
+section, #home{
     scroll-margin-top: 80px;
 }
 section:nth-of-type(even):not(#newsletter), footer, #home {
