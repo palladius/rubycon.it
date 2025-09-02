@@ -1,93 +1,25 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    {% seo %}
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    {% include head-custom.html %}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        * {
-            scroll-behavior: smooth;
-            cursor: url("{{ 'assets/images/dagger.png' | relative_url }}") 12 12, auto;
-        }
-        body{
-            font-family: "Cinzel", serif;
-            font-optical-sizing: auto;
-            font-weight: 500;
-            font-style: normal;
-            text-transform: lowercase;
-        }
-        section{
-            scroll-margin-top: 80px;
-        }
-        section:nth-of-type(odd):not(#newsletter), footer {
-            background: linear-gradient(135deg, #500011 0%, #2b0b01 100%);
-        }
-        section:nth-of-type(even), header, #newsletter{
-            background-color: #f4f1ed;
-        }
-        section:nth-of-type(odd):not(#newsletter){
-            color: white
-        }
-        .speaker-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .schedule-item:hover {
-            background-color: rgba(225, 29, 72, 0.05);
-        }
-        .animate-bounce-slow {
-            animation: bounce 3s infinite;
-        }
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-15px);
-            }
-        }
-    </style>
-  </head>
-  <script type="text/javascript" src="https://embeds.iubenda.com/widgets/f9366748-cc05-49e5-a769-aabeb9bdd190.js"></script>
-  <body>
-    {% include header.html %}
+---
+layout: default
+---
+{% capture title %}
+    {{ page.title }}
+{% endcapture %}
 
-    <main id="content" role="main" class="container mx-auto px-4 py-8">
-      <article class="prose lg:prose-xl">
-        <h1>{{ page.title }}</h1>
-        <p class="text-gray-600">Published on {{ page.date | date: "%B %d, %Y" }}</p>
-        {{ content }}
-      </article>
-    </main>
+{% capture date %}
+    Published on {{ page.date | date: "%B %d, %Y" }}
+{% endcapture %}
 
-    {% include footer.html %}
+{% capture content %}
+    <article class="prose">
+        <div class="content">
+            {{ content }}
+        </div>
+    </article>
+{% endcapture %}
 
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
-            document.querySelector('.mobile-menu').classList.toggle('hidden');
-        });
-        document.querySelectorAll('.mobile-menu a').forEach(button => {
-            button.addEventListener('click', function(){
-                document.querySelector('.mobile-menu').classList.toggle('hidden');
-            })
-        })
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({duration: 500})
-    </script>
-  </body>
-</html>
+{% include section.html
+    id="post" 
+    title=title 
+    description=date
+    content=content
+%}
