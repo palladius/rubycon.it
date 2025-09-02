@@ -67,6 +67,8 @@ navigation:
     link: "#home"
   - name: about
     link: "#about"
+  - name: news
+    link: "/news"
   - name: speakers
     link: "#speakers"
   - name: schedule
