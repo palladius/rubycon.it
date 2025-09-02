@@ -2,6 +2,14 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.3.0
+
+* [gemini] feat: Add articles/newsletter functionality
+* [gemini] feat: Create article layout
+* [gemini] feat: Create articles listing page
+* [gemini] feat: Add first newsletter article
+* [gemini] feat: Add articles link to footer
+
 ## 0.2.17
 
 * 🏛️ feat(schedule): 🗓️ Replace "coming soon" with a 3-line summary.
