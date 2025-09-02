@@ -1,8 +1,9 @@
 ---
 layout: default
-title:  "Welcome to Jekyll!"
+title:  "Welcome to Jekyll! To be filled in the future"
 date:   2025-08-08 14:41:27 +0000
 categories: jekyll update
+published: false
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

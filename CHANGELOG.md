@@ -9,6 +9,11 @@
 ## 0.3.0
 
 * [gemini] fix(css): 🛠️ Resolved Sass `@import` deprecation warning by using `@use` and namespacing variables.
+* [gemini] feat: Add articles/newsletter functionality
+* [gemini] feat: Create article layout
+* [gemini] feat: Create articles listing page
+* [gemini] feat: Add first newsletter article
+* [gemini] feat: Add articles link to footer
 
 ## 0.2.22
 
