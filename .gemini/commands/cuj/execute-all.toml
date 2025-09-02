@@ -1,0 +1,3 @@
+
+# TODO iterate through all the single, via some !{} command or ls -al docs/cujs/ ..
+# .. or maybe we can do this in the justfile?!?

@@ -2,6 +2,33 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.3.1
+
+* [gemini] feat(footer): 🏛️ Added GitHub link to quick links section in footer.
+
+## 0.3.0
+
+* [gemini] fix(css): 🛠️ Resolved Sass `@import` deprecation warning by using `@use` and namespacing variables.
+* [gemini] feat: Add articles/newsletter functionality
+* [gemini] feat: Create article layout
+* [gemini] feat: Create articles listing page
+* [gemini] feat: Add first newsletter article
+* [gemini] feat: Add articles link to footer
+
+## 0.2.22
+
+* [gemini] fix(sass): 🛠️ Resolve Sass `@import` deprecation warning by using `@use` and namespacing variables.
+
+## 0.2.21
+
+* [gemini] feat(footer): 🏛️ Add link to GitHub repository in the footer.
+
+## 0.2.20
+
+* [gemini] feat(sponsors): 🏛️ Improved the sponsors page with a detailed prospectus.
+* [gemini] feat(about): 🏛️ Added an organizers section to the about page.
+* [gemini] fix(test): 🛠️ Fixed the build by ignoring Google Fonts in the test configuration.
+
 ## 0.2.19
 
 * [gemini] 🏛️ fix(accessibility): Add alt text to images and improve link descriptions.

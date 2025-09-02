@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% capture title %}
+    {{ page.title }}
+{% endcapture %}
+
+{% capture date %}
+    Published on {{ page.date | date: "%B %d, %Y" }}
+{% endcapture %}
+
+{% capture content %}
+    <article class="prose">
+        <div class="content">
+            {{ content }}
+        </div>
+    </article>
+{% endcapture %}
+
+{% include section.html
+    id="post" 
+    title=title 
+    description=date
+    content=content
+%}

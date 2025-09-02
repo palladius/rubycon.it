@@ -4,7 +4,7 @@
         <div class="px-4 mx-auto">
             <div class="flex justify-between h-20 items-center">
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="#home" class="flex items-center">
+                    <a href="/#home" class="flex items-center">
                         <img src="{{ "/assets/images/logo.png" | relative_url }}" alt="Rubycon Italy conference logo" style="width: 70px; height: 70px; mix-blend-mode: darken;">
                         <span class="text-xl font-bold text-gray-900" style="margin-left: -10px;">
                             <span class="text-red-800">rvby</span><span class="text-blue-700">∬</span>con
@@ -14,7 +14,7 @@
                 <div class="hidden lg:block">
                     <div class="ml-10 flex items-center space-x-5">
                         {% for nav in site.navigation  %}
-                            <a href="{{ nav.link }}" class="text-gray-900 hover:text-red-800 px-1 py-2 font-medium">{{ nav.name }}</a>
+                            <a href="/{{ nav.link }}" class="text-gray-900 hover:text-red-800 px-1 py-2 font-medium">{{ nav.name }}</a>
                         {% endfor %}
                         <!-- <a href="#register" class="bg-red-800 text-white px-6 py-2 rounded-md font-medium hover:bg-red-700 transition">register</a> -->
                     </div>
@@ -28,10 +28,10 @@
             </div>
         </div>
         <!-- mobile menu -->
-        <div class="mobile-menu hidden md:hidden shadow-lg absolute text-center" style="width: 100%;">
+        <div class="mobile-menu hidden shadow-lg absolute text-center" style="width: 100%;">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 {% for nav in site.navigation  %}
-                    <a href="{{ nav.link }}" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-800"
+                    <a href="/{{ nav.link }}" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-800"
                        onclick="document.querySelector('.mobile-menu').classList.toggle('hidden');">
                         {{ nav.name }}
                     </a>

@@ -2,23 +2,6 @@
     <div class="text-center text-3xl font-bold" style="margin-top: -2rem;" data-aos="fade-up">
         <a href="mailto:{{ site.info_email }}" class="text-gray-500 hover:text-red-900">{{ site.info_email }}</a>
     </div>
-
-    {% comment %}
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-            {% for sponsor in site.sponsors %}
-                <div class="flex justify-center p-6 bg-gray-50 rounded-lg h-32 shadow">
-                    <img src="{{ sponsor.logo }}" alt="ruby" class="h-16 object-contain sh" style="mix-blend-mode: darken;">
-                </div>
-            {% endfor %}
-        </div>
-
-        <!-- <div class="text-center mt-12">
-            <a href="#" class="inline-flex items-center text-red-600 font-bold hover:text-red-800">
-                become a sponsor
-                <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-        </div> -->
-    {% endcomment %}
 {% endcapture %}
 
 {% include section.html

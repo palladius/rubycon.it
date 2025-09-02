@@ -50,3 +50,16 @@
     description="a day with learning, networking, and ruby goodness."
     content=content
 %}
+
+<script>
+    // Schedule day toggle
+    document.querySelectorAll('.schedule-day-toggle').forEach(button => {
+        button.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            const icon = this.querySelector('i');
+            
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        });
+    });
+</script>

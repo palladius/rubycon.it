@@ -1,7 +1,10 @@
 
 description = "🏛️🇲🇪⚔️🕊️ [rubycon] Execute ONE cuj"
 
-# TODO printenv CUJ_MODE
+# CHANGELOG
+# 31aug25 palladius v1.1 Added CUJ_MODE in text. Also hardened GH repo in GEMINI.md and here after #13 sc***up.
+# 31aug25 palladius v1.0 Initial setup.
+
 prompt = """you're an expert Website critique.
 
 * CUJ Mode: "!{ printenv CUJ_MODE || echo INTERACTIVE}"
@@ -44,8 +47,11 @@ Depending on CUJ mode, follow one of these 2 paths:
 3. Since your STDIO is unlinked, your output should take these forms, choose a combination which suits you best:
 
 - Create a `gh` issue with the results. Consider using checklists for partially implemented stuff (eg, this is done, but this is not).
+   Add "CUJ" label to the issue. Add [CUJ_XX] to title. Also add the `CUJ_MODE=XXX` on top of the issue.
 - Create a Pull Request with the proposed changes.
 - If you do both, make sure these 2 are linked.
+- When interacting with GitHub, always add a footer `-- additum ex ♊ Gemini Interfacie Lineae Mandatorum pro $GITHUB_USERNAME`
+- Github repo is `github.com/palladius/rubycon.it`.
 
 ## Input CUJ
 

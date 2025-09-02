@@ -22,7 +22,7 @@ title: RubyCon - The Ruby Conference in Italy
 # When we have the email for the domain:
 info_email: info@rubycon.it
 # - cfp_email: cfp@rubycon.it
-site_version: '0.2.19'
+site_version: '0.3.1'
 
 event:
   name: Rubycon
@@ -30,6 +30,10 @@ event:
   location: Rimini, Italy
 
 social_media:
+  - name: Linkedin
+    url: "https://www.linkedin.com/company/rubycon-italy"
+    icon: linkedin
+    aria_label: "Rubycon on Linkedin"
   - name: Facebook
     url: "https://www.facebook.com/rubyconitaly"
     icon: facebook
@@ -51,7 +55,7 @@ social_media:
     icon: discord
     aria_label: "Rubycon on Discord"
   - name: X-twitter
-    url: "https://x.com/rubycon2026"
+    url: "https://x.com/rubyconitaly"
     icon: "x-twitter"
     aria_label: "Rubycon on X-twitter"
   - name: Bluesky
@@ -78,11 +82,12 @@ navigation:
 about:
   - title: ruby at the core
     icon: gem
-    description: learn about the latest trends and best practices in ruby, rails, and related technologies from industry leaders.
-  - title: community connections
+    #description: learn about the latest trends and best practices in ruby, rails, and related technologies from industry leaders.
+    description: Created by Ruby enthusiasts for Ruby enthusiasts. # Add MINASWAN and Italian hospitality.
+  - title: Community connections
     icon: users
     description: meet fellow ruby developers, share ideas, and build relationships with collaborators, employers, and enthusiasts.
-  - title: italian atmosphere
+  - title: Italian atmosphere
     icon: utensils
     description: experience the warmth of Italy through local culture, food, and hospitality while attending the conference in Rimini.
 speakers:
@@ -95,19 +100,22 @@ speakers:
   # https://en.wikipedia.org/wiki/Crossing_the_Rubicon
   - avatar: '/assets/images/logo/0_0.jpeg'
     full_name: Julius Caesar
-    role: senior ruby developer @company
-    description: The crossing of the river Rubicon from the north by Julius Caesar was in early January 49 BC. The exact date is unknown. Scholars usually place it on the night of 10 and 11 January because of the speeds at which messengers could travel at that time. It is often asserted that Caesar's crossing of the river precipitated Caesar's civil war, but Caesar's forces had already crossed into Italy and occupied Ariminum (Rimini) the previous day.
+    role: Senior Ruby developer @Gallia 3P
+    #description: The crossing of the river Rubicon from the north by Julius Caesar was in early January 49 BC. The exact date is unknown. Scholars usually place it on the night of 10 and 11 January because of the speeds at which messengers could travel at that time. It is often asserted that Caesar's crossing of the river precipitated Caesar's civil war, but Caesar's forces had already crossed into Italy and occupied Ariminum (Rimini) the previous day.
+    description: The crossing of the river Rubicon from the north by Julius Caesar was in early January 49 BC. Directly from Las Vegas (NV), Caesar is thrilled to open the ceremony and explain his vision for the future of Ruby development.
     keys: [ruby, ruby on rails]
   - avatar: '/assets/images/logo/0_1.jpeg'
     full_name: Crixus
     role: Frontend developer @Spartacus Inc.
-    description: Crixus (died 72 BC) was a Gallic gladiator and military leader in the Third Servile War between the Roman Republic and rebel slaves. Born in Gaul, he was enslaved by the Romans under unknown circumstances and trained as a gladiator in Capua. His name means "one with curly hair" in Gaulish.
+    #description: Crixus (died 72 BC) was a Gallic gladiator and military leader in the Third Servile War between the Roman Republic and rebel slaves. Born in Gaul, he was enslaved by the Romans under unknown circumstances and trained as a gladiator in Capua. His name means "one with curly hair" in Gaulish.
+    description: Coming soon
     keys: [ruby, ruby on rails, gladiator]
   # https://la.wikipedia.org/wiki/Gaius_Cilnius_Maecenas
   - avatar: '/assets/images/logo/0_2.jpeg'
     full_name: Gaius Cilnius Maecenas
     role: Eques, Patronus, Minister @Romae Imperium
-    description: Gaius Cilnius Maecenas (circa 70/65–8 a.C.n.) fuit dives eques Romanus, artium patronus, amicus Octaviani Augusti, Horatii, Vergilii, et aliorum poetarum. Ex Tuscia provenit ex regia familia Etrusca. Quandam Terentiam in matrimonium duxit.
+    #description: Gaius Cilnius Maecenas (circa 70/65–8 a.C.n.) fuit dives eques Romanus, artium patronus, amicus Octaviani Augusti, Horatii, Vergilii, et aliorum poetarum. Ex Tuscia provenit ex regia familia Etrusca. Quandam Terentiam in matrimonium duxit.
+    description: Coming soon
     keys: [ruby, ruby on rails, sponsorship]
 schedule:
   - title: 'day 1 - may 8'

@@ -77,3 +77,5 @@ For any non-trivial task you are given, do NOT jump to implementation. Instead, 
 * Before committing, increment site_version in `rubycon.it/_config.yml` and add the changes to `CHANGELOG.md`.
 * Use proper emojis in Roman theme. Also use semantics from `gitmoji`.
 * If an issue is mentioned, update the GH issue after commit, and add the commit hash to the comment, so its beautifully linked.
+* Github repo is `github.com/palladius/rubycon.it`. Use this repo for PRs and Issues.
+* If pointed to work on issue 12, or https://github.com/palladius/rubycon.it/issues/12, use `gh` to do it.
