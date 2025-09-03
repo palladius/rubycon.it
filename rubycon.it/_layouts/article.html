@@ -6,7 +6,10 @@ layout: default
 {% endcapture %}
 
 {% capture date %}
-    Published on {{ page.date | date: "%B %d, %Y" }}
+    <p>Published on {{ page.date | date: "%B %d, %Y" }}</p>
+    {% if page.asset_url %}
+        <img src="{{ page.asset_url }}" alt="image" class="w-full h-auto rounded-lg mb-4">
+    {% endif %}
 {% endcapture %}
 
 {% capture content %}
