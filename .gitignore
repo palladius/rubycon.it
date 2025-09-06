@@ -10,3 +10,6 @@ vendor/
 test/
 doc/theme_screenshots/
 .playwright-mcp/
+
+.gemini/
+gha-creds-*.json

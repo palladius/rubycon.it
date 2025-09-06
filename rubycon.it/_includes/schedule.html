@@ -1,5 +1,5 @@
 {% capture content %}
-    <div class="text-center text-lg text-gray-600">
+    <div class="text-center text-lg text-gray-600" data-aos="fade-up">
         <p><b>Fri, 8 May 09:30:</b> Main Event (schedule to come)</p>
         <p><b>Fri, 8 May 20:30:</b> Dinner + Toga Party</p>
         <p><b>Sat, 9 May 10:00:</b> Guided tour to the Mouth of the Rubicon</p>
@@ -46,7 +46,20 @@
 
 {% include section.html
     id="schedule"
-    title="iii. &nbsp;event schedule"
-    description="a day with learning, networking, and ruby goodness."
+    title="iii. &nbsp;Event schedule"
+    description="A day with learning, networking, and Ruby goodness."
     content=content
 %}
+
+<script>
+    // Schedule day toggle
+    document.querySelectorAll('.schedule-day-toggle').forEach(button => {
+        button.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            const icon = this.querySelector('i');
+            
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        });
+    });
+</script>

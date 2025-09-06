@@ -30,3 +30,16 @@ gemini:
 # Usage: just dev
 dev:
     nodemon --watch rubycon.it/_config.yml --ext yml --exec "just run-local-p4002"
+
+
+# CUJ_MODE=TEST_SOBENME gemini -p -c # then add this '/cuj:execute-single cuj03'
+
+
+gemini-execute-cuj-test03:
+    CUJ_MODE=INTERACTIVE gemini --checkpointing --approval-mode yolo -p '/cuj:execute-single cuj03'
+gemini-execute-cuj-test02:
+    CUJ_MODE=INTERACTIVE gemini --checkpointing --approval-mode yolo -p '/cuj:execute-single cuj02'
+
+# To be used in GH actions or otherwise headless environments.
+gemini-execute-cuj-test-daemon:
+    CUJ_MODE=DAEMON gemini --approval-mode yolo -c -p '/cuj:execute-single cuj04'

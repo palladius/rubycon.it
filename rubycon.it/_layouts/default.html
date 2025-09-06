@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>{{ site.title }}</title>
     {% seo %}
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
@@ -16,92 +16,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        * {
-            scroll-behavior: smooth;
-            cursor: url("{{ 'assets/images/dagger.png' | relative_url }}") 12 12, auto;
-        }
-        body{
-            font-family: "Cinzel", serif;
-            font-optical-sizing: auto;
-            font-weight: 500;
-            font-style: normal;
-            text-transform: lowercase;
-        }
-        section{
-            scroll-margin-top: 80px;
-        }
-        section:nth-of-type(odd):not(#newsletter), footer {
-            background: linear-gradient(135deg, #500011 0%, #2b0b01 100%);
-        }
-        section:nth-of-type(even), header, #newsletter{
-            background-color: #f4f1ed;
-        }
-        section:nth-of-type(odd):not(#newsletter){
-            color: white
-        }
-        .speaker-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .schedule-item:hover {
-            background-color: rgba(225, 29, 72, 0.05);
-        }
-        .animate-bounce-slow {
-            animation: bounce 3s infinite;
-        }
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-15px);
-            }
-        }
-    </style>
   </head>
-  <script type="text/javascript" src="https://embeds.iubenda.com/widgets/f9366748-cc05-49e5-a769-aabeb9bdd190.js"></script>
+  <!-- <script type="text/javascript" src="https://embeds.iubenda.com/widgets/f9366748-cc05-49e5-a769-aabeb9bdd190.js"></script> -->
+  <!-- <style>
+    *{
+      cursor: url("{{ 'assets/images/dagger.png' | relative_url }}") 12 12, auto;
+    }
+  </style> -->
   <body>
-    <!-- <a id="skip-to-content" href="#content">Skip to the content.</a> -->
-
     {% include header.html %}
-
+    
     <main id="content" role="main">
-      <!-- {{ content }} -->
-
-      {% include hero.html %}
-      {% include about.html %}
-      {% include speakers.html %}
-      {% include schedule.html %}
-      {% include venue.html %}
-      {% include sponsors.html %}
-      {% include newsletter.html %}
+      {{ content }}
     </main>
 
     {% include footer.html %}
 
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
-            document.querySelector('.mobile-menu').classList.toggle('hidden');
-        });
-        document.querySelectorAll('.mobile-menu a').forEach(button => {
-            button.addEventListener('click', function(){
-                document.querySelector('.mobile-menu').classList.toggle('hidden');
-            })
-        })
-
-        // Schedule day toggle
-        document.querySelectorAll('.schedule-day-toggle').forEach(button => {
-            button.addEventListener('click', function() {
-                const content = this.nextElementSibling;
-                const icon = this.querySelector('i');
-                
-                content.classList.toggle('hidden');
-                icon.classList.toggle('rotate-180');
-            });
-        });
-    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({duration: 500})
