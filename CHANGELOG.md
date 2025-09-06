@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.3.5
+
+* [gemini] fix(layout): 🏛️ Remove duplicated image from article layout.
+
 ## 0.3.4
 
 * [gemini] feat(articles): 🏛️ Restore image in article cards.
@@ -10,6 +14,8 @@
 * [gemini] feat(articles): 🏛️ Restore image on individual article pages with 50% width and float right.
 * [gemini] fix(articles): 🏛️ Adjust image size and positioning on individual article pages.
 * [gemini] feat(articles): 🏛️ Make article title red and bold.
+* [gemini] feat(articles): 🏛️ Restore main image on articles page.
+* [gemini] fix(articles): 🏛️ Remove standalone image from articles page.
 
 ## 0.3.3
 
