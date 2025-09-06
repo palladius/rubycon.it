@@ -2,6 +2,7 @@
 layout: article
 title: Articles
 permalink: /articles/
+asset_url: /assets/images/rubicon.jpg
 ---
 
 <section id="articles" class="py-20">
@@ -13,8 +14,10 @@ permalink: /articles/
         <div class="bg-white rounded-lg shadow-md overflow-hidden">
           <div class="p-6">
             <h3 class="text-xl font-bold mb-2"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <img src="{{ post.asset_url | relative_url }}" alt="{{ post.title }}" class="article-card-image">
+            
             <p class="text-gray-600 text-sm mb-4">Published on {{ post.date | date: "%B %d, %Y" }}</p>
-            <p class="text-gray-700">{{ post.excerpt }}</p>
+            <div class="text-gray-700">{{ post.excerpt }}</div>
             <a href="{{ post.url | relative_url }}" class="text-red-500 hover:underline mt-4 inline-block">Read more</a>
           </div>
         </div>
