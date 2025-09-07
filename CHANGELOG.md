@@ -2,6 +2,29 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.3.5
+
+* [gemini] fix(layout): 🏛️ Remove duplicated image from article layout.
+
+## 0.3.4
+
+* [gemini] feat(articles): 🏛️ Restore image in article cards.
+* [gemini] feat(articles): 🏛️ Use article image as background for the Latest News section.
+* [gemini] fix(articles): 🏛️ Remove empty 'Published on' date from articles page.
+* [gemini] feat(articles): 🏛️ Restore image on individual article pages with 50% width and float right.
+* [gemini] fix(articles): 🏛️ Adjust image size and positioning on individual article pages.
+* [gemini] feat(articles): 🏛️ Make article title red and bold.
+* [gemini] feat(articles): 🏛️ Restore main image on articles page.
+* [gemini] fix(articles): 🏛️ Remove standalone image from articles page.
+
+## 0.3.3
+
+* [gemini] feat(articles): 🏛️ Add article image to cards and resize main image.
+
+## 0.3.2
+
+* [gemini] fix(articles): 🏛️ Fixed broken image on articles page and resolved HTML validation errors.
+
 ## 0.3.1
 
 * [gemini] feat(footer): 🏛️ Added GitHub link to quick links section in footer.

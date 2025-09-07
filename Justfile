@@ -4,7 +4,7 @@ list:
 
 # This wont work until you have installed just, so its a silly circular dependency :) which AI can fix.
 install:
-    sudo apt install just
+    npm install -g nodemon
 
 # needs to run from rubycon.it - TODO --watch
 run-local-p4002:

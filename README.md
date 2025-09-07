@@ -31,3 +31,7 @@ Auto-pushed by netlify on `staging` branch.
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e94ad014-62cf-436d-be42-0a98e5348195/deploy-status)](https://app.netlify.com/projects/rubycon-staging/deploys)
 
 * https://rubycon-staging.netlify.app/
+
+## Thanks
+
+* thanks to [Heather of tourissimo](https://www.tourissimo.travel/blog/crossing-the-rubicon) for letting us use the Rubicon picture.

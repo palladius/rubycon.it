@@ -64,3 +64,23 @@ section:nth-of-type(odd):not(#newsletter){
   white-space: nowrap;
   border-width: 0;
 }
+
+.small-main-image {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.article-card-image {
+  width: 100px;
+  float: right;
+  margin-left: 15px;
+}
+
+.article-main-image {
+  max-width: 50%;
+  height: auto;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
