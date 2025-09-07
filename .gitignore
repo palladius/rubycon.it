@@ -13,3 +13,4 @@ doc/theme_screenshots/
 
 .gemini/
 gha-creds-*.json
+.DS_Store
