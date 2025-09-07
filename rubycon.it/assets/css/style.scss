@@ -18,16 +18,16 @@ body{
     line-height: 1.5;
     color: variables.$body-text-color;
 }
-section, #home{
+section{
     scroll-margin-top: 80px;
 }
-section:nth-of-type(even):not(#newsletter), footer, #home {
+section:nth-of-type(odd):not(#newsletter), footer {
     background: variables.$background-primary;
 }
-section:nth-of-type(odd), header, #newsletter, .mobile-menu{
+section:nth-of-type(even), header, #newsletter, .mobile-menu{
     background-color: variables.$background-secondary;
 }
-section:nth-of-type(even):not(#newsletter){
+section:nth-of-type(odd):not(#newsletter){
     color: white;
 }
 .speaker-card{
@@ -51,6 +51,17 @@ section:nth-of-type(even):not(#newsletter){
     50% {
         transform: translateY(-15px);
     }
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 .sr-only {
   position: absolute;
