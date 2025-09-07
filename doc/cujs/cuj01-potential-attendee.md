@@ -16,3 +16,5 @@ As a developer,
 * As a Rubyist who loves Ruby (and potentially a Rails developer), would I find what I like in this event? Rate it 1-100 and motivate your answer.
 * As a non-Italian who needs to fly all over to Italy from Tokyo, Miami, Berlin, would this event be attractive vs competitor events?
   Find other events in https://www.rubyevents.org/events (look at April-May 2026 range for comparison).
+
+Note: do NOT use rubyevents GitHub repo for PRs! Only use rubycon.it!
