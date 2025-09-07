@@ -8,14 +8,22 @@ permalink: /articles/
   <div class="container mx-auto px-4">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {% for post in site.posts %}
-        <div class="bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-down">
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-            <p class="text-gray-600 text-sm mb-4">Published on {{ post.date | date: "%B %d, %Y" }}</p>
-            <p class="text-gray-700">{{ post.excerpt }}</p>
-            <a href="{{ post.url | relative_url }}" class="text-red-500 hover:underline mt-4 inline-block">Read more</a>
-          </div>
+      <div class="bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+        <div class="relative" data-aos="fade-up">
+            <img src="{{ post.asset_url | default: '/assets/images/logo.png' | relative_url }}" alt="{{ post.title }}" class="w-full h-64 object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+            <div class="absolute bottom-4 left-4">
+                <h3 class="text-white text-2xl font-bold">{{ post.title }}</h3>
+                <p class="text-red-200">{{ post.date | date: "%B %d, %Y" }}</p>
+            </div>
         </div>
+        <div class="p-3" data-aos="fade-up">
+            <p class="text-gray-600 mb-4">{{ post.excerpt }}</p>
+            <div class="flex mt-2">
+              <a href="{{ post.url }}" class="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full">Read more</a>
+            </div>
+        </div>
+      </div>
       {% endfor %}
     </div>
   </div>
