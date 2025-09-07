@@ -88,16 +88,6 @@ about:
   - title: Italian atmosphere
     icon: utensils
     description: experience the warmth of Italy through local culture, food, and hospitality while attending the conference in Rimini.
-why:
-  - title: Giving a voice to the unheard
-    icon: globe
-    description: In Italy there are great Ruby developers, but nobody knows them abroad. Rubycon is also for them.
-  - title: beyond just code
-    icon: handshake-angle
-    description: "Ruby in Italy shouldn’t just be a language: it should be connections, opportunities, and people supporting each other."
-  - title: Creating a real community
-    icon: heart
-    description: In Italy there’s no real Ruby community yet. Rubycon wants to change that.
 speakers:
   # - avatar: '/assets/images/speakers/carmine-paolino.jpg'
   #   full_name: Carmine Paolino
