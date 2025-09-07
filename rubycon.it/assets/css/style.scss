@@ -18,16 +18,16 @@ body{
     line-height: 1.5;
     color: variables.$body-text-color;
 }
-section{
+section, #home{
     scroll-margin-top: 80px;
 }
-section:nth-of-type(odd):not(#newsletter), footer {
+section:nth-of-type(even):not(#newsletter), footer, #home {
     background: variables.$background-primary;
 }
-section:nth-of-type(even), header, #newsletter, .mobile-menu{
+section:nth-of-type(odd), header, #newsletter, .mobile-menu{
     background-color: variables.$background-secondary;
 }
-section:nth-of-type(odd):not(#newsletter){
+section:nth-of-type(even):not(#newsletter){
     color: white;
 }
 .speaker-card{
