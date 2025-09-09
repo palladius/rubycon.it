@@ -1,8 +1,8 @@
 {% capture speakers_content %}
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {% for speaker in site.speakers %}
-            <div class="speaker-card rounded-lg overflow-hidden shadow-md transition duration-300">
-                <div class="relative" data-aos="fade-up">
+            <div class="my-card rounded-lg overflow-hidden shadow-md transition duration-300">
+                <div class="relative" data-aos="fade-zoom">
                     <img src="{{ speaker.avatar | relative_url }}" alt="{{ speaker.full_name }}" class="w-full h-64 object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
                     <div class="absolute bottom-4 left-4">
@@ -10,7 +10,7 @@
                         <p class="text-red-200">{{ speaker.role }}</p>
                     </div>
                 </div>
-                <div class="p-6" data-aos="fade-up">
+                <div class="p-6" data-aos="fade-zoom">
                     <p class="text-gray-600 mb-4">{{ speaker.description }}</p>
                     <div class="flex space-x-2">
                         {% for key in speaker.keys %}
