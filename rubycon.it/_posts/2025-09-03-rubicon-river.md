@@ -2,7 +2,6 @@
 layout: article
 title: "The Rubicon River - a bit of history"
 date: 2025-09-03
-##asset_url: /assets/images/rubicon.jpg
 asset_url: /assets/images/articles/rubicon-map.png
 published: true
 ---
