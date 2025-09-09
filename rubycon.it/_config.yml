@@ -79,6 +79,8 @@ navigation:
     link: "#sponsors"
   - name: newsletter
     link: "#newsletter"
+  - name: blog
+    link: "articles/"
 about:
   - title: Ruby at the core
     icon: gem

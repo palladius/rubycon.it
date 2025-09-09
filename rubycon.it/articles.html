@@ -9,20 +9,22 @@ permalink: /articles/
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {% for post in site.posts %}
       <div class="bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-        <div class="relative" data-aos="fade-up">
-            <img src="{{ post.asset_url | default: '/assets/images/logo.png' | relative_url }}" alt="{{ post.title }}" class="w-full h-64 object-cover">
-            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
-            <div class="absolute bottom-4 left-4">
-                <h3 class="text-white text-2xl font-bold">{{ post.title }}</h3>
-                <p class="text-red-200">{{ post.date | date: "%B %d, %Y" }}</p>
-            </div>
-        </div>
-        <div class="p-3" data-aos="fade-up">
-            <p class="text-gray-600 mb-4">{{ post.excerpt }}</p>
-            <div class="flex mt-2">
-              <a href="{{ post.url }}" class="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full">Read more</a>
-            </div>
-        </div>
+        <a href="{{ post.url }}">
+          <div class="relative" data-aos="fade-up">
+              <img src="{{ post.asset_url | default: '/assets/images/logo.png' | relative_url }}" alt="{{ post.title }}" class="w-full h-64 object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+              <div class="absolute bottom-4 left-4">
+                  <h3 class="text-white text-2xl font-bold">{{ post.title }}</h3>
+                  <p class="text-red-200">{{ post.date | date: "%B %d, %Y" }}</p>
+              </div>
+          </div>
+          <div class="p-3" data-aos="fade-up">
+              <p class="text-gray-600 mb-4">{{ post.excerpt }}</p>
+              <div class="flex mt-2">
+                <span class="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full">Read more</span>
+              </div>
+          </div>
+        </a>
       </div>
       {% endfor %}
     </div>
