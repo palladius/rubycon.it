@@ -67,6 +67,8 @@ navigation:
     link: "#home"
   - name: about
     link: "#about"
+  - name: news
+    link: "/news"
   - name: speakers
     link: "#speakers"
   - name: schedule
@@ -77,8 +79,10 @@ navigation:
     link: "#sponsors"
   - name: newsletter
     link: "#newsletter"
+  - name: blog
+    link: "articles/"
 about:
-  - title: ruby at the core
+  - title: Ruby at the core
     icon: gem
     description: learn about the latest trends and best practices in ruby, rails, and related technologies from industry leaders.
     # description: Created by Ruby enthusiasts for Ruby enthusiasts. # Add MINASWAN and Italian hospitality.
@@ -176,15 +180,15 @@ schedule:
         tag: 'FUN'
 venue:
    img: "/assets/images/ambasciatori.jpg"
-   title: 'hotel ambasciatori'
-   description: 'located in the heart of rimini, hotel ambasciatori offers modern facilities in an elegant seaside setting, just steps away from the beach and the city’s main attractions.'
+   title: 'Hotel Ambasciatori'
+   description: 'Located in the heart of Rimini, Hotel Ambasciatori offers modern facilities in an elegant seaside setting, just steps away from the beach and the city’s main attractions.'
    maps_path: "https://www.google.com/maps/place/hotel+ambasciatori+rimini/@44.0687726,12.5775295,17z/data=!3m1!4b1!4m9!3m8!1s0x132cc377163d5c69:0x342e6d3ad7ed633a!5m2!4m1!1i2!8m2!3d44.0687688!4d12.5801044!16s%2fg%2f1tl1f3gh?entry=ttu&g_ep=egoymdi1mdgxos4wikxmdsoasafqaw%3d%3d"
    info:
-    - content: 'viale vespucci, 22, 47921 rimini rn, italy'
+    - content: 'Viale Vespucci, 22, 47921 Rimini rn, Italy'
       icon: map-marker-alt
-    - content: 'only a short walk from rimini train station'
+    - content: 'Only a short walk from Rimini train station'
       icon: subway
-    - content: 'conference attendees can enjoy comfortable accommodation directly at the venue'
+    - content: 'Conference attendees can enjoy comfortable accommodation directly at the venue'
       icon: hotel
 sponsors:
   #- logo:

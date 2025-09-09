@@ -24,35 +24,17 @@
   </style> -->
   <body>
     {% include header.html %}
-
+    
     <main id="content" role="main">
-      {% include hero.html %}
-      {% include about.html %}
-      {% include speakers.html %}
-      {% include schedule.html %}
-      {% include venue.html %}
-      {% include sponsors.html %}
-      {% include newsletter.html %}
+      {{ content }}
     </main>
 
     {% include footer.html %}
 
-    <script>
-        // Schedule day toggle
-        document.querySelectorAll('.schedule-day-toggle').forEach(button => {
-            button.addEventListener('click', function() {
-                const content = this.nextElementSibling;
-                const icon = this.querySelector('i');
-                
-                content.classList.toggle('hidden');
-                icon.classList.toggle('rotate-180');
-            });
-        });
-    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({duration: 500})
     </script>
-    <script type="text/javascript" src="https://embeds.iubenda.com/widgets/f9366748-cc05-49e5-a769-aabeb9bdd190.js"></script>
+    <!-- <script type="text/javascript" src="https://embeds.iubenda.com/widgets/f9366748-cc05-49e5-a769-aabeb9bdd190.js"></script> -->
   </body>
 </html>
