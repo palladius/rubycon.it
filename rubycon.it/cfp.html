@@ -3,11 +3,6 @@ layout: default
 title: Call for Papers
 ---
 
-{% capture description %}
-    We are looking for speakers to share their knowledge and experience with the Ruby community.
-    Submit your proposal by sending an email to
-{% endcapture %}
-
 {% capture content %}
     <div class="text-center text-3xl font-bold" style="margin-top: -2rem;" data-aos="fade-up">
         <a href="mailto:{{ site.info_email }}" class="text-gray-500 hover:text-red-900">{{ site.info_email }}</a>
@@ -17,6 +12,7 @@ title: Call for Papers
 {% include section.html
     id="cfp"
     title="Call for papers is now open!"
-    description=description
+    description="We are looking for speakers to share their knowledge and experience with the Ruby community.<br>
+                 Submit your proposal by sending an email to"
     content=content
 %}
