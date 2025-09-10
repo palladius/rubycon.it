@@ -14,10 +14,14 @@ layout: default
 
 {% capture content %}
     <article class="prose">
-        <div class="content" data-aos="fade-down">
+        <div class="content" data-aos="fade-down" data-aos-once="true">
             {{ content }}
         </div>
     </article>
+
+    <div class="mt-24 flex justify-center">
+        <script async data-uid="8a5a8f8636" src="https://rubycon-italy.kit.com/8a5a8f8636/index.js"></script>
+    </div>
 {% endcapture %}
 
 {% include section.html
