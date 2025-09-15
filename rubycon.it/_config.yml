@@ -65,25 +65,25 @@ social_media:
     icon: bluesky
     aria_label: "Rubycon on Bluesky"
 navigation:
-  - name: home
+  - name: Home
     link: "#home"
-  - name: info 
+  - name: Info 
     submenu:
-      - name: about
+      - name: About
         link: "#about"
-      - name: speakers
+      - name: Speakers
         link: "#speakers"
-      - name: schedule
+      - name: Schedule
         link: "#schedule"
-      - name: venue
+      - name: Venue
         link: "#venue"
-      - name: sponsors
+      - name: Sponsors
         link: "#sponsors"
-      - name: faq 
+      - name: FAQ 
         link: "#faq"
-  - name: newsletter
+  - name: Newsletter
     link: "#newsletter"
-  - name: blog
+  - name: Blog
     link: "articles/"
 about:
   - title: Ruby at the core
