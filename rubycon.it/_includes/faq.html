@@ -2,11 +2,16 @@
     <div class="rounded-lg shadow-lg overflow-hidden">
         <div class="border-b border-gray-200 text-gray-500" data-aos="fade-up">
             {% for data in site.faq %}
-                <button class="faq-toggle w-full px-6 py-4 text-left font-bold bg-gray-100 hover:bg-gray-200 transition flex justify-between items-center">
+                <button class="faq-toggle w-full px-6 py-4 text-left font-bold bg-gray-100 hover:bg-gray-200 transition flex justify-between items-center"
+                onclick="toggleFAQ(this)">
                     <span>{{ data.question }}</span>
                     <i class="fas fa-chevron-down transition-transform duration-300"></i>
                 </button>
-                <div class="faq-content px-6 py-4 hidden bg-white">{{ data.answer }}</div>
+                <div class="bg-white max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="px-6 py-4">
+                        {{ data.answer }}
+                    </p>
+                </div>
             {% endfor %}
         </div>
     </div>
@@ -19,13 +24,12 @@
 %}
 
 <script>
-    document.querySelectorAll('.faq-toggle').forEach(button => {
-        button.addEventListener('click', function() {
-            const content = this.nextElementSibling;
-            const icon = this.querySelector('i');
-            
-            content.classList.toggle('hidden');
-            icon.classList.toggle('rotate-180');
-        });
-    });
+   function toggleFAQ(button) {
+        const content = button.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null; // chiudi
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px"; // apri
+        }
+    }
 </script>   
