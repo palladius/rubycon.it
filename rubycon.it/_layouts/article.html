@@ -14,9 +14,11 @@ layout: default
 
 {% capture content %}
     <article class="prose">
-        <div class="content" data-aos="fade-down">
+        <div class="content" data-aos="fade-down" data-aos-once="true">
             {{ content }}
         </div>
+
+        <a href="/#newsletter" class="block text-xl mt-16">join our newsletter</a>
     </article>
 {% endcapture %}
 

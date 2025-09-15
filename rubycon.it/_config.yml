@@ -21,6 +21,7 @@
 title: RubyCon - The Ruby Conference in Italy
 # When we have the email for the domain:
 info_email: info@rubycon.it
+cfp_email: cfp@rubycon.it
 # - cfp_email: cfp@rubycon.it
 site_version: '0.3.5'
 
@@ -28,6 +29,7 @@ event:
   name: Rubycon
   date: 8 May 2026
   location: Rimini, Italy
+  tickets: Tickets available soon!
 
 social_media:
   - name: Linkedin
@@ -65,18 +67,20 @@ social_media:
 navigation:
   - name: Home
     link: "#home"
-  - name: About
-    link: "#about"
-  - name: News
-    link: "/news"
-  - name: Speakers
-    link: "#speakers"
-  - name: Schedule
-    link: "#schedule"
-  - name: Venue
-    link: "#venue"
-  - name: Sponsors
-    link: "#sponsors"
+  - name: Info 
+    submenu:
+      - name: About
+        link: "#about"
+      - name: Speakers
+        link: "#speakers"
+      - name: Schedule
+        link: "#schedule"
+      - name: Venue
+        link: "#venue"
+      - name: Sponsors
+        link: "#sponsors"
+      - name: FAQ 
+        link: "#faq"
   - name: Newsletter
     link: "#newsletter"
   - name: Blog
@@ -192,6 +196,11 @@ venue:
       icon: hotel
 sponsors:
   #- logo:
+faq:
+  - question: 'Why are you doing this?'
+    answer: 'see the.... why section'
+  - question: 'How do i travel to'
+    answer: '.....'
 
 
 # Build settings
