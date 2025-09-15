@@ -67,16 +67,20 @@ social_media:
 navigation:
   - name: home
     link: "#home"
-  - name: about
-    link: "#about"
-  - name: speakers
-    link: "#speakers"
-  - name: schedule
-    link: "#schedule"
-  - name: venue
-    link: "#venue"
-  - name: sponsors
-    link: "#sponsors"
+  - name: info 
+    submenu:
+      - name: about
+        link: "#about"
+      - name: speakers
+        link: "#speakers"
+      - name: schedule
+        link: "#schedule"
+      - name: venue
+        link: "#venue"
+      - name: sponsors
+        link: "#sponsors"
+      - name: faq 
+        link: "#faq"
   - name: newsletter
     link: "#newsletter"
   - name: blog
@@ -192,6 +196,11 @@ venue:
       icon: hotel
 sponsors:
   #- logo:
+faq:
+  - question: 'Why are you doing this?'
+    answer: 'see the.... why section'
+  - question: 'How do i travel to'
+    answer: '.....'
 
 
 # Build settings

@@ -27,6 +27,9 @@ section:nth-of-type(even):not(#newsletter), footer, #home {
 section:nth-of-type(odd), header, #newsletter, .mobile-menu{
     background-color: variables.$background-secondary;
 }
+.bg-secondary{
+  background-color: variables.$background-secondary;
+}
 section:nth-of-type(even):not(#newsletter){
     color: white;
 }

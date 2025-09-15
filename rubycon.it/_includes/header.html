@@ -13,31 +13,76 @@
                 </div>
                 <div class="hidden lg:block">
                     <div class="ml-10 flex items-center space-x-5">
-                        {% for nav in site.navigation  %}
-                            <a href="/{{ nav.link }}" class="text-gray-900 hover:text-red-800 px-1 py-2 font-medium">{{ nav.name }}</a>
+                        {% for nav in site.navigation %}
+                        <div class="relative group inline-block">
+                            {% if nav.link %}
+                                <a href="/{{ nav.link }}" class="text-gray-900 hover:text-red-800 px-1 py-2 font-medium block">
+                                    {{ nav.name }}
+                                </a>
+                            {% else %}
+                                <span class="text-gray-900 hover:text-red-800 px-1 py-2 font-medium block cursor-pointer">
+                                    {{ nav.name }}
+                                    {% if nav.submenu %} <i class="fas fa-chevron-down text-base"></i> {% endif %}
+                                </span>
+                            {% endif %}
+
+                            {% if nav.submenu %}
+                            <div class="absolute top-full left-0 bg-secondary px-1 py-2 w-40 hidden group-hover:block shadow-lg">
+                                {% for subnav in nav.submenu %}
+                                <a href="/{{ subnav.link }}" class="block text-gray-900 hover:text-red-800 px-2 py-3 font-medium">
+                                    {{ subnav.name }}
+                                </a>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                        </div>
                         {% endfor %}
                         <!-- <a href="#register" class="bg-red-800 text-white px-6 py-2 rounded-md font-medium hover:bg-red-700 transition">register</a> -->
                     </div>
                 </div>
                 <div class="lg:hidden">
                     <button class="mobile-menu-button p-2 rounded-md text-gray-700 hover:text-red-800 focus:outline-none"
-                            onclick="document.querySelector('.mobile-menu').classList.toggle('hidden')">
+                            onclick="hideMenu()">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
             </div>
         </div>
         <!-- mobile menu -->
-        <div class="mobile-menu hidden shadow-lg absolute text-center" style="width: 100%;">
+        <div class="mobile-menu hidden shadow-lg absolute text-center overflow-y-auto" style="width: 100%">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 {% for nav in site.navigation  %}
-                    <a href="/{{ nav.link }}" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-800"
-                       onclick="document.querySelector('.mobile-menu').classList.toggle('hidden');">
-                        {{ nav.name }}
-                    </a>
+                    {% if nav.link %}
+                        <a href="/{{ nav.link }}" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-800"
+                        onclick="hideMenu()">
+                            {{ nav.name }}
+                        </a>
+                    {% else %}
+                        <span class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-800 cursor-pointer"
+                        onclick="this.nextElementSibling.classList.toggle('hidden')">
+                            {{ nav.name }} <i class="fas fa-chevron-down text-base"></i>
+                        </span>
+                    {% endif %}
+
+                    {% if nav.submenu %}
+                        <div class="px-1 py-2 border-b border-t hidden">
+                            {% for subnav in nav.submenu %}
+                            <a href="/{{ subnav.link }}" class="block text-gray-900 hover:text-red-800 px-2 py-3 font-medium"
+                            onclick="hideMenu()">
+                                {{ subnav.name }}
+                            </a>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
                 {% endfor %}
                 <!-- <a href="#register" class="block px-3 py-2 text-base font-medium text-white bg-red-800 rounded-md">register</a> -->
             </div>
         </div>
     </nav>
 </header>
+
+<script>
+    function hideMenu(){
+        document.querySelector('.mobile-menu').classList.toggle('hidden')
+    }
+</script>

@@ -1,0 +1,31 @@
+{% capture content %}
+    <div class="rounded-lg shadow-lg overflow-hidden">
+        <div class="border-b border-gray-200 text-gray-500" data-aos="fade-up">
+            {% for data in site.faq %}
+                <button class="faq-toggle w-full px-6 py-4 text-left font-bold bg-gray-100 hover:bg-gray-200 transition flex justify-between items-center">
+                    <span>{{ data.question }}</span>
+                    <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content px-6 py-4 hidden bg-white">{{ data.answer }}</div>
+            {% endfor %}
+        </div>
+    </div>
+{% endcapture %}
+
+{% include section.html
+    id="faq"
+    title="vi. &nbsp;Domande frequenti"
+    content=content
+%}
+
+<script>
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+        button.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            const icon = this.querySelector('i');
+            
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        });
+    });
+</script>   
