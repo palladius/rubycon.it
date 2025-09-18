@@ -51,7 +51,7 @@
         <!-- mobile menu -->
         <div class="mobile-menu hidden shadow-lg absolute text-center overflow-y-auto" style="width: 100%">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                {% for nav in site.navigation  %}
+                {% for nav in site.data.navigation  %}
                     {% if nav.link %}
                         <a href="/{{ nav.link }}" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-800"
                         onclick="document.querySelector('.mobile-menu').classList.toggle('hidden')">
