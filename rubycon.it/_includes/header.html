@@ -13,7 +13,7 @@
                 </div>
                 <div class="hidden lg:block">
                     <div class="ml-10 flex items-center space-x-5">
-                        {% for nav in site.navigation %}
+                        {% for nav in site.data.navigation %}
                         <div class="relative group inline-block">
                             {% if nav.link %}
                                 <a href="/{{ nav.link }}" class="text-gray-900 hover:text-red-800 px-1 py-2 font-medium block">

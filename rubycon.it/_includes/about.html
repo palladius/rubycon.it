@@ -1,6 +1,6 @@
 {% capture content %}
     <div class="grid md:grid-cols-3 gap-10">
-        {% for card in site.about %}
+        {% for card in site.data.about %}
             <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition" data-aos="fade-up">
                 <div class="bg-red-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
                     <i class="fas fa-{{ card.icon }} text-red-800 text-2xl"></i>

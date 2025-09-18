@@ -1,7 +1,7 @@
 {% capture content %}
     <div class="rounded-lg shadow-lg overflow-hidden">
         <div class="border-b border-gray-200 text-gray-500" data-aos="fade-up">
-            {% for data in site.faq %}
+            {% for data in site.data.faq %}
                 <button class="faq-toggle w-full px-6 py-4 text-left font-bold bg-gray-100 hover:bg-gray-200 transition flex justify-between items-center"
                 onclick="toggleFAQ(this)">
                     <span>{{ data.question }}</span>

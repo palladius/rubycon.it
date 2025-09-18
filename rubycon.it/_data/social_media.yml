@@ -1,0 +1,32 @@
+- name: Linkedin
+  url: "https://www.linkedin.com/company/rubycon-italy"
+  icon: linkedin
+  aria_label: "Rubycon on Linkedin"
+- name: Facebook
+  url: "https://www.facebook.com/rubyconitaly"
+  icon: facebook
+  aria_label: "Rubycon on Facebook"
+- name: Mastodon
+  url: "https://mastodon.social/@rubycon"
+  icon: mastodon
+  aria_label: "Rubycon on Mastodon"
+- name: Instagram
+  url: "https://www.instagram.com/rubyconitaly/"
+  icon: instagram
+  aria_label: "Rubycon on Instagram"
+- name: YouTube
+  url: "https://www.youtube.com/channel/UCNqcu--Vp9H7JfGHW4TYzIw"
+  icon: youtube
+  aria_label: "Rubycon on YouTube"
+- name: Discord
+  url: "https://discord.gg/T43GHE6wHH"
+  icon: discord
+  aria_label: "Rubycon on Discord"
+- name: X-twitter
+  url: "https://x.com/rubyconitaly"
+  icon: "x-twitter"
+  aria_label: "Rubycon on X-twitter"
+- name: Bluesky
+  url: "https://bsky.app/profile/rubyconitaly.bsky.social"
+  icon: bluesky
+  aria_label: "Rubycon on Bluesky"

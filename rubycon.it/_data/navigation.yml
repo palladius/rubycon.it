@@ -1,0 +1,20 @@
+- name: Home
+  link: "#home"
+- name: Info 
+  submenu:
+    - name: About
+      link: "#about"
+    - name: Speakers
+      link: "#speakers"
+    - name: Schedule
+      link: "#schedule"
+    - name: Venue
+      link: "#venue"
+    - name: Sponsors
+      link: "#sponsors"
+    - name: FAQ 
+      link: "#faq"
+- name: Newsletter
+  link: "#newsletter"
+- name: Blog
+  link: "articles/"

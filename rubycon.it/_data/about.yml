@@ -1,0 +1,10 @@
+- title: Ruby at the core
+  icon: gem
+  #description: learn about the latest trends and best practices in ruby, rails, and related technologies from industry leaders.
+  description: Created by Ruby enthusiasts for Ruby enthusiasts. # Add MINASWAN and Italian hospitality.
+- title: Community connections
+  icon: users
+  description: meet fellow ruby developers, share ideas, and build relationships with collaborators, employers, and enthusiasts.
+- title: Italian atmosphere
+  icon: utensils
+  description: experience the warmth of Italy through local culture, food, and hospitality while attending the conference in Rimini.
