@@ -10,10 +10,10 @@
     scroll-behavior: smooth;   
 }
 body{
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
     font-style: normal;
+    font-optical-sizing: auto;
     font-size: 16px;
     line-height: 1.5;
     color: variables.$body-text-color;
@@ -98,7 +98,7 @@ section:nth-of-type(even):not(#newsletter){
 
 .prose p {
   margin-bottom: 1.25rem;
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
 .prose strong {
