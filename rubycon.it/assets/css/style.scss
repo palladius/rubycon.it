@@ -27,6 +27,9 @@ section:nth-of-type(even):not(#newsletter), footer, #home {
 section:nth-of-type(odd), header, #newsletter, .mobile-menu{
     background-color: variables.$background-secondary;
 }
+.bg-secondary{
+  background-color: variables.$background-secondary;
+}
 section:nth-of-type(even):not(#newsletter){
     color: white;
 }
@@ -62,16 +65,6 @@ section:nth-of-type(even):not(#newsletter){
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
-}
-
-.roman-number{
-  display: inline-block;
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  text-decoration: underline overline;
-  line-height: -10px;
 }
 
 // for articles
