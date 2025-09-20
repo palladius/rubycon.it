@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Meet Federico Fois"
+title: "Meet Federico"
 date: 2025-09-16
 asset_url: /assets/images/articles/federico_fois.jpeg
 published: true

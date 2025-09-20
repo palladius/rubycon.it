@@ -2,6 +2,12 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.3.6
+
+* [gemini] feat(footer): 🏛️ Add CFP link to footer.
+* [Riccardo] feat(header): 🏛️ Add CFP link to header.
+* [Riccardo] 🏛️ Removed surnames ricc/Fede from Blog.
+
 ## 0.3.5
 
 * [gemini] fix(layout): 🏛️ Remove duplicated image from article layout.

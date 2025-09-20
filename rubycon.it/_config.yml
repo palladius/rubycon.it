@@ -23,7 +23,7 @@ title: RubyCon - The Ruby Conference in Italy
 info_email: info@rubycon.it
 cfp_email: cfp@rubycon.it
 # - cfp_email: cfp@rubycon.it
-site_version: '0.3.5'
+site_version: '0.3.6'
 
 event:
   name: Rubycon
@@ -81,7 +81,9 @@ navigation:
   - name: newsletter
     link: "#newsletter"
   - name: blog
-    link: "articles/"
+    link: "articles.html"
+  - name: cfp
+    link: "cfp.html"
 about:
   - title: Ruby at the core
     icon: gem
