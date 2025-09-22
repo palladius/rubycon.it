@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Meet Riccardo Carlesso"
+title: "Meet Riccardo"
 date: 2025-09-09
 asset_url: /assets/images/articles/riccardo_carlesso.webp
 published: true
