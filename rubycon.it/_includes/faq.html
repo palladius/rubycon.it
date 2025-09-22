@@ -1,3 +1,9 @@
+{% capture description %}
+<p> If you don't find the answer you were looking for, for specific questions, contact our support team: 
+   <a href="mailto:support@rubycon.com" class="text-yellow-400">{{ site.info_email }}</a>.
+</p>
+{% endcapture %}
+
 {% capture content %}
     <div class="rounded-lg shadow-lg overflow-hidden">
         <div class="border-b border-gray-200 text-gray-500" data-aos="fade-up">
@@ -20,6 +26,7 @@
 {% include section.html
     id="faq"
     title="VI. &nbsp;Frequently Asked Questions"
+    description=description
     content=content
 %}
 
