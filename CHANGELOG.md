@@ -4,6 +4,10 @@
 
 ## 0.3.6
 
+* [gemini] fix(accessibility): 🏛️ Improved "learn more" link with aria-label and updated newsletter form accessibility plan.
+
+## 0.3.6
+
 * [gemini] feat(footer): 🏛️ Add CFP link to footer.
 * [Riccardo] feat(header): 🏛️ Add CFP link to header.
 * [Riccardo] 🏛️ Removed surnames ricc/Fede from Blog.
