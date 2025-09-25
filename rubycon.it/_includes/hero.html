@@ -5,7 +5,7 @@
                 <h1 class="text-4xl md:text-6xl font-bold mb-6">Ruby<span class="text-yellow-400">con</span> Italy</h1>
                 <p class="text-xl md:text-2xl mb-8">The premier Ruby conference in the heart of Italy</p>
                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                    <!-- <a href="#register" class="bg-white text-red-950 px-8 py-3 rounded-md font-bold text-lg hover:bg-gray-100 transition duration-300 text-center">register now</a> -->
+                    <a href="{{ site.event.tickets_url }}" class="bg-white text-red-950 px-8 py-3 rounded-md font-bold text-lg hover:bg-gray-100 transition duration-300 text-center">Get tickets</a>
                     <a href="#about" class="border-2 border-white text-white px-8 py-3 rounded-md font-bold text-lg hover:bg-white hover:text-red-950 transition duration-300 text-center" aria-label="Learn more about Rubycon Italy">learn more</a>
                 </div>
             </div>
@@ -13,7 +13,7 @@
                 <div class="absolute -top-4 bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg shadow-lg font-bold animate-bounce-slow">
                     <div class="flex items-center">
                         <i class="fas fa-ticket mr-2"></i>
-                        <span>{{ site.event.tickets }}</span>
+                        <span>{{ site.event.tickets_status }}</span>
                     </div>
                 </div>
                 <img src="{{ "/assets/images/sala-quarzo.jpg" | relative_url }}" alt="The conference room at Hotel Ambasciatori, named Sala Quarzo" class="rounded-lg shadow-2xl w-full max-w-lg mx-auto" style="height: 300px; object-fit: cover;">

@@ -29,8 +29,8 @@ event:
   name: Rubycon
   date: 8 May 2026
   location: Rimini, Italy
-  tickets: Tickets available soon!
-  #tickets_url: "https://ti.to/rubycon/rubycon-2026"
+  tickets_status: Tickets available soon!
+  tickets_url: "https://ti.to/rubycon/rubycon-2026"
 
 
 # Build settings
