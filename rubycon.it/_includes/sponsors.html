@@ -1,13 +1,32 @@
-{% capture content %}
-    <div class="text-center text-3xl font-bold" style="margin-top: -2rem;" data-aos="fade-up">
-        <a href="mailto:{{ site.info_email }}" class="text-gray-500 hover:text-red-900">{{ site.info_email }}</a>
-    </div>
+{% capture description %}
+    <p>
+        We're grateful to these organizations for supporting the Ruby community in Italy.<br>
+        If you're interested to become a sponsor, contact us at
+        <a href="mailto:{{ site.info_email }}" class="text-red-900">{{ site.info_email }}</a>
+    </p>
+{% endcapture %}
+
+{% capture content %}               
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                <div class="flex justify-center p-6 bg-gray-50 rounded-lg h-32">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1024px-Ruby_logo.svg.png" alt="Ruby" class="h-16 object-contain">
+                </div>
+                <div class="flex justify-center p-6 bg-gray-50 rounded-lg h-32">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/1200px-Ruby_On_Rails_Logo.svg.png" alt="Ruby on Rails" class="h-16 object-contain">
+                </div>
+                <div class="flex justify-center p-6 bg-gray-50 rounded-lg h-32">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="GitHub" class="h-16 object-contain">
+                </div>
+                <div class="flex justify-center p-6 bg-gray-50 rounded-lg h-32">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_AWS_logo.svg/1280px-Amazon_AWS_logo.svg.png" alt="AWS" class="h-16 object-contain">
+                </div>
+            </div>
 {% endcapture %}
 
 {% include section.html
     id="sponsors"
     title="V. &nbsp;Our sponsors"
-    description="We are looking for sponsors. If you are interested, contact us at"
+    description=description
     content=content
 %}
 <script>
