@@ -1,4 +1,19 @@
-- title: 'Community sponsors'
+# - title: 'platinum'
+#   logos:
+#   - name: 'Dev Fest'
+#     img: '/assets/images/logo.png'
+#     url: 'https://devfest.modena.it/'
+# - title: 'gold'
+#   logos:
+#   - name: 'Dev Fest'
+#     img: '/assets/images/sponsors/devfest.png'
+#     url: 'https://devfest.modena.it/'
+# - title: 'silver'
+#   logos:
+#   - name: 'Dev Fest'
+#     img: '/assets/images/sponsors/devfest.png'
+#     url: 'https://devfest.modena.it/'
+- title: 'community'
   logos:
   - name: 'Dev Fest'
     img: '/assets/images/sponsors/devfest.png'
