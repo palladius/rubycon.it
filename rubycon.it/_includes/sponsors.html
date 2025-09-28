@@ -10,7 +10,7 @@
         {% for logo in sponsor.logos %}
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
                 <a href="{{ logo.url }}" target="_blank" class="block flex justify-center bg-gray-50 rounded-lg h-32" data-aos="fade-up">
-                    <img src="{{ logo.img }}" alt="{{ logo.title }}" class="w-full object-contain" style="mix-blend-mode: darken;">
+                    <img src="{{ logo.img }}" alt="{{ logo.name }}" class="w-full object-contain" style="mix-blend-mode: darken;">
                 </a>
             </div>
         {% endfor %}
