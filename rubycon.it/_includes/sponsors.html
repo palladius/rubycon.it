@@ -9,7 +9,7 @@
         <h4 class="mb-2 text-center" data-aos="fade-up">{{ sponsor.title }}</h4>
         <div class="flex flex-wrap gap-8 items-center justify-center">
         {% for logo in sponsor.logos %}
-            <a href="{{ logo.url }}" target="_blank" class="flex justify-center bg-gray-50 rounded-lg shadow-sm p-3 h-32" data-aos="fade-up" style="width: 150px;">
+            <a href="{{ logo.url }}" target="_blank" class="flex justify-center bg-gray-50 rounded-lg shadow-sm p-2" data-aos="fade-up" style="width: 150px; height: 100px;">
                 <img src="{{ logo.img }}" alt="{{ logo.name }}" class="w-full object-contain" style="mix-blend-mode: darken;">
             </a>
         {% endfor %}
