@@ -1,9 +1,7 @@
 {% capture description %}
-    <p>
-        We're grateful to these organizations for supporting the Ruby community in Italy.<br>
-        If you're interested to become a sponsor, contact us at
-        <a href="mailto:{{ site.info_email }}" class="text-red-900">{{ site.info_email }}</a>
-    </p>
+    We thank these organizations for supporting the Ruby community in Italy.<br>
+    Interested in sponsoring? Contact us at
+    <a href="mailto:{{ site.info_email }}" class="text-red-900">{{ site.info_email }}</a>
 {% endcapture %}
 
 {% capture content %}
@@ -22,6 +20,6 @@
 {% include section.html
     id="sponsors"
     title="V. &nbsp;Our sponsors"
-    description="We are looking for sponsors. If you are interested, contact us at"
+    description=description
     content=content
 %}
