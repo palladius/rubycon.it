@@ -1,7 +1,22 @@
+{% capture description %}
+    <p>
+        We're grateful to these organizations for supporting the Ruby community in Italy.<br>
+        If you're interested to become a sponsor, contact us at
+        <a href="mailto:{{ site.info_email }}" class="text-red-900">{{ site.info_email }}</a>
+    </p>
+{% endcapture %}
+
 {% capture content %}
-    <div class="text-center text-3xl font-bold" style="margin-top: -2rem;" data-aos="fade-up">
-        <a href="mailto:{{ site.info_email }}" class="text-gray-500 hover:text-red-900">{{ site.info_email }}</a>
-    </div>
+   {% for sponsor in site.data.sponsors %}
+        <h4 class="mb-2" data-aos="fade-right">{{ sponsor.title }}</h4>
+        {% for logo in sponsor.logos %}
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                <a href="{{ logo.url }}" target="_blank" class="block flex justify-center bg-gray-50 rounded-lg h-32" data-aos="fade-up">
+                    <img src="{{ logo.img }}" alt="{{ logo.title }}" class="w-full object-contain" style="mix-blend-mode: darken;">
+                </a>
+            </div>
+        {% endfor %}
+    {% endfor %}
 {% endcapture %}
 
 {% include section.html
@@ -10,36 +25,3 @@
     description="We are looking for sponsors. If you are interested, contact us at"
     content=content
 %}
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const tabs = document.querySelectorAll('[data-tabs-target]');
-    const tabContents = document.querySelectorAll('[role="tabpanel"]');
-
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            const target = document.querySelector(tab.dataset.tabsTarget);
-
-            tabs.forEach(t => {
-                t.setAttribute('aria-selected', 'false');
-                t.classList.remove('border-red-600', 'text-red-600');
-                t.classList.add('hover:text-gray-600', 'hover:border-gray-300');
-            });
-
-            tab.setAttribute('aria-selected', 'true');
-            tab.classList.add('border-red-600', 'text-red-600');
-            tab.classList.remove('hover:text-gray-600', 'hover:border-gray-300');
-
-            tabContents.forEach(c => {
-                c.classList.add('hidden');
-            });
-
-            target.classList.remove('hidden');
-        });
-    });
-
-    // Activate the first tab by default
-    if (tabs.length > 0) {
-        tabs[0].click();
-    }
-});
-</script>
