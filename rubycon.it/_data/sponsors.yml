@@ -18,3 +18,8 @@
   - name: 'Dev Fest'
     img: '/assets/images/sponsors/devfest.png'
     url: 'https://devfest.modena.it/'
+    size_scale: '1.5'
+  - name: 'Tito'
+    img: '/assets/images/sponsors/tito.png'
+    url: 'https://ti.to/home'
+    size_scale: '0.6'
