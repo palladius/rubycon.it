@@ -47,6 +47,22 @@ section:nth-of-type(even):not(#newsletter){
 .animate-bounce-slow {
     animation: bounce 3s infinite;
 }
+.box-logos-platinum a {
+  width: 200px; 
+  height: 150px;
+}
+.box-logos-gold a {
+  width: 180px; 
+  height: 130px;
+}
+.box-logos-silver a {
+  width: 160px; 
+  height: 110px;
+}
+.box-logos-community a {
+  width: 140px; 
+  height: 90px;
+}
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
