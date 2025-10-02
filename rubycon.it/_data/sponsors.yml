@@ -23,3 +23,7 @@
     img: '/assets/images/sponsors/tito.png'
     url: 'https://ti.to/home'
     size_scale: '0.6'
+  - name: 'Modena.rb'
+    img: '/assets/images/sponsors/modenarb.jpg'
+    url: 'https://t.me/+0HSZ-Bv4-A1iODk0'
+    size_scale: '1.2'

@@ -5,20 +5,18 @@
 {% endcapture %}
 
 {% capture content %}
-    <div >
     {% for sponsor in site.data.sponsors %}
         <div data-aos="fade-up" class="box-logos-{{ sponsor.title }}">
             <h2 class="mb-2 mt-4 text-center capitalize text-lg">{{ sponsor.title }}</h2>
             <div class="flex flex-wrap gap-8 items-center justify-center">
             {% for logo in sponsor.logos %}
-                <a href="{{ logo.url }}" target="_blank" class="flex justify-center p-2 overflow-hidden bg-white shadow-lg rounded-lg">
+                <a href="{{ logo.url }}" target="_blank" class="flex justify-center p-2 overflow-hidden bg-white shadow-lg hover:scale-[1.03] transition linear-50 rounded-lg">
                     <img src="{{ logo.img }}" alt="{{ logo.name }}" class="w-full object-contain scale-[{{ logo.size_scale }}]" style="mix-blend-mode: darken;">
                 </a>
             {% endfor %}
             </div>
         </div>
     {% endfor %}
-    </div>
 {% endcapture %}
 
 {% include section.html
