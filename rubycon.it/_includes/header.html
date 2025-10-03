@@ -16,7 +16,7 @@
                         {% for nav in site.data.navigation %}
                         <div class="relative group inline-block">
                             {% if nav.link %}
-                                <a href="/{{ nav.link }}" class="text-gray-900 hover:text-red-800 px-1 py-2 font-medium block">
+                                <a href="{{ nav.link }}" class="text-gray-900 hover:text-red-800 px-1 py-2 font-medium block">
                                     {{ nav.name }}
                                 </a>
                             {% else %}
@@ -29,7 +29,7 @@
                             {% if nav.submenu %}
                             <div class="absolute top-full left-0 bg-secondary px-1 py-2 w-40 hidden group-hover:block shadow-lg">
                                 {% for subnav in nav.submenu %}
-                                <a href="/{{ subnav.link }}" class="block text-gray-900 hover:text-red-800 px-2 py-3 font-medium">
+                                <a href="{{ subnav.link }}" class="block text-gray-900 hover:text-red-800 px-2 py-3 font-medium">
                                     {{ subnav.name }}
                                 </a>
                                 {% endfor %}
@@ -54,7 +54,7 @@
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 {% for nav in site.data.navigation  %}
                     {% if nav.link %}
-                        <a href="/{{ nav.link }}" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-800"
+                        <a href="{{ nav.link }}" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-800"
                         onclick="document.querySelector('.mobile-menu').classList.toggle('hidden')">
                             {{ nav.name }}
                         </a>
@@ -68,7 +68,7 @@
                     {% if nav.submenu %}
                         <div class="px-1 py-2 border-b border-t hidden">
                             {% for subnav in nav.submenu %}
-                            <a href="/{{ subnav.link }}" class="block text-gray-900 hover:text-red-800 px-2 py-3 font-medium"
+                            <a href="{{ subnav.link }}" class="block text-gray-900 hover:text-red-800 px-2 py-3 font-medium"
                             onclick="document.querySelector('.mobile-menu').classList.toggle('hidden')">
                                 {{ subnav.name }}
                             </a>
