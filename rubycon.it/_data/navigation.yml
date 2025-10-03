@@ -1,22 +1,22 @@
 - name: Home
-  link: "#home"
+  link: "/#home"
 - name: Info
   submenu:
     - name: About
-      link: "#about"
+      link: "/#about"
     - name: Speakers
-      link: "#speakers"
+      link: "/#speakers"
     - name: Schedule
-      link: "#schedule"
+      link: "/#schedule"
     - name: Venue
-      link: "#venue"
+      link: "/#venue"
     - name: Sponsors
-      link: "#sponsors"
+      link: "/#sponsors"
     - name: CFP
-      link: cfp.html
+      link: "/cfp.html"
     # - name: FAQ
     #   link: "#faq"
 - name: Newsletter
-  link: "#newsletter"
+  link: "/#newsletter"
 - name: Blog
-  link: "articles/"
+  link: "/articles/"
