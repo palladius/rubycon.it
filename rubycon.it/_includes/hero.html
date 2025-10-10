@@ -11,10 +11,10 @@
             </div>
             <div class="md:w-1/2 relative">
                 <div class="absolute -top-4 bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg shadow-lg font-bold animate-bounce-slow">
-                    <div class="flex items-center">
+                    <a href="{{ site.event.tickets_url }}" class="flex items-center">
                         <i class="fas fa-ticket mr-2"></i>
                         <span>{{ site.event.tickets_status }}</span>
-                    </div>
+                    </a>
                 </div>
                 <img src="{{ "/assets/images/sala-quarzo.jpg" | relative_url }}" alt="The conference room at Hotel Ambasciatori, named Sala Quarzo" class="rounded-lg shadow-2xl w-full max-w-lg mx-auto" style="height: 300px; object-fit: cover;">
                 <div class="absolute -bottom-8 -right-2 bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg shadow-lg font-bold animate-bounce-slow">

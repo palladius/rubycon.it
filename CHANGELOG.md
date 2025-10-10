@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.3.7
+
+* [gemini] feat(tickets): 🎟️ Update ticket button text and URL.
+
 ## 0.3.6
 
 * [gemini] fix(accessibility): 🏛️ Improved "learn more" link with aria-label and updated newsletter form accessibility plan.

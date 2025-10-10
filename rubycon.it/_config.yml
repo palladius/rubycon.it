@@ -23,14 +23,14 @@ title: RubyCon - The Ruby Conference in Italy
 info_email: info@rubycon.it
 cfp_email: cfp@rubycon.it
 # - cfp_email: cfp@rubycon.it
-site_version: '0.3.6'
+site_version: '0.3.7'
 
 event:
   name: Rubycon
   date: 8 May 2026
   location: Rimini, Italy
-  tickets_status: Tickets Now Open!
-  tickets_url: "https://ti.to/rubycon/rubycon-2026"
+  tickets_status: Tickets Available Now!
+  tickets_url: "https://ti.to/rubycon/rubycon-2026/"
 
 
 # Build settings
