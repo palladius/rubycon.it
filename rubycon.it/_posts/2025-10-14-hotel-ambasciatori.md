@@ -15,3 +15,8 @@ The heated outdoor pool, the magnificent American Bar Terrace and the stunning c
 Get ready for an unbeatable conference experience!
 
 See you in Rimini!
+
+<a href="{{ site.data.venue.maps_path }}" target="_blank" class="inline-flex items-center text-yellow-400 font-bold hover:text-red-800">
+    Open in google maps
+    <i class="fas fa-external-link-alt ml-2"></i>
+</a>
