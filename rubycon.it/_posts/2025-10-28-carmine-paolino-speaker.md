@@ -16,4 +16,4 @@ Over the years, he has been fortunate to work with amazing teams at OLX, Capgemi
 
 When he is not coding or training models, he can be found making house and disco music as Crimson Lake, running Berlin’s Floppy Disco collective, or exploring the world through his camera lens.
 
-<b>Carmine is the first confirmed speaker at RubyConf Italy 2026! You can't miss it!</b>
+<b>Carmine is the first confirmed speaker at RubyCon Italy 2026! You can't miss it!</b>
