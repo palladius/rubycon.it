@@ -5,12 +5,11 @@
 #   labels: [async ruby, ruby on rails,  ruby_llm]
 
 # https://en.wikipedia.org/wiki/Crossing_the_Rubicon
-- avatar: '/assets/images/logo/0_0.jpeg'
-  full_name: Julius Caesar
-  role: Senior Ruby developer @Gallia 3P
-  #description: The crossing of the river Rubicon from the north by Julius Caesar was in early January 49 BC. The exact date is unknown. Scholars usually place it on the night of 10 and 11 January because of the speeds at which messengers could travel at that time. It is often asserted that Caesar's crossing of the river precipitated Caesar's civil war, but Caesar's forces had already crossed into Italy and occupied Ariminum (Rimini) the previous day.
-  description: The crossing of the river Rubicon from the north by Julius Caesar was in early January 49 BC. Directly from Las Vegas (NV), Caesar is thrilled to open the ceremony and explain his vision for the future of Ruby development.
-  labels: [ruby, ruby on rails]
+- avatar: '/assets/images/articles/carmine_paolino.jpg'
+  full_name: Carmine Paolino
+  role: Founder at Chat with Work
+  description: Carmine Paolino is our first announced speaker. More details soon.
+  labels: [ruby, rubyllm]
 - avatar: '/assets/images/logo/0_1.jpeg'
   full_name: Crixus
   role: Frontend developer @Spartacus Inc.
