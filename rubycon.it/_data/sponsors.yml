@@ -27,3 +27,7 @@
     img: '/assets/images/sponsors/modenarb.jpg'
     url: 'https://t.me/+0HSZ-Bv4-A1iODk0'
     size_scale: '1.2'
+  - name: 'Helvetic Ruby'
+    img: '/assets/images/sponsors/helvetic-ruby-logo.svg'
+    url: 'https://helvetic-ruby.ch/'
+    size_scale: '0.9'
