@@ -31,3 +31,7 @@
     img: '/assets/images/sponsors/helvetic-ruby-logo.svg'
     url: 'https://helvetic-ruby.ch/'
     size_scale: '0.9'
+  - name: 'RubyConf Austria'
+    img: '/assets/images/sponsors/rubyconfat.png'
+    url: 'https://rubyconf.at/'
+    size_scale: '0.9'
