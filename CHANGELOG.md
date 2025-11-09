@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.3.9
+
+* [gemini] feat(speaker): 🗣️ Update Marco Roth article with image, links, and fix front matter.
+
 ## 0.3.8
 
 * [ricc] feat(speakers): 🗣️ Introduce Marco Roth as a speaker.
