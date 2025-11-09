@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.0
+
+* [gemini] feat(content): 📝 Clarify that the conference is single-track on the schedule and CFP pages.
+
 ## 0.3.9
 
 * [gemini] feat(speaker): 🗣️ Update Marco Roth article with image, links, and fix front matter.
