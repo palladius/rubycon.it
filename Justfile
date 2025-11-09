@@ -9,8 +9,8 @@ install:
 # needs to run from rubycon.it - TODO --watch
 run-local-p4002:
     cd rubycon.it/ && JEKYLL_LOG_LEVEL=info bundle exec jekyll serve  --port 4002 --watch  --livereload 2>&1 | tee log/last-run.log
-# run-local-p4003-watch:
-#     cd rubycon.it/ && bundle exec jekyll serve  --port 4003 --watch
+run-local-p4002-future:
+    cd rubycon.it/ && JEKYLL_LOG_LEVEL=info bundle exec jekyll serve  --port 4002 --watch  --livereload --future 2>&1 | tee log/last-run.log
 
 test:
     cd rubycon.it/ && bundle exec rake test
