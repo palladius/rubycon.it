@@ -1,6 +1,9 @@
 {
-  "mcpServers": {
-    // "context7": { "httpUrl": "https://mcp.context7.com/mcp" },
-    "playwright": { "command": "npx",  "args": ["@playwright/mcp@latest"]  }
+  "model": {
+    "maxSessionTurns": 50
+  },
+  "telemetry": {
+    "enabled": false,
+    "target": "gcp"
   }
 }
