@@ -4,6 +4,7 @@ title: "Meet Federico"
 date: 2025-09-16
 asset_url: /assets/images/articles/federico_fois.jpeg
 published: true
+excerpt: "Federico is our frontender-in-chief, the mastermind behind every shade of red you see on our beautiful website!"
 ---
 
 Federico is our frontender-in-chief, the mastermind behind every shade of red you see on our beautiful website!

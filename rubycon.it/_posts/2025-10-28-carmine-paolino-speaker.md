@@ -4,6 +4,7 @@ title: "Carmine Paolino - Speaker"
 date: 2025-10-28
 asset_url: /assets/images/articles/carmine_paolino.jpg
 published: true
+excerpt: "Carmine Paolino’s journey with technology started early—at age 5, he wrote his first scripts to automate launching his favorite games."
 ---
 
 Carmine Paolino’s journey with technology started early—at age 5, he wrote his first scripts to automate launching his favorite games. That moment of making a computer do exactly what he wanted felt like magic, and it sparked a lifelong fascination with technology.

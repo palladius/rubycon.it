@@ -4,6 +4,7 @@ title: "The Rubicon River - a bit of history"
 date: 2025-09-03
 asset_url: /assets/images/articles/rubicon-map.png
 published: true
+excerpt: "The Rubicon river had been for centuries the northern border between the area directly controlled by Rome and its allies and the Roman province of Cisalpine Gaul."
 ---
 
 The Rubicon river had been for centuries the northern border between the area directly controlled by Rome and its allies and the Roman province of Cisalpine Gaul.

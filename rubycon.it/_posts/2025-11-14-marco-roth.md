@@ -7,6 +7,7 @@ categories: speakers
 tags: [speaker, ruby, community, herb, reactionview, rubyevents]
 #image: /assets/images/articles/marco_roth.jpeg
 asset_url: /assets/images/articles/marco_roth.jpeg
+excerpt: "We are pleased to announce that **Marco Roth** will be speaking at Rubycon 2026."
 ---
 
 We are pleased to announce that **Marco Roth** will be speaking at Rubycon 2026. Marco is a well-known figure in the Ruby community, recognized for his many contributions.

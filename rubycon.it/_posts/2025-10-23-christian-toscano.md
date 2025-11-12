@@ -4,6 +4,7 @@ title: "Christian Toscano"
 date: 2025-10-23
 asset_url: /assets/images/articles/christian_toscano.png
 published: true
+excerpt: "Christian Toscano is a backend developer and (wannabe) tech writer who cut his teeth on Android development before discovering Ruby in 2021—a language that finally made coding feel like joy."
 ---
 
 Christian Toscano is a backend developer and (wannabe) tech writer who cut his teeth on Android development before discovering Ruby in 2021—a language that finally made coding feel like joy.

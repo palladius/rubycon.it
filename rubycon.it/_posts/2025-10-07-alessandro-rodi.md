@@ -4,6 +4,7 @@ title: "Meet Alessandro"
 date: 2025-10-07
 asset_url: /assets/images/articles/alessandro_rodi.jpeg
 published: true
+excerpt: "Alessandro Rodi has been a passionate Ruby on Rails Engineer since 2012."
 ---
 
 Alessandro Rodi has been a passionate Ruby on Rails Engineer since 2012. Ruby on Rails felt like a revelation and the key to escape, after being imprisoned in the Java ecosystem for six years.

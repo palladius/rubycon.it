@@ -4,6 +4,7 @@ title: "Hotel Ambasciatori"
 date: 2025-10-14
 asset_url: /assets/images/articles/ambasciatori.webp
 published: true
+excerpt: "Today we're thrilled to show you the amazing location we’ve secured for Rubycon 2026: the spectacular Hotel Ambasciatori in Rimini!"
 ---
 
 Today we're thrilled to show you the amazing location we’ve secured for Rubycon 2026: the spectacular Hotel Ambasciatori in Rimini!

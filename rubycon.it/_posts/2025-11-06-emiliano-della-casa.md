@@ -4,6 +4,7 @@ title: "Emiliano Della Casa"
 date: 2025-11-06
 asset_url: /assets/images/articles/emiliano_della_casa.png
 published: true
+excerpt: "Emiliano is a software consultant based in Modena (Italy), working mainly on Ruby and related frameworks."
 ---
 
 Emiliano is a software consultant based in Modena (Italy), working mainly on Ruby and related frameworks. 
