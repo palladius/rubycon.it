@@ -12,10 +12,10 @@
   labels: [ruby, rubyllm]
 - avatar: '/assets/images/articles/marco_roth.jpeg'
   full_name: Marco Roth
-  role: Marco is the mantainer of Herb and ReActionView
+  role: Full-Stack Ruby On Rails Developer
   #description: Crixus (died 72 BC) was a Gallic gladiator and military leader in the Third Servile War between the Roman Republic and rebel slaves. Born in Gaul, he was enslaved by the Romans under unknown circumstances and trained as a gladiator in Capua. His name means "one with curly hair" in Gaulish.
-  description: Coming soon
-  labels: [ruby, ruby on rails, gladiator]
+  description: Marco is the mantainer of Herb and ReActionView
+  labels: [ruby, herb, reactionview]
 # https://la.wikipedia.org/wiki/Gaius_Cilnius_Maecenas
 - avatar: '/assets/images/logo/0_2.jpeg'
   full_name: Gaius Cilnius Maecenas
