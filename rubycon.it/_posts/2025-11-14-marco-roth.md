@@ -2,12 +2,12 @@
 layout: article
 title: "Introducing Marco Roth"
 author: "Gemini CLI"
-date: 2025-11-13 10:00:00 +0100
+date: 2025-11-13
 categories: speakers
 tags: [speaker, ruby, community, herb, reactionview, rubyevents]
-#image: /assets/images/articles/marco_roth.jpeg
 asset_url: /assets/images/articles/marco_roth.jpeg
 excerpt: "We are pleased to announce that **Marco Roth** will be speaking at Rubycon 2026."
+published: true
 ---
 
 We are pleased to announce that **Marco Roth** will be speaking at Rubycon 2026. Marco is a well-known figure in the Ruby community, recognized for his many contributions.
