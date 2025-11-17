@@ -3,16 +3,19 @@
 #   - name: 'Dev Fest'
 #     img: '/assets/images/logo.png'
 #     url: 'https://devfest.modena.it/'
+#     size_scale: '1'
 # - title: 'gold'
 #   logos:
 #   - name: 'Dev Fest'
 #     img: '/assets/images/sponsors/devfest.png'
 #     url: 'https://devfest.modena.it/'
+#     size_scale: '1'
 # - title: 'silver'
 #   logos:
 #   - name: 'Dev Fest'
 #     img: '/assets/images/sponsors/devfest.png'
 #     url: 'https://devfest.modena.it/'
+#     size_scale: '1'
 - title: 'community'
   logos:
   - name: 'Dev Fest'
