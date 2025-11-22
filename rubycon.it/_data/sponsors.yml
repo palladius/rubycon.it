@@ -2,20 +2,28 @@
 # Gold / Triumvir
 # Silver / Praetor
 # Bronze / Quaestor
-# - title: 'Imperator' # Maps to Platinum
+
+# - title: 'imperator' # Maps to Platinum
 #   logos:
 #   - name: 'Dev Fest'
-#     img: '/assets/images/sponsors/devfest.png'
+#     img: '/assets/images/sponsors/devfest.webp'
 #     url: 'https://devfest.modena.it/'
 #     size_scale: '1'
-- title: '<b>⚔️ Triumvir</b>' # maps to gold
+- title: 'triumvir' # maps to gold
+  icon: '⚔️'
   logos:
   - name: 'TypeSense'
     #img: '/assets/images/sponsors/platinum/typesense_logo_dark-2.svg' # "£rubycon.it\assets\images\sponsors\platinum\
     img: '/assets/images/sponsors/triumvir/typesense_logo-2.svg' # "£rubycon.it\assets\images\sponsors\platinum\
     url: 'https://typesense.org/'
     size_scale: '1'
-# - title: 'silver'
+# - title: 'praetor' # maps to silver
+#   logos:
+#   - name: 'Dev Fest'
+#     img: '/assets/images/sponsors/devfest.webp'
+#     url: 'https://devfest.modena.it/'
+#     size_scale: '1'
+# - title: 'quaestor' # maps to bronze
 #   logos:
 #   - name: 'Dev Fest'
 #     img: '/assets/images/sponsors/devfest.png'
@@ -24,17 +32,17 @@
 - title: 'community'
   logos:
   - name: 'Dev Fest'
-    img: '/assets/images/sponsors/devfest.png'
+    img: '/assets/images/sponsors/devfest.webp'
     url: 'https://devfest.modena.it/'
-    size_scale: '1.5'
+    size_scale: '0.8'
   - name: 'Tito'
     img: '/assets/images/sponsors/tito.png'
     url: 'https://ti.to/home'
     size_scale: '0.6'
   - name: 'Modena.rb'
-    img: '/assets/images/sponsors/modenarb.jpg'
+    img: '/assets/images/sponsors/modenarb.avif'
     url: 'https://t.me/+0HSZ-Bv4-A1iODk0'
-    size_scale: '1.2'
+    size_scale: '1.5'
   - name: 'Helvetic Ruby'
     img: '/assets/images/sponsors/helvetic-ruby-logo.svg'
     url: 'https://helvetic-ruby.ch/'
