@@ -11,7 +11,7 @@
             <div class="flex flex-wrap gap-8 items-center justify-center">
             {% for logo in sponsor.logos %}
                 <a href="{{ logo.url }}" target="_blank" class="flex justify-center p-2 overflow-hidden bg-white shadow-lg hover:scale-[1.03] transition linear-50 rounded-lg">
-                    <img src="{{ logo.img }}" alt="{{ logo.name }}" class="w-full object-contain scale-[{{ logo.size_scale }}]" style="mix-blend-mode: darken;">
+                    <img src="{{ logo.img }}" alt="{{ logo.name }}" class="object-contain scale-[{{ logo.size_scale }}]" style="mix-blend-mode: darken;">
                 </a>
             {% endfor %}
             </div>
