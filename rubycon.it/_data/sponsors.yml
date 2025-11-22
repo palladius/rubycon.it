@@ -1,16 +1,20 @@
-- title: '<b>Triumvir</b>' # maps to gold
-  logos:
-  - name: 'TypeSense'
-    #img: '/assets/images/sponsors/platinum/typesense_logo_dark-2.svg' # "£rubycon.it\assets\images\sponsors\platinum\
-    img: '/assets/images/sponsors/platinum/typesense_logo-2.svg' # "£rubycon.it\assets\images\sponsors\platinum\
-    url: 'https://typesense.org/'
-    size_scale: '1'
-# - title: 'gold'
+# Platinum / Imperator
+# Gold / Triumvir
+# Silver / Praetor
+# Bronze / Quaestor
+# - title: 'Imperator' # Maps to Platinum
 #   logos:
 #   - name: 'Dev Fest'
 #     img: '/assets/images/sponsors/devfest.png'
 #     url: 'https://devfest.modena.it/'
 #     size_scale: '1'
+- title: '<b>⚔️ Triumvir</b>' # maps to gold
+  logos:
+  - name: 'TypeSense'
+    #img: '/assets/images/sponsors/platinum/typesense_logo_dark-2.svg' # "£rubycon.it\assets\images\sponsors\platinum\
+    img: '/assets/images/sponsors/triumvir/typesense_logo-2.svg' # "£rubycon.it\assets\images\sponsors\platinum\
+    url: 'https://typesense.org/'
+    size_scale: '1'
 # - title: 'silver'
 #   logos:
 #   - name: 'Dev Fest'
