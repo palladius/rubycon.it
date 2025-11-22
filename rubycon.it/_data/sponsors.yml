@@ -26,7 +26,7 @@
 # - title: 'quaestor' # maps to bronze
 #   logos:
 #   - name: 'Dev Fest'
-#     img: '/assets/images/sponsors/devfest.png'
+#     img: '/assets/images/sponsors/devfest.webp'
 #     url: 'https://devfest.modena.it/'
 #     size_scale: '1'
 - title: 'community'
