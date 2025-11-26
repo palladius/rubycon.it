@@ -51,3 +51,7 @@
     img: '/assets/images/sponsors/rubyconfat.png'
     url: 'https://rubyconf.at/'
     size_scale: '0.9'
+  - name: 'Wroclove.rb'
+    img: '/assets/images/sponsors/wroclove.png'
+    url: 'https://wrocloverb.com/'
+    size_scale: '0.9'
