@@ -22,7 +22,7 @@ title: RubyCon - The Ruby Conference in Italy
 # When we have the email for the domain:
 info_email: info@rubycon.it
 cfp_email: cfp@rubycon.it
-site_version: '0.4.1'
+site_version: "0.4.2"
 
 event:
   name: Rubycon
@@ -32,18 +32,16 @@ event:
   tickets_url: "https://ti.to/rubycon/rubycon-2026/"
   # sold_out_banner: ⏳ Early Bird tickets almost sold out!
 
-
 # Build settings
 github:
   is_project_page: true
-  repository_url: 'https://github.com/palladius/rubycon.it'
-  repository_name: 'rubycon.it'
-  owner_name: 'palladius'
-  owner_url: 'https://github.com/palladius'
+  repository_url: "https://github.com/palladius/rubycon.it"
+  repository_name: "rubycon.it"
+  owner_name: "palladius"
+  owner_url: "https://github.com/palladius"
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

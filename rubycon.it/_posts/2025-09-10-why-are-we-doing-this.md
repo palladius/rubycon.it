@@ -9,4 +9,4 @@ excerpt: "A lot of people asked us 'Why are we doing this?'."
 
 A lot of people asked us **"Why are we doing this?"**.
 
-Well, to answer this we need to date back to May 2024 when the last Rubyday 2024 was done.
+Well, to answer this we need to date back to May 2024 when the last RubyDay 2024 was done.
