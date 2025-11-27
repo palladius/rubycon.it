@@ -7,7 +7,7 @@ published: true
 excerpt: "Riccardo is a long-time Ruby enthusiast."
 ---
 
-Riccardo is a long-time Ruby enthusiast. He bought a Mac after his roommate Fabio showed him that ruby came preinstalled from the terminal, and TextMate was a natural progression. This was around Ruby 1.8.0 and Rails 2.2, circa 2009.
+Riccardo is a long-time Ruby enthusiast. He bought a Mac after his roommate Fabio showed him that Ruby came preinstalled from the terminal, and TextMate was a natural progression. This was around Ruby 1.8.0 and Rails 2.2, circa 2009.
 
 In 2010, he landed his dream job: a Ruby on Rails developer at HEAnet in Dublin.
 

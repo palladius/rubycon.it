@@ -15,4 +15,4 @@ Alessandro and his company are part of the Rails Foundation and, of course, of t
 
 Alessandro also works on some Open Source gems, and all of them are extracted from the work done as a Web Agency.
 
-Alessandro met Riccardo at the local ruby meetup in Zürich, and when he heard that a conference was being organized in his own region, he decided to help with the organization, hoping to show the rest of the Ruby community his territory. 
+Alessandro met Riccardo at the local Ruby meetup in Zürich, and when he heard that a conference was being organized in his own region, he decided to help with the organization, hoping to show the rest of the Ruby community his territory. 

@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.2
+
+* [gemini] fix(content): 📝 Fix typos and inconsistencies in articles.
+
 ## 0.4.1
 
 * [ricc] feat(content): 📝 Tone down Marco Roth article.
