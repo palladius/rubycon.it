@@ -11,7 +11,7 @@
                     </div>
                 </div>
                 <div class="p-6" data-aos="fade-zoom">
-                    <p class="text-gray-600 mb-4">{{ speaker.description }}</p>
+                    <div class="text-gray-600 mb-4">{{ speaker.description | markdownify }}</div>
                     <div class="flex space-x-2">
                         {% for label in speaker.labels %}
                             <span class="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full">{{ label }}</span>

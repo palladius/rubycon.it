@@ -5,21 +5,21 @@
 #   labels: [async ruby, ruby on rails,  ruby_llm]
 
 # https://en.wikipedia.org/wiki/Crossing_the_Rubicon
-- avatar: '/assets/images/articles/carmine_paolino.jpg'
+- avatar: "/assets/images/articles/carmine_paolino.jpg"
   full_name: Carmine Paolino
   role: Founder at Chat with Work
   description: Carmine Paolino is our first announced speaker. More details soon.
   labels: [ruby, rubyllm]
-- avatar: '/assets/images/articles/marco_roth.jpeg'
+- avatar: "/assets/images/articles/marco_roth.jpeg"
   full_name: Marco Roth
   role: Full-Stack Ruby On Rails Developer
   #description: Crixus (died 72 BC) was a Gallic gladiator and military leader in the Third Servile War between the Roman Republic and rebel slaves. Born in Gaul, he was enslaved by the Romans under unknown circumstances and trained as a gladiator in Capua. His name means "one with curly hair" in Gaulish.
   description: Marco is the maintainer of Herb and ReActionView
   labels: [ruby, herb, reactionview]
 # https://la.wikipedia.org/wiki/Gaius_Cilnius_Maecenas
-- avatar: '/assets/images/logo/0_2.jpeg'
+- avatar: "/assets/images/logo/0_2.jpeg"
   full_name: Gaius Cilnius Maecenas
   role: Eques, Patronus, Minister @Romae Imperium
   #description: Gaius Cilnius Maecenas (circa 70/65–8 a.C.n.) fuit dives eques Romanus, artium patronus, amicus Octaviani Augusti, Horatii, Vergilii, et aliorum poetarum. Ex Tuscia provenit ex regia familia Etrusca. Quandam Terentiam in matrimonium duxit.
-  description: Coming soon
+  description: "This could be you! [Apply to the CFP!](/cfp.html)"
   labels: [ruby, ruby on rails, sponsorship]
