@@ -17,6 +17,7 @@
       img: "/assets/images/sponsors/triumvir/typesense_logo-2.svg" # "£rubycon.it\assets\images\sponsors\platinum\
       url: "https://typesense.org/"
       size_scale: "1"
+      description: "TypeSense is a fast, open-source, and distributed search engine that provides a fast and efficient way to search through large datasets."
 # - title: 'praetor' # maps to silver
 #   logos:
 #   - name: 'Dev Fest'
