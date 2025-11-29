@@ -9,14 +9,14 @@
 #     img: '/assets/images/sponsors/devfest.webp'
 #     url: 'https://devfest.modena.it/'
 #     size_scale: '1'
-- title: 'triumvir' # maps to gold
-  icon: '⚔️'
+- title: "triumvir" # maps to gold
+  icon: "⚔️"
   logos:
-  - name: 'TypeSense'
-    #img: '/assets/images/sponsors/platinum/typesense_logo_dark-2.svg' # "£rubycon.it\assets\images\sponsors\platinum\
-    img: '/assets/images/sponsors/triumvir/typesense_logo-2.svg' # "£rubycon.it\assets\images\sponsors\platinum\
-    url: 'https://typesense.org/'
-    size_scale: '1'
+    - name: "TypeSense"
+      #img: '/assets/images/sponsors/platinum/typesense_logo_dark-2.svg' # "£rubycon.it\assets\images\sponsors\platinum\
+      img: "/assets/images/sponsors/triumvir/typesense_logo-2.svg" # "£rubycon.it\assets\images\sponsors\platinum\
+      url: "https://typesense.org/"
+      size_scale: "1"
 # - title: 'praetor' # maps to silver
 #   logos:
 #   - name: 'Dev Fest'
@@ -29,29 +29,33 @@
 #     img: '/assets/images/sponsors/devfest.webp'
 #     url: 'https://devfest.modena.it/'
 #     size_scale: '1'
-- title: 'community'
+- title: "community"
   logos:
-  - name: 'Dev Fest'
-    img: '/assets/images/sponsors/devfest.webp'
-    url: 'https://devfest.modena.it/'
-    size_scale: '0.8'
-  - name: 'Tito'
-    img: '/assets/images/sponsors/tito.png'
-    url: 'https://ti.to/home'
-    size_scale: '0.6'
-  - name: 'Modena.rb'
-    img: '/assets/images/sponsors/modenarb.avif'
-    url: 'https://t.me/+0HSZ-Bv4-A1iODk0'
-    size_scale: '1.5'
-  - name: 'Helvetic Ruby'
-    img: '/assets/images/sponsors/helvetic-ruby-logo.svg'
-    url: 'https://helvetic-ruby.ch/'
-    size_scale: '0.9'
-  - name: 'RubyConf Austria'
-    img: '/assets/images/sponsors/rubyconfat.png'
-    url: 'https://rubyconf.at/'
-    size_scale: '0.9'
-  - name: 'Wroclove.rb'
-    img: '/assets/images/sponsors/wroclove.png'
-    url: 'https://wrocloverb.com/'
-    size_scale: '0.9'
+    - name: "Dev Fest"
+      img: "/assets/images/sponsors/devfest.webp"
+      url: "https://devfest.modena.it/"
+      size_scale: "0.8"
+    - name: "Tito"
+      img: "/assets/images/sponsors/tito.png"
+      url: "https://ti.to/home"
+      size_scale: "0.6"
+    - name: "Modena.rb"
+      img: "/assets/images/sponsors/modenarb.avif"
+      url: "https://t.me/+0HSZ-Bv4-A1iODk0"
+      size_scale: "1.5"
+    - name: "Helvetic Ruby"
+      img: "/assets/images/sponsors/helvetic-ruby-logo.svg"
+      url: "https://helvetic-ruby.ch/"
+      size_scale: "0.9"
+    - name: "RubyConf Austria"
+      img: "/assets/images/sponsors/rubyconfat.png"
+      url: "https://rubyconf.at/"
+      size_scale: "0.9"
+    - name: "Wroclove.rb"
+      img: "/assets/images/sponsors/wroclove.png"
+      url: "https://wrocloverb.com/"
+      size_scale: "0.9"
+    - name: "SheTech"
+      img: "/assets/images/sponsors/shetech.png"
+      url: "https://shetechitaly.org/"
+      size_scale: "0.9"
