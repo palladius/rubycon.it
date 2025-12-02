@@ -2,6 +2,14 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.4
+
+* [gemini] feat(speakers): 🗣️ Update Maecenas description with CFP link.
+
+## 0.4.3
+
+* [gemini] feat(sponsors): 🤝 Add SheTech as a community sponsor.
+
 ## 0.4.2
 
 * [gemini] fix(content): 📝 Fix typos and inconsistencies in articles.
