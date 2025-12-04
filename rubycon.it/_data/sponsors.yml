@@ -1,23 +1,22 @@
-# Platinum / Imperator
-# Gold / Triumvir
-# Silver / Praetor
-# Bronze / Quaestor
-
-# - title: 'imperator' # Maps to Platinum
+# - title: 'imperator'
 #   logos:
 #   - name: 'Dev Fest'
 #     img: '/assets/images/sponsors/devfest.webp'
 #     url: 'https://devfest.modena.it/'
 #     size_scale: '1'
-- title: "triumvir" # maps to gold
+- title: "triumvir"
   icon: "⚔️"
   logos:
     - name: "TypeSense"
-      #img: '/assets/images/sponsors/platinum/typesense_logo_dark-2.svg' # "£rubycon.it\assets\images\sponsors\platinum\
-      img: "/assets/images/sponsors/triumvir/typesense_logo-2.svg" # "£rubycon.it\assets\images\sponsors\platinum\
+      img: "/assets/images/sponsors/triumvir/typesense_logo-2.svg"
       url: "https://typesense.org/"
       size_scale: "1"
       description: "TypeSense is a fast, open-source, and distributed search engine that provides a fast and efficient way to search through large datasets."
+    - name: "DatoCMS"
+      img: "/assets/images/sponsors/triumvir/datocms.svg"
+      url: "https://datocms.com/"
+      size_scale: "1"
+      description: "Simply put, the most complete, user-friendly and performant Headless CMS"
 # - title: 'praetor' # maps to silver
 #   logos:
 #   - name: 'Dev Fest'
