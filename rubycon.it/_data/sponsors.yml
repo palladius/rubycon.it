@@ -8,53 +8,48 @@
   icon: "⚔️"
   logos:
     - name: "TypeSense"
-      img: "/assets/images/sponsors/triumvir/typesense_logo-2.svg"
+      img: "/assets/images/sponsors/triumvir/typesense.svg"
       url: "https://typesense.org/"
       size_scale: "1"
       description: "TypeSense is a fast, open-source, and distributed search engine that provides a fast and efficient way to search through large datasets."
     - name: "DatoCMS"
       img: "/assets/images/sponsors/triumvir/datocms.svg"
       url: "https://datocms.com/"
-      size_scale: "1"
+      size_scale: "0.8"
       description: "Simply put, the most complete, user-friendly and performant Headless CMS"
-# - title: 'praetor' # maps to silver
-#   logos:
-#   - name: 'Dev Fest'
-#     img: '/assets/images/sponsors/devfest.webp'
-#     url: 'https://devfest.modena.it/'
-#     size_scale: '1'
-# - title: 'quaestor' # maps to bronze
-#   logos:
-#   - name: 'Dev Fest'
-#     img: '/assets/images/sponsors/devfest.webp'
-#     url: 'https://devfest.modena.it/'
-#     size_scale: '1'
+- title: 'praetor'
+  icon: '🦅'
+  logos:
+  - name: 'Appsignal'
+    img: '/assets/images/sponsors/praetor/appsignal.svg'
+    url: 'https://appsignal.com'
+    size_scale: '1'
 - title: "community"
   logos:
     - name: "Dev Fest"
       img: "/assets/images/sponsors/community/devfest.webp"
       url: "https://devfest.modena.it/"
-      size_scale: "0.8"
+      size_scale: "0.7"
       description: "An annual technology conference dedicated to developers, IT professionals, students, and tech enthusiasts, organized by the Google Developer Group (GDG) Cloud of Modena."
     - name: "Grusp"
       img: "/assets/images/sponsors/community/grusp.png"
       url: "https://www.grusp.org/"
-      size_scale: "0.9"
+      size_scale: "0.8"
       description: "GrUSP è una associazione no-profit che ha come scopo il miglioramento dell’ecosistema del mondo dello sviluppo web in Italia"
     - name: "Helvetic Ruby"
       img: "/assets/images/sponsors/community/helvetic-ruby-logo.svg"
       url: "https://helvetic-ruby.ch/"
-      size_scale: "0.9"
+      size_scale: "0.8"
       description: "A single-day, single-track event designed for Ruby programming language enthusiasts and professionals from Switzerland and internationally."
     - name: "Modena.rb"
       img: "/assets/images/sponsors/community/modenarb.avif"
       url: "https://t.me/+0HSZ-Bv4-A1iODk0"
-      size_scale: "1.5"
+      size_scale: "1.4"
       description: "A Meetup group for individuals in the Modena area who are passionate about Ruby on Rails, aiming to improve members' skills through networking and education."
     - name: "RubyConf Austria"
       img: "/assets/images/sponsors/community/rubyconfat.png"
       url: "https://rubyconf.at/"
-      size_scale: "0.9"
+      size_scale: "0.8"
       description: "A community-driven, single-track conference dedicated to the Ruby programming language, aiming to support and expand the Ruby community in Austria."
     - name: "SheTech"
       img: "/assets/images/sponsors/community/shetech.png"
@@ -64,10 +59,10 @@
     - name: "Tito"
       img: "/assets/images/sponsors/community/tito.png"
       url: "https://ti.to/home"
-      size_scale: "0.6"
+      size_scale: "0.5"
       description: "A robust, cloud-based event registration and ticketing software designed to simplify the planning, promotion, and management of events."
     - name: "Wroclove.rb"
       img: "/assets/images/sponsors/community/wroclove.png"
       url: "https://wrocloverb.com/"
-      size_scale: "0.9"
+      size_scale: "0.8"
       description: "An annual, not-for-profit event held in Wrocław, Poland, organized by the local Ruby community since 2012."
