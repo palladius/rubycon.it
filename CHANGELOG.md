@@ -2,7 +2,12 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
-## 0.4.4
+## 0.4.6
+
+* [riccardo] feat(faq): 💬 Add emojis to FAQ questions.
+
+## 0.4.5
+
 
 * [gemini] feat(speakers): 🗣️ Update Maecenas description with CFP link.
 
