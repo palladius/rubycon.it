@@ -18,3 +18,4 @@ gha-creds-*.json
 doc/plans/
 marco roth.md
 .git-privatize
+.tmp.comandi-da-lanciare-pericoloso.sh

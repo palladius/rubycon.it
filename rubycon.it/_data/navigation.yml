@@ -14,8 +14,8 @@
       link: "/#sponsors"
     - name: CFP
       link: "/cfp.html"
-    # - name: FAQ
-    #   link: "#faq"
+    - name: FAQ
+      link: "/#faq"
 - name: Newsletter
   link: "/#newsletter"
 - name: Blog

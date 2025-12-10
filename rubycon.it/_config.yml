@@ -22,7 +22,8 @@ title: RubyCon - The Ruby Conference in Italy
 # When we have the email for the domain:
 info_email: info@rubycon.it
 cfp_email: cfp@rubycon.it
-site_version: "0.4.4"
+site_version: "0.4.5"
+support_email: support@rubycon.com
 
 event:
   name: Rubycon
@@ -31,6 +32,10 @@ event:
   tickets_status: Tickets Available Now!
   tickets_url: "https://ti.to/rubycon/rubycon-2026/"
   # sold_out_banner: ⏳ Early Bird tickets almost sold out!
+
+# Adding social URLs.. to dry them out a bit.
+social_url:
+  discord: "https://discord.gg/T43GHE6wHH"
 
 # Build settings
 github:
