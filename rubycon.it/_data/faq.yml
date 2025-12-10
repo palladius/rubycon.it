@@ -1,12 +1,12 @@
 - question: '✨ Why are you doing this?'
   answer: |
-    When RubyDay was cancelled in 2024, a number of aficionados decided to take this in their own hands and make it happen. 
+    When RubyDay was cancelled in 2024, a number of aficionados decided to take this into their own hands and make it happen. 
     So here we are! And by speaking to devs and sponsors, it looks like they appreciate what we're trying to do, which motivates us to do more!
 - question: '✈️ How do I travel to Rubycon / 🇮🇹 Rimini?'
   answer: 'The biggest international airport is Bologna Marconi Airport (BLQ). The railway system is very rich and efficient and connects Rimini to Bologna > Milan, Ravenna > Venezia, Ancona > south. So you can also fly to Florence, Milan and Venice.'
 - question: '🏨 Any updates on Hotels?'
   #  TODO: add discord channel programmatically so its DRY
-  answer: "We're currently talking to a numnber of hotels to provide you discounted rates for Thu and Fri night. We want to encourage you to book your flights and ticket ASAP to save time, you can also join our Discord channel for more up to date info."
+  answer: "We're currently talking to a number of hotels to provide you discounted rates for Thu and Fri night. We want to encourage you to book your flights and ticket ASAP to save time, you can also join our Discord channel for more up to date info."
 - question: "🤔  I'm not sure if I should come all the way from outside Italy just for a single-day conference..."
   answer: >
     That's a very good point! Let us explain to you how we envisioned this. We want people to come from outside of Italy for a number of reasons:
@@ -20,7 +20,7 @@
     Yes! We're talking to Adrian and our Community friends to bring you the Ruby Passport experience.
     We're also working on a brand new stamp. Caesar would be so proud, he would stamp all over his salad! 
   # Or .. ❓
-- question: "🤷‍♀️  I have a great question which you dind't answer.."
+- question: "🤷‍♀️  I have a great question which you didn't answer.."
   answer: |
     Well, join our discord chat and ask it there. This is NOT just for people who've already bought a ticket, it's the right place to ask a question and make up your mind! 
     Link is on the bottom cos Rubyists like to keep it DRY :)

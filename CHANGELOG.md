@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.7
+
+* [riccardo] fix(faq): 📝 Fix typos in FAQ.
+
 ## 0.4.6
 
 * [riccardo] feat(faq): 💬 Add emojis to FAQ questions.
