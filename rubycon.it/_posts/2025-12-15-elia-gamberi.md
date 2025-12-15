@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Meet Elia"
-date: 2025-09-16
+date: 2025-12-15
 asset_url: /assets/images/articles/elia_gamberi.jpg
 published: true
 excerpt: "Elia is a Consultant Developer based in Modena (Italy), with a special place in his heart for Ruby"
