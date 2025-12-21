@@ -11,11 +11,12 @@ venue_hotel:
     The price might be higher than neighboring hotels.
 
 nearby_hotels:
-  # - name: Caesar's Palace (Ale-oh-oh)
-  #   stars: 6
-  #   url: "https://www.caesars.com/caesars-palace"
-  #   walking_distance: 10h flight from Vegas, then 10min
-  #   notes: "Fake hotel listing to test long walking distance handling."
+  - name: Hotel Ambasciatori
+    stars: 4
+    ballpark_price_eur: "190-250"
+    url: "https://www.hotelambasciatori.it/"
+    walking_distance: "Same as venue, very close"
+    notes: "The same Hotel Ambasciatori as the venue hotel, listed here for completeness."
   - name: Hotel Calipso
     stars: 3
     ballpark_price_eur: "95-115"
@@ -31,15 +32,17 @@ nearby_hotels:
     notes: |
       great hotel. non specified discount for RubyCon attendees.
 
-  - name: Hotel Aria / Acqua
-    stars: 3
+  - name: Hotel Aria (and Acqua)
+    stars: 4
     ballpark_price_eur: "90-140"
     url: "https://www.booking.com/hotel/it/aria-rimini.en-gb.html"
     walking_distance: 5 min
+    booking_com_community_review_score: 9.3
     notes: |
       Hotel Aria and Hotel Acqua are sister hotels located next to each other.
       They offer a discounted price if you book Thursday to Saturday for RubyCon attendees,
       but you can try your luck also for fewer days.
+      Link is to Hotel Aria (****) while Acqua is 3*.
 
 airports:
   - name: Bologna Guglielmo Marconi Airport (BLQ)

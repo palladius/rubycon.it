@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.18
+
+* [ricc] feat(logistics): 🏨 Add Hotel Ambasciatori to nearby hotels list.
+
 ## 0.4.17
 
 * [ricc] feat(logistics): ✨ Add star ratings to hotels.
