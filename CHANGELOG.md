@@ -2,6 +2,14 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.9
+
+* [ricc] feat(logistics): 💅 Improve UI of logistics page and add hotel notes.
+
+## 0.4.8
+
+* [ricc] feat(logistics): 🏛️ Add logistics page with hotel and travel info.
+
 ## 0.4.7
 
 * [riccardo] fix(faq): 📝 Fix typos in FAQ.

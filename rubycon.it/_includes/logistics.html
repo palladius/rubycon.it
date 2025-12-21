@@ -1,0 +1,86 @@
+<style>
+  .logistics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  .logistics-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+  }
+  .logistics-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  .logistics-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .logistics-card h3 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+</style>
+
+<div class="container-lg py-6 p-responsive">
+  <h1 class="h1 text-center mb-6">Logistics</h1>
+
+  <div class="logistics-grid">
+
+    <!-- Venue Card -->
+    <div class="logistics-card">
+      <h2>🏨 Venue</h2>
+      <p class="f4">
+        The conference will be held at the <a href="{{ site.data.logistics.venue_hotel.url }}" target="_blank" rel="noopener">{{ site.data.logistics.venue_hotel.name }}</a>.
+      </p>
+      <p class="f4">{{ site.data.logistics.venue_hotel.address }}</p>
+    </div>
+
+    <!-- Hotels Card -->
+    <div class="logistics-card">
+      <h2>🏨🏨🏨 Nearby Hotels</h2>
+      <p class="f4">A few hotels within walking distance:</p>
+      <ul class="list-style-none mt-3">
+        {% for hotel in site.data.logistics.nearby_hotels %}
+          <li class="py-2">
+            <strong class="d-block"><a href="{{ hotel.url }}" target="_blank" rel="noopener">{{ hotel.name }}</a></strong>
+            <span>Walking distance: {{ hotel.walking_distance }}</span>
+            {% if hotel.notes and hotel.notes != "" %}
+              <p class="f5 text-gray-600 mt-1">{{ hotel.notes | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <!-- Travel Card -->
+    <div class="logistics-card">
+      <h2>✈️🚆🚗 Travel</h2>
+      
+      <h3>✈️ By Air</h3>
+      <ul class="list-style-none">
+        {% for airport in site.data.logistics.airports %}
+          <li class="py-1">
+            <strong class="d-block">{{ airport.name }}</strong>
+            <span>{{ airport.travel_info }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <h3 class="mt-4">🚆 By Train</h3>
+      <p class="f4">
+        Rimini's station is well-connected. More info on <a href="https://www.trenitalia.com/en.html" target="_blank" rel="noopener">Trenitalia</a>.
+      </p>
+
+      <h3 class="mt-4">🚗 By Car</h3>
+      <p class="f4">
+        Reachable via A14 motorway. Check with your hotel for parking.
+      </p>
+    </div>
+
+  </div>
+</div>

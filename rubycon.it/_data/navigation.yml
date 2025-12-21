@@ -12,6 +12,8 @@
       link: "/#venue"
     - name: Sponsors
       link: "/#sponsors"
+    - name: Logistics
+      link: "/logistics/"
     - name: CFP
       link: "/cfp.html"
     - name: FAQ
