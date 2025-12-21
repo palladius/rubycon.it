@@ -2,6 +2,30 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.15
+
+* [ricc] feat(logistics): 🔍 Make hotel map image clickable to enlarge.
+
+## 0.4.14
+
+* [ricc] feat(logistics): 🗺️ Add "Click here to enlarge" link for interactive map.
+
+## 0.4.13
+
+* [ricc] style(logistics): 💅 Update logistics page with Tailwind CSS for better typography and layout.
+
+## 0.4.12
+
+* [ricc] refactor(logistics): ♻️ Reorganize page layout to linear sections and move hotel map.
+
+## 0.4.11
+
+* [ricc] fix(logistics): 🗺️ Update hotel map image to an annotated version.
+
+## 0.4.10
+
+* [ricc] feat(logistics): 🗺️ Add hotel map image and interactive Google Maps iframe.
+
 ## 0.4.9
 
 * [ricc] feat(logistics): 💅 Improve UI of logistics page and add hotel notes.
