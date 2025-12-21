@@ -1,114 +1,98 @@
 <div class="max-w-4xl mx-auto px-4 py-12">
-  <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-12 text-gray-900">Logistics</h1>
+    <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-12 text-gray-900">Logistics / Hotels</h1>
 
-  <!-- Venue Section -->
-  <div class="mb-12">
-    <h2 class="text-3xl font-bold border-b-2 border-gray-200 pb-3 mb-6 text-gray-800">🏨 Venue</h2>
-    <div class="prose max-w-none text-gray-700">
-      <p class="text-xl leading-relaxed">
-        The conference will be held at the <a href="{{ site.data.logistics.venue_hotel.url }}" target="_blank" rel="noopener" class="text-red-700 hover:text-red-900 underline font-semibold">{{ site.data.logistics.venue_hotel.name }}</a>
-        {% if site.data.logistics.venue_hotel.stars %}
-          <span class="text-yellow-500">{% for i in (1..site.data.logistics.venue_hotel.stars) %}⭐{% endfor %}</span>
-        {% endif %}
-        {% if site.data.logistics.venue_hotel.ballpark_price_eur %}<span class="ml-4 text-gray-700">{{ site.data.logistics.venue_hotel.ballpark_price_eur }} €/night</span>{% endif %}
-      </p>
-      <p class="text-lg mt-2">{{ site.data.logistics.venue_hotel.address }}</p>
-    </div>
-  </div>
-
-  <!-- Travel Section -->
-  <div class="mb-12">
-    <h2 class="text-3xl font-bold border-b-2 border-gray-200 pb-3 mb-6 text-gray-800">✈️🚆🚗 Travel</h2>
-
-    <div class="mb-8">
-      <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
-        <span class="mr-2">✈️</span> By Air
-      </h3>
-      <span>The closest/biggest airport is Bologna (BLQ). However, you can also consider other nearby airports, for a compromise between size and vicinity (closer airports usually serve local flights, while large international airports like Rome, Milan, Venice are further away):</span>
-      <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
-        {% for airport in site.data.logistics.airports %}
-          <li>
-            ✈️ <strong class="font-semibold text-gray-900">{{ airport.name }}</strong>: {{ airport.travel_info }}
-          </li>
-        {% endfor %}
-      </ul>
-        <strong class="font-semibold text-gray-900">✈️</strong>
-        Check on <a href="https://www.google.de/travel/flights/search?tfs=CBwQAholEgoyMDI2LTA1LTA3KAFqDAgDEggvbS8wN2Rma3IHCAESA0JMURolEgoyMDI2LTA1LTEwKAFqBwgBEgNCTFFyDAgDEggvbS8wN2Rma0ABSAFwAYIBCwj___________8BmAEB&curr=EUR&gl=IT">Google Flights</a>.
-
+    <div class="mb-12">
+        <h2 class="text-3xl font-bold border-b-2 border-gray-200 pb-3 mb-6 text-gray-800">🏨 Venue</h2>
+        <div class="prose max-w-none text-gray-700">
+            <p class="text-xl leading-relaxed">
+                The conference will be held at the <a href="{{ site.data.logistics.venue_hotel.url }}" target="_blank"
+                                                      rel="noopener"
+                                                      class="text-red-700 hover:text-red-900 underline font-semibold">{{
+                site.data.logistics.venue_hotel.name }}</a>
+                {% if site.data.logistics.venue_hotel.stars %}
+                <span class="text-yellow-500">{% for i in (1..site.data.logistics.venue_hotel.stars) %}⭐{% endfor %}</span>
+                {% endif %}
+            </p>
+            <p class="text-lg mt-2">{{ site.data.logistics.venue_hotel.address }}</p>
+        </div>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-8">
-      <div>
-        <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
-          <span class="mr-2">🚆</span> By Train
-        </h3>
-        <p class="text-lg text-gray-700 leading-relaxed">
-          Rimini's station is well-connected. More info on <a href="https://www.trenitalia.com/en.html" target="_blank" rel="noopener" class="text-red-700 hover:text-red-900 underline">Trenitalia</a>.
-        </p>
-      </div>
+    <!-- Travel Section -->
+    <div class="mb-12">
+        <h2 class="text-3xl font-bold border-b-2 border-gray-200 pb-3 mb-6 text-gray-800">✈️🚆🚗 Travel</h2>
 
-      <div>
-        <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
-          <span class="mr-2">🚗</span> By Car
-        </h3>
-        <p class="text-lg text-gray-700 leading-relaxed">
-          Reachable via A14 motorway. Check with your hotel for parking.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Nearby Hotels Section -->
-  <div class="mb-12">
-    <h2 class="text-3xl font-bold border-b-2 border-gray-200 pb-3 mb-6 text-gray-800">🏨🏨🏨 Nearby Hotels</h2>
-    <p class="text-lg text-gray-700 mb-6">A few hotels within walking distance:</p>
-
-    <ul class="space-y-6 mb-12">
-      {% for hotel in site.data.logistics.nearby_hotels %}
-        <li class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-          <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
-            <h3 class="text-xl font-bold text-gray-900 m-0">
-              <a href="{{ hotel.url }}" target="_blank" rel="noopener" class="hover:text-red-700 hover:underline decoration-2">{{ hotel.name }}</a>
-              {% if hotel.stars %}
-                <span class="text-yellow-500">{% for i in (1..hotel.stars) %}⭐{% endfor %}</span>
-              {% endif %}
+        <div class="mb-8">
+            <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
+                <span class="mr-2">✈️</span> By Air
             </h3>
-            <span class="text-gray-500 font-medium text-sm mt-1 md:mt-0">
-              {{ hotel.walking_distance }} walk
-              {% if hotel.ballpark_price_eur %}<span class="ml-4 text-gray-700">{{ hotel.ballpark_price_eur }} €/night</span>{% endif %}
-            </span>
-          </div>
-          {% if hotel.notes and hotel.notes != "" %}
-            <div class="text-gray-600 mt-2 text-base leading-relaxed">
-              {{ hotel.notes | markdownify }}
-            </div>
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ul>
+            <span>The closest/biggest airport is Bologna (BLQ). However, you can also consider other nearby airports, for a compromise between size and vicinity (closer airports usually serve local flights, while large international airports like Rome, Milan, Venice are further away):</span>
+            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                {% for airport in site.data.logistics.airports %}
+                <li>
+                    ✈️ <strong class="font-semibold text-gray-900">{{ airport.name }}</strong>: {{ airport.travel_info
+                    }}
+                </li>
+                {% endfor %}
+            </ul>
+            <strong class="font-semibold text-gray-900">✈️</strong>
+            Check on <a
+                href="https://www.google.de/travel/flights/search?tfs=CBwQAholEgoyMDI2LTA1LTA3KAFqDAgDEggvbS8wN2Rma3IHCAESA0JMURolEgoyMDI2LTA1LTEwKAFqBwgBEgNCTFFyDAgDEggvbS8wN2Rma0ABSAFwAYIBCwj___________8BmAEB&curr=EUR&gl=IT">Google
+            Flights</a>.
 
-    <div class="grid lg:grid-cols-2 gap-8 mt-12">
-      <div class="flex flex-col">
-        <h3 class="text-lg font-bold mb-4 text-center text-gray-800">Selected Hotels</h3>
-        <div class="bg-white p-2 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-          <a href="{{ site.baseurl }}/assets/images/logistics/hotels-annotated.png" target="_blank" rel="noopener" title="Click to enlarge">
-            <img src="{{ site.baseurl }}/assets/images/logistics/hotels-annotated.png" alt="Annotated map of hotels close to Ambasciatori" class="w-full h-auto rounded-lg object-contain" style="max-height: 480px;">
-          </a>
         </div>
-      </div>
 
-      <div class="flex flex-col">
-        <h3 class="text-lg font-bold mb-4 text-center text-gray-800">Interactive Map</h3>
-        <div class="bg-white p-2 rounded-xl shadow-md border border-gray-200 h-full">
-            <div class="relative w-full h-0 pb-[75%] rounded-lg overflow-hidden">
-                <iframe src="https://www.google.com/maps/d/embed?mid=1zb_234F5UcyVOQPk3R0MqLRe7IdsWA0&hl=en&ehbc=2E312F" class="absolute top-0 left-0 w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
+                    <span class="mr-2">🚆</span> By Train
+                </h3>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Rimini's station is well-connected. More info on <a href="https://www.trenitalia.com/en.html"
+                                                                        target="_blank" rel="noopener"
+                                                                        class="text-red-700 hover:text-red-900 underline">Trenitalia</a>.
+                </p>
             </div>
-            <div class="text-center mt-4">
-                <a href="https://www.google.com/maps/d/embed?mid=1zb_234F5UcyVOQPk3R0MqLRe7IdsWA0&hl=en&ehbc=2E312F" target="_blank" rel="noopener" class="text-red-700 hover:text-red-900 underline font-semibold">Click here to enlarge map</a>
+
+            <div>
+                <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
+                    <span class="mr-2">🚗</span> By Car
+                </h3>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Reachable via A14 motorway. Check with your hotel for parking.
+                </p>
             </div>
         </div>
-      </div>
     </div>
-  </div>
 
+    <!-- Nearby Hotels Section -->
+    <div class="mb-12">
+        <h2 class="text-3xl font-bold border-b-2 border-gray-200 pb-3 mb-6 text-gray-800">🏨🏨🏨 Nearby Hotels</h2>
+        <p class="text-lg text-gray-700 mb-6">A few hotels within walking distance:</p>
+
+        <ul class="space-y-6 mb-12">
+            {% for hotel in site.data.logistics.nearby_hotels %}
+            <li class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                    <h3 class="text-xl font-bold text-gray-900 m-0">
+                        <a href="{{ hotel.url }}" target="_blank" rel="noopener"
+                           class="hover:text-red-700 hover:underline decoration-2">{{ hotel.name }}</a>
+                        {% if hotel.stars %}
+                        <span class="text-yellow-500">{% for i in (1..hotel.stars) %}⭐{% endfor %}</span>
+                        {% endif %}
+                    </h3>
+                    <span class="text-gray-500 font-medium text-sm mt-1 md:mt-0">
+              {{ hotel.walking_distance }} walk
+              {% if hotel.ballpark_price_eur %}<span
+                            class="ml-4 text-gray-700">{{ hotel.ballpark_price_eur }} €/night</span>{% endif %}
+            </span>
+                </div>
+                {% if hotel.notes and hotel.notes != "" %}
+                <div class="text-gray-600 mt-2 text-base leading-relaxed">
+                    {{ hotel.notes | markdownify }}
+                </div>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>

@@ -8,30 +8,15 @@ venue_hotel:
     The venue hotel is Hotel Ambasciatori, located right on the beach promenade.
     The hotel is already booked for another conference, yet a few rooms are still available.
     You can book them by contacting the hotel directly and mentioning "RubyCon".
-    The price might be higher than neighboring hotels.
-
 nearby_hotels:
-  - name: Hotel Ambasciatori
-    stars: 4
-    ballpark_price_eur: "190-250"
-    url: "https://www.hotelambasciatori.it/"
-    walking_distance: "Same as venue, very close"
-    notes: "The same Hotel Ambasciatori as the venue hotel, listed here for completeness."
-  - name: Hotel Calipso
-    stars: 3
-    ballpark_price_eur: "95-115"
-    url: https://www.booking.com/hotel/it/calipso-rimini.it.html
-    walking_distance: 42 min
-    notes: |
-      10% discount for RubyCon attendees.
   - name: Hotel Imperiale
     stars: 4
     ballpark_price_eur: "135-155"
-    url:   https://www.booking.com/hotel/it/holiday-inn-rimini.it.html
-    walking_distance: 42 min
+    url: https://www.hirimini.com/en/
+    walking_distance: 5 min
     notes: |
-      great hotel. non specified discount for RubyCon attendees.
-
+      This is the speakers and team members hotel. 
+      Located nearby the location, they offer a discount for rubycon attendees when booking directly.
   - name: Hotel Aria (and Acqua)
     stars: 4
     ballpark_price_eur: "90-140"
@@ -43,7 +28,19 @@ nearby_hotels:
       They offer a discounted price if you book Thursday to Saturday for RubyCon attendees,
       but you can try your luck also for fewer days.
       Link is to Hotel Aria (****) while Acqua is also ****.
-
+  - name: Hotel Calypso
+    stars: 3
+    ballpark_price_eur: "95-115"
+    url: https://www.hotelcalypso.com/en/
+    walking_distance: 5 min
+    notes: |
+      10% discount for RubyCon attendees when booking directly.
+  - name: Hotel La Perla
+    stars: 3
+    url: https://laperla.riminiihotel.com/en/
+    walking_distance: 5 min
+    notes: |
+      A discount is offered to RubyCon attendees when booking directly.
 airports:
   - name: Bologna Guglielmo Marconi Airport (BLQ)
     travel_info: "A larger international airport. From here you can take a train to Rimini (about 1-1.5 hours)."
