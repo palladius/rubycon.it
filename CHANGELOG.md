@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.17
+
+* [ricc] feat(logistics): ✨ Add star ratings to hotels.
+
 ## 0.4.16
 
 * [ricc] feat(logistics): ✨ Consolidate features: Add anchor IDs for direct linking (#travel, #hotels, etc.), rename #transportation to #travel, enrich venue section with hotel images, add hotel stars rating and ballpark price to nearby hotels, and add direct Google Maps link for the venue.
