@@ -9,12 +9,12 @@ venue_hotel:
     The price might be higher than neighboring hotels.
 
 nearby_hotels:
-  - name: Caesar's Palace
+  - name: Caesar's Palace (Ale-oh-oh)
     url: "https://www.caesars.com/caesars-palace"
-    walking_distance: 10h flight from Vegas
+    walking_distance: 10h flight from Vegas, then 10min
     notes: "Fake hotel listing to test long walking distance handling."
-  - name: Hotel Panama Majestic
-    url: "https://www.panamamajestic.it/"
+  - name: Hotel Rodi Majestic
+    url: "https://www.rodi-majestic.it/"
     walking_distance: 3 min
     notes: "Fake hotel listing to test long walking distance handling."
   - name: Hotel Aria / Acqua
@@ -26,12 +26,14 @@ nearby_hotels:
       but you can try your luck also for fewer days.
 
 airports:
-  - name: Federico Fellini International Airport (RMI)
-    travel_info: "Rimini's airport. It's about a 15-minute taxi ride to the venue."
   - name: Bologna Guglielmo Marconi Airport (BLQ)
     travel_info: "A larger international airport. From here you can take a train to Rimini (about 1-1.5 hours)."
+  - name: Federico Fellini International Airport (RMI)
+    travel_info: "Rimini's airport. It's about a 15-minute taxi ride to the venue."
   - name: Ancona-Falconara Airport (AOI)
     travel_info: "Another option, with a train connection to Rimini (about 1 hour)."
+  - name: Venice Marco Polo Airport (VCE)
+    travel_info: "Another option, with a train connection to Rimini (about 2 hours)."
 
 transport:
   - type: Train
