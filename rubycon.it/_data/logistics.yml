@@ -12,20 +12,14 @@ nearby_hotels:
   - name: Caesar's Palace (Ale-oh-oh)
     url: "https://www.caesars.com/caesars-palace"
     walking_distance: 10h flight from Vegas, then 10min
-    stars_rating_emojis: "⭐⭐⭐"
-    ballpark_price_eur: "120-180"
     notes: "Fake hotel listing to test long walking distance handling."
   - name: Hotel Rodi Majestic
     url: "https://www.rodi-majestic.it/"
     walking_distance: 3 min
-    stars_rating_emojis: "⭐⭐⭐⭐"
-    ballpark_price_eur: "100-150"
     notes: "Fake hotel listing to test long walking distance handling."
   - name: Hotel Aria / Acqua
     url: "https://www.booking.com/hotel/it/aria-rimini.en-gb.html"
     walking_distance: 5 min
-    stars_rating_emojis: "⭐⭐⭐"
-    ballpark_price_eur: "90-140"
     notes: |
       Hotel Aria and Hotel Acqua are sister hotels located next to each other.
       They offer a discounted price if you book Thursday to Saturday for RubyCon attendees,
