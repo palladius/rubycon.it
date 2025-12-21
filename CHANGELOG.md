@@ -2,6 +2,14 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.17
+
+* [ricc] feat(logistics): ✨ Add hotel stars rating, ballpark price to nearby hotels, and direct Google Maps link for the venue.
+
+## 0.4.16
+
+* [ricc] feat(logistics): 🏨 Enrich venue section with hotel images, add anchor IDs for direct linking (#travel, #hotels, etc.), and rename #transportation to #travel.
+
 ## 0.4.15
 
 * [ricc] feat(logistics): 🔍 Make hotel map image clickable to enlarge.
