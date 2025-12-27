@@ -24,6 +24,13 @@
     img: '/assets/images/sponsors/praetor/appsignal.svg'
     url: 'https://appsignal.com'
     size_scale: '1'
+- title: 'quaestor'
+  icon: '📜'
+  logos:
+  - name: 'Netframe'
+    img: '/assets/images/sponsors/quaestor/netframe.png'
+    url: 'https://netframe.it/'
+    size_scale: '1'
 - title: "community"
   logos:
     - name: "Dev Fest"
