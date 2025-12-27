@@ -1,0 +1,58 @@
+venue_hotel:
+  name: Hotel Ambasciatori
+  stars: 4
+  ballpark_price_eur: "190-250"
+  address: Lungomare Amerigo Vespucci, 22, 47921 Rimini RN, Italy
+  url: "https://www.hotelambasciatori.it/"
+  notes: |
+    The venue hotel is Hotel Ambasciatori, located right on the beach promenade.
+    The hotel is already booked for another conference, yet a few rooms are still available.
+    You can book them by contacting the hotel directly and mentioning "RubyCon".
+nearby_hotels:
+  - name: Hotel Imperiale
+    stars: 4
+    ballpark_price_eur: "135-155"
+    url: https://www.hirimini.com/en/
+    walking_distance: 5 min
+    notes: |
+      This is the speakers and team members hotel. 
+      Located nearby the location, they offer a discount for rubycon attendees when booking directly.
+  - name: Hotel Aria (and Acqua)
+    stars: 4
+    ballpark_price_eur: "90-140"
+    url: "https://www.booking.com/hotel/it/aria-rimini.en-gb.html"
+    walking_distance: 5 min
+    booking_com_community_review_score: 9.3
+    notes: |
+      Hotel Aria and Hotel Acqua are sister hotels located next to each other.
+      They offer a discounted price if you book Thursday to Saturday for RubyCon attendees,
+      but you can try your luck also for fewer days.
+      Link is to Hotel Aria (****) while Acqua is also ****.
+  - name: Hotel Calypso
+    stars: 3
+    ballpark_price_eur: "95-115"
+    url: https://www.hotelcalypso.com/en/
+    walking_distance: 5 min
+    notes: |
+      10% discount for RubyCon attendees when booking directly.
+  - name: Hotel La Perla
+    stars: 3
+    url: https://laperla.riminiihotel.com/en/
+    walking_distance: 5 min
+    notes: |
+      A discount is offered to RubyCon attendees when booking directly.
+airports:
+  - name: Bologna Guglielmo Marconi Airport (BLQ)
+    travel_info: "A larger international airport. From here you can take a train to Rimini (about 1-1.5 hours)."
+  - name: Federico Fellini International Airport (RMI)
+    travel_info: "Rimini's airport. It's about a 15-minute taxi ride to the venue."
+  - name: Ancona-Falconara Airport (AOI)
+    travel_info: "Another option, with a train connection to Rimini (about 1 hour)."
+  - name: Venice Marco Polo Airport (VCE)
+    travel_info: "Another option, with a train connection to Rimini (about 2 hours)."
+
+transport:
+  - type: Train
+    info: "Rimini is well-connected by train. The train station is a short taxi or bus ride from the venue area."
+  - type: Car
+    info: "You can reach Rimini via the A14 motorway. Be aware of parking, especially during tourist season."
