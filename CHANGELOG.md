@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.19
+
+* [gemini] fix(workflow): 🔀 Fix gemini-triage workflow permission and config issues (Fixes #55).
+
 ## 0.4.18
 
 * [ricc] feat(logistics): 🏨 Add Hotel Ambasciatori to nearby hotels list.
