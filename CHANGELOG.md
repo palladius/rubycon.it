@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.20
+
+* [gemini] chore(git): 🗑️ Remove Git LFS and restore binary images directly to git history.
+
 ## 0.4.19
 
 * [gemini] fix(workflow): 🔀 Fix gemini-triage workflow permission and config issues (Fixes #55).

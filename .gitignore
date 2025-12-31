@@ -10,12 +10,9 @@ vendor/
 test/
 doc/theme_screenshots/
 .playwright-mcp/
-
 .gemini/
 gha-creds-*.json
 .DS_Store
 .env
-doc/plans/
-marco roth.md
 .git-privatize
 .tmp.comandi-da-lanciare-pericoloso.sh
