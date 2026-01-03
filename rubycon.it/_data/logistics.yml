@@ -24,10 +24,10 @@ nearby_hotels:
     walking_distance: 5 min
     booking_com_community_review_score: 9.3
     notes: |
-      Hotel Aria and Hotel Acqua are sister hotels located next to each other.
+      Hotel Aria and Hotel Acqua are sibling hotels located next to each other (both are ⭐️⭐️⭐️⭐️).
       They offer a discounted price if you book Thursday to Saturday for RubyCon attendees,
       but you can try your luck also for fewer days.
-      Link is to Hotel Aria (****) while Acqua is also ****.
+      Provided link is to Hotel Aria.
   - name: Hotel Calypso
     stars: 3
     ballpark_price_eur: "95-115"
