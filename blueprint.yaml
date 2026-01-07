@@ -1,0 +1,20 @@
+ricc-app:
+  maturity: graduated
+  app_name: rubycon-it
+  lang: Ruby
+  version: '0.4.16' # from `rubycon.it/_config.yml` under site_version
+  app_description: Static website for the Rubycon ruby event in Rimini, Italy, taking place on May 8th 2026.
+  emoji: "🏛️"
+  owner: github.com/palladius
+  code_url: git@github.com:palladius/rubycon.it.git
+  prod_url: https://rubycon.it
+  stack: [ Jekyll, Ruby ]
+  privacy:
+    code: public
+    app: public
+  environments:
+    prod:
+      url: https://rubycon.it
+      is_live: true
+      autopush: true
+      platform: netlify
