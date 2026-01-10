@@ -32,10 +32,10 @@ Ideally text will be in black or white, depending on CSS color, and have bold in
 
 ## Feedback loop
 
-* Before executing, create a `PLAN.md`, ask user to confirm, and then re-read that plan, and execute upon it.
-* Use github issues to track things to do, and complex activities.
-* Use meaningful commits.
-* Do NOT run the server yourself. all long-running events will be run by user. If you need to check log, note that `just run..` logs under `rubycon.it/log/*.log`.
+* Before executing, create a plan as `doc/plans/YYYYMMDD-SOME_SENSIBLE_NAME.md`, ask user to confirm, and then re-read that plan, and execute upon it.
+* Use github issues to track things to do, and complex activities. Use `gh` to create and update issues. Sign yourself so people know who is working on what (and probably you'll use the same login as a user, eg `palladius`).
+* Use meaningful commits. Use `gitmoji` for commits.
+* Do NOT run the server yourself. all long-running events will be run by user. If you need to check log, note that `just run..` logs under `rubycon.it/log/*.log`. When you do a change on UI, check if someone is running a server, and if so observe the logs and check for recent errors. You can trigger it with a quick `curl https://localhost:4002/path/to/page`. Error should be in `rubycon.it/log/last-run.log`
 
 ## Push to prod
 
