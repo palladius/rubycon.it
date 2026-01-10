@@ -12,6 +12,8 @@ run-local-p4002:
 run-local-p4002-future:
     cd rubycon.it/ && JEKYLL_LOG_LEVEL=info bundle exec jekyll serve  --port 4002 --watch  --livereload --future 2>&1 | tee log/last-run.log
 
+run: run-local-p4002
+
 test:
     cd rubycon.it/ && bundle exec rake test
 

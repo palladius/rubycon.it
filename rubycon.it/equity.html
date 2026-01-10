@@ -1,0 +1,62 @@
+---
+layout: default
+title: Equity
+permalink: /equity
+---
+
+{% capture content %}
+
+### Why this program exists
+
+We know that attending a conference isn’t always easy. Financial, personal, or structural barriers can make it hard to
+take part. We want to bring together people from different backgrounds and experiences, by making our conference more
+accessible.
+
+### Apply for the Equity Tickets Program
+
+You can apply for the Equity Tickets Program by filling this form.
+
+#### Who can apply
+
+You’re welcome to apply if you:
+
+* Belong to an underrepresented group in tech, such as women, LGBTQIA+ people, people with disabilities, or people from
+minority background.
+* Face financial constraints, including students, unemployed people, early-career professionals, or anyone for whom the
+ticket price would be a barrier.
+
+You don’t need to fit every category, if this program feels relevant to you, we encourage you to apply.
+
+#### What is included
+
+Selected applicants will be contacted directly with instructions to claim their ticket and attend the conference at a
+**symbolic cost of €20**.
+
+Please note: **travel, accommodation, and food are not covered**.
+
+### Sponsors
+
+The Equity Tickets Program is made possible thanks to our sponsors.
+
+
+### Are you interested to support our program?
+
+By purchasing at least two equity tickets at a discounted rate, you help make the conference accessible to more people
+while supporting diversity and inclusion in the tech community.
+For more informations, contact us at [sponsors@rubycon.it](mailto:sponsors@rubycon.it)
+
+### Contact
+
+If you have questions or need more information, feel free to reach out at [info@rubycon.it](mailto:info@rubycon.it)
+{% endcapture %}
+
+{% assign rendered_content = content | markdownify %}
+
+{% include section.html
+id="equity"
+title="Equity"
+description="“Great software starts by caring about the people who build it” <i>(Gaius Cilnius Maecenas)</i>"
+content=rendered_content
+%}
+
+<!-- Maybe add a busto of Mecenate as in https://it.wikipedia.org/wiki/Gaio_Cilnio_Mecenate -->

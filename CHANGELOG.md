@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.21
+
+* [gemini] feat(equity): 🤝 Add Equity Tickets page with program details and sponsor info.
+
 ## 0.4.20
 
 * [gemini] chore(git): 🗑️ Remove Git LFS and restore binary images directly to git history.
