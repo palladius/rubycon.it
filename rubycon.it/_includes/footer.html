@@ -1,61 +1,67 @@
 <footer class="text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
-                <div>
-                    <div class="flex items-center mb-4">
-                        <span class="text-xl font-bold">Ruby<span class="text-yellow-400">con</span> Italy</span>
-                    </div>
-                    <p class="text-gray-300 mb-4">The premier Ruby conference in Italy, bringing together developers, companies, and enthusiasts.</p>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div>
+                <div class="flex items-center mb-4">
+                    <span class="text-xl font-bold">Ruby<span class="text-yellow-400">con</span> Italy</span>
                 </div>
-
-                <div>
-                    <h3 class="text-lg font-bold mb-4">quick links</h3>
-                    <ul class="space-y-2">
-                        {% for nav in site.data.navigation %}
-                            {% if nav.submenu %}
-                                {% for subnav in nav.submenu %}
-                                    <li><a href="{{ subnav.link }}" class="text-gray-300 hover:text-white">{{ subnav.name }}</a></li>
-                                {% endfor %}
-                            {% else %}
-                                <li><a href="{{ nav.link }}" class="text-gray-300 hover:text-white">{{ nav.name }}</a></li>
-                            {% endif %}
-                        {% endfor %}
-                        <li><a href="{{ site.github.repository_url }}" class="text-gray-300 hover:text-white" target="_blank">GitHub</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="text-lg font-bold mb-4">social</h3>
-                    <ul class="space-y-2">
-                        {% for social in site.data.social_media %}
-                            <li>
-                                <a href="{{ social.url }}" class="text-gray-300 hover:text-white" target="_blank">
-                                    <i class="fab fa-{{ social.icon }} text-md" aria-hidden="true"></i>
-                                    <span aria-hidden="true">{{ social.name }}</span>
-                                    <span class="sr-only">{{ social.aria_label }}</span>
-                                </a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="text-lg font-bold mb-4">contact</h3>
-                    <ul class="space-y-2">
-                        <li class="flex items-start">
-                            <i class="fas fa-envelope text-yellow-400 mt-1 mr-3"></i>
-                            <a href="mailto:{{ site.info_email }}" class="text-gray-300 hover:text-white">{{ site.info_email }}</a>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt text-yellow-400 mt-1 mr-3"></i>
-                            <span class="text-gray-300">{{ site.data.venue.title }}, {{ site.event.location }}</span>
-                        </li>
-                    </ul>
-                </div>
+                <p class="text-gray-300 mb-4">The premier Ruby conference in Italy, bringing together developers,
+                    companies, and enthusiasts.</p>
             </div>
 
-            <div class="border-t border-gray-300 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-300 mb-4 md:mb-0">© 2026 <a href="{{ site.github.repository_url }}" class="text-gray-300 hover:text-white">{{ site.event.name }} Italy v{{ site.site_version }}</a>. All rights reserved.</p>
+            <div>
+                <h3 class="text-lg font-bold mb-4">quick links</h3>
+                <ul class="space-y-2">
+                    {% for nav in site.data.navigation %}
+                    {% if nav.submenu %}
+                    {% for subnav in nav.submenu %}
+                    <li><a href="{{ subnav.link }}" class="text-gray-300 hover:text-white">{{ subnav.name }}</a></li>
+                    {% endfor %}
+                    {% else %}
+                    <li><a href="{{ nav.link }}" class="text-gray-300 hover:text-white">{{ nav.name }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                    <li><a href="{{ site.github.repository_url }}" class="text-gray-300 hover:text-white"
+                            target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold mb-4">social</h3>
+                <ul class="space-y-2">
+                    {% for social in site.data.social_media %}
+                    <li>
+                        <a href="{{ social.url }}" class="text-gray-300 hover:text-white" target="_blank">
+                            <i class="fab fa-{{ social.icon }} text-md" aria-hidden="true"></i>
+                            <span aria-hidden="true">{{ social.name }}</span>
+                            <span class="sr-only">{{ social.aria_label }}</span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold mb-4">contact</h3>
+                <ul class="space-y-2">
+                    <li class="flex items-start">
+                        <i class="fas fa-envelope text-yellow-400 mt-1 mr-3"></i>
+                        <a href="mailto:{{ site.info_email }}" class="text-gray-300 hover:text-white">{{ site.info_email
+                            }}</a>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt text-yellow-400 mt-1 mr-3"></i>
+                        <span class="text-gray-300">{{ site.data.venue.title }}, {{ site.event.location }}</span>
+                    </li>
+                </ul>
             </div>
         </div>
+
+        <div class="border-t border-gray-300 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-300 mb-4 md:mb-0">© 2026 <a
+                    href="{{ site.github.repository_url }}/blob/main/CHANGELOG.md"
+                    class="text-gray-300 hover:text-white">{{ site.event.name }} Italy v{{ site.site_version }}</a>. All
+                rights reserved.</p>
+        </div>
+    </div>
 </footer>
