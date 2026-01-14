@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.26
+
+* [ricc] fix(sponsors): 🔗 Change weLaika URL from LinkedIn to welaika.com (as requested by sponsor).
+
 ## 0.4.25
 
 * [ricc] chore(sponsors): 🧹 Remove orphaned sponsor images (devfest.png, modenarb.jpg) from root directory.
