@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.24
+
+* [ricc] fix(sponsors): 📝 Add description to Appsignal sponsor for consistency.
+
 ## 0.4.23
 
 * [ricc] feat(sponsors): 🤝 Add weLaika as Praetor sponsor (Fixes #59).
