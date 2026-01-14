@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.25
+
+* [ricc] chore(sponsors): 🧹 Remove orphaned sponsor images (devfest.png, modenarb.jpg) from root directory.
+
 ## 0.4.24
 
 * [ricc] fix(sponsors): 📝 Add description to Appsignal sponsor for consistency.
