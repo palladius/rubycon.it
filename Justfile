@@ -19,7 +19,7 @@ test:
 
 
 version:
-    egrep "^version: " rubycon.it/_config.yml | sed 's/version: //g'
+    egrep "^site_version: " rubycon.it/_config.yml | sed 's/site_version: //g' | tr -d '"'
 
 clean:
     cd rubycon.it/ && bundle exec jekyll clean
@@ -45,3 +45,4 @@ gemini-execute-cuj-test02:
 # To be used in GH actions or otherwise headless environments.
 gemini-execute-cuj-test-daemon:
     CUJ_MODE=DAEMON gemini --approval-mode yolo -c -p '/cuj:execute-single cuj04'
+

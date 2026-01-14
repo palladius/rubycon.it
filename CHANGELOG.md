@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.22
+
+* [ricc] fix(cicd): 🔧 Fix broken Netlify CI/CD by adding `bundle install` before `bundle exec jekyll build` (Fixes #58).
+
 ## 0.4.21
 
 * [gemini] feat(equity): 🤝 Add Equity Tickets page with program details and sponsor info.
