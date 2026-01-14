@@ -24,6 +24,11 @@
     img: '/assets/images/sponsors/praetor/appsignal.svg'
     url: 'https://appsignal.com'
     size_scale: '1'
+  - name: 'weLaika'
+    img: '/assets/images/sponsors/praetor/welaika.svg'
+    url: 'https://www.linkedin.com/company/welaika/'
+    size_scale: '1'
+    description: 'An Italian cooperative based in Turin specializing in web & mobile development and advertising. They build web solutions, mobile apps, e-commerce platforms, and integrated digital solutions.'
 - title: 'quaestor'
   icon: '📜'
   logos:
