@@ -1,0 +1,7 @@
+Time,Description,Milestone
+2026-01-10 11:36:14 CET,Commit `a61a79d` pushed to main (breaking CSS),Start of Incident
+2026-01-10 11:50:00 CET,Riccardo detects the issue (estimated),Incident Detected
+2026-01-10 11:58:53 CET,Commit `c41124c` reverts `style.scss` changes,Mitigation
+2026-01-10 11:58:58 CET,Commit `d6a5e62` confirms fix,End of Incident
+2026-01-10 12:05:43 CET,Issue #57 created for tracking,
+
