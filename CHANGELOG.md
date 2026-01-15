@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.27
+
+* [ricc] style(footer): 💅 Make version number bold in footer for better visibility.
+
 ## 0.4.26
 
 * [ricc] fix(sponsors): 🔗 Change weLaika URL from LinkedIn to welaika.com (as requested by sponsor).
