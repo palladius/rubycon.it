@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.29
+
+* [ricc] fix(test): 🔧 Configure HTML-Proofer with lower concurrency and timeouts to reduce 429 rate limit errors.
+
 ## 0.4.28
 
 * [ricc] feat(footer): 🔗 Add link to LICENSE file on 'Some rights reserved' text.
