@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.28
+
+* [ricc] feat(footer): 🔗 Add link to LICENSE file on 'Some rights reserved' text.
+
 ## 0.4.27
 
 * [ricc] style(footer): 💅 Make version number bold in footer for better visibility.
