@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.31
+
+* [gemini] feat(sponsors): 📄 Add Sponsorship Prospectus page with PDF downloads (Fixes #65).
+
 ## 0.4.30
 
 * [gemini] feat(content): 🇺🇸 Clarify that talks will be in English on Homepage and About page (Fixes #64).
