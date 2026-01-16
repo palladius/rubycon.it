@@ -38,3 +38,6 @@ The critical error occurred in commit `a61a79d`, where the multi-line front matt
 *   **Front Matter Sensitivity**: Be extremely careful when editing the first few lines of Jekyll assets. Automated tools/LLMs might inadvertently reflow text, breaking the strict syntax required by Jekyll.
 *   **Visual Regression Testing**: A simple check of "is the page red?" is crucial. The new `test_branding.rb` script automates this.
 *   **Atomic Commits**: Mixing style changes with structural file changes (like front matter) makes debugging harder.
+
+
+Riccardo note: This is related to issue #57 => https://github.com/palladius/rubycon.it/issues/57

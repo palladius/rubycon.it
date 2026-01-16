@@ -1,14 +1,17 @@
 ricc-app:
+  blueprint_schema: "0.0.3"
   maturity: graduated
   app_name: rubycon-it
-  lang: Ruby
+  lang: ruby
   version: '0.4.16' # from `rubycon.it/_config.yml` under site_version
   app_description: Static website for the Rubycon ruby event in Rimini, Italy, taking place on May 8th 2026.
+  description_long: "Rubycon.it is the official website for Italy's premier Ruby conference, held annually in Rimini. The site provides information about speakers, schedule, sponsors, and venue details. Built with Jekyll and hosted on Netlify, it serves as the central hub for attendees and sponsors to learn about this community-driven event celebrating Ruby and its ecosystem."
   emoji: "🏛️"
   owner: github.com/palladius
   code_url: git@github.com:palladius/rubycon.it.git
   prod_url: https://rubycon.it
-  stack: [ Jekyll, Ruby ]
+  repo_image: https://rubycon.it/assets/images/logo.png
+  stack: [ jekyll, ruby, netlify ]
   privacy:
     code: public
     app: public
@@ -18,3 +21,8 @@ ricc-app:
       is_live: true
       autopush: true
       platform: netlify
+  automation:
+    ci_config: .github/workflows/jekyll.yml
+  lifecycle:
+    activity: warm
+    last_commit_date: "2026-01-14"

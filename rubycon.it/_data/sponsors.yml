@@ -24,6 +24,13 @@
     img: '/assets/images/sponsors/praetor/appsignal.svg'
     url: 'https://appsignal.com'
     size_scale: '1'
+    description: 'Application Performance Monitoring (APM) offering error tracking, performance monitoring, dashboards, host metrics, and alerts for Ruby, Elixir, Node.js, Python, and JavaScript.'
+  - name: 'weLaika'
+    img: '/assets/images/sponsors/praetor/welaika.svg'
+    # LinkedIn: https://www.linkedin.com/company/welaika/
+    url: 'https://welaika.com/'
+    size_scale: '1'
+    description: 'An Italian cooperative based in Turin specializing in web & mobile development and advertising. They build web solutions, mobile apps, e-commerce platforms, and integrated digital solutions.'
 - title: 'quaestor'
   icon: '📜'
   logos:

@@ -2,6 +2,38 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.29
+
+* [ricc] fix(test): 🔧 Configure HTML-Proofer with lower concurrency and timeouts to reduce 429 rate limit errors.
+
+## 0.4.28
+
+* [ricc] feat(footer): 🔗 Add link to LICENSE file on 'Some rights reserved' text.
+
+## 0.4.27
+
+* [ricc] style(footer): 💅 Make version number bold in footer for better visibility.
+
+## 0.4.26
+
+* [ricc] fix(sponsors): 🔗 Change weLaika URL from LinkedIn to welaika.com (as requested by sponsor).
+
+## 0.4.25
+
+* [ricc] chore(sponsors): 🧹 Remove orphaned sponsor images (devfest.png, modenarb.jpg) from root directory.
+
+## 0.4.24
+
+* [ricc] fix(sponsors): 📝 Add description to Appsignal sponsor for consistency.
+
+## 0.4.23
+
+* [ricc] feat(sponsors): 🤝 Add weLaika as Praetor sponsor (Fixes #59).
+
+## 0.4.22
+
+* [ricc] fix(cicd): 🔧 Fix broken Netlify CI/CD by adding `bundle install` before `bundle exec jekyll build` (Fixes #58).
+
 ## 0.4.21
 
 * [gemini] feat(equity): 🤝 Add Equity Tickets page with program details and sponsor info.

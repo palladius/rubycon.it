@@ -1,0 +1,5 @@
+- [x] Setup workspace (files)
+- [x] Investigation (complete timeline)
+- [x] Draft Postmortem
+- [x] Define Action Items
+- [x] Finalize Document

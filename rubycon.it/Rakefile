@@ -13,6 +13,12 @@ task :test do
     :check_twitter_card => true,
     :assume_extension => true,
     :empty_alt_ignore => true,
-    :disable_external => false # check external links
+    :disable_external => false, # check external links
+    :typhoeus => {
+      :timeout => 30,
+      :connecttimeout => 10,
+      :followlocation => true
+    },
+    :hydra => { :max_concurrency => 5 } # Reduce concurrency to avoid rate limiting
   }).run
 end
