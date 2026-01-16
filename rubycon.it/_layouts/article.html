@@ -8,7 +8,7 @@ layout: default
 {% capture date %}
     Published on {{ page.date | date: "%B %d, %Y" }}
     {% if page.asset_url %}
-        <img src="{{ page.asset_url }}" alt="{{ page.asset_url | default: page.title }}" class="rounded-lg mb-4" style="width: 100%; height: 300px; object-fit: contain;">
+        <img src="{{ page.asset_url }}" alt="Featured image for {{ page.title }}" class="rounded-lg mb-4" style="width: 100%; height: 300px; object-fit: contain;">
     {% endif %}
 {% endcapture %}
 

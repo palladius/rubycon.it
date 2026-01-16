@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.36
+
+* [gemini] fix(accessibility): ♿ Improve color contrast (yellow on white), fix article alt tags, and add skip-to-content navigation (Fixes #64).
+
 ## 0.4.35
 
 * [gemini] revert(sponsors): 🔓 Remove accordion toggle, make sponsors list always visible (Fixes #65 part 6).
