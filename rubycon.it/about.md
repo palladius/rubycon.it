@@ -20,4 +20,8 @@ Rubycon is organized by a team of passionate Ruby developers:
 
 We are dedicated to creating a high-quality, inclusive, and enjoyable event for everyone.
 
+## Language
+
+All talks at Rubycon will be in English.
+
 🏛️🇲🇪⚔️🕊️
