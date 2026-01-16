@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.39
+
+* [gemini] feat(sponsors): 💡 Add 'Bespoke Opportunities' section (space, swag, flexibility) to sponsors page.
+
 ## 0.4.38
 
 * [gemini] feat(sponsors): 💡 Add 'Bespoke Opportunities' section (space, swag, flexibility) to sponsors page.
