@@ -1,3 +1,25 @@
 
 # TODO iterate through all the single, via some !{} command or ls -al docs/cujs/ ..
 # .. or maybe we can do this in the justfile?!?
+
+description = "🏛️🇲🇪⚔️🕊️ [rubycon] Execute ALL CUJs in folder doc/cujs/"
+
+prompt = """you're an expert Website critique.
+
+## Available CUJs
+
+!{ls -al docs/cujs/cuj*.md}
+
+## Action
+
+For each one and every CUJ above (in `doc/cujs/cuj*.md`), execute the command:
+
+`/cuj:execute-single [ADDITIONAL_CONTEXT]` 
+
+with the same context you find below.
+Note the additional context is optional.
+
+## ADDITIONAL_CONTEXT
+
+<begin>{{args}}<end>
+"""
