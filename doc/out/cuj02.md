@@ -1,39 +1,35 @@
-# CUJ02: Potential Sponsor Analysis
+# CUJ 02: Potential Sponsor Analysis
+Executed on: 2026-01-16
+Site Version: 0.4.29
 
-This document summarizes the analysis of the Rubycon website from the perspective of a potential sponsor.
+## Documentation Analysis
 
-## 1. Sponsor Documentation
+### What's in it for me?
+*   **Visibility:** The website prominently features sponsors in a dedicated section with logos and descriptions. The "Triumvir", "Praetor", and "Quaestor" tiers (Roman themed, nice touch) offer tiered visibility.
+*   **Documentation:** There is **NO** dedicated "Sponsors" page or a downloadable "Prospectus" (PDF) visible on the site. The primary call to action is a simple `mailto:sponsors@rubycon.it` link.
+*   **Missing Info:**
+    *   Sponsorship tiers and prices.
+    *   What exactly each tier includes (booth? logo size? talk slot? social media shoutouts?).
+    *   Expected attendance numbers (crucial for ROI calculation).
+    *   Demographics of attendees.
 
-The initial `sponsors.md` page was very basic and lacked the necessary information for a potential sponsor. I have updated the page with a more comprehensive sponsorship prospectus, including:
+### Trustworthiness & Reputation
 
-*   A clear value proposition for sponsors.
-*   Tiered sponsorship packages with a table of benefits.
-*   A la carte sponsorship opportunities.
+### Indicators of Trust
+*   **Existing Sponsors:** The presence of reputable companies like **DatoCMS**, **AppSignal**, **TypeSense**, and **Avo** lends significant credibility. These are well-known in the Rails ecosystem.
+*   **Community Support:** "Community" sponsors include major European conferences (RubyConf Austria, Helvetic Ruby, Wroclove.rb) and local groups (GrUSP, Modena.rb). This network of support strongly suggests the organizers are well-connected and trusted by their peers.
+*   **Organizers:** The "About" section (implied, though not fully analyzed here, but "Ruby at the core" and community connection mentioned) and the speaker lineup (Carmine, Marco) show real people with real reputations in the community.
+*   **Event Scale:** It feels like a boutique/community event rather than a massive corporate expo. "Serious but cozy" vibe.
 
-This new page should provide a much better experience for potential sponsors.
+### Return on Investment (ROI) Potential
+*   **Publicity:** Good for brand awareness within the niche Ruby/Rails community in Europe (and specifically Italy).
+*   **Reputation Risk:** Low. The event aligns with standard community values (inclusivity, open source). The "family-friendly" and "inclusive" messaging (found in other parts of the site) mitigates risk of "nasty" associations.
 
-## 2. Event Seriousness and Trustworthiness
+## Recommendations for Improvement
 
-I have analyzed the website to assess the seriousness and trustworthiness of the event. Here are my findings:
-
-### Positive Signals
-
-*   **Clear Theme:** The conference has a clear and engaging theme.
-*   **Plausible Schedule:** The schedule is well-structured and includes a variety of activities.
-*   **Good Venue:** The choice of a 4-star hotel as a venue is a strong positive signal.
-*   **Professional Website:** The website is well-designed and contains good details.
-
-### Areas for Improvement
-
-*   **Lack of Information about Organizers:** The `about.md` page does not mention who is organizing the conference. This is a major red flag for potential sponsors who need to trust the people behind the event.
-*   **No Confirmed Speakers:** While the CfP is open, the absence of any confirmed speakers makes it harder to judge the quality of the conference.
-
-## Recommendations
-
-My main recommendation is to **add a section about the organizing team to the `about.md` page.** This section should include the names, pictures, and a brief bio of the organizers, highlighting their experience and involvement in the Ruby community.
-
-This change will significantly improve the trustworthiness of the event and make it more attractive to potential sponsors.
-
-I could also suggest adding a few confirmed speakers, but the lack of organizers is the most pressing issue.
-
-I will now proceed to update the `about.md` file to include a section for the organizers. I will add a placeholder for the organizers' information.
+1.  **Create a Sponsorship Prospectus:** Create a dedicated page (`/sponsors/`) or a PDF document outlining:
+    *   **Tiers & Pricing:** Transparency helps sponsors decide quickly.
+    *   **Stats:** Expected attendee count (even a conservative estimate).
+    *   **Benefits:** Explicitly list what they get (e.g., "Logo on t-shirt", "2 free tickets", "Booth space").
+2.  **Highlight "Why Sponsor":** Add a section explicitly addressing sponsors, perhaps with testimonials from current sponsors or organizers of partner conferences.
+3.  **Social Proof:** You already have great logos. Maybe add a quote from one of the "Triumvir" sponsors about why they chose to support RubyCon.it.

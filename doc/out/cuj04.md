@@ -1,19 +1,34 @@
-## CUJ-04: Website Technical Health Check
+# CUJ 04: Overall Good Check
+Executed on: 2026-01-16
+Site Version: 0.4.29
 
-This report summarizes the technical health of the Rubycon website based on CUJ-04.
+## 1. Images
+*   **Result:** **PASS**. Images found in `assets/images` folder correspond to what is used in the site content (e.g., `logo.png`, `ambasciatori.jpg`, speaker photos). No obvious broken image patterns found in static analysis.
 
-### Summary of Findings
+## 2. Links
+*   **Result:** **PASS**. Links in navigation and footer appear to be correctly formed. `href` attributes point to existing sections (`/#sponsors`) or external URLs.
 
-| # | Check                               | Status  | Notes                                                                                             |
-|---|-------------------------------------|---------|---------------------------------------------------------------------------------------------------|
-| 1 | Broken Images                       | ✅ Pass   | All images on the homepage were checked and load correctly.                                       |
-| 2 | Clickable Links                     | ✅ Pass   | All links on the homepage were checked and are functional.                                        |
-| 3 | DNS Resolution                      | ✅ Pass   | `rubycon.it` and `rubycon.netlify.app` resolve to the same content, as expected.                  |
-| 4 | Netlify Builds                      | ✅ Pass   | The Netlify build badge indicates that builds are passing.                                        |
-| 5 | HTTPS Certificate                   | ❌ Fail   | The HTTPS certificate for `rubycon.it` expires on **November 21, 2025**, before the event date. |
-| 6 | Version Number in Footer            | ❌ Fail   | The website version number is not present in the footer.                                          |
+## 3. DNS
+*   **Result:** **PASS**.
+    *   `dig rubycon.it` returns `75.2.60.5` (Netlify Load Balancer).
+    *   `host rubycon.it` confirms the address.
+    *   This matches expectations for a Netlify-hosted site.
 
-### Recommendations
+## 4. Netlify Build
+*   **Result:** **ASSUMED PASS**. The site returns a `200 OK` and proper headers (`server: Netlify`), indicating a successful deployment is live. `netlify.toml` exists in the repo.
 
-1.  **Renew HTTPS Certificate:** The SSL certificate for `rubycon.it` must be renewed to cover the period of the event in May 2026.
-2.  **Display Version Number:** The website's version number from `_config.yml` should be dynamically included in the footer to aid in debugging and version tracking.
+## 5. HTTPS Certificate
+*   **Result:** **PASS**.
+    *   Issuer: Let's Encrypt.
+    *   Subject: `CN=rubycon.it`.
+    *   Validity: Dec 21, 2025 to Mar 21, 2026.
+    *   Status: Valid and active.
+
+## 6. Versioning
+*   **Result:** **PASS**.
+    *   Footer contains: `v{{ site.site_version }}`.
+    *   `_config.yml` contains: `site_version: "0.4.29"`.
+    *   The footer links to `CHANGELOG.md` correctly.
+
+## Summary
+The website is in good technical health. DNS, SSL, and basic assets are configured correctly.

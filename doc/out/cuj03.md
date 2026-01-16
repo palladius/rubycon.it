@@ -1,42 +1,50 @@
-# CUJ03 Accessibility Audit Report
+# CUJ 03: Accessibility Analysis
+Executed on: 2026-01-16
+Site Version: 0.4.29
 
-Based on the accessibility snapshot, here are the recommendations to improve the accessibility of the website, especially for visually impaired users.
+## 1. Advanced Accessibility Check
 
-## 1. Add `alt` text to all images
+### Semantic HTML & Alt Tags
+*   **Images:** The codebase generally uses `alt` attributes correctly.
+    *   `sponsors.html`: Uses `alt="{{ logo.name }}"`. Good.
+    *   `speakers.html`: Uses `alt="{{ speaker.full_name }}"`. Good.
+    *   `venue.html`: Uses `alt="{{ site.data.venue.title }}"`. Good.
+    *   `articles.html`: Uses `alt="{{ post.title }}"`. Acceptable, but could be more descriptive.
+    *   **Issue:** Some images in `_site/articles/index.html` have `alt` tags that are just filenames or generic text (e.g., `alt="/assets/images/articles/ludovico_besana.png"`). This is BAD. It seems `article.html` layout might be falling back to `page.asset_url` if `page.title` or a specific alt isn't set, or the default is messy.
+    *   **Logo:** `alt="Rubycon Italy conference logo"` is perfect.
 
-**Issue:** Many images on the website are missing `alt` text. This is a critical issue for users who rely on screen readers, as they won't be able to understand the content of the images.
+### Color Contrast
+*   **Colors:**
+    *   `$body-text-color: #606c71`: Gray on likely white/light background. Contrast ratio needs checking (usually okay on white, failing on dark).
+    *   `$background-primary: linear-gradient(135deg, #500011 0%, #2b0b01 100%)`: Dark red/brown.
+    *   `text-red-900` on white: Generally passes AA.
+    *   `text-gray-300` on dark background (nav): might be low contrast.
+    *   `text-yellow-400` on white (venue icons): **FAIL**. Yellow on white is notoriously bad for contrast.
+    *   `text-red-200` on dark overlay (speaker role): Might be okay depending on the image opacity (`opacity-70`), but text on images is always risky.
 
-**Recommendations:**
+### Structure
+*   **Headings:** The site uses `h1`, `h2`, `h3` structurally. `section.html` seems to wrap content well.
+*   **Links:** "Open in google maps" is descriptive. `target="_blank"` is used; should ideally have `rel="noopener noreferrer"` (security + a11y best practice implies warning user).
+*   **ARIA:** No obvious ARIA labels found in the snippets.
 
-*   **[ref=e8]** `img "rubycon logo"`: Add `alt="Rubycon logo"`. **[FIXED]**
-*   **[ref=e33]** `img "ruby hero"`: Add `alt="A stylized ruby gemstone"`. **[FIXED]**
-*   **[ref=e69, ref=e81, ref=e94]** Speaker images: Add `alt` text with the speaker's name. **[FIXED]**
-*   **[ref=e127]** `img "hotel"`: Add `alt="Hotel Ambasciatori in Rimini"`. **[FIXED]**
-*   **[ref=e172]** `img`: This image is inside a button in the newsletter form and seems to be a decorative icon. It should have an empty `alt` attribute (`alt=""`) to be ignored by screen readers. **[UNFIXABLE]** This is rendered by an external script from `kit.com` and cannot be modified.
+## 2. Actionable Checklist
 
-## 2. Improve link descriptions
+### High Priority (Fix Now)
+1.  **[Contrast] Fix Yellow Icons:** In `venue.html` (and others), `text-yellow-400` on white background is unreadable for many. Change to a darker gold/orange or use a dark background.
+    *   *Action:* Change `text-yellow-400` to `text-yellow-600` or `text-amber-600`.
+2.  **[Images] Fix Article Alt Tags:** Ensure article images don't output the filename as alt text.
+    *   *Action:* In `_layouts/article.html`, change `alt="{{ page.asset_url | default: page.title }}"` to strictly use `page.title` or a dedicated `page.image_alt` field. Filenames are useless to screen readers.
+3.  **[Contrast] Links in Prose:** The red link color (`#dc2626`) on white is usually ~4.5:1 (pass AA), but check `hover` state (`#b91c1c`) to ensure it stays accessible.
 
-**Issue:** Some links have generic or repetitive text, which can be confusing for screen reader users.
+### Medium Priority (Improve)
+4.  **[Images] Descriptive Alts:** Enhance `alt` tags for speakers. Instead of just "Marco Roth", use "Photo of Marco Roth". For venue, "Photo of Hotel Ambasciatori exterior".
+    *   *Action:* Update `_includes/speakers.html` and `_includes/venue.html`.
+5.  **[Navigation] Skip Link:** Add a "Skip to main content" link at the top of the `body` (hidden visually, visible on focus).
+    *   *Action:* Add to `_includes/header.html`.
 
-**Recommendations:**
+### Low Priority (Polish)
+6.  **[ARIA] Social Icons:** Ensure social media icons (if any, in footer) have `aria-label`.
+7.  **[Focus] Focus States:** Ensure all focusable elements (links, buttons) have a visible focus ring (CSS `outline`).
 
-*   **Social Media Links:** Instead of just the name of the social media platform, provide more context. For example:
-    *   "Facebook" should be "Rubycon on Facebook".
-    *   "Mastodon" should be "Rubycon on Mastodon".
-    *   And so on for all social media links. **[FIXED]**
-
-## 3. Check color contrast
-
-**Issue:** The accessibility snapshot does not provide information about color contrast. Low color contrast can make text difficult to read for people with visual impairments.
-
-**Recommendation:**
-
-*   Manually check the color contrast of the text against the background colors. There are many online tools available for this purpose. Ensure that the contrast ratio meets the WCAG AA or AAA guidelines.
-
-## 4. Review heading structure
-
-**Issue:** The heading structure seems to be in a logical order, but it's good practice to double-check the HTML to ensure that headings are used correctly and not just for styling purposes.
-
-**Recommendation:**
-
-*   Review the HTML of the page to ensure that `<h1>`, `<h2>`, `<h3>`, etc. are used to create a logical hierarchy of the content.
+## 3. Playwright Screenshots
+*(Skipped as per environment limitations - use the checklist above for manual review)*
