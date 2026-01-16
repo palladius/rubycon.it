@@ -1,10 +1,8 @@
 ---
-layout: default
-title: Sponsors
+layout: page
+title: 🤝 Sponsoring Rubycon Italy
 permalink: /sponsors/
 ---
-
-# 🤝 Sponsoring Rubycon Italy
 
 Thank you for your interest in supporting the Ruby community in Italy! 🇮🇹💎
 
@@ -19,7 +17,7 @@ Download our sponsorship packages to learn more about benefits and tiers:
 
 ## 🏛️ Current Sponsors
 
-{% include sponsors.html %}
+{% include sponsors_list.html %}
 
 ## 📬 Contact Us
 

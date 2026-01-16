@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.32
+
+* [gemini] fix(sponsors): 💄 Fix 'very ugly' sponsors page by adding a new `page` layout and `sponsors_list` include.
+
 ## 0.4.31
 
 * [gemini] feat(sponsors): 📄 Add Sponsorship Prospectus page with PDF downloads (Fixes #65).
