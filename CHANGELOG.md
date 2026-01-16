@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.33
+
+* [gemini] feat(sponsors): 🙈 Make the current sponsors list togglable (accordion) on the sponsors page.
+
 ## 0.4.32
 
 * [gemini] fix(sponsors): 💄 Fix 'very ugly' sponsors page by adding a new `page` layout and `sponsors_list` include.

@@ -15,9 +15,20 @@ Download our sponsorship packages to learn more about benefits and tiers:
 *   📄 **[Sponsorship Packages (Document)](/assets/documents/rubycon-2026-sponsorship-packages-doc.pdf)** - Detailed information.
 *   🖥️ **[Sponsorship Slides (Presentation)](/assets/documents/rubycon-2026-sponsorship-packages-slides.pdf)** - Quick overview.
 
-## 🏛️ Current Sponsors
+<br/>
 
-{% include sponsors_list.html %}
+<details class="group p-4 bg-gray-50 rounded-lg border border-gray-200">
+  <summary class="list-none cursor-pointer text-xl font-bold text-gray-800 flex items-center justify-between">
+    <span class="flex items-center">
+        <span class="mr-2">🏛️</span>
+        <span>See Current Sponsors</span>
+    </span>
+    <span class="transform group-open:rotate-180 transition-transform duration-300">▼</span>
+  </summary>
+  <div class="mt-6 opacity-0 group-open:opacity-100 transition-opacity duration-500">
+    {% include sponsors_list.html %}
+  </div>
+</details>
 
 ## 📬 Contact Us
 
