@@ -17,10 +17,17 @@ Download our sponsorship packages to learn more about benefits and tiers:
 
 <br/>
 
+## 💡 Bespoke Opportunities & Flexibility
+
+We are a community event, and we are **flexible**! If you have a creative idea for sponsorship that isn't in the packages, we'd love to hear it.
+
+*   **Extra Space:** We have a large room adjacent to the main conference hall (Sala Quarzo) available for booths, banquets, or showcasing merchandise/demos. If you need space to engage with attendees, just ask!
+*   **Swag Bag:** We are completely open to including your merchandise in our attendee swag bags, provided it is reasonable in size and weight.
+
 ### 🏛️ Current Sponsors
 
 {% include sponsors_list.html %}
 
 ## 📬 Contact Us
 
-Interested in a custom package or have questions? Reach out to our sponsorship team at [sponsors@rubycon.it](mailto:sponsors@rubycon.it).
+Interested in a package, space for a booth, or have a unique idea? Reach out to our sponsorship team at [sponsors@rubycon.it](mailto:sponsors@rubycon.it).
