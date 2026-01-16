@@ -12,8 +12,8 @@ Rubycon Italy is a community-driven conference dedicated to Ruby and Rails enthu
 
 Download our sponsorship packages to learn more about benefits and tiers:
 
-*   📄 **[Sponsorship Packages (Document)](/assets/documents/rubycon-2026-sponsorship-packages-doc.pdf)** - Detailed information.
-*   🖥️ **[Sponsorship Slides (Presentation)](/assets/documents/rubycon-2026-sponsorship-packages-slides.pdf)** - Quick overview.
+*   📄 **[2026 Sponsorship Packages (Document)](/assets/documents/rubycon-2026-sponsorship-packages-doc.pdf)** - Detailed information.
+*   🖥️ **[2026 Sponsorship Slides (Presentation)](/assets/documents/rubycon-2026-sponsorship-packages-slides.pdf)** - Quick overview.
 
 <br/>
 
