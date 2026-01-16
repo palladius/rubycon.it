@@ -1,4 +1,10 @@
 {% for sponsor in site.data.sponsors %}
+{% assign card_bg = "bg-white" %}
+{% assign img_style = "mix-blend-mode: darken" %}
+{% if sponsor.title == 'community' %}
+  {% assign card_bg = "bg-gray-800" %}
+  {% assign img_style = "" %}
+{% endif %}
 <div data-aos="fade-up" class="box-logos-{{ sponsor.title }} mt-10">
   <h2 class="mb-2 mt-4 text-center capitalize text-lg">
     <b>{{ sponsor.icon }} {{ sponsor.title }}</b>
@@ -8,14 +14,14 @@
     <a
       href="{{ logo.url }}"
       target="_blank"
-      class="flex justify-center p-2 overflow-hidden bg-white shadow-lg hover:scale-[1.03] transition linear-50 rounded-lg"
+      class="flex justify-center p-2 overflow-hidden {{ card_bg }} shadow-lg hover:scale-[1.03] transition linear-50 rounded-lg"
       {% if logo.description %}title="{{ logo.description }}"{% endif %}
     >
       <img
         src="{{ logo.img }}"
         alt="{{ logo.name }}"
         class="object-contain scale-[{{ logo.size_scale }}]"
-        style="mix-blend-mode: darken"
+        style="{{ img_style }}"
       />
     </a>
     {% endfor %}

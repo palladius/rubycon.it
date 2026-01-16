@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.34
+
+* [gemini] fix(sponsors): 🌑 Use dark background for community sponsors to fix visibility of white logos (Fixes #65 part 4).
+
 ## 0.4.33
 
 * [gemini] feat(sponsors): 🙈 Make the current sponsors list togglable (accordion) on the sponsors page.
