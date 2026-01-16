@@ -19,7 +19,7 @@ Download our sponsorship packages to learn more about benefits and tiers:
 
 ## 💡 Bespoke Opportunities & Flexibility
 
-We are a community event, and we are **flexible**! If you have a creative idea for sponsorship that isn't in the packages, we'd love to hear it.
+We are a community-friendly event, and we are **flexible**! If you have a creative idea for sponsorship that isn't in the packages, we'd love to hear it.
 
 *   **Extra Space:** We have a large room adjacent to the main conference hall (Sala Quarzo) available for booths, banquets, or showcasing merchandise/demos. If you need space to engage with attendees, just ask!
 *   **Swag Bag:** We are completely open to including your merchandise in our attendee swag bags, provided it is reasonable in size and weight.

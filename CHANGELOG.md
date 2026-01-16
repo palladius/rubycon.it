@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.40
+
+* [gemini] fix(content): 📝 Rephrase 'community event' to 'community-friendly event' on sponsors page.
+
 ## 0.4.39
 
 * [gemini] feat(sponsors): 💡 Add 'Bespoke Opportunities' section (space, swag, flexibility) to sponsors page.
