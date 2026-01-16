@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.35
+
+* [gemini] revert(sponsors): 🔓 Remove accordion toggle, make sponsors list always visible (Fixes #65 part 6).
+
 ## 0.4.34
 
 * [gemini] fix(sponsors): 🌑 Use dark background for community sponsors to fix visibility of white logos (Fixes #65 part 4).
