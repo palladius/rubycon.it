@@ -4,20 +4,37 @@
 
 description = "🏛️🇲🇪⚔️🕊️ [rubycon] Execute ALL CUJs in folder doc/cujs/"
 
+# CHANGELOG
+# 16jan26 palladius v1.0 Initial setup. It calls execute-single for all files found.
+
 prompt = """you're an expert Website critique.
 
 ## Available CUJs
 
-!{ls -al docs/cujs/cuj*.md}
+!{ls doc/cujs/cuj*.md}
 
-## Action
+## Action 1: execute all
 
+Call `/cuj:execute-single` for each and every file found in the "Available CUJs" list above.
 For each one and every CUJ above (in `doc/cujs/cuj*.md`), execute the command:
 
 `/cuj:execute-single [ADDITIONAL_CONTEXT]` 
 
 with the same context you find below.
 Note the additional context is optional.
+
+## Action 1: after execution
+
+Propose to the user to read all recommendations and create an ACTIONABLE GH issue (via `gh`) to 
+help fix those more immediate issues. Some of them will be VERY easy fixed and can be done from AI,
+some of them will need a human to take into consideration and cannot be done in code (eg change the
+organization of the event..). If this is the case, separate those things into TWO issues.
+
+The most simply actionable ones should be managed by yourself -> propose the user AFTER filing the 1/2 GH 
+issues to take the most AI-actionable one. 
+
+**: It's ok for ONE issue to have multiple actions, as long as they're SMALL.
+Bigger actions should instead be 1:1 with issues (eg big back-end refactor and big front-end refactor).
 
 ## ADDITIONAL_CONTEXT
 

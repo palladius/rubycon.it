@@ -2,6 +2,7 @@
 description = "🏛️🇲🇪⚔️🕊️ [rubycon] Execute ONE cuj"
 
 # CHANGELOG
+# 16jan26 palladius v1.2 Added DATE and VERSION to output file instructions.
 # 31aug25 palladius v1.1 Added CUJ_MODE in text. Also hardened GH repo in GEMINI.md and here after #13 sc***up.
 # 31aug25 palladius v1.0 Initial setup.
 
@@ -38,6 +39,8 @@ Depending on CUJ mode, follow one of these 2 paths:
 3. Feel free to EDIT files to make them better and propose.
 4. Finally produce an output in `doc/out/<CUJ_ID>.md` with your recommendations. If recommendations are not trivial
    and there's a unique component which requires some complex work, feel free to open a `gh` issue. Add [CUJxx] to the title.
+5. Ensure the date of today's execution is on top of the file, so next executions can evaluate how fresh is the judgement.
+   Also add the current site version `just version` on top, for the same `diff` reason.
 
 #### DAEMON
 
