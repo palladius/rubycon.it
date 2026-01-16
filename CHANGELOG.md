@@ -2,6 +2,14 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.38
+
+* [ricc] fix(sponsors): 🎨 Add explicit dimensions (w-48 h-32) to sponsor logo cards and change community background to pure white for better logo visibility (modena.rb, wroclove.rb).
+
+## 0.4.37
+
+* [ricc] fix(sponsors): 🤝 Add missing icon to community sponsor tier and create dedicated /sponsors/ page.
+
 ## 0.4.36
 
 * [gemini] fix(accessibility): ♿ Improve color contrast (yellow on white), fix article alt tags, and add skip-to-content navigation (Fixes #64).

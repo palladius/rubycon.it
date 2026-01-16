@@ -39,6 +39,7 @@
     url: 'https://netframe.it/'
     size_scale: '1'
 - title: "community"
+  icon: "🤝"
   logos:
     - name: "Dev Fest"
       img: "/assets/images/sponsors/community/devfest.webp"
