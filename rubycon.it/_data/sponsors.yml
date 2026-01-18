@@ -86,3 +86,8 @@
       url: "https://avohq.io/"
       size_scale: "0.8"
       description: "The Rails Framework for Internal Tools"
+    - name: "Arkemis"
+      img: "/assets/images/sponsors/arkemis.svg"
+      url: "https://arkemis.it/"
+      size_scale: "0.8"
+      description: "We shape an open ecosystem that brings together technology, education, and community to empower the next generation of developers and digital teams to build with quality, speed, and awareness. 🖤"
