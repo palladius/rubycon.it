@@ -39,7 +39,7 @@ The following behaviors are considered harassment and are unacceptable within ou
 *   Sustained disruption of community events, including talks and presentations.
 
 ## Consequences of Unacceptable Behavior
-
+*   Unwelcome sexual attention. This includes, sexualized comments or jokes; inappropriate touching, groping, and unwelcome sexual advances.
 Unacceptable behavior from any community member, including sponsors and those with decision-making authority, will not be tolerated.
 
 Anyone asked to stop unacceptable behavior is expected to comply immediately.
