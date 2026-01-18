@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.42
+
+* [gemini] docs: 📚 Add RAG events documentation and SEO analysis (CUJ 06) output.
+
 ## 0.4.41
 
 * [palladius] feat(legal): 🛡️ Add Code of Conduct based on Berlin standard (Fixes #68).

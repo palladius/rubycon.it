@@ -1,6 +1,6 @@
 # CUJ Execution Log
 Date: 2026-01-16
-Site Version: 0.4.40
+Site Version: 0.4.41
 Objective: Execute website critique for each CUJ.
 
 ## Execution Summary
@@ -29,3 +29,8 @@ Objective: Execute website critique for each CUJ.
 *   **Status:** Completed.
 *   **Output:** `doc/out/cuj05.md`
 *   **Key Findings:** 🔴 **MISSING Code of Conduct**. Equity page is welcoming. Inclusive language is good.
+
+### CUJ 06: SEO Analysis
+*   **Status:** Completed.
+*   **Output:** `doc/out/cuj06.md`
+*   **Key Findings:** 🔴 **MISSING Description, Sitemap, Robots.txt, and Event Schema**. Visible keyword presence is weak in meta-data.
