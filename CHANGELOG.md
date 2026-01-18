@@ -2,6 +2,14 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.43
+
+* [Gemini] 🌐 chore(config): Add site.url to _config.yml (Fixes #71).
+
+## 0.4.42
+
+* [Gemini] 📝 feat(seo): Add meta description to _config.yml (Fixes #71).
+
 ## 0.4.41
 
 * [palladius] feat(legal): 🛡️ Add Code of Conduct based on Berlin standard (Fixes #68).

@@ -4,6 +4,50 @@
     <meta charset="UTF-8">
     <title>{{ site.title }}</title>
     {% seo %}
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "{{ site.event.name }}",
+  "startDate": "{{ site.event.date | date: "%Y-%m-%d" }}",
+  "endDate": "{{ site.event.date | date: "%Y-%m-%d" }}",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "location": {
+    "@type": "Place",
+    "name": "{{ site.event.location }}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Viale Amerigo Vespucci, 46",
+      "addressLocality": "Rimini",
+      "postalCode": "47921",
+      "addressRegion": "RN",
+      "addressCountry": "IT"
+    }
+  },
+  "image": [
+    "{{ site.url }}/assets/images/logo.png"
+  ],
+  "description": "{{ site.description }}",
+  "offers": {
+    "@type": "Offer",
+    "url": "{{ site.event.tickets_url }}",
+    "price": "See website",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "{{ site.time | date_to_xmlschema }}"
+  },
+  "performer": {
+    "@type": "Person",
+    "name": "Rubycon Speakers"
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "Rubycon Organizers",
+    "url": "{{ site.url }}"
+  }
+}
+</script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
