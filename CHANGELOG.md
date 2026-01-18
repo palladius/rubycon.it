@@ -2,6 +2,10 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.41
+
+* [palladius] feat(legal): 🛡️ Add Code of Conduct based on Berlin standard (Fixes #68).
+
 ## 0.4.40
 
 * [gemini] fix(content): 📝 Rephrase 'community event' to 'community-friendly event' on sponsors page.
