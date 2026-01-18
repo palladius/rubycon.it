@@ -48,7 +48,7 @@ If a community member engages in unacceptable behavior, the community organizers
 
 ## Reporting Guidelines
 
-If you are subject to or witness unacceptable behavior, or have any other concerns, please notify a community organizer as soon as possible. [info@rubycon.it](mailto:info@rubycon.it).
+If you are subject to or witness unacceptable behavior, or have any other concerns, please notify a community organizer as soon as possible at [info@rubycon.it](mailto:info@rubycon.it).
 
 ## Scope
 
