@@ -4,7 +4,7 @@
 
 ## 0.4.41
 
-* [gemini] feat(legal): 🛡️ Add Code of Conduct based on Berlin standard (Fixes #68).
+* [palladius] feat(legal): 🛡️ Add Code of Conduct based on Berlin standard (Fixes #68).
 
 ## 0.4.40
 
