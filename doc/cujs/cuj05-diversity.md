@@ -1,3 +1,4 @@
+# Diversity
 
 * Ensure women and diverse background (non-binary, colored, gay, ..) are feeling confident and comfortable with how the site is worded.
 * Is the https://rubycon.it/ website DEI-compliant? Did we forget or miss some diverse angle?
