@@ -2,10 +2,6 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
-## 0.4.43
-
-* [alessia] feat(equity-to-scholarship) 📝 Rename 'equity' to 'Scholarship' and add it on the menu.
-
 ## 0.4.42
 
 * [gemini] docs: 📚 Add RAG events documentation and SEO analysis (CUJ 06) output.
