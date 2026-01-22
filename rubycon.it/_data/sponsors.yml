@@ -38,6 +38,11 @@
     img: '/assets/images/sponsors/quaestor/netframe.png'
     url: 'https://netframe.it/'
     size_scale: '1'
+  - name: 'Seesaw'
+    img: '/assets/images/sponsors/seesaw.svg'
+    url: 'https://seesaw.it/'
+    size_scale: '1'
+    description: 'SEESAW srl is an Italian company based in Padova, Italy. This company assists businesses, professionals, and organizations in leveraging technology to enhance productivity, agility, and overall work processes. They focus on software development, strategy, and creativity to help clients achieve their goals.'
 - title: "community"
   icon: "🤝"
   logos:
