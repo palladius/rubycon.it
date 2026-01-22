@@ -13,8 +13,6 @@
     - name: Sponsors
       link: "/#sponsors"
 
-      link: "/logistics/"
-    - name: CFP
       link: "/cfp.html"
     - name: FAQ
       link: "/#faq"
