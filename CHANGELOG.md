@@ -2,6 +2,11 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.44
+
+* [palladius] feat(equity): 🔗 Rename link from /scholarship back to /equity, but keep name as "Scholarship" (Fixes PR #76).
+* [palladius] feat(scholarship): 🔗 Use `/scholarship` as canonical URL, with `/equity` redirecting to it (Ref #78).
+
 ## 0.4.43
 
 * [alessia] feat(equity-to-scholarship) 📝 Rename 'equity' to 'Scholarship' and add it on the menu.
