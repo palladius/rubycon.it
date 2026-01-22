@@ -4,8 +4,14 @@
 
 ## 0.4.44
 
-* [palladius] feat(equity): 🔗 Rename link from /scholarship back to /equity, but keep name as "Scholarship" (Fixes PR #76).
-* [palladius] feat(scholarship): 🔗 Use `/scholarship` as canonical URL, with `/equity` redirecting to it (Ref #78).
+* [palladius] feat(scholarship): 🔗 Restored dual-link strategy (`/scholarship` canonical, `/equity` redirect) (Ref #78).
+    * Renamed `equity.html` back to `scholarship.html`.
+    * Added `jekyll-redirect-from` plugin to handle `/equity` -> `/scholarship` redirect.
+    * Added text "formerly known as Equity" to scholarship page.
+    * Moved "Scholarship" link from main navigation to Footer value-links.
+* [palladius] feat(venue): 📍 Moved "Logistics & Hotels" from top nav to Venue section.
+* [palladius] feat(footer): 🔤 Alphabetized quick links and added "Code of Conduct".
+* [palladius] feat(faq): 📜 Updated FAQ to point to footer links and avoid broken markdown.
 
 ## 0.4.43
 
