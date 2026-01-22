@@ -2,6 +2,24 @@
 
 (version is now in `rubycon.it/_config.yml`)
 
+## 0.4.45
+
+* [gemini] chore(merge): 🔀 Merge branch 'feat/equity-to-scholarship' into main (Fixes #78).
+
+## 0.4.44
+
+* [palladius] feat(scholarship): 🔗 Restored dual-link strategy (`/scholarship` canonical, `/equity` redirect) (Ref #78).
+    * Renamed `equity.html` back to `scholarship.html`.
+    * Added `jekyll-redirect-from` plugin to handle `/equity` -> `/scholarship` redirect.
+    * Added text "formerly known as Equity" to scholarship page.
+    * Moved "Scholarship" link from main navigation to Footer value-links.
+* [palladius] feat(venue): 📍 Moved "Logistics & Hotels" from top nav to Venue section.
+* [palladius] feat(footer): 🔤 Alphabetized quick links and added "Code of Conduct".
+* [palladius] feat(faq): 📜 Updated FAQ to point to footer links and avoid broken markdown.
+
+## 0.4.43
+
+* [alessia] feat(equity-to-scholarship) 📝 Rename 'equity' to 'Scholarship' and add it on the menu.
 ## 0.4.42
 
 * [gemini] docs: 📚 Add RAG events documentation and SEO analysis (CUJ 06) output.
