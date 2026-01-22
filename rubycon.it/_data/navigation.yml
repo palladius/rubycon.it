@@ -12,12 +12,8 @@
       link: "/#venue"
     - name: Sponsors
       link: "/#sponsors"
-    - name: Logistics & Hotels
-      link: "/logistics/"
     - name: CFP
       link: "/cfp.html"
-    - name: Scholarship
-      link: "/scholarship/"
     - name: FAQ
       link: "/#faq"
 - name: Newsletter
