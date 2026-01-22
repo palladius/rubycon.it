@@ -12,20 +12,51 @@
             <div>
                 <h3 class="text-lg font-bold mb-4">quick links</h3>
                 <ul class="space-y-2">
+                    {% assign link_items = "" | split: "" %}
+
+                    {% comment %} Add Navigation Links {% endcomment %}
                     {% for nav in site.data.navigation %}
                     {% if nav.submenu %}
                     {% for subnav in nav.submenu %}
-                    <li><a href="{{ subnav.link }}" class="text-gray-300 hover:text-white">{{ subnav.name }}</a></li>
+                    {% assign item_str = subnav.name | append: "::" | append: subnav.link %}
+                    {% assign link_items = link_items | push: item_str %}
                     {% endfor %}
                     {% else %}
-                    <li><a href="{{ nav.link }}" class="text-gray-300 hover:text-white">{{ nav.name }}</a></li>
+                    {% assign item_str = nav.name | append: "::" | append: nav.link %}
+                    {% assign link_items = link_items | push: item_str %}
                     {% endif %}
                     {% endfor %}
-                    <li><a href="/scholarship" class="text-gray-300 hover:text-white">Scholarship</a></li>
-                    <li><a href="/code-of-conduct/" class="text-gray-300 hover:text-white">Code of Conduct</a></li>
-                    <li><a href="{{ site.github.repository_url }}" class="text-gray-300 hover:text-white"
-                            target="_blank">GitHub</a></li>
+
+                    {% comment %} Add Manual Links {% endcomment %}
+                    {% assign link_items = link_items | push: "Scholarship::/scholarship" %}
+                    {% assign link_items = link_items | push: "Code of Conduct::/code-of-conduct/" %}
+                    {% assign github_link = "GitHub::" | append: site.github.repository_url %}
+                    {% assign link_items = link_items | push: github_link %}
+
+                    {% comment %} Sort and Render {% endcomment %}
+                    {% assign sorted_links = link_items | sort_natural %}
+
+                    {% for item in sorted_links %}
+                    {% assign parts = item | split: "::" %}
+                    {% assign name = parts[0] %}
+                    {% assign link = parts[1] %}
+
+                    {% if name == "Home" %}
+                    <li><a href="{{ link }}" class="text-gray-300 hover:text-white">{{ name }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+
+                    {% for item in sorted_links %}
+                    {% assign parts = item | split: "::" %}
+                    {% assign name = parts[0] %}
+                    {% assign link = parts[1] %}
+
+                    {% if name != "Home" %}
+                    <li><a href="{{ link }}" class="text-gray-300 hover:text-white">{{ name }}</a></li>
+                    {% endif %}
+                    {% endfor %}
                 </ul>
+
             </div>
 
             <div>
