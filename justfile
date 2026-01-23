@@ -46,3 +46,6 @@ gemini-execute-cuj-test02:
 gemini-execute-cuj-test-daemon:
     CUJ_MODE=DAEMON gemini --approval-mode yolo -c -p '/cuj:execute-single cuj04'
 
+
+netlify-get-last-deployments:
+    echo TODO gemini
