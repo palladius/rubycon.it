@@ -1,37 +1,24 @@
 {% capture description %} We thank these organizations for supporting the Ruby
 community in Italy.<br />
 Interested in sponsoring? Contact us at
-<a href="mailto:{{ site.info_email }}" class="text-red-900"
-  >{{ site.info_email }}</a
->
+<a href="mailto:{{ site.info_email }}" class="text-red-900">{{ site.info_email }}</a>
 {% endcapture %} {% capture content %} {% for sponsor in site.data.sponsors %}
+
 <div data-aos="fade-up" class="box-logos-{{ sponsor.title }} mt-10">
   <h2 class="mb-2 mt-4 text-center capitalize text-lg">
     <b>{{ sponsor.icon }} {{ sponsor.title }}</b>
   </h2>
   <div class="flex flex-wrap gap-8 items-center justify-center">
     {% for logo in sponsor.logos %}
-    <a
-      href="{{ logo.url }}"
-      target="_blank"
+    <a href="{{ logo.url }}" target="_blank"
       class="flex justify-center p-2 overflow-hidden bg-white shadow-lg hover:scale-[1.03] transition linear-50 rounded-lg"
-      {%
-      if
-      logo.description
-      %}title="{{ logo.description }}"
-      {%
-      endif
-      %}
-    >
-      <img
-        src="{{ logo.img }}"
-        alt="{{ logo.name }}"
-        class="object-contain scale-[{{ logo.size_scale }}]"
-        style="mix-blend-mode: darken"
-      />
+      {% if logo.description %}title="{{ logo.description }}" {% endif %}>
+      <img src="{{ logo.img }}" alt="{{ logo.name }}" class="object-contain scale-[{{ logo.size_scale }}]"
+        style="mix-blend-mode: darken" />
     </a>
     {% endfor %}
   </div>
 </div>
+
 {% endfor %} {% endcapture %} {% include section.html id="sponsors" title="V.
 &nbsp;Our sponsors" description=description content=content %}

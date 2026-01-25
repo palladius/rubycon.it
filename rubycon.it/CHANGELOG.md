@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.4.47] - 2026-01-25
+
+### Added
+- **Sponsors**: Added `scholarship_tickets` property to support scholarship sponsors.
+- **Sponsors**: Added **weLaika**, **Typesense**, and **Seesaw** as scholarship sponsors (2 tickets each).
+
+### Changed
+- **Scholarship Page**: Dynamic rendering of scholarship sponsors using `scholarship_tickets` property.
+- **Configuration**: Refactored scholarship sponsors to be part of their respective tiers (Triumvir/Praetor) instead of a separate section.
+
 ## [0.4.46] - 2026-01-25
 
 ### Added

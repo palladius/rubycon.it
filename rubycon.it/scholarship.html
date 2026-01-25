@@ -42,14 +42,31 @@ Please note: **travel, accommodation, and food are not covered**. But again, if 
 
 ### Sponsors
 
-The Scholarship Tickets Program is made possible thanks to our sponsors.
+The Scholarship Tickets Program is made possible thanks to our sponsors:
 
-<!-- 
-Tickets available:
 
-* **2** (Typesense).
-* *More are coming soon!*
--->
+
+{% assign scholarship_sponsors = "" | split: "" %}
+{% for tier in site.data.sponsors %}
+{% for logo in tier.logos %}
+{% if logo.scholarship_tickets %}
+{% assign scholarship_sponsors = scholarship_sponsors | push: logo %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+{% if scholarship_sponsors.size > 0 %}
+<div class="grid grid-cols-2 md:grid-cols-3 gap-8 items-center my-8">
+    {% for logo in scholarship_sponsors %}
+    <a href="{{ logo.url }}" target="_blank" rel="noopener noreferrer"
+        class="block hover:opacity-80 transition-opacity">
+        <img src="{{ logo.img }}" alt="{{ logo.name }}" class="max-h-24 mx-auto"
+            style="transform: scale({{ logo.size_scale }});" title="{{ logo.description | default: logo.name }}">
+    </a>
+    {% endfor %}
+</div>
+{% endif %}
+
 
 #### Are you interested to support our program?
 

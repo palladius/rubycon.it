@@ -11,6 +11,7 @@
       img: "/assets/images/sponsors/triumvir/typesense.svg"
       url: "https://typesense.org/"
       size_scale: "1"
+      scholarship_tickets: 2
       description: "TypeSense is a fast, open-source, and distributed search engine that provides a fast and efficient way to search through large datasets."
     - name: "DatoCMS"
       img: "/assets/images/sponsors/triumvir/datocms.svg"
@@ -30,7 +31,14 @@
     # LinkedIn: https://www.linkedin.com/company/welaika/
     url: 'https://welaika.com/'
     size_scale: '1'
+    scholarship_tickets: 2
     description: 'An Italian cooperative based in Turin specializing in web & mobile development and advertising. They build web solutions, mobile apps, e-commerce platforms, and integrated digital solutions.'
+  - name: "Seesaw"
+    img: "/assets/images/sponsors/praetor/seesaw.svg"
+    url: "https://seesaw.it/"
+    size_scale: "1"
+    scholarship_tickets: 2
+    description: "Seesaw is an Italian digital agency based in Padua, developing tailored digital solutions, web platforms, and mobile apps to enhance business productivity and agility."
 - title: 'quaestor'
   icon: '📜'
   logos:
@@ -86,3 +94,5 @@
       url: "https://avohq.io/"
       size_scale: "0.8"
       description: "The Rails Framework for Internal Tools"
+
+
