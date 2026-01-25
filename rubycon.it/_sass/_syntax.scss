@@ -1,3 +1,5 @@
+@use "variables";
+
 .highlight .hll {
     background-color: #f8f8f8;
 }
@@ -18,12 +20,12 @@
 }
 
 .highlight .k {
-    color: #000000;
+    color: variables.$ruby-cyan;
     font-weight: bold;
 }
 
 .highlight .o {
-    color: #000000;
+    color: variables.$ruby-cyan;
     font-weight: bold;
 }
 
@@ -49,12 +51,12 @@
 }
 
 .highlight .gd {
-    color: #000000;
+    color: variables.$ruby-cyan;
     background-color: #ffdddd;
 }
 
 .highlight .ge {
-    color: #000000;
+    color: variables.$ruby-cyan;
     font-style: italic;
 }
 
@@ -67,7 +69,7 @@
 }
 
 .highlight .gi {
-    color: #000000;
+    color: variables.$ruby-cyan;
     background-color: #ddffdd;
 }
 
@@ -92,27 +94,27 @@
 }
 
 .highlight .kc {
-    color: #000000;
+    color: variables.$ruby-cyan;
     font-weight: bold;
 }
 
 .highlight .kd {
-    color: #000000;
+    color: variables.$ruby-cyan;
     font-weight: bold;
 }
 
 .highlight .kn {
-    color: #000000;
+    color: variables.$ruby-cyan;
     font-weight: bold;
 }
 
 .highlight .kp {
-    color: #000000;
+    color: variables.$ruby-cyan;
     font-weight: bold;
 }
 
 .highlight .kr {
-    color: #000000;
+    color: variables.$ruby-cyan;
     font-weight: bold;
 }
 
@@ -126,7 +128,8 @@
 }
 
 .highlight .s {
-    color: $ruby-red;
+    color: variables.$ruby-red;
+    font-weight: bold;
 }
 
 .highlight .na {
@@ -208,35 +211,43 @@
 }
 
 .highlight .sb {
-    color: $ruby-red;
+    color: variables.$ruby-red;
+    font-weight: bold;
 }
 
 .highlight .sc {
-    color: $ruby-red;
+    color: variables.$ruby-red;
+    font-weight: bold;
 }
 
 .highlight .sd {
-    color: $ruby-red;
+    color: variables.$ruby-red;
+    font-weight: bold;
 }
 
 .highlight .s2 {
-    color: $ruby-red;
+    color: variables.$ruby-red;
+    font-weight: bold;
 }
 
 .highlight .se {
-    color: $ruby-red;
+    color: variables.$ruby-red;
+    font-weight: bold;
 }
 
 .highlight .sh {
-    color: $ruby-red;
+    color: variables.$ruby-red;
+    font-weight: bold;
 }
 
 .highlight .si {
-    color: $ruby-red;
+    color: variables.$ruby-red;
+    font-weight: bold;
 }
 
 .highlight .sx {
-    color: $ruby-red;
+    color: variables.$ruby-red;
+    font-weight: bold;
 }
 
 .highlight .sr {
@@ -244,7 +255,8 @@
 }
 
 .highlight .s1 {
-    color: $ruby-red;
+    color: variables.$ruby-red;
+    font-weight: bold;
 }
 
 .highlight .ss {

@@ -36,6 +36,7 @@ Ideally text will be in black or white, depending on CSS color, and have bold in
 * Use GitHub issues to track things to do, and complex activities. Use `gh` to create and update issues. Sign yourself so people know who is working on what (and probably you'll use the same login as a user, eg `palladius`) as "Gemini" or "Antigravity" or whatever suits best.
 * Use meaningful commits. Use `gitmoji` for commits.
 * Do NOT run the server yourself. all long-running events will be run by user. If you need to check log, note that `just run..` logs under `rubycon.it/log/*.log`. When you do a change on UI, check if someone is running a server, and if so observe the logs and check for recent errors. You can trigger it with a quick `curl https://localhost:4002/path/to/page`. Error should be in `rubycon.it/log/last-run.log`
+* you tend to make errors on CSS; when working on CSS, please see `doc/CSS_ERRORS.md`.
 
 ## Push to prod
 

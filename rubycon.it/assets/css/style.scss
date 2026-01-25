@@ -2,6 +2,7 @@
 ---
 
 @use "variables";
+@use "syntax";
 
 * {
   margin: 0;
@@ -242,4 +243,11 @@ section:nth-of-type(even):not(#newsletter) {
   border-radius: 0.5rem;
   overflow-x: auto;
   margin: 1.5rem 0;
+}
+
+.prose pre code {
+  background-color: transparent;
+  color: inherit;
+  font-size: 1rem;
+  padding: 0;
 }

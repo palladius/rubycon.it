@@ -4,38 +4,36 @@ title: Program of the Day (DSL)
 permalink: /program_of_the_day/
 ---
 
+
+*Note for rubyconians: this page is rendered using a DSL, see `program_of_the_day.md` for the code. It's not linked anywhere, for you folks to TAL. -- Riccardo*
+
 <div class="prose lg:prose-xl mx-auto">
     <p>Because we love Ruby, here is the program of the day rendered as... valid Ruby code!</p>
 </div>
 
 {% highlight ruby %}
-module Rubycon
-  class Schedule
-    def self.define(&block)
-      new.instance_eval(&block)
-    end
+{% include dsl/content.rb %}
+{% endhighlight %}
 
-    def day(date, &block)
-      puts "# Schedule for #{date}"
-      yield
-    end
 
-    def event(time:, description:, speaker: nil, tag: nil)
-      puts "  #{time.ljust(15)} | #{description.ljust(30)} | #{speaker}"
-    end
-  end
-end
+<!-- 
+{% highlight ruby %}
+  # Riccaro tried without including the file, but it didn't work.
+  puts "Hello World"
 
-Rubycon::Schedule.define do
-{% for day in site.data.schedule %}
-  day "{{ day.title }}" do
-{% for event in day.events %}    event(
-      time:        "{{ event.clock }}",
-      description: "{{ event.description }}",
-      speaker:     "{{ event.full_name }}",
-      tag:         "{{ event.tag }}"
-    )
-{% endfor %}  end
-{% endfor %}
+=begin
+
+  Note from https://jekyllrb.com/docs/liquid/tags/ : 
+  Using Pygments has been deprecated and is not supported in Jekyll 4; the configuration setting highlighter: pygments now automatically falls back to using Rouge which is written in Ruby and 100% compatible with stylesheets for Pygments.
+
+=end  
+{% endhighlight %}
+
+
+{% highlight ruby linenos %}
+# with line numbers
+def foo
+  puts 'foo'
 end
 {% endhighlight %}
+-->

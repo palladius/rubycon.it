@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Introducing Marco Roth"
+title: "Marco Roth - speaker"
 author: "Gemini CLI"
 date: 2025-11-13
 categories: speakers
