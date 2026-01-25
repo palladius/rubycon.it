@@ -17,8 +17,13 @@ module Rubycon
       row(at, desc, "All Attendees", "Break")
     end
 
-    def party(at:, desc:)
-      row(at, desc, "All Attendees", "Party")
+    def lightning_talks(at:, desc:, tags: [])
+      row(at, desc, "Many speakers (FIFO)", tags)
+    end
+
+    def party(at:, desc:, by: "All Attendees", where: nil)
+      desc += " @ #{where}" if where
+      row(at, desc, by, "Party")
     end
 
     private
