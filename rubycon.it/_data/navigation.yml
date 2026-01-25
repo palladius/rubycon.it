@@ -2,6 +2,9 @@
   link: "/#home"
 - name: Info
   submenu:
+    # Nota: questi dovrebbero linkare tutti e soli i subpages della home - cioe' dovrebbero essere tutti LOCALU a / come #qualcosa.
+    #       Le sotto pagine dovrebbero avere un link relativo in BASSO dove ci sono MOLTI link.
+    #       Perche' direte? Se no l'header si appesantisce un botto.
     - name: About
       link: "/#about"
     - name: Speakers
@@ -12,8 +15,6 @@
       link: "/#venue"
     - name: Sponsors
       link: "/#sponsors"
-    - name: CFP
-      link: "/cfp.html"
     - name: FAQ
       link: "/#faq"
 - name: Newsletter
