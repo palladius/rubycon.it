@@ -22,7 +22,7 @@ title: RubyCon - The Ruby Conference in Italy
 # When we have the email for the domain:
 info_email: info@rubycon.it
 cfp_email: cfp@rubycon.it
-site_version: "0.4.45"
+site_version: "0.4.46"
 support_email: support@rubycon.com
 
 event:
@@ -49,6 +49,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-sass-converter
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
