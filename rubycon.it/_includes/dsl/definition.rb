@@ -9,11 +9,11 @@ module Rubycon
       row(at, desc, "All Attendees", "Check-in")
     end
 
-    def talk(at:, desc:, by:, tags: [])
+    def talk(at:, desc:, by: "TBD", tags: [])
       row(at, desc, by, tags)
     end
 
-    def pause(at:, desc:)
+    def pause(at:, desc:, tags: [])
       row(at, desc, "All Attendees", "Break")
     end
 
