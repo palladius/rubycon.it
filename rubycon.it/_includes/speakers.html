@@ -35,11 +35,11 @@
 %}
 
 <script>
-    window.onload = () => {
+    document.addEventListener('DOMContentLoaded', () => {
         gsap.registerPlugin(Draggable);
 
         const track = document.querySelector('.speakers-track');
-        track.innerHTML += track.innerHTML;
+        track.innerHTML += track.innerHTML; //temporary cause few speakers
 
         const contentWidth = track.scrollWidth / 2;
 
@@ -84,6 +84,6 @@
         // DESKTOP hover
         track.addEventListener("pointerenter", () => isPaused = true);
         track.addEventListener("pointerleave", () => isPaused = false);
-    }
+    })
 </script>
 

@@ -284,7 +284,6 @@ section:nth-of-type(even):not(#newsletter) {
 }
 @media screen and (max-width: 600px) {
   .my-card{
-    background-color: variables.$background-secondary;
     width: 300px;
   }
 }
