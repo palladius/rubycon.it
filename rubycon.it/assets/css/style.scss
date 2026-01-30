@@ -282,17 +282,14 @@ section:nth-of-type(even):not(#newsletter) {
   margin: 1.5rem 0;
 }
 
-<<<<<<< Updated upstream
 .prose pre code {
   background-color: transparent;
   color: inherit;
   font-size: 1rem;
-  padding: 0;
-=======
+  padding: 0;}
 @media screen and (max-width: 600px) {
   .my-card{
     background-color: variables.$background-secondary;
     width: 300px;
 }
->>>>>>> Stashed changes
 }
