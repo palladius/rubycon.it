@@ -10,6 +10,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+html, body{
+  overflow-x: hidden;
+}
 
 body {
   font-family: "Libre Baskerville", serif;
@@ -45,6 +48,40 @@ header,
 
 section:nth-of-type(even):not(#newsletter) {
   color: white;
+}
+#speakers-wrapper{
+    mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #500011 7%,
+    #500011 92%,
+    transparent 100%
+  );
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #500011 7%,
+    #500011 92%,
+    transparent 100%
+  );
+}
+.speakers-track {
+  will-change: transform;
+  cursor: grab;
+}
+
+.speakers-track:active {
+  cursor: grabbing;
+}
+
+.speakers-track > * {
+  flex-shrink: 0;
+}
+.my-card{
+    flex-shrink: 0;
+    background-color: variables.$background-secondary;
+    width: 350px;
 }
 
 .my-card {
@@ -245,9 +282,17 @@ section:nth-of-type(even):not(#newsletter) {
   margin: 1.5rem 0;
 }
 
+<<<<<<< Updated upstream
 .prose pre code {
   background-color: transparent;
   color: inherit;
   font-size: 1rem;
   padding: 0;
+=======
+@media screen and (max-width: 600px) {
+  .my-card{
+    background-color: variables.$background-secondary;
+    width: 300px;
+}
+>>>>>>> Stashed changes
 }

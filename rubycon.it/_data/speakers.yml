@@ -22,3 +22,9 @@
   role: Full-Stack Ruby On Rails Developer
   description: "Julia is from Barcelona and has been working with Rails for almost 15 years."
   labels: [ruby, ruby on rails]
+- avatar: '/assets/images/logo/0_0.jpeg'
+  full_name: Julius Caesar
+  role: Senior Ruby developer @Gallia 3P
+  #description: The crossing of the river Rubicon from the north by Julius Caesar was in early January 49 BC. The exact date is unknown. Scholars usually place it on the night of 10 and 11 January because of the speeds at which messengers could travel at that time. It is often asserted that Caesar's crossing of the river precipitated Caesar's civil war, but Caesar's forces had already crossed into Italy and occupied Ariminum (Rimini) the previous day.
+  description: cooming soon.
+  keys: [ruby, ruby on rails]
