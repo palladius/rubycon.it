@@ -22,3 +22,8 @@
   role: Full-Stack Ruby On Rails Developer
   description: "Julia is from Barcelona and has been working with Rails for almost 15 years."
   labels: [ruby, ruby on rails]
+- avatar: '/assets/images/logo/0_0.jpeg'
+  full_name: Julius Caesar
+  role: Senior Ruby developer @Gallia 3P
+  description: cooming soon.
+  labels: [ruby, ruby on rails]
