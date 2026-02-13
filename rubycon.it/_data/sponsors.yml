@@ -46,6 +46,10 @@
     img: '/assets/images/sponsors/quaestor/netframe.png'
     url: 'https://netframe.it/'
     size_scale: '1'
+  - name: 'Engim'
+    img: '/assets/images/sponsors/quaestor/engim.jpeg'
+    url: 'https://www.engim.eu/'
+    size_scale: '1'
 - title: "community"
   icon: "🤝"
   logos:
