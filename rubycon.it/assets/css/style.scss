@@ -279,11 +279,15 @@ section:nth-of-type(even):not(#newsletter) {
 .prose pre code {
   background-color: transparent;
   color: inherit;
-  font-size: 1rem;
+  font-size: 98%;
   padding: 0;
+  line-height: 1.4;
 }
 @media screen and (max-width: 600px) {
   .my-card{
     width: 300px;
+  }
+  .prose pre code {
+    font-size: 90%;
   }
 }
