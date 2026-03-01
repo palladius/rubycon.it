@@ -1,66 +1,31 @@
 <footer class="text-white py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
-            <div>
-                <div class="flex items-center mb-4">
-                    <span class="text-xl font-bold">Ruby<span class="text-yellow-400">con</span> Italy</span>
-                </div>
-                <p class="text-gray-300 mb-4">The premier Ruby conference in Italy, bringing together developers,
-                    companies, and enthusiasts.</p>
-            </div>
 
             <div>
-                <h3 class="text-lg font-bold mb-4">quick links</h3>
+                <h3 class="text-lg font-bold mb-4">Quick links</h3>
                 <ul class="space-y-2">
-                    {% assign link_items = "" | split: "" %}
-
-                    {% comment %} Add Navigation Links {% endcomment %}
-                    {% for nav in site.data.navigation %}
-                    {% if nav.submenu %}
-                    {% for subnav in nav.submenu %}
-                    {% assign item_str = subnav.name | append: "::" | append: subnav.link %}
-                    {% assign link_items = link_items | push: item_str %}
-                    {% endfor %}
-                    {% else %}
-                    {% assign item_str = nav.name | append: "::" | append: nav.link %}
-                    {% assign link_items = link_items | push: item_str %}
-                    {% endif %}
-                    {% endfor %}
-
-                    {% comment %} Add Manual Links {% endcomment %}
-                    {% assign link_items = link_items | push: "Scholarship::/scholarship" %}
-                    {% assign link_items = link_items | push: "Code of Conduct::/code-of-conduct/" %}
-                    {% assign github_link = "GitHub::" | append: site.github.repository_url %}
-                    {% assign link_items = link_items | push: github_link %}
-
-                    {% comment %} Sort and Render {% endcomment %}
-                    {% assign sorted_links = link_items | sort_natural %}
-
-                    {% for item in sorted_links %}
-                    {% assign parts = item | split: "::" %}
-                    {% assign name = parts[0] %}
-                    {% assign link = parts[1] %}
-
-                    {% if name == "Home" %}
-                    <li><a href="{{ link }}" class="text-gray-300 hover:text-white">{{ name }}</a></li>
-                    {% endif %}
-                    {% endfor %}
-
-                    {% for item in sorted_links %}
-                    {% assign parts = item | split: "::" %}
-                    {% assign name = parts[0] %}
-                    {% assign link = parts[1] %}
-
-                    {% if name != "Home" %}
-                    <li><a href="{{ link }}" class="text-gray-300 hover:text-white">{{ name }}</a></li>
-                    {% endif %}
-                    {% endfor %}
+                    <li><a href="/#home" class="text-gray-300 hover:text-white">Home</a></li>
+                    <li><a href="/schedule/" class="text-gray-300 hover:text-white">Schedule</a></li>
+                    <li><a href="/#speakers" class="text-gray-300 hover:text-white">Speakers</a></li>
+                    <li><a href="/#venue" class="text-gray-300 hover:text-white">Venue</a></li>
+                    <li><a href="/#sponsors" class="text-gray-300 hover:text-white">Sponsors</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="space-y-2 mt-11">
+                    <li><a href="/logistics/" class="text-gray-300 hover:text-white">Logistics</a></li>
+                    <li><a href="/#faq" class="text-gray-300 hover:text-white">FAQ</a></li>
+                    <li><a href="/articles/" class="text-gray-300 hover:text-white">Blog</a></li>
+                    <li><a href="/scholarship" class="text-gray-300 hover:text-white">Scolarship</a></li>
+                    <li><a href="/code-of-conduct" class="text-gray-300 hover:text-white">Code of Conduct</a></li>
+                    <li><a href="{{ site.github.repository_url }}" class="text-gray-300 hover:text-white">GitHub</a></li>
                 </ul>
 
             </div>
 
             <div>
-                <h3 class="text-lg font-bold mb-4">social</h3>
+                <h3 class="text-lg font-bold mb-4">Social</h3>
                 <ul class="space-y-2">
                     {% for social in site.data.social_media %}
                     <li>
@@ -75,7 +40,7 @@
             </div>
 
             <div>
-                <h3 class="text-lg font-bold mb-4">contact</h3>
+                <h3 class="text-lg font-bold mb-4">Contact</h3>
                 <ul class="space-y-2">
                     <li class="flex items-start">
                         <i class="fas fa-envelope text-yellow-400 mt-1 mr-3"></i>
@@ -87,10 +52,20 @@
                         <span class="text-gray-300">{{ site.data.venue.title }}, {{ site.event.location }}</span>
                     </li>
                 </ul>
+                <h3 class="text-lg font-bold mb-4 mt-6">newsletter</h3>
+                <form action="https://app.convertkit.com/forms/8a5a8f8636/subscriptions" method="post" data-sv-form="8a5a8f8636" data-uid="8a5a8f8636">
+                    <div class="flex gap-2">
+                        <label for="newsletter-email" class="sr-only">Email address</label>
+                        <input type="email" name="email_address" id="newsletter-email" placeholder="your@email.com" required
+                               class="px-3 py-1.5 rounded-md text-gray-900 text-sm w-40 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                        <button type="submit" class="bg-red-800 text-white px-3 py-1.5 rounded-md text-sm font-medium hover:bg-red-700 transition">Subscribe</button>
+                    </div>
+                    <a href="https://kit.com" target="_blank" class="text-gray-400 text-xs mt-2 inline-block hover:text-gray-300">Built with Kit</a>
+                </form>
             </div>
         </div>
 
-        <div class="border-t border-gray-300 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div class="border-t border-gray-300 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p class="text-gray-300 mb-4 md:mb-0">© 2026 <a
                     href="{{ site.github.repository_url }}/blob/main/CHANGELOG.md"
                     class="text-gray-300 hover:text-white">{{ site.event.name }} Italy <strong>v{{ site.site_version

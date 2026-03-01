@@ -19,7 +19,5 @@
       link: "/logistics/"
     - name: FAQ
       link: "/#faq"
-- name: Newsletter
-  link: "/#newsletter"
 - name: Blog
   link: "/articles/"
