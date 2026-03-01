@@ -257,7 +257,7 @@ section:nth-of-type(even):not(#newsletter) {
   margin: 1.5rem 0;
 }
 
-.prose code {
+code {
   background-color: #f3f4f6;
   /* gray-100 */
   padding: 0.2rem 0.4rem;
@@ -265,7 +265,7 @@ section:nth-of-type(even):not(#newsletter) {
   font-size: 0.875rem;
 }
 
-.prose pre {
+pre {
   background-color: #1f2937;
   /* gray-800 */
   color: #f9fafb;
@@ -274,15 +274,16 @@ section:nth-of-type(even):not(#newsletter) {
   border-radius: 0.5rem;
   overflow-x: auto;
   margin: 1.5rem 0;
+
+  code {
+    background-color: transparent;
+    color: inherit;
+    font-size: 98%;
+    padding: 0;
+    line-height: 1.4;
+  }
 }
 
-.prose pre code {
-  background-color: transparent;
-  color: inherit;
-  font-size: 98%;
-  padding: 0;
-  line-height: 1.4;
-}
 @media screen and (max-width: 600px) {
   .my-card{
     width: 300px;

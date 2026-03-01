@@ -1,8 +1,13 @@
 {% capture content %}
-<div class="text-center text-lg text-gray-600" data-aos="fade-up">
-    <p><b>Fri, 8 May 09:30:</b> Main Event (schedule to come)</p>
-    <p><b>Fri, 8 May 20:30:</b> Dinner + Toga Party</p>
+<div class="text-center text-xl text-gray-600" data-aos="fade-up">
+    <p><b>Fri, 8 May 08:30:</b> Main Event</p>
+    <p><b>Fri, 8 May 20:00:</b> Dinner + Toga Party</p>
     <p><b>Sat, 9 May 10:00:</b> Guided tour to the Mouth of the Rubicon</p>
+    <p class="mt-6">
+        <a href="/schedule/" class="text-red-800 hover:text-red-600 font-semibold underline">
+            View the full schedule →
+        </a>
+    </p>
 </div>
 <!-- To restore previous schedule, uncomment this -->
 {% comment %}
@@ -44,8 +49,9 @@
 {% include section.html
 id="schedule"
 title="III. &nbsp;Event schedule"
-description="A day with learning, networking, and Ruby goodness. Rubycon is a single-track conference, so you won't miss
-a thing!"
+description="We organized a single-day track conference, full of high-level, deep, technical content.
+<br>
+This will be a day with learning, networking, and plenty of Ruby goodness!"
 content=content
 %}
 

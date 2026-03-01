@@ -10,11 +10,13 @@
     - name: Speakers
       link: "/#speakers"
     - name: Schedule
-      link: "/#schedule"
+      link: "/schedule/"
     - name: Venue
       link: "/#venue"
     - name: Sponsors
       link: "/#sponsors"
+    - name: Logistics
+      link: "/logistics/"
     - name: FAQ
       link: "/#faq"
 - name: Newsletter
