@@ -1,16 +1,20 @@
 - question: '✨ Why are you doing this?'
   answer: |
-    When RubyDay was cancelled in 2024, a number of aficionados decided to take this into their own hands and make it happen. 
+    When RubyDay was cancelled in 2024, a number of aficionados decided to take this into their own hands and make it happen.
     So here we are! And by speaking to devs and sponsors, it looks like they appreciate what we're trying to do, which motivates us to do more!
 - question: '✈️ How do I travel to Rubycon / 🇮🇹 Rimini?'
-  answer: 'The biggest international airport is Bologna Marconi Airport (BLQ). The railway system is very rich and efficient and connects Rimini to Bologna > Milan, Ravenna > Venezia, Ancona > south. So you can also fly to Florence, Milan and Venice.'
+  answer: |
+    The biggest international airport is Bologna Marconi Airport (BLQ). The railway system is very rich and efficient and connects Rimini to Bologna > Milan, Ravenna > Venezia, Ancona > south. So you can also fly to Florence, Milan and Venice.
+    Check our <a href="/logistics/">Logistics page</a> for detailed travel info including airports, trains, and driving directions.
 - question: '🏨 Any updates on Hotels?'
-  #  TODO: add discord channel programmatically so its DRY
-  answer: "We're currently talking to a number of hotels to provide you discounted rates for Thu and Fri night. We want to encourage you to book your flights and ticket ASAP to save time, you can also join our Discord channel for more up to date info."
+  answer: |
+    Yes! We have negotiated discounted rates at several hotels near the venue.
+    Head over to our <a href="/logistics/">Logistics page</a> for the full list of recommended hotels with prices and booking links.
+    If you have any questions, reach out to us at <a href="mailto:info@rubycon.it">info@rubycon.it</a> or ask in our <a href="https://discord.gg/T43GHE6wHH">Discord channel</a>.
 - question: "🤔  I'm not sure if I should come all the way from outside Italy just for a single-day conference..."
   answer: >
     That's a very good point! Let us explain to you how we envisioned this. We want people to come from outside of Italy for a number of reasons:
-    
+
     1. A great day of technical talks, and a well organized nice dinner/party in the evening to make the most out of Friday.
     2. We planned the event on a Friday (usually conferences are Tue-Thu), conveniently to attach the weekend to it. You can have a long weekend in Italy,
        and May is considered the best month (not too hot/touristy yet, but good weather). We're organizing a morning to visit the Rubycon mouths, and we're planning
@@ -18,17 +22,16 @@
 - question: "🛂 Are you going to have Ruby Passports?"
   answer: |
     Yes! We're talking to Adrian and our Community friends to bring you the Ruby Passport experience.
-    We're also working on a brand new stamp. Caesar would be so proud, he would stamp all over his salad! 
-  # Or .. ❓
+    We're also working on a brand new stamp. Caesar would be so proud, he would stamp all over his salad!
 - question: "🤷‍♀️  I have a great question which you didn't answer.."
   answer: |
-    Well, join our discord chat and ask it there. This is NOT just for people who've already bought a ticket, it's the right place to ask a question and make up your mind! 
-    Link is on the bottom cos Rubyists like to keep it DRY :)
+    Join our <a href="https://discord.gg/T43GHE6wHH">Discord chat</a> and ask it there. This is NOT just for people who've already bought a ticket, it's the right place to ask a question and make up your mind!
+    You can also drop us an email at <a href="mailto:support@rubycon.com">support@rubycon.com</a>.
 - question: "🎓 Do you care about Equity? Do you have a Scholarship program?"
   answer: |
-    Yes we do! We have a dedicated Scholarship Program to ensure everyone has a fair chance to participate.
-    Just follow the links in the footer for more info.
+    Yes we do! We have a dedicated <a href="/scholarship">Scholarship Program</a> to ensure everyone has a fair chance to participate.
+    For more details or to apply, visit the <a href="/scholarship">Scholarship page</a> or contact us at <a href="mailto:info@rubycon.it">info@rubycon.it</a>.
 - question: "📜 Do you have a Code of Conduct?"
   answer: |
     Yes, we follow the Berlin Code of Conduct. We are committed to providing a friendly, safe and welcoming environment for all.
-    Just follow the links in the footer to read it.
+    Read our full <a href="/code-of-conduct/">Code of Conduct</a>. To report a violation, contact us at <a href="mailto:info@rubycon.it">info@rubycon.it</a>.
