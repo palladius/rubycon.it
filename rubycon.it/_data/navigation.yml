@@ -1,5 +1,7 @@
 - name: Home
   link: "/#home"
+- name: Schedule
+  link: "/schedule/"
 - name: Info
   submenu:
     # Nota: questi dovrebbero linkare tutti e soli i subpages della home - cioe' dovrebbero essere tutti LOCALU a / come #qualcosa.
