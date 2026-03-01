@@ -1,10 +1,3 @@
-# - avatar: '/assets/images/speakers/carmine-paolino.jpg'
-#   full_name: Carmine Paolino
-#   role: senior ruby developer @'Chat with Work'
-#   description: Founder and CEO of Chat with Work. Ruby_LLM maintainer # , async ruby promoter
-#   labels: [async ruby, ruby on rails,  ruby_llm]
-
-# https://en.wikipedia.org/wiki/Crossing_the_Rubicon
 - avatar: "/assets/images/articles/carmine_paolino.jpg"
   full_name: Carmine Paolino
   role: Founder at Chat with Work
@@ -13,17 +6,10 @@
 - avatar: "/assets/images/articles/marco_roth.jpeg"
   full_name: Marco Roth
   role: Full-Stack Ruby On Rails Developer
-  #description: Crixus (died 72 BC) was a Gallic gladiator and military leader in the Third Servile War between the Roman Republic and rebel slaves. Born in Gaul, he was enslaved by the Romans under unknown circumstances and trained as a gladiator in Capua. His name means "one with curly hair" in Gaulish.
   description: Marco is the maintainer of Herb and ReActionView
   labels: [ruby, herb, reactionview]
-# https://la.wikipedia.org/wiki/Gaius_Cilnius_Maecenas
 - avatar: "/assets/images/articles/julia_lopez.png"
   full_name: Julia López
   role: Full-Stack Ruby On Rails Developer
   description: "Julia is from Barcelona and has been working with Rails for almost 15 years."
-  labels: [ruby, ruby on rails]
-- avatar: '/assets/images/logo/0_0.jpeg'
-  full_name: Julius Caesar
-  role: Senior Ruby developer @Gallia 3P
-  description: cooming soon.
   labels: [ruby, ruby on rails]
