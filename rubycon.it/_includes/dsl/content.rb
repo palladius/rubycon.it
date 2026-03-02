@@ -53,8 +53,8 @@ Rubycon::Agenda.schedule(Date.new(2026, 5, 8)) do
        title: "From Plato to Production: A Philosophical History of Code",
        by: "Yara Debian"
 
-  talk at: 17_15,
-       title: "Piadina - It's a wrap!",
+  talk at: 17_30,
+       title: "Piadina - It's a wrap!", # aka Piadina!
        by: "Riccardo Carlesso"
 
   # Keep the conversation going, or refill
