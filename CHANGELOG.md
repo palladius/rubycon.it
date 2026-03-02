@@ -4,6 +4,7 @@
 
 * [gemini] refactor(dsl): ⏱️ Converted schedule times from strings to numerals (e.g., `08_30`).
 * [gemini] refactor(dsl): 💨 Renamed `pause` to `lapsus` (Latin flair, no Ruby keyword conflict).
+* [gemini] refactor(dsl): 🍝 Renamed `party` to `dinner`.
 
 (version is now in `rubycon.it/_config.yml`)
 

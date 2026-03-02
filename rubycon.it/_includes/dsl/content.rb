@@ -1,12 +1,12 @@
 Rubycon::Agenda.schedule(Date.new(2026, 5, 8)) do
-  check_in at: 08_30,
+  check_in at: 8_30,
            desc: "Check-in & Welcome Coffee"
 
-  intro at: 09_30,
+  intro at: 9_30,
         desc: "Welcome to Rubycon",
         by: "Riccardo Carlesso" # MC
 
-  keynote at: 09_45, # Keynote
+  keynote at: 9_45, # Keynote
           title: "Ruby Is the Best Language for Building AI Web Apps",
           by: "Carmine Paolino"
 
@@ -45,7 +45,7 @@ Rubycon::Agenda.schedule(Date.new(2026, 5, 8)) do
          desc: "☕ Coffee Break"
 
   talk at: 16_10,
-       # title: "TBD",
+       title: "TBD",
        by: "Marco Roth"
 
 
@@ -54,7 +54,7 @@ Rubycon::Agenda.schedule(Date.new(2026, 5, 8)) do
        by: "Yara Debian"
 
   talk at: 17_15,
-       title: "It's a wrap!",
+       title: "Piadina - It's a wrap!",
        by: "Riccardo Carlesso"
 
   # Keep the conversation going, or refill
@@ -65,8 +65,8 @@ Rubycon::Agenda.schedule(Date.new(2026, 5, 8)) do
 
   # Here we will have dinner, and then the Toga Party!
   # The place is 10m walk from the hotel.
-  party at: 20_00,
+  dinner at: 20_00,
         desc: "🍝 Dinner + 🎉 Toga Party!",
-        where: "🏖️ Bagno 46",
-        url: "https://www.bagno46rimini.com/"
+        where: "🏖️ Bagno 46"
+        #  url: "https://www.bagno46rimini.com/"
 end

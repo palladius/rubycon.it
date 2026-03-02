@@ -5,25 +5,38 @@ module Rubycon
       new.instance_eval(&block)
     end
 
-    def check_in(at:, desc:)
-      row(at, desc, "All Attendees", "Check-in")
+    def self.schedule(date, &block)
+      agenda_of_the_day(date, &block)
     end
 
-    def talk(at:, desc:, by: "TBD", tags: [])
-      row(at, desc, by, tags)
+    def check_in(at:, desc:)
+      row(at, desc, nil, "Check-in")
+    end
+
+    def intro(at:, desc:, by: "TBD")
+      row(at, desc, by, "Intro")
+    end
+
+    def keynote(at:, title:, by: "TBD")
+      row(at, title, by, "Keynote")
+    end
+
+    def talk(at:, title: nil, desc: nil, by: "TBD", tags: [])
+      title ||= desc || "TBD"
+      row(at, title, by, tags)
     end
 
     def lapsus(at:, desc:, tags: [])
-      row(at, desc, "All Attendees", "Break")
+      row(at, desc, nil, "Break")
     end
 
     def lightning_talks(at:, desc:, tags: [])
       row(at, desc, "Many speakers (FIFO)", tags)
     end
 
-    def party(at:, desc:, by: "All Attendees", where: nil)
+    def dinner(at:, desc:, by: nil, where: nil, url: nil)
       desc += " @ #{where}" if where
-      row(at, desc, by, "Party")
+      row(at, desc, by, "Dinner")
     end
 
     private
@@ -34,8 +47,14 @@ module Rubycon
                  else
                    time.to_s
                  end
-      speaker_str = speaker ? "(#{speaker})" : ""
+      speaker_str = (speaker && speaker != "") ? "(#{speaker})" : ""
       puts "  #{time_str.ljust(15)} | #{desc.ljust(40)} #{speaker_str}"
+    end
+  end
+
+  module Agenda
+    def self.schedule(date, &block)
+      Schedule.schedule(date, &block)
     end
   end
 end
