@@ -59,7 +59,7 @@ Rubycon::Agenda.schedule(Date.new(2026, 5, 8)) do
 
   # Keep the conversation going, or refill
   # the batteries in the hotel, whatever you prefer.
-  pause at: "18:00",
+  pause at: 18_00,
         desc: "Drinks or Shower or Nap",
         tags: %w[optional]
 
