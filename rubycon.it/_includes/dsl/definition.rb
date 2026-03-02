@@ -13,7 +13,7 @@ module Rubycon
       row(at, desc, by, tags)
     end
 
-    def pause(at:, desc:, tags: [])
+    def lapsus(at:, desc:, tags: [])
       row(at, desc, "All Attendees", "Break")
     end
 
@@ -29,8 +29,13 @@ module Rubycon
     private
 
     def row(time, desc, speaker, tags)
+      time_str = if time.is_a?(Integer)
+                   "%02d:%02d" % [time / 100, time % 100]
+                 else
+                   time.to_s
+                 end
       speaker_str = speaker ? "(#{speaker})" : ""
-      puts "  #{time.ljust(15)} | #{desc.ljust(40)} #{speaker_str}"
+      puts "  #{time_str.ljust(15)} | #{desc.ljust(40)} #{speaker_str}"
     end
   end
 end

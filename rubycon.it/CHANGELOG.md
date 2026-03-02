@@ -17,7 +17,7 @@ All notable changes to this project will be documented in this file.
 ## [0.4.46] - 2026-01-25
 
 ### Added
-- **Schedule DSL**: Implemented a Ruby DSL for the conference schedule (`_includes/schedule_dsl.rb`), featuring a readable one-liner syntax (`talk`, `pause`, `check_in`).
+- **Schedule DSL**: Implemented a Ruby DSL for the conference schedule (`_includes/schedule_dsl.rb`), featuring a readable one-liner syntax (`talk`, `lapsus`, `check_in`).
 - **Program Page**: Added `/program_of_the_day` page to display the schedule rendered as Ruby code.
 - **Styling**: Introduced a custom "Ruby Red" & Cyan syntax highlighting theme for code blocks (`_sass/_syntax.scss`).
 - **Features**: Added `lightning_talks` and `party` methods to the DSL with optional arguments (tags, speakers).

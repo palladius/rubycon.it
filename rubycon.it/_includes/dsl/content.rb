@@ -1,71 +1,71 @@
 Rubycon::Agenda.schedule(Date.new(2026, 5, 8)) do
-  check_in at: "08:30",
+  check_in at: 08_30,
            desc: "Check-in & Welcome Coffee"
 
-  intro at: "09:30",
-        desc: "MC Welcome",
-        by: "Riccardo Carlesso"
+  intro at: 09_30,
+        desc: "Welcome to Rubycon",
+        by: "Riccardo Carlesso" # MC
 
-  keynote at: "09:45",
+  keynote at: 09_45, # Keynote
           title: "Ruby Is the Best Language for Building AI Web Apps",
           by: "Carmine Paolino"
 
-  talk at: "10:30",
+  talk at: 10_30,
        title: "Debugging Techniques in Ruby",
        by: "Julia Lopez"
 
-  pause at: "11:15",
-        desc: "☕️ Coffee Break"
+  lapsus at: 11_15,
+         desc: "☕️ Coffee Break"
 
-  talk at: "11:20",
+  talk at: 11_20,
        title: "Breaking the rules of software engineering: will it work?",
        by: "Silvano Stralla"
 
-  talk at: "11:55",
+  talk at: 11_55,
        title: "rv, a ruby manager for the future",
        by: "André Arko"
 
-  pause at: "12:25",
-        desc: "🍝 Lunch Break & Networking"
+  lapsus at: 12_25,
+         desc: "🍝 Lunch Break & Networking"
 
   # We want to give everyone the chance to say/bring something for 5 minutes.
-  lightning_talks at: "13:55",
+  lightning_talks at: 13_55,
                   desc: "⚡️ 5minutes for everyone who has something to say",
-                  tags: %w[FIFO]
+                  tags: %w[ FIFO on_the_day ]
 
-  talk at: "14:45",
+  talk at: 14_45,
        title: "Semantic Image Search in Ruby: Postgres, Redis, or LLM?",
        by: "Michele Franzin"
 
-  talk at: "15:20",
+  talk at: 15_20,
        title: "My daily life on Ruby",
        by: "Akira Matsuda"
 
-  pause at: "15:50",
-        desc: "☕ Coffee Break"
+  lapsus at: 15_50,
+         desc: "☕ Coffee Break"
 
-  talk at: "16:10",
-       title: "TBD",
+  talk at: 16_10,
+       # title: "TBD",
        by: "Marco Roth"
 
 
-  talk at: "16:45",
+  talk at: 16_45,
        title: "From Plato to Production: A Philosophical History of Code",
        by: "Yara Debian"
 
-  talk at: "17:15",
+  talk at: 17_15,
        title: "It's a wrap!",
        by: "Riccardo Carlesso"
 
   # Keep the conversation going, or refill
   # the batteries in the hotel, whatever you prefer.
-  pause at: 18_00,
-        desc: "Drinks or Shower or Nap",
-        tags: %w[optional]
+  lapsus at: 18_00,
+         desc: "Drinks or Shower or Nap",
+         tags: %w[optional]
 
   # Here we will have dinner, and then the Toga Party!
   # The place is 10m walk from the hotel.
-  party at: "20:00",
+  party at: 20_00,
         desc: "🍝 Dinner + 🎉 Toga Party!",
         where: "🏖️ Bagno 46",
         url: "https://www.bagno46rimini.com/"

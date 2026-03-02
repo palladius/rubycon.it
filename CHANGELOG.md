@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.16.3
+
+* [gemini] refactor(dsl): ⏱️ Converted schedule times from strings to numerals (e.g., `08_30`).
+* [gemini] refactor(dsl): 💨 Renamed `pause` to `lapsus` (Latin flair, no Ruby keyword conflict).
+
 (version is now in `rubycon.it/_config.yml`)
 
 ## 0.4.45
