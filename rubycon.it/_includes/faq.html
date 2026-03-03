@@ -1,14 +1,14 @@
 {% capture description %}
 If you don't find the answer you were looking for, for specific questions, contact our
-<a href="mailto:{{ site.support_email }}" class="text-amber-600">support team</a> or
+<a href="mailto:{{ site.support_email }}" class="text-yellow-600">support team</a> or
 ask in our
 
-<a href="{{ site.social_url.discord }}" class="text-amber-600">Discord Channel</a>.
+<a href="{{ site.social_url.discord }}" class="text-yellow-600">Discord Channel</a>.
 {% endcapture %}
 
 {% capture content %}
     <div class="rounded-lg shadow-lg overflow-hidden">
-        <div class="border-b border-gray-200 text-gray-500" data-aos="fade-up">
+        <div class="border-b border-gray-200 text-gray-600" data-aos="fade-up">
             {% for data in site.data.faq %}
                 <div class="px-6 py-4 font-bold bg-gray-100">
                     {{ data.question }}
