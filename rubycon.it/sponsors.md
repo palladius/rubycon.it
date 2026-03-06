@@ -1,33 +1,51 @@
 ---
 layout: page
-title: 🤝 Sponsoring Rubycon Italy
+title: Sponsoring Rubycon.it
 permalink: /sponsors/
 ---
 
-Thank you for your interest in supporting the Ruby community in Italy! 🇮🇹💎
+<div class="space-y-16">
 
-Rubycon Italy is a community-driven conference dedicated to Ruby and Rails enthusiasts. By sponsoring us, you'll gain visibility among a passionate group of developers and support the growth of the Italian Ruby ecosystem.
+  <!-- Introduction -->
+  <div class="text-center max-w-3xl mx-auto" data-aos="fade-up">
+    <p class="text-xl text-gray-600 mb-4">Thanks for considering sponsoring Rubycon Italy! 🇮🇹💎</p>
+    <p class="text-gray-600">We're a community-driven conference for Ruby and Rails folks. By supporting us, you'll connect with passionate developers and help grow the Italian Ruby scene.</p>
+  </div>
 
-## 📄 Sponsorship Prospectus
+  <!-- Bespoke Opportunities Section -->
+  <div data-aos="fade-up">
+    <h3 class="text-2xl font-bold mb-6 text-gray-700 text-center">💡 Something Different?</h3>
+    <p class="text-gray-600 mb-8 text-center">We're pretty flexible! Got a creative idea? Let's talk.</p>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-8 rounded-lg shadow-md text-center">
+        <div class="bg-red-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+          <i class="fas fa-building text-red-800 text-2xl"></i>
+        </div>
+        <h4 class="text-xl font-bold mb-3">Extra Space</h4>
+        <p class="text-gray-600">We've got a large room next to the main hall perfect for booths, demos, or meetups. Just ask!</p>
+      </div>
+      <div class="bg-white p-8 rounded-lg shadow-md text-center">
+        <div class="bg-red-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+          <i class="fas fa-gift text-red-800 text-2xl"></i>
+        </div>
+        <h4 class="text-xl font-bold mb-3">Swag Bag</h4>
+        <p class="text-gray-600">Happy to include your goodies in our attendee bags (as long as they're not too heavy!).</p>
+      </div>
+    </div>
+  </div>
 
-Download our sponsorship packages to learn more about benefits and tiers:
+  <!-- Contact Section -->
+  <div class="text-center bg-red-50 p-8 rounded-lg" data-aos="fade-up">
+    <h3 class="text-2xl font-bold text-gray-700 mb-4">📬 Get in Touch</h3>
+    <a href="mailto:sponsors@rubycon.it" class="inline-flex items-center px-6 py-3 bg-red-800 text-white font-bold rounded-lg hover:bg-red-900 transition">
+      <i class="fas fa-envelope mr-2"></i>
+      Email us at sponsors@rubycon.it
+    </a>
+  </div>
 
-*   📄 **[2026 Sponsorship Packages (Document)](/assets/documents/rubycon-2026-sponsorship-packages-doc.pdf)** - Detailed information.
-*   🖥️ **[2026 Sponsorship Slides (Presentation)](/assets/documents/rubycon-2026-sponsorship-packages-slides.pdf)** - Quick overview.
-
-<br/>
-
-## 💡 Bespoke Opportunities & Flexibility
-
-We are a community-friendly event, and we are **flexible**! If you have a creative idea for sponsorship that isn't in the packages, we'd love to hear it.
-
-*   **Extra Space:** We have a large room adjacent to the main conference hall (Sala Quarzo) available for booths, banquets, or showcasing merchandise/demos. If you need space to engage with attendees, just ask!
-*   **Swag Bag:** We are completely open to including your merchandise in our attendee swag bags, provided it is reasonable in size and weight.
-
-### 🏛️ Current Sponsors
-
-{% include sponsors_list.html %}
-
-## 📬 Contact Us
-
-Interested in a package, space for a booth, or have a unique idea? Reach out to our sponsorship team at [sponsors@rubycon.it](mailto:sponsors@rubycon.it).
+  <!-- Current Sponsors Section -->
+  <div data-aos="fade-up">
+    <h3 class="text-2xl font-bold mb-8 text-gray-700 text-center">🏛️ Our Amazing Sponsors</h3>
+    {% include sponsors_list.html %}
+  </div>
+</div>
