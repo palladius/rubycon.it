@@ -11,7 +11,7 @@ Rubycon::Agenda.schedule(Date.new(2026, 5, 8)) do
           by: "Carmine Paolino"
 
   talk at: 10_30,
-       title: "Debugging Techniques in Ruby",
+       title: "Shift-left on Accessibility in your Ruby webapps",
        by: "Julia Lopez"
 
   lapsus at: 11_15,
