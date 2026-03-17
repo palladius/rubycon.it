@@ -2,13 +2,13 @@
 layout: default
 title: Articles
 permalink: /articles/
---- 
+---
 
 {% capture content %}
   <div class="container mx-auto px-4">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {% for post in site.posts %}
-      <div class="my-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+      <div class="bg-white rounded-lg overflow-hidden shadow-md transition duration-300 mx-auto w-full">
         <a href="{{ post.url }}" data-aos="fade-up">
           <div class="relative">
               <img src="{{ post.asset_url | default: '/assets/images/logo.png' | relative_url }}" alt="{{ post.title }}" class="w-full h-64 object-cover">
