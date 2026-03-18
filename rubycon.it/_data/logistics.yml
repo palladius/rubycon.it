@@ -49,7 +49,7 @@ airports:
   - name: Ancona-Falconara Airport (AOI)
     travel_info: "Another option, with a train connection to Rimini (about 1 hour)."
   - name: Venice Marco Polo Airport (VCE)
-    travel_info: "Another option, with a train connection to Rimini (about 2 hours)."
+    travel_info: "Another option, with a train connection to Rimini thru Bologna (about 4 hours)."
 
 transport:
   - type: Train
