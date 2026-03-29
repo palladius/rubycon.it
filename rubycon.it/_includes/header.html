@@ -1,49 +1,40 @@
-<header class="sticky top-0 z-50">
+<header class="absolute top-0 left-0 right-0 z-50">
     <a href="#content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-red-800 focus:text-white focus:px-6 focus:py-3 focus:rounded-md focus:font-bold">Skip to content</a>
     <!-- navigation -->
-    <nav class="shadow-lg relative">
-        <div class="px-4 mx-auto">
-            <div class="flex justify-between h-20 items-center">
+    <nav class="relative">
+        <div class="px-4 mx-auto lg:px-12">
+            <div class="flex justify-between h-24 items-center">
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="/#home" class="flex items-center">
-                        <span class="text-3xl font-bold tracking-tighter" style="font-family: 'Cinzel', serif;">
-                            <span class="text-red-800">RVBYCON</span>
-                            <span class="text-red-800 ml-2 opacity-90">I<i class="fas fa-gem text-xl mx-0.5" style="vertical-align: middle;"></i>I</span>
+                    <a href="/#home" class="flex items-center group">
+                        <span class="text-3xl font-bold tracking-tighter text-[#fcf7e8]" style="font-family: 'Cinzel', serif;">
+                            RVBYCON
+                            <span class="ml-2 opacity-80 group-hover:opacity-100 transition-opacity">I<i class="fas fa-gem text-xl mx-0.5" style="vertical-align: middle;"></i>I</span>
                         </span>
                     </a>
                 </div>
                 <div class="hidden lg:block">
-                    <div class="ml-10 flex items-center space-x-5">
+                    <div class="ml-10 flex items-center space-x-8">
                         {% for nav in site.data.navigation %}
                         <div class="relative group inline-block">
                             {% if nav.link %}
-                                <a href="{{ nav.link }}" class="text-gray-900 hover:text-red-800 px-1 py-2 font-medium block">
+                                <a href="{{ nav.link }}" class="text-[#fcf7e8] opacity-80 hover:opacity-100 px-1 py-2 text-sm uppercase tracking-widest font-medium transition-all">
                                     {{ nav.name }}
                                 </a>
                             {% else %}
-                                <span class="text-gray-900 hover:text-red-800 px-1 py-2 font-medium block cursor-pointer">
+                                <span class="text-[#fcf7e8] opacity-80 hover:opacity-100 px-1 py-2 text-sm uppercase tracking-widest font-medium cursor-pointer transition-all">
                                     {{ nav.name }}
-                                    {% if nav.submenu %} <i class="fas fa-chevron-down text-base"></i> {% endif %}
                                 </span>
-                            {% endif %}
-
-                            {% if nav.submenu %}
-                            <div class="absolute top-full left-0 bg-secondary px-1 py-2 w-40 hidden group-hover:block shadow-lg">
-                                {% for subnav in nav.submenu %}
-                                <a href="{{ subnav.link }}" class="block text-gray-900 hover:text-red-800 px-2 py-3 font-medium">
-                                    {{ subnav.name }}
-                                </a>
-                                {% endfor %}
-                            </div>
                             {% endif %}
                         </div>
                         {% endfor %}
-                        <a href="{{ site.event.tickets_url }}" class="bg-red-800 text-white px-6 py-2 rounded-full font-medium hover:bg-red-700 transition">Get your ticket</a>
+                        <a href="{{ site.event.tickets_url }}" class="bg-[#fcf7e8] text-[#802126] px-6 py-2 rounded-sm text-sm uppercase tracking-widest font-bold hover:bg-white transition-all shadow-lg">
+                            Get your ticket
+                        </a>
                     </div>
                 </div>
-                <div class="lg:hidden">
-                    <a href="{{ site.event.tickets_url }}" class="bg-red-800 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-red-700 transition">Get your ticket</a>
-                    <button class="mobile-menu-button p-2 rounded-md text-gray-700 hover:text-red-800 focus:outline-none align-middle"
+                <div class="lg:hidden flex items-center gap-4">
+                    <a href="{{ site.event.tickets_url }}" class="bg-[#fcf7e8] text-[#802126] px-4 py-2 rounded-sm text-xs uppercase tracking-widest font-bold hover:bg-white transition">Tickets</a>
+                    <button class="mobile-menu-button p-2 text-[#fcf7e8] focus:outline-none"
                             onclick="document.querySelector('.mobile-menu').classList.toggle('hidden')">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
@@ -51,31 +42,13 @@
             </div>
         </div>
         <!-- mobile menu -->
-        <div class="mobile-menu hidden shadow-lg absolute text-center overflow-y-auto" style="width: 100%">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div class="mobile-menu hidden shadow-2xl absolute text-center bg-[#802126] border-t border-[#fcf7e8]/10" style="width: 100%">
+            <div class="px-4 pt-4 pb-8 space-y-4">
                 {% for nav in site.data.navigation  %}
-                    {% if nav.link %}
-                        <a href="{{ nav.link }}" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-800"
-                        onclick="document.querySelector('.mobile-menu').classList.toggle('hidden')">
-                            {{ nav.name }}
-                        </a>
-                    {% else %}
-                        <span class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-800 cursor-pointer"
-                        onclick="this.nextElementSibling.classList.toggle('hidden')">
-                            {{ nav.name }} <i class="fas fa-chevron-down text-base"></i>
-                        </span>
-                    {% endif %}
-
-                    {% if nav.submenu %}
-                        <div class="px-1 py-2 border-b border-t hidden">
-                            {% for subnav in nav.submenu %}
-                            <a href="{{ subnav.link }}" class="block text-gray-900 hover:text-red-800 px-2 py-3 font-medium"
-                            onclick="document.querySelector('.mobile-menu').classList.toggle('hidden')">
-                                {{ subnav.name }}
-                            </a>
-                            {% endfor %}
-                        </div>
-                    {% endif %}
+                    <a href="{{ nav.link }}" class="block text-lg font-serif text-[#fcf7e8] opacity-80 hover:opacity-100 py-2"
+                    onclick="document.querySelector('.mobile-menu').classList.toggle('hidden')">
+                        {{ nav.name }}
+                    </a>
                 {% endfor %}
             </div>
         </div>

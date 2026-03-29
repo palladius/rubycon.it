@@ -2,33 +2,35 @@
   We thank these organizations for supporting the Ruby community in Italy.
   <br /><br />
   Interested in sponsoring? 
-  <a href="/sponsors/" class="text-[#802126] font-bold underline hover:opacity-70 transition ml-2">Learn more</a> 
+  <a href="/sponsors/" class="text-[#802126] font-bold border-b border-red-800/30 hover:opacity-70 transition">Learn more</a> 
   or contact us at 
-  <a href="mailto:{{ site.info_email }}" class="text-[#802126] font-bold underline hover:opacity-70 transition">{{ site.info_email }}</a>
+  <a href="mailto:{{ site.info_email }}" class="text-[#802126] font-bold border-b border-red-800/30 hover:opacity-70 transition">{{ site.info_email }}</a>
 {% endcapture %}
 
-{% capture title %}{{ include.title | default: "Our sponsors" }}{% endcapture %}
+{% capture title %}{{ include.title | default: "Sponsor" }}{% endcapture %}
 
 {% capture content %}
+<div class="mt-16">
 {% for sponsor in site.data.sponsors %}
-<div data-aos="fade-up" class="mt-16 first:mt-0">
-  <h3 class="text-sm uppercase tracking-widest mb-8 font-bold opacity-60 flex items-center gap-4">
+<div data-aos="fade-up" class="mb-20 last:mb-0">
+  <h3 class="text-[10px] uppercase tracking-[0.3em] mb-10 font-bold opacity-40 flex items-center gap-6">
     <span>{{ sponsor.title }}</span>
-    <div class="h-[1px] bg-red-800/20 flex-grow"></div>
+    <div class="h-[1px] bg-red-800/10 flex-grow"></div>
   </h3>
   
-  <div class="flex flex-wrap gap-12 items-center">
+  <div class="flex flex-wrap gap-x-16 gap-y-12 items-center">
     {% for logo in sponsor.logos %}
     <a href="{{ logo.url }}" target="_blank"
-      class="grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-500 transform hover:scale-105"
+      class="opacity-60 hover:opacity-100 transition-all duration-500 transform hover:scale-105"
       {% if logo.description %}title="{{ logo.description }}" {% endif %}>
-      <img src="{{ logo.img }}" alt="{{ logo.name }}" class="max-h-16 md:max-h-20 w-auto object-contain"
+      <img src="{{ logo.img }}" alt="{{ logo.name }}" class="max-h-12 md:max-h-16 w-auto object-contain"
         style="mix-blend-mode: darken" />
     </a>
     {% endfor %}
   </div>
 </div>
 {% endfor %}
+</div>
 {% endcapture %}
 
-{% include section.html id="sponsors" title=title description=description content=content %}
+{% include section.html id="sponsors" title=title description="They make this possible." content=content %}

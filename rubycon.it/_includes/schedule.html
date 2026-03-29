@@ -1,34 +1,33 @@
 {% capture content %}
-<div class="max-w-3xl" data-aos="fade-up">
-    <div class="space-y-8">
-        <div class="flex gap-8 items-start group">
-            <div class="text-2xl font-bold pt-1" style="font-family: 'Cinzel', serif; color: #802126; min-width: 100px;">08:30</div>
-            <div>
-                <h3 class="text-2xl font-bold mb-2">Main Event</h3>
-                <p class="text-gray-600 italic">Friday, 8 May &bull; Hotel Ambasciatori</p>
+<div class="max-w-4xl mt-16" data-aos="fade-up">
+    <div class="space-y-0 border-t border-red-800/10">
+        {% for day in site.data.schedule %}
+            {% for event in day.events %}
+            <div class="flex gap-12 py-8 border-b border-red-800/10 items-start group hover:bg-red-800/5 transition-colors px-4 -mx-4">
+                <div class="text-xl font-bold pt-1 opacity-60" style="font-family: 'Cinzel', serif; color: #802126; min-width: 80px;">
+                    {{ event.clock }}
+                </div>
+                <div class="flex-grow">
+                    <h3 class="text-2xl font-serif mb-2 text-gray-900 group-hover:text-[#802126] transition-colors">
+                        {{ event.description }}
+                    </h3>
+                    <div class="flex items-center gap-4">
+                        <p class="text-gray-600 italic">{{ event.full_name }}</p>
+                        {% if event.tag %}
+                            <span class="text-[10px] uppercase tracking-widest border border-red-800/30 px-2 py-0.5 text-[#802126] font-bold rounded-sm">
+                                {{ event.tag }}
+                            </span>
+                        {% endif %}
+                    </div>
+                </div>
             </div>
-        </div>
-        
-        <div class="flex gap-8 items-start group">
-            <div class="text-2xl font-bold pt-1" style="font-family: 'Cinzel', serif; color: #802126; min-width: 100px;">20:00</div>
-            <div>
-                <h3 class="text-2xl font-bold mb-2">Dinner + Toga Party</h3>
-                <p class="text-gray-600 italic">Friday, 8 May &bull; Rimini Nightlife</p>
-            </div>
-        </div>
-
-        <div class="flex gap-8 items-start group">
-            <div class="text-2xl font-bold pt-1" style="font-family: 'Cinzel', serif; color: #802126; min-width: 100px;">10:00</div>
-            <div>
-                <h3 class="text-2xl font-bold mb-2">Rubicon Trip</h3>
-                <p class="text-gray-600 italic">Saturday, 9 May &bull; Guided tour to the mouth of the Rubicon</p>
-            </div>
-        </div>
+            {% endfor %}
+        {% endfor %}
     </div>
 
-    <div class="mt-16">
-        <a href="/schedule/" class="inline-block border-b-2 border-[#802126] text-[#802126] font-bold text-xl pb-1 hover:opacity-70 transition">
-            View the full schedule →
+    <div class="mt-12">
+        <a href="/schedule/" class="inline-block text-[#802126] font-bold border-b-2 border-[#802126] pb-1 hover:opacity-70 transition">
+            Full schedule
         </a>
     </div>
 </div>
@@ -36,7 +35,7 @@
 
 {% include section.html
 id="schedule"
-title="Event schedule"
-description="High-level, deep, technical content. Plus plenty of Ruby goodness."
+title="The day"
+description="One stage. You see everything."
 content=content
 %}

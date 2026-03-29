@@ -1,64 +1,52 @@
-<footer class="py-16 text-[#fcf7e8]" style="background-color: #802126;">
+<footer class="py-24 bg-[#802126] text-[#fcf7e8] border-t border-[#fcf7e8]/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
-
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-12 mb-20">
             <div>
-                <h3 class="text-xl font-bold mb-6" style="font-family: 'Cinzel', serif;">Quick links</h3>
-                <ul class="space-y-3">
-                    <li><a href="/#home" class="opacity-80 hover:opacity-100 transition">Home</a></li>
-                    <li><a href="/schedule/" class="opacity-80 hover:opacity-100 transition">Schedule</a></li>
-                    <li><a href="/#speakers" class="opacity-80 hover:opacity-100 transition">Speakers</a></li>
-                    <li><a href="/#venue" class="opacity-80 hover:opacity-100 transition">Venue</a></li>
-                    <li><a href="/#sponsors" class="opacity-80 hover:opacity-100 transition">Sponsors</a></li>
+                <h3 class="text-sm font-bold uppercase tracking-[0.2em] mb-8 opacity-40">Conference</h3>
+                <ul class="space-y-4 font-serif italic text-lg">
+                    <li><a href="/schedule/" class="hover:opacity-60 transition">Schedule</a></li>
+                    <li><a href="/#speakers" class="hover:opacity-60 transition">Speakers</a></li>
+                    <li><a href="/#venue" class="hover:opacity-60 transition">Venue and travel</a></li>
+                    <li><a href="/#sponsors" class="hover:opacity-60 transition">Sponsors</a></li>
                 </ul>
             </div>
             <div>
-                <ul class="space-y-3 mt-12">
-                    <li><a href="/logistics/" class="opacity-80 hover:opacity-100 transition">Logistics</a></li>
-                    <li><a href="/faq/" class="opacity-80 hover:opacity-100 transition">FAQ</a></li>
-                    <li><a href="/articles/" class="opacity-80 hover:opacity-100 transition">Blog</a></li>
-                    <li><a href="/scholarship" class="opacity-80 hover:opacity-100 transition">Scholarship</a></li>
-                    <li><a href="/code-of-conduct" class="opacity-80 hover:opacity-100 transition">Code of Conduct</a></li>
-                    <li><a href="{{ site.github.repository_url }}" class="opacity-80 hover:opacity-100 transition">GitHub</a></li>
+                <h3 class="text-sm font-bold uppercase tracking-[0.2em] mb-8 opacity-40">More</h3>
+                <ul class="space-y-4 font-serif italic text-lg">
+                    <li><a href="/articles/" class="hover:opacity-60 transition">Blog</a></li>
+                    <li><a href="/faq/" class="hover:opacity-60 transition">FAQ</a></li>
+                    <li><a href="/scholarship" class="hover:opacity-60 transition">Scholarship</a></li>
+                    <li><a href="/code-of-conduct" class="hover:opacity-60 transition">Code of Conduct</a></li>
                 </ul>
             </div>
-
             <div>
-                <h3 class="text-xl font-bold mb-6" style="font-family: 'Cinzel', serif;">Social</h3>
-                <ul class="space-y-3">
-                    {% for social in site.data.social_media %}
-                    <li>
-                        <a href="{{ social.url }}" class="flex items-center gap-3 opacity-80 hover:opacity-100 transition" target="_blank">
-                            <i class="fab fa-{{ social.icon }} text-lg" aria-hidden="true"></i>
-                            <span>{{ social.name }}</span>
-                        </a>
+                <h3 class="text-sm font-bold uppercase tracking-[0.2em] mb-8 opacity-40">Social</h3>
+                <ul class="space-y-4 font-serif italic text-lg">
+                    <li><a href="https://linkedin.com/company/rubycon-italy" target="_blank" class="hover:opacity-60 transition">LinkedIn</a></li>
+                    <li><a href="https://instagram.com/rubycon.it" target="_blank" class="hover:opacity-60 transition">Instagram</a></li>
+                    <li><a href="https://bsky.app/profile/rubycon.it" target="_blank" class="hover:opacity-60 transition">Bluesky</a></li>
+                    <li><a href="https://ruby.social/@rubycon" target="_blank" class="hover:opacity-60 transition">Mastodon</a></li>
+                    <li><a href="https://x.com/rubycon_it" target="_blank" class="hover:opacity-60 transition">X</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-sm font-bold uppercase tracking-[0.2em] mb-8 opacity-40">Contact</h3>
+                <ul class="space-y-4 font-serif italic text-lg">
+                    <li><a href="mailto:{{ site.info_email }}" class="hover:opacity-60 transition">{{ site.info_email }}</a></li>
+                    <li><a href="https://discord.gg/ruby-italy" target="_blank" class="hover:opacity-60 transition">Discord</a></li>
+                    <li class="pt-4 text-sm not-italic font-sans uppercase tracking-widest opacity-60">
+                        Hotel Ambasciatori<br>
+                        Rimini, Italy
                     </li>
-                    {% endfor %}
                 </ul>
-            </div>
-
-            <div>
-                <h3 class="text-xl font-bold mb-6" style="font-family: 'Cinzel', serif;">Newsletter</h3>
-                <form action="https://app.convertkit.com/forms/8a5a8f8636/subscriptions" method="post" data-sv-form="8a5a8f8636" data-uid="8a5a8f8636" class="mb-4">
-                    <div class="flex flex-col gap-3">
-                        <label for="newsletter-email" class="sr-only">Email address</label>
-                        <input type="email" name="email_address" id="newsletter-email" placeholder="your@email.com" required
-                               class="px-4 py-2 rounded-full text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-[#fcf7e8] bg-[#fcf7e8]">
-                        <button type="submit" class="bg-white text-[#802126] px-6 py-2 rounded-full font-bold hover:bg-opacity-90 transition">Subscribe</button>
-                    </div>
-                </form>
-                <a href="https://kit.com" target="_blank" class="opacity-50 text-xs hover:opacity-80 transition">Built with Kit</a>
             </div>
         </div>
 
-        <div class="border-t border-[#fcf7e8]/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm opacity-70">
-            <p class="mb-4 md:mb-0">
-                © 2026 {{ site.event.name }} Italy <strong>v{{ site.site_version }}</strong>. 
-                <a href="{{ site.github.repository_url }}/blob/main/LICENSE" class="hover:underline ml-2">Some rights reserved</a>.
-            </p>
-            <div class="flex gap-6">
-                <a href="{{ site.github.repository_url }}/blob/main/CHANGELOG.md" class="hover:underline">Changelog</a>
-                <a href="/#home" class="hover:underline">Back to top</a>
+        <div class="pt-12 border-t border-[#fcf7e8]/10 flex flex-col md:flex-row justify-between items-center text-xs uppercase tracking-[0.2em] opacity-40">
+            <p>© 2026 Rubycon Italy v{{ site.site_version }}. Some rights reserved.</p>
+            <div class="flex gap-8 mt-4 md:mt-0">
+                <a href="{{ site.github.repository_url }}/blob/main/CHANGELOG.md" class="hover:opacity-100">Changelog</a>
+                <a href="/#home" class="hover:opacity-100">Back to top</a>
             </div>
         </div>
     </div>

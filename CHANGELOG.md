@@ -5,9 +5,10 @@
 * [gemini] feat(ui): 🎨 Massive UI refactoring based on Figma design (#88).
     * Implemented "Roman" theme with Wine Red (#802126) and Cream (#fcf7e8) color palette.
     * Refined logotype to match PDF specifications, including the "I♦I" pictogram.
-    * Redesigned Hero section with full-width background and Cinzel typography.
-    * Refactored Header and Footer to match the new design system.
-    * Updated all section includes (About, Speakers, Schedule, Sponsors, Venue) for better visual consistency.
+    * Completely redesigned Hero section with full-viewport background, transparent header, and improved CTAs.
+    * Updated all sections (About, Speakers, Schedule, Sponsors, Venue) to match the minimalist, left-aligned design from Figma mockups.
+    * Added "Cross the Rubicon" call-to-action section above the footer.
+    * Simplified footer with refined link columns and social icons.
     * Integrated "Cinzel" serif font for a classical aesthetic.
 
 ## 0.16.3
