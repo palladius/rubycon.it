@@ -1,14 +1,40 @@
-{% capture content %}
-    <div class="flex flex-col lg:flex-row" data-aos="fade-up">
-        <div class="w-full flex justify-center">
-            <div class="shadow-lg">
-                <script async data-uid="8a5a8f8636" src="https://rubycon-italy.kit.com/8a5a8f8636/index.js"></script>
+<section class="py-32 bg-[#802126] text-[#fcf7e8] relative overflow-hidden">
+    <!-- Decorative texture or marble-like overlay could go here -->
+    <div class="absolute inset-0 opacity-10 bg-[url('{{ "/assets/images/ambasciatori.jpg" | relative_url }}')] bg-cover bg-center mix-blend-overlay"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 text-center relative z-10" data-aos="zoom-in">
+        <h2 class="text-5xl md:text-8xl font-bold mb-8 tracking-tighter" style="font-family: 'Trajan Pro', 'Cinzel', serif;">
+            Cross the Rubicon.
+        </h2>
+        <p class="text-xl md:text-3xl mb-12 opacity-90 font-serif italic">
+            Rimini, 8 May. Nine talks, one stage, dinner on the beach,<br class="hidden md:block">
+            and the rest of the weekend in Italy.
+        </p>
+        
+        <div class="flex flex-col items-center gap-6">
+            <a href="{{ site.event.tickets_url }}" class="inline-block bg-[#fcf7e8] text-[#802126] px-12 py-5 rounded-sm font-bold text-lg uppercase tracking-widest hover:bg-white transition-all duration-300 shadow-2xl">
+                Get your ticket now
+            </a>
+            <p class="text-sm opacity-60 uppercase tracking-widest font-bold">
+                Early bird from €99 &bull; Price goes up April 15
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-[#802126] text-[#fcf7e8] border-t border-[#fcf7e8]/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+            <div class="max-w-md">
+                <h3 class="text-2xl font-bold mb-6 uppercase tracking-widest" style="font-family: 'Trajan Pro', 'Cinzel', serif;">Stay in the loop</h3>
+                <form action="https://app.convertkit.com/forms/8a5a8f8636/subscriptions" method="post" data-sv-form="8a5a8f8636" data-uid="8a5a8f8636" class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" name="email_address" placeholder="your@email.com" required
+                           class="bg-transparent border-b-2 border-[#fcf7e8]/40 px-0 py-2 text-[#fcf7e8] placeholder-[#fcf7e8]/40 focus:outline-none focus:border-[#fcf7e8] transition-colors flex-grow text-lg font-serif italic">
+                    <button type="submit" class="border-2 border-[#fcf7e8] text-[#fcf7e8] px-8 py-2 rounded-sm font-bold uppercase tracking-widest hover:bg-[#fcf7e8] hover:text-[#802126] transition-all">
+                        Subscribe
+                    </button>
+                </form>
             </div>
         </div>
     </div>
-{% endcapture %}
-
-{% include section.html
-    id="newsletter"
-    content=content
-%}
+</section>

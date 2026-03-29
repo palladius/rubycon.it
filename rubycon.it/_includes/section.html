@@ -1,13 +1,20 @@
-<section id="{{ include.id }}" class="py-20">
-    <div class="{% unless include.wide %}max-w-7xl {% endunless %}mx-auto px-4 sm:px-6 lg:px-8">
-        {% if include.title && include.description %}
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">{{ include.title }}</h2>
-                <div class="w-20 h-1 bg-red-800 mx-auto mb-6"></div>
-                <p class="text-xl max-w-3xl mx-auto">{{ include.description }}</p>
+<section id="{{ include.id }}" class="py-24 border-b border-red-800/5">
+    <div class="{% unless include.wide %}max-w-7xl {% endunless %}mx-auto px-4 sm:px-6 lg:px-12">
+        {% if include.title %}
+            <div class="mb-12" data-aos="fade-right">
+                <h2 class="text-[10px] font-bold mb-4 opacity-40 uppercase tracking-[0.3em]" style="font-family: 'Inter', sans-serif; color: #802126;">
+                    {{ include.title }}
+                </h2>
+                {% if include.description %}
+                    <p class="text-3xl md:text-5xl font-serif max-w-4xl leading-tight text-gray-900">
+                        {{ include.description }}
+                    </p>
+                {% endif %}
             </div>
         {% endif %}
 
-        {{ include.content }}
+        <div class="mt-12">
+            {{ include.content }}
+        </div>
     </div>
 </section>

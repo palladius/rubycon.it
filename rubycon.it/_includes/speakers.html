@@ -1,89 +1,34 @@
 {% capture speakers_content %}
-<div id="speakers-wrapper" class="overflow-hidden relative">
-        <div class="flex speakers-track">
-            {% for speaker in site.data.speakers %}
-            <div class="my-card mx-3 rounded-lg overflow-hidden shadow-md transition duration-300">
-                <div class="relative">
-                    <img src="{{ speaker.avatar | relative_url }}" alt="{{ speaker.full_name }}" class="w-full h-64 object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
-                    <div class="absolute bottom-4 left-4">
-                        <h3 class="text-white text-2xl font-bold">{{ speaker.full_name }}</h3>
-                        <p class="text-red-200">{{ speaker.role }}</p>
-                    </div>
-                </div>
-                <div class="p-6">
-                    <div class="text-gray-600 mb-4">{{ speaker.description | markdownify }}</div>
-                    <div class="flex space-x-2">
-                        {% for label in speaker.labels %}
-                            <span class="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full">{{ label }}</span>
-                        {% endfor %}
-                    </div>
-                </div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 mt-16">
+    {% for speaker in site.data.speakers %}
+    <div class="flex gap-6 items-start" data-aos="fade-up">
+        <div class="flex-shrink-0">
+            <img src="{{ speaker.avatar | relative_url }}" alt="{{ speaker.full_name }}" class="w-32 h-32 rounded-full object-cover shadow-lg border-2 border-white">
+        </div>
+        <div>
+            <h3 class="text-2xl font-bold mb-1" style="font-family: 'Trajan Pro', 'Cinzel', serif; color: #802126;">{{ speaker.full_name }}</h3>
+            <p class="text-gray-700 text-sm mb-3 leading-relaxed">
+                {{ speaker.role }}<br>
+                <span class="opacity-60 italic">{{ speaker.labels | join: " &bull; " }}</span>
+            </p>
+            <div class="text-gray-600 text-sm leading-relaxed max-w-md">
+                {{ speaker.description | strip_html | truncate: 150 }}
             </div>
-            {% endfor %}
         </div>
     </div>
+    {% endfor %}
+</div>
+
+<div class="mt-16 text-center">
+    <a href="/speakers/" class="text-[#802126] font-bold border-b-2 border-[#802126] pb-1 hover:opacity-70 transition">
+        All speakers
+    </a>
 </div>
 {% endcapture %}
 
 {% include section.html
     id="speakers"
-    title="II. &nbsp;Featured speakers"
-    description="We are humbled by the huge response to our CFP: over 40 submissions! We are currently evaluating them and
-    will announce the speakers soon."
+    title="Speakers"
+    description="Who's talking"
     content=speakers_content
 %}
-
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        gsap.registerPlugin(Draggable);
-
-        const track = document.querySelector('.speakers-track');
-        track.innerHTML += track.innerHTML; //temporary cause few speakers
-
-        const contentWidth = track.scrollWidth / 2;
-
-        let x = 0;
-        const speed = 0.8;
-        let isPaused = false;
-
-        function animate() {
-            if (!isPaused) {
-            x -= speed;
-            }
-
-            // wrap infinito
-            if (x <= -contentWidth) x += contentWidth;
-            if (x >= 0) x -= contentWidth;
-
-            gsap.set(track, { x });
-
-            requestAnimationFrame(animate);
-        }
-
-        animate();
-
-        // DRAG (mouse + touch)
-        Draggable.create(track, {
-            type: "x",
-            allowNativeTouchScrolling: false,
-
-            onPress() {
-            isPaused = true;
-            },
-
-            onDrag() {
-            x += this.deltaX;
-            },
-
-            onRelease() {
-            isPaused = false;
-            }
-        });
-
-        // DESKTOP hover
-        track.addEventListener("pointerenter", () => isPaused = true);
-        track.addEventListener("pointerleave", () => isPaused = false);
-    })
-</script>
-
