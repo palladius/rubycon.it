@@ -1,69 +1,42 @@
 {% capture content %}
-<div class="text-center text-xl text-gray-600" data-aos="fade-up">
-    <p><b class="text-gray-700">Fri, 8 May 08:30:</b> Main Event</p>
-    <p><b class="text-gray-700">Fri, 8 May 20:00:</b> Dinner + Toga Party</p>
-    <p><b class="text-gray-700">Sat, 9 May 10:00:</b> Guided tour to the mouth of the Rubicon</p>
-    <p class="mt-6">
-        <a href="/schedule/" class="text-red-800 hover:text-red-600 font-semibold underline">
-            View the full schedule (Ruby code) →
-        </a>
-    </p>
-</div>
-<!-- To restore previous schedule, uncomment this -->
-{% comment %}
-<div class="bg-white rounded-lg shadow-lg overflow-hidden">
-    {% for day in site.data.schedule %}
-    <div class="border-b border-gray-200" data-aos="fade-up">
-        {% if site.data.schedule.size > 1 %}
-        <button
-            class="schedule-day-toggle w-full px-6 py-4 text-left font-bold text-xl bg-gray-100 hover:bg-gray-200 transition flex justify-between items-center">
-            <span>{{ day.title }}</span>
-            <i class="fas fa-chevron-down transition-transform duration-300"></i>
-        </button>
-        {% endif %}
-        <div class="schedule-day-content px-6 py-4">
-            {% for event in day.events %}
-            <div class="schedule-item border-l-4 border-red-800 pl-4 transition" data-aos="fade-right"
-                data-aos-once="true">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-                    <div class="mb-2 md:mb-0">
-                        <span class="text-sm text-gray-500">{{ event.clock }}</span>
-                        <h3 class="text-xl font-bold">{{ event.description }}</h3>
-                        <p class="text-gray-600">{{ event.full_name }}</p>
-                    </div>
-                    {% if event.tag %}
-                    <span class="bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full self-start md:self-center">{{
-                        event.tag }}</span>
-                    {% endif %}
-                </div>
+<div class="max-w-3xl" data-aos="fade-up">
+    <div class="space-y-8">
+        <div class="flex gap-8 items-start group">
+            <div class="text-2xl font-bold pt-1" style="font-family: 'Cinzel', serif; color: #802126; min-width: 100px;">08:30</div>
+            <div>
+                <h3 class="text-2xl font-bold mb-2">Main Event</h3>
+                <p class="text-gray-600 italic">Friday, 8 May &bull; Hotel Ambasciatori</p>
             </div>
-            <br>
-            {% endfor %}
+        </div>
+        
+        <div class="flex gap-8 items-start group">
+            <div class="text-2xl font-bold pt-1" style="font-family: 'Cinzel', serif; color: #802126; min-width: 100px;">20:00</div>
+            <div>
+                <h3 class="text-2xl font-bold mb-2">Dinner + Toga Party</h3>
+                <p class="text-gray-600 italic">Friday, 8 May &bull; Rimini Nightlife</p>
+            </div>
+        </div>
+
+        <div class="flex gap-8 items-start group">
+            <div class="text-2xl font-bold pt-1" style="font-family: 'Cinzel', serif; color: #802126; min-width: 100px;">10:00</div>
+            <div>
+                <h3 class="text-2xl font-bold mb-2">Rubicon Trip</h3>
+                <p class="text-gray-600 italic">Saturday, 9 May &bull; Guided tour to the mouth of the Rubicon</p>
+            </div>
         </div>
     </div>
-    {% endfor %}
+
+    <div class="mt-16">
+        <a href="/schedule/" class="inline-block border-b-2 border-[#802126] text-[#802126] font-bold text-xl pb-1 hover:opacity-70 transition">
+            View the full schedule →
+        </a>
+    </div>
 </div>
-{% endcomment %}
 {% endcapture %}
 
 {% include section.html
 id="schedule"
-title="III. &nbsp;Event schedule"
-description="We organized a single-day track conference, full of high-level, deep, technical content.
-<br>
-This will be a day with learning, networking, and plenty of Ruby goodness!"
+title="Event schedule"
+description="High-level, deep, technical content. Plus plenty of Ruby goodness."
 content=content
 %}
-
-<script>
-    // Schedule day toggle
-    document.querySelectorAll('.schedule-day-toggle').forEach(button => {
-        button.addEventListener('click', function () {
-            const content = this.nextElementSibling;
-            const icon = this.querySelector('i');
-
-            content.classList.toggle('hidden');
-            icon.classList.toggle('rotate-180');
-        });
-    });
-</script>

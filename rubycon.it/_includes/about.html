@@ -1,21 +1,35 @@
 {% capture content %}
-<div class="grid md:grid-cols-3 gap-10">
-    {% for card in site.data.about %}
-    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition" data-aos="fade-up">
-        <div class="bg-red-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-            <i class="fas fa-{{ card.icon }} text-red-800 text-2xl"></i>
-        </div>
-        <h3 class="text-xl font-bold mb-3">{{ card.title }}</h3>
-        <p class="text-gray-600">{{ card.description }}</p>
+<div class="grid md:grid-cols-2 gap-x-16 gap-y-12">
+    <div data-aos="fade-up">
+        <h3 class="text-2xl font-bold mb-4" style="color: #802126;">Talks that go deep</h3>
+        <p class="text-lg text-gray-700 leading-relaxed">
+            We rejected sponsor talk slots. If it's on stage, it's there because we think you'll learn something real.
+        </p>
     </div>
-    {% endfor %}
+    <div data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-2xl font-bold mb-4" style="color: #802126;">Small enough to meet everyone</h3>
+        <p class="text-lg text-gray-700 leading-relaxed">
+            About 200 people. One stage. You'll run into the keynote speakers at the coffee table. That's the point.
+        </p>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-2xl font-bold mb-4" style="color: #802126;">Stuff you can use on Monday</h3>
+        <p class="text-lg text-gray-700 leading-relaxed">
+            Production case studies, tooling updates, architecture decisions. The kind of talks that change how you write code next week.
+        </p>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-2xl font-bold mb-4" style="color: #802126;">Then there's Rimini</h3>
+        <p class="text-lg text-gray-700 leading-relaxed">
+            The Adriatic coast, the food, May weather. You came for the talks but you'll stay for the piadina and the sea.
+        </p>
+    </div>
 </div>
 {% endcapture %}
 
 {% include section.html
 id="about"
-title="I. &nbsp;About Rubycon Italy"
-description="Join us for a full day dedicated to Ruby inspiring talks from italian and international speakers, sharing
-ideas and experiences from the Ruby world. All talks are in English."
+title="Why Rubycon"
+description="RubyDay went away. So we made our own."
 content=content
 %}

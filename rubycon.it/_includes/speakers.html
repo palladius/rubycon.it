@@ -1,21 +1,19 @@
 {% capture speakers_content %}
-<div id="speakers-wrapper" class="overflow-hidden relative">
+<div id="speakers-wrapper" class="overflow-hidden relative py-10">
         <div class="flex speakers-track">
             {% for speaker in site.data.speakers %}
-            <div class="my-card mx-3 rounded-lg overflow-hidden shadow-md transition duration-300">
-                <div class="relative">
-                    <img src="{{ speaker.avatar | relative_url }}" alt="{{ speaker.full_name }}" class="w-full h-64 object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
-                    <div class="absolute bottom-4 left-4">
-                        <h3 class="text-white text-2xl font-bold">{{ speaker.full_name }}</h3>
-                        <p class="text-red-200">{{ speaker.role }}</p>
-                    </div>
+            <div class="my-card mx-4 bg-white shadow-sm border border-red-800/10 hover:border-red-800/30 transition-all duration-500 group">
+                <div class="relative overflow-hidden">
+                    <img src="{{ speaker.avatar | relative_url }}" alt="{{ speaker.full_name }}" class="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                    <div class="absolute inset-0 bg-[#802126] mix-blend-multiply opacity-20 group-hover:opacity-0 transition-opacity duration-700"></div>
                 </div>
-                <div class="p-6">
-                    <div class="text-gray-600 mb-4">{{ speaker.description | markdownify }}</div>
-                    <div class="flex space-x-2">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-1" style="font-family: 'Cinzel', serif; color: #802126;">{{ speaker.full_name }}</h3>
+                    <p class="text-sm uppercase tracking-widest mb-4 opacity-70 font-semibold">{{ speaker.role }}</p>
+                    <div class="text-gray-700 text-base leading-relaxed mb-6 font-serif italic">{{ speaker.description | markdownify }}</div>
+                    <div class="flex flex-wrap gap-2">
                         {% for label in speaker.labels %}
-                            <span class="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full">{{ label }}</span>
+                            <span class="border border-red-800/20 text-red-800 text-[10px] uppercase tracking-tighter px-3 py-1">{{ label }}</span>
                         {% endfor %}
                     </div>
                 </div>
@@ -28,7 +26,7 @@
 
 {% include section.html
     id="speakers"
-    title="II. &nbsp;Featured speakers"
+    title="Featured speakers"
     description="We are humbled by the huge response to our CFP: over 40 submissions! We are currently evaluating them and
     will announce the speakers soon."
     content=speakers_content
@@ -36,15 +34,18 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
+        if (typeof Draggable === 'undefined') return;
         gsap.registerPlugin(Draggable);
 
         const track = document.querySelector('.speakers-track');
+        if (!track) return;
+        
         track.innerHTML += track.innerHTML; //temporary cause few speakers
 
         const contentWidth = track.scrollWidth / 2;
 
         let x = 0;
-        const speed = 0.8;
+        const speed = 0.6;
         let isPaused = false;
 
         function animate() {
@@ -86,4 +87,3 @@
         track.addEventListener("pointerleave", () => isPaused = false);
     })
 </script>
-

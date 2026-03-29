@@ -1,38 +1,36 @@
-<footer class="text-white py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+<footer class="py-16 text-[#fcf7e8]" style="background-color: #802126;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
 
             <div>
-                <h3 class="text-lg font-bold mb-4">Quick links</h3>
-                <ul class="space-y-2">
-                    <li><a href="/#home" class="text-gray-300 hover:text-white">Home</a></li>
-                    <li><a href="/schedule/" class="text-gray-300 hover:text-white">Schedule</a></li>
-                    <li><a href="/#speakers" class="text-gray-300 hover:text-white">Speakers</a></li>
-                    <li><a href="/#venue" class="text-gray-300 hover:text-white">Venue</a></li>
-                    <li><a href="/#sponsors" class="text-gray-300 hover:text-white">Sponsors</a></li>
+                <h3 class="text-xl font-bold mb-6" style="font-family: 'Cinzel', serif;">Quick links</h3>
+                <ul class="space-y-3">
+                    <li><a href="/#home" class="opacity-80 hover:opacity-100 transition">Home</a></li>
+                    <li><a href="/schedule/" class="opacity-80 hover:opacity-100 transition">Schedule</a></li>
+                    <li><a href="/#speakers" class="opacity-80 hover:opacity-100 transition">Speakers</a></li>
+                    <li><a href="/#venue" class="opacity-80 hover:opacity-100 transition">Venue</a></li>
+                    <li><a href="/#sponsors" class="opacity-80 hover:opacity-100 transition">Sponsors</a></li>
                 </ul>
             </div>
             <div>
-                <ul class="space-y-2 mt-11">
-                    <li><a href="/logistics/" class="text-gray-300 hover:text-white">Logistics</a></li>
-                    <li><a href="/faq/" class="text-gray-300 hover:text-white">FAQ</a></li>
-                    <li><a href="/articles/" class="text-gray-300 hover:text-white">Blog</a></li>
-                    <li><a href="/scholarship" class="text-gray-300 hover:text-white">Scolarship</a></li>
-                    <li><a href="/code-of-conduct" class="text-gray-300 hover:text-white">Code of Conduct</a></li>
-                    <li><a href="{{ site.github.repository_url }}" class="text-gray-300 hover:text-white">GitHub</a></li>
+                <ul class="space-y-3 mt-12">
+                    <li><a href="/logistics/" class="opacity-80 hover:opacity-100 transition">Logistics</a></li>
+                    <li><a href="/faq/" class="opacity-80 hover:opacity-100 transition">FAQ</a></li>
+                    <li><a href="/articles/" class="opacity-80 hover:opacity-100 transition">Blog</a></li>
+                    <li><a href="/scholarship" class="opacity-80 hover:opacity-100 transition">Scholarship</a></li>
+                    <li><a href="/code-of-conduct" class="opacity-80 hover:opacity-100 transition">Code of Conduct</a></li>
+                    <li><a href="{{ site.github.repository_url }}" class="opacity-80 hover:opacity-100 transition">GitHub</a></li>
                 </ul>
-
             </div>
 
             <div>
-                <h3 class="text-lg font-bold mb-4">Social</h3>
-                <ul class="space-y-2">
+                <h3 class="text-xl font-bold mb-6" style="font-family: 'Cinzel', serif;">Social</h3>
+                <ul class="space-y-3">
                     {% for social in site.data.social_media %}
                     <li>
-                        <a href="{{ social.url }}" class="text-gray-300 hover:text-white" target="_blank">
-                            <i class="fab fa-{{ social.icon }} text-md" aria-hidden="true"></i>
-                            <span aria-hidden="true">{{ social.name }}</span>
-                            <span class="sr-only">{{ social.aria_label }}</span>
+                        <a href="{{ social.url }}" class="flex items-center gap-3 opacity-80 hover:opacity-100 transition" target="_blank">
+                            <i class="fab fa-{{ social.icon }} text-lg" aria-hidden="true"></i>
+                            <span>{{ social.name }}</span>
                         </a>
                     </li>
                     {% endfor %}
@@ -40,39 +38,28 @@
             </div>
 
             <div>
-                <h3 class="text-lg font-bold mb-4">Contact</h3>
-                <ul class="space-y-2">
-                    <li class="flex items-start">
-                        <i class="fas fa-envelope text-yellow-400 mt-1 mr-3"></i>
-                        <a href="mailto:{{ site.info_email }}" class="text-gray-300 hover:text-white">{{ site.info_email
-                            }}</a>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-map-marker-alt text-yellow-400 mt-1 mr-3"></i>
-                        <span class="text-gray-300">{{ site.data.venue.title }}, {{ site.event.location }}</span>
-                    </li>
-                </ul>
-                <h3 class="text-lg font-bold mb-4 mt-6">newsletter</h3>
-                <form action="https://app.convertkit.com/forms/8a5a8f8636/subscriptions" method="post" data-sv-form="8a5a8f8636" data-uid="8a5a8f8636">
-                    <div class="flex gap-2">
+                <h3 class="text-xl font-bold mb-6" style="font-family: 'Cinzel', serif;">Newsletter</h3>
+                <form action="https://app.convertkit.com/forms/8a5a8f8636/subscriptions" method="post" data-sv-form="8a5a8f8636" data-uid="8a5a8f8636" class="mb-4">
+                    <div class="flex flex-col gap-3">
                         <label for="newsletter-email" class="sr-only">Email address</label>
                         <input type="email" name="email_address" id="newsletter-email" placeholder="your@email.com" required
-                               class="px-3 py-1.5 rounded-md text-gray-900 text-sm w-40 focus:outline-none focus:ring-2 focus:ring-yellow-400">
-                        <button type="submit" class="bg-red-800 text-white px-3 py-1.5 rounded-md text-sm font-medium hover:bg-red-700 transition">Subscribe</button>
+                               class="px-4 py-2 rounded-full text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-[#fcf7e8] bg-[#fcf7e8]">
+                        <button type="submit" class="bg-white text-[#802126] px-6 py-2 rounded-full font-bold hover:bg-opacity-90 transition">Subscribe</button>
                     </div>
-                    <a href="https://kit.com" target="_blank" class="text-gray-400 text-xs mt-2 inline-block hover:text-gray-300">Built with Kit</a>
                 </form>
+                <a href="https://kit.com" target="_blank" class="opacity-50 text-xs hover:opacity-80 transition">Built with Kit</a>
             </div>
         </div>
 
-        <div class="border-t border-gray-300 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p class="text-gray-300 mb-4 md:mb-0">© 2026 <a
-                    href="{{ site.github.repository_url }}/blob/main/CHANGELOG.md"
-                    class="text-gray-300 hover:text-white">{{ site.event.name }} Italy <strong>v{{ site.site_version
-                        }}</strong></a>.
-                <a href="{{ site.github.repository_url }}/blob/main/LICENSE" class="text-gray-300 hover:text-white">Some
-                    rights reserved</a>.
+        <div class="border-t border-[#fcf7e8]/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm opacity-70">
+            <p class="mb-4 md:mb-0">
+                © 2026 {{ site.event.name }} Italy <strong>v{{ site.site_version }}</strong>. 
+                <a href="{{ site.github.repository_url }}/blob/main/LICENSE" class="hover:underline ml-2">Some rights reserved</a>.
             </p>
+            <div class="flex gap-6">
+                <a href="{{ site.github.repository_url }}/blob/main/CHANGELOG.md" class="hover:underline">Changelog</a>
+                <a href="/#home" class="hover:underline">Back to top</a>
+            </div>
         </div>
     </div>
 </footer>

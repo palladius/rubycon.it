@@ -5,28 +5,35 @@
     </div>
 {% endif %}
 
-<div id="home" class="text-white flex items-center" style="min-height: calc(100vh - 80px);">
-    <div class="mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div class="flex flex-col md:flex-row items-center" data-aos="fade-up">
-            <div class="md:w-1/2 mb-10 md:mb-0">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">Ruby<span class="text-yellow-400">con</span> Italy</h1>
-                <p class="text-xl md:text-2xl mb-8">The premier Ruby conference in the heart of Italy</p>
-                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="{{ site.event.tickets_url }}" class="relative inline-block bg-white text-red-950 px-8 py-3 rounded-md font-bold text-lg hover:bg-gray-100 transition duration-300 text-center">
-                        Tickets for sale
-                    </a>
-                    <a href="#about" class="border-2 border-white text-white px-8 py-3 rounded-md font-bold text-lg hover:bg-white hover:text-red-950 transition duration-300 text-center" aria-label="Learn more about Rubycon Italy">learn more</a>
-                </div>
+<div id="home" class="relative text-white flex items-center bg-cover bg-center" style="min-height: 80vh; background-image: url('{{ "/assets/images/ambasciatori.jpg" | relative_url }}');">
+    <!-- Wine Red Overlay -->
+    <div class="absolute inset-0 bg-[#802126] opacity-85"></div>
+
+    <div class="relative z-10 mx-auto px-4 sm:px-6 lg:px-12 py-20 w-full">
+        <div class="max-w-4xl" data-aos="fade-up">
+            <h1 class="text-6xl md:text-9xl font-bold mb-4 tracking-tighter text-white" style="font-family: 'Cinzel', serif;">
+                RVBYCON
+            </h1>
+            <div class="text-2xl md:text-4xl font-medium mb-6 opacity-90" style="font-family: 'Cinzel', serif;">
+                {{ site.event.date }} &bull; {{ site.event.location }}
             </div>
-            <div class="md:w-1/2 relative">
-                <img src="{{ "/assets/images/sala-quarzo.jpg" | relative_url }}" alt="The conference room at Hotel Ambasciatori, named Sala Quarzo" class="rounded-lg shadow-2xl w-full mx-auto" style="height: 400px; object-fit: cover;">
-                <div class="absolute -bottom-8 -right-2 bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg shadow-lg font-bold animate-bounce-slow">
-                    <div class="flex items-center">
-                        <i class="fas fa-calendar-alt mr-2"></i>
-                        <span>{{ site.event.date }} | {{ site.event.location }}</span>
-                    </div>
-                </div>
+            <p class="text-xl md:text-2xl mb-10 max-w-2xl font-light italic">
+                The premier Ruby conference in the heart of Italy
+            </p>
+            
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="{{ site.event.tickets_url }}" class="inline-block bg-[#fcf7e8] text-[#802126] px-10 py-4 rounded-full font-bold text-lg hover:bg-white transition duration-300 text-center shadow-xl">
+                    Buy ticket now
+                </a>
+                <a href="#about" class="inline-block border-2 border-[#fcf7e8] text-[#fcf7e8] px-10 py-4 rounded-full font-bold text-lg hover:bg-[#fcf7e8] hover:text-[#802126] transition duration-300 text-center shadow-lg">
+                    Learn more
+                </a>
             </div>
+        </div>
+        
+        <!-- Arrow Down (decorative) -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+            <i class="fas fa-chevron-down text-3xl"></i>
         </div>
     </div>
 </div>

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.17.0
+
+* [gemini] feat(ui): 🎨 Massive UI refactoring based on Figma design (#88).
+    * Implemented "Roman" theme with Wine Red (#802126) and Cream (#fcf7e8) color palette.
+    * Redesigned Hero section with full-width background and Cinzel typography.
+    * Refactored Header and Footer to match the new design system.
+    * Updated all section includes (About, Speakers, Schedule, Sponsors, Venue) for better visual consistency.
+    * Integrated "Cinzel" serif font for a classical aesthetic.
+
 ## 0.16.3
 
 * [gemini] refactor(dsl): ⏱️ Converted schedule times from strings to numerals (e.g., `08_30`).
