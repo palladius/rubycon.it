@@ -6,7 +6,7 @@
             <div class="flex justify-between h-24 items-center">
                 <div class="flex-shrink-0 flex items-center">
                     <a href="/#home" class="flex items-center group">
-                        <span class="text-3xl font-bold tracking-tighter text-[#fcf7e8] transition-colors duration-300" id="header-logo" style="font-family: 'Trajan Pro', 'Cinzel', serif;">
+                        <span class="text-3xl font-bold tracking-tighter transition-colors duration-300" id="header-logo" style="font-family: 'Trajan Pro', 'Cinzel', serif; color: #fcf7e8 !important;">
                             RVBYCON
                             <span class="ml-2 opacity-80 group-hover:opacity-100 transition-opacity">I<i class="fas fa-gem text-xl mx-0.5" style="vertical-align: middle;"></i>I</span>
                         </span>
@@ -62,8 +62,14 @@
         function updateHeader() {
             if (window.scrollY > 50) {
                 header.classList.add('scrolled');
+                logo.style.setProperty('color', '#802126', 'important');
+                navLinks.forEach(link => link.style.setProperty('color', '#802126', 'important'));
+                mobileToggle.style.setProperty('color', '#802126', 'important');
             } else {
                 header.classList.remove('scrolled');
+                logo.style.setProperty('color', '#fcf7e8', 'important');
+                navLinks.forEach(link => link.style.setProperty('color', '#fcf7e8', 'important'));
+                mobileToggle.style.setProperty('color', '#fcf7e8', 'important');
             }
         }
 
