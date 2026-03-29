@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.16.4] - 2026-03-29
+
+### Changed
+- *[Riccardo / Antigravity]* **Schedule**: Standardized talk durations to 40 minutes and coffee breaks to 20 minutes for better consistency. Shrunk Piadina wrap to 20m. Updated `_includes/dsl/content.rb` and `_data/schedule.yml`.
+
 ## [0.4.47] - 2026-01-25
 
 ### Added
