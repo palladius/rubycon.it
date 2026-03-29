@@ -1,4 +1,4 @@
-<header class="absolute top-0 left-0 right-0 z-50">
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent" id="main-header">
     <a href="#content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-red-800 focus:text-white focus:px-6 focus:py-3 focus:rounded-md focus:font-bold">Skip to content</a>
     <!-- navigation -->
     <nav class="relative">
@@ -6,7 +6,7 @@
             <div class="flex justify-between h-24 items-center">
                 <div class="flex-shrink-0 flex items-center">
                     <a href="/#home" class="flex items-center group">
-                        <span class="text-3xl font-bold tracking-tighter text-[#fcf7e8]" style="font-family: 'Trajan Pro', 'Cinzel', serif;">
+                        <span class="text-3xl font-bold tracking-tighter text-[#fcf7e8] transition-colors duration-300" id="header-logo" style="font-family: 'Trajan Pro', 'Cinzel', serif;">
                             RVBYCON
                             <span class="ml-2 opacity-80 group-hover:opacity-100 transition-opacity">I<i class="fas fa-gem text-xl mx-0.5" style="vertical-align: middle;"></i>I</span>
                         </span>
@@ -17,25 +17,24 @@
                         {% for nav in site.data.navigation %}
                         <div class="relative group inline-block">
                             {% if nav.link %}
-                                <a href="{{ nav.link }}" class="text-[#fcf7e8] opacity-80 hover:opacity-100 px-1 py-2 text-sm uppercase tracking-widest font-medium transition-all">
+                                <a href="{{ nav.link }}" class="text-[#fcf7e8] opacity-80 hover:opacity-100 px-1 py-2 text-sm uppercase tracking-[0.2em] font-bold transition-all nav-link" style="font-family: 'Inter', sans-serif;">
                                     {{ nav.name }}
                                 </a>
                             {% else %}
-                                <span class="text-[#fcf7e8] opacity-80 hover:opacity-100 px-1 py-2 text-sm uppercase tracking-widest font-medium cursor-pointer transition-all">
+                                <span class="text-[#fcf7e8] opacity-80 hover:opacity-100 px-1 py-2 text-sm uppercase tracking-[0.2em] font-bold cursor-pointer transition-all nav-link" style="font-family: 'Inter', sans-serif;">
                                     {{ nav.name }}
                                 </span>
                             {% endif %}
                         </div>
                         {% endfor %}
-                        <a href="{{ site.event.tickets_url }}" class="bg-[#fcf7e8] text-[#802126] px-6 py-2 rounded-sm text-sm uppercase tracking-widest font-bold hover:bg-white transition-all shadow-lg">
+                        <a href="{{ site.event.tickets_url }}" class="bg-[#fcf7e8] text-[#802126] px-6 py-2 rounded-sm text-sm uppercase tracking-widest font-bold hover:bg-white transition-all shadow-lg header-btn">
                             Get your ticket
                         </a>
                     </div>
                 </div>
                 <div class="lg:hidden flex items-center gap-4">
-                    <a href="{{ site.event.tickets_url }}" class="bg-[#fcf7e8] text-[#802126] px-4 py-2 rounded-sm text-xs uppercase tracking-widest font-bold hover:bg-white transition">Tickets</a>
-                    <button class="mobile-menu-button p-2 text-[#fcf7e8] focus:outline-none"
-                            onclick="document.querySelector('.mobile-menu').classList.toggle('hidden')">
+                    <a href="{{ site.event.tickets_url }}" class="bg-[#fcf7e8] text-[#802126] px-4 py-2 rounded-sm text-xs uppercase tracking-widest font-bold hover:bg-white transition header-btn">Tickets</a>
+                    <button class="mobile-menu-button p-2 text-[#fcf7e8] focus:outline-none" id="mobile-toggle">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -45,8 +44,7 @@
         <div class="mobile-menu hidden shadow-2xl absolute text-center bg-[#802126] border-t border-[#fcf7e8]/10" style="width: 100%">
             <div class="px-4 pt-4 pb-8 space-y-4">
                 {% for nav in site.data.navigation  %}
-                    <a href="{{ nav.link }}" class="block text-lg font-serif text-[#fcf7e8] opacity-80 hover:opacity-100 py-2"
-                    onclick="document.querySelector('.mobile-menu').classList.toggle('hidden')">
+                    <a href="{{ nav.link }}" class="block text-lg font-serif text-[#fcf7e8] opacity-80 hover:opacity-100 py-2">
                         {{ nav.name }}
                     </a>
                 {% endfor %}
@@ -54,3 +52,26 @@
         </div>
     </nav>
 </header>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const header = document.getElementById('main-header');
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        function updateHeader() {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        }
+
+        window.addEventListener('scroll', updateHeader);
+        updateHeader(); // initial state
+
+        mobileToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    });
+</script>

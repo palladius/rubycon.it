@@ -7,7 +7,8 @@
     * Refined logotype to match PDF specifications, including the "I♦I" pictogram.
     * Completely redesigned Hero section with full-viewport background, transparent header, and improved CTAs.
     * Updated all sections (About, Speakers, Schedule, Sponsors, Venue) to match the minimalist, left-aligned design from Figma mockups.
-    * Added "Cross the Rubicon" call-to-action section above the footer.
+    * Fixed invisible "RVBYCON" hero title by adding cream color override.
+    * Implemented dynamic sticky header that transitions from transparent to cream on scroll for better visibility.
     * Simplified footer with refined link columns and social icons.
     * Integrated "Trajan Pro" as the primary serif font, with "Cinzel" as a high-fidelity fallback.
 

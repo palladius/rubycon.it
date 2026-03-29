@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: "Trajan Pro", "Libre Baskerville", serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-style: normal;
   font-optical-sizing: auto;
@@ -28,6 +28,13 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   letter-spacing: -0.02em;
 }
+
+.label, .font-sans, .nav-link, .tag {
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
 
 
 section,
@@ -46,8 +53,30 @@ section:nth-of-type(even) {
 }
 
 header {
-  background-color: variables.$ruby-cream;
-  border-bottom: 1px solid rgba(128, 33, 38, 0.1);
+  transition: all 0.3s ease;
+  
+  &.scrolled {
+    background-color: variables.$ruby-cream !important;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    border-bottom: 1px solid rgba(128, 33, 38, 0.1);
+    
+    #header-logo {
+      color: variables.$ruby-wine-red !important;
+    }
+    
+    .nav-link {
+      color: variables.$ruby-wine-red !important;
+    }
+    
+    .header-btn {
+      background-color: variables.$ruby-wine-red !important;
+      color: variables.$ruby-cream !important;
+    }
+    
+    #mobile-toggle {
+      color: variables.$ruby-wine-red !important;
+    }
+  }
 }
 
 footer {
