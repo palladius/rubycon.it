@@ -9,7 +9,7 @@
     * Updated all sections (About, Speakers, Schedule, Sponsors, Venue) to match the minimalist, left-aligned design from Figma mockups.
     * Added "Cross the Rubicon" call-to-action section above the footer.
     * Simplified footer with refined link columns and social icons.
-    * Integrated "Cinzel" serif font for a classical aesthetic.
+    * Integrated "Trajan Pro" as the primary serif font, with "Cinzel" as a high-fidelity fallback.
 
 ## 0.16.3
 
