@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.17.0] - 2026-03-30
+
+### Fixed
+- *[Riccardo / Antigravity]* **Sponsors**: Removed duplicated "quaestor" and "community" sponsor blocks in `_data/sponsors.yml`. Fixes GH Issue #92.
+
 ## [0.16.9] - 2026-03-30
 
 ### Changed
