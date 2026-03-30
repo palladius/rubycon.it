@@ -13,3 +13,13 @@
   role: Full-Stack Ruby On Rails Developer
   description: "Julia is from Barcelona and has been working with Rails for almost 15 years."
   labels: [ruby, ruby on rails]
+- avatar: "/assets/images/articles/akira_matsuda.jpg"
+  full_name: Akira Matsuda
+  role: Ruby Committer & Creator of Kaminari
+  description: Akira is a Ruby Committer, creator of Kaminari and Asakusa.rb organizer.
+  labels: [ruby, kaminari]
+- avatar: "/assets/images/articles/andre_arko.jpg"
+  full_name: André Arko
+  role: Ruby Central Board & Lead Developer of Bundler
+  description: André is the creator of Bundler and works tirelessly on RubyGems to make dependency management great.
+  labels: [ruby, bundler, rubygems]
