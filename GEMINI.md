@@ -28,7 +28,7 @@ Program is designed around a Friday, probably 8 may 2026, but could change. We c
 ## Graphics
 
 The CSS should have some sort of sea/river inspired color set, like scales of light blue.
-Ideally text will be in black or white, depending on CSS color, and have bold ins the dark red of Ruby logo (not sure what it is).
+Ideally text will be in black or white, depending on CSS color, and have bold ins the dark red of Ruby logo (not sure what it is). Note in MArch 2026 we're doing a BIG graphics rebranding. Check GH [Issue 88](https://github.com/palladius/rubycon.it/issues/88) and branch `figma26`.
 
 ## Feedback loop
 

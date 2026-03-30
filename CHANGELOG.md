@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.16.5
+
+* [Antigravity/Gemini] feat(agenda): 🗣️ Add Marco Roth abstract and title (Fixes #74).
+
 ## 0.16.3
 
 * [gemini] refactor(dsl): ⏱️ Converted schedule times from strings to numerals (e.g., `08_30`).

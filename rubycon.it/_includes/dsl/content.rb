@@ -45,7 +45,7 @@ Rubycon::Agenda.schedule(Date.new(2026, 5, 8)) do
          desc: "☕ Coffee Break"
 
   talk at: 16_20,
-       title: "TBD",
+       title: "HTML-Aware ERB: The Path to Reactive Rendering",
        by: "Marco Roth"
 
 
