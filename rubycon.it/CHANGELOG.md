@@ -7,7 +7,7 @@ All notable changes to this project will be documented in this file.
 ## [0.16.6] - 2026-03-30
 
 ### Added
-- *[Riccardo / Antigravity]* **Speakers**: Added Akira Matsuda and André Arko to the featured speakers list (`_data/speakers.yml`) and copied their pictures. Tracked missing information for the rest of the schedule in GH Issue #91.
+- *[Riccardo / Antigravity]* **Speakers**: Added Akira Matsuda, André Arko, Silvano Stralla, and Yara Debian to the featured speakers list (`_data/speakers.yml`) and copied their pictures. Tracked missing information for the rest of the schedule in GH Issue #91.
 
 ## [0.16.4] - 2026-03-29
 

@@ -23,3 +23,13 @@
   role: Ruby Central Board & Lead Developer of Bundler
   description: André is the creator of Bundler and works tirelessly on RubyGems to make dependency management great.
   labels: [ruby, bundler, rubygems]
+- avatar: "/assets/images/articles/silvano_stralla.jpeg"
+  full_name: Silvano Stralla
+  role: TBD
+  description: Silvano will hold a talk about Breaking the rules of software engineering.
+  labels: [ruby]
+- avatar: "/assets/images/articles/yara_debian.jpeg"
+  full_name: Yara Debian
+  role: TBD
+  description: Yara will present From Plato to Production, a Philosophical History of Code.
+  labels: [ruby, art, philosophy]
