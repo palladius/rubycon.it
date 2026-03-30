@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.16.8] - 2026-03-30
+
+### Changed
+- *[Riccardo / Antigravity]* **Speakers**: Translated Michele Franzin's profile to English.
+
 ## [0.16.7] - 2026-03-30
 
 ### Added

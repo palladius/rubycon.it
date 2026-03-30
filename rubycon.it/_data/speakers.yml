@@ -25,6 +25,6 @@
   labels: [ruby, bundler, rubygems]
 - avatar: "/assets/images/articles/michele_franzin.jpg"
   full_name: Michele Franzin
-  role: Lead Developer ed Architetto at SeeSaw srl
-  description: Software Engineer, folgorato in gioventù da uno ZX-Spectrum vive in bilico tra il presente Ruby e un passato Java Enterprise. Lavora come Lead Developer ed Architetto in SeeSaw una giovane software house italiana. Passionario della formazione non perde occasione per condividere le sue esperienze.
+  role: Lead Developer and Architect at SeeSaw srl
+  description: Software Engineer, struck in his youth by a ZX-Spectrum, he lives balanced between the present Ruby and a past Java Enterprise. He works as a Lead Developer and Architect at SeeSaw, a young Italian software house. Passionate about training, he never misses an opportunity to share his experiences.
   labels: [ruby, seesaw, architecture]
