@@ -23,3 +23,8 @@
   role: Ruby Central Board & Lead Developer of Bundler
   description: André is the creator of Bundler and works tirelessly on RubyGems to make dependency management great.
   labels: [ruby, bundler, rubygems]
+- avatar: "/assets/images/articles/michele_franzin.jpg"
+  full_name: Michele Franzin
+  role: Lead Developer ed Architetto at SeeSaw srl
+  description: Software Engineer, folgorato in gioventù da uno ZX-Spectrum vive in bilico tra il presente Ruby e un passato Java Enterprise. Lavora come Lead Developer ed Architetto in SeeSaw una giovane software house italiana. Passionario della formazione non perde occasione per condividere le sue esperienze.
+  labels: [ruby, seesaw, architecture]

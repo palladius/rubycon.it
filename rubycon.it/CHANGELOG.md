@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.16.7] - 2026-03-30
+
+### Added
+- *[Riccardo / Antigravity]* **Speakers**: Added Michele Franzin to the featured speakers list (`_data/speakers.yml`) and copied his picture from Sessionize. Fixes GH Issue #91.
+
 ## [0.16.6] - 2026-03-30
 
 ### Added
