@@ -33,3 +33,8 @@
   role: TBD
   description: Yara will present From Plato to Production, a Philosophical History of Code.
   labels: [ruby, art, philosophy]
+- avatar: "/assets/images/articles/michele_franzin.jpg"
+  full_name: Michele Franzin
+  role: Lead Developer and Architect at SeeSaw srl
+  description: Software Engineer, struck in his youth by a ZX-Spectrum, he lives balanced between the present Ruby and a past Java Enterprise. He works as a Lead Developer and Architect at SeeSaw, a young Italian software house. Passionate about training, he never misses an opportunity to share his experiences.
+  labels: [ruby, seesaw, architecture]
