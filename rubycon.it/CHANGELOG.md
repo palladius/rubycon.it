@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.16.9] - 2026-03-30
+
+### Changed
+- *[Riccardo / Antigravity]* **Speakers Section**: Updated the description on the homepage as all speakers have now been announced.
+
 ## [0.16.8] - 2026-03-30
 
 ### Changed
