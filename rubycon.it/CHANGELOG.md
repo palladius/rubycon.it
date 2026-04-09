@@ -4,6 +4,36 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.17.0] - 2026-03-30
+
+### Fixed
+- *[Riccardo / Antigravity]* **Sponsors**: Removed duplicated "quaestor" and "community" sponsor blocks in `_data/sponsors.yml`. Fixes GH Issue #92.
+
+## [0.16.9] - 2026-03-30
+
+### Changed
+- *[Riccardo / Antigravity]* **Speakers Section**: Updated the description on the homepage as all speakers have now been announced.
+
+## [0.16.8] - 2026-03-30
+
+### Changed
+- *[Riccardo / Antigravity]* **Speakers**: Translated Michele Franzin's profile to English.
+
+## [0.16.7] - 2026-03-30
+
+### Added
+- *[Riccardo / Antigravity]* **Speakers**: Added Michele Franzin to the featured speakers list (`_data/speakers.yml`) and copied his picture from Sessionize. Fixes GH Issue #91.
+
+## [0.16.6] - 2026-03-30
+
+### Added
+- *[Riccardo / Antigravity]* **Speakers**: Added Akira Matsuda, André Arko, Silvano Stralla, and Yara Debian to the featured speakers list (`_data/speakers.yml`) and copied their pictures. Tracked missing information for the rest of the schedule in GH Issue #91.
+
+## [0.16.4] - 2026-03-29
+
+### Changed
+- *[Riccardo / Antigravity]* **Schedule**: Standardized talk durations to 40 minutes and coffee breaks to 20 minutes for better consistency. Shrunk Piadina wrap to 20m. Updated `_includes/dsl/content.rb` and `_data/schedule.yml`.
+
 ## [0.4.47] - 2026-01-25
 
 ### Added

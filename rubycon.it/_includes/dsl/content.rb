@@ -10,26 +10,26 @@ Rubycon::Agenda.schedule(Date.new(2026, 5, 8)) do
           title: "Ruby Is the Best Language for Building AI Web Apps",
           by: "Carmine Paolino"
 
-  talk at: 10_30,
+  talk at: 10_25,
        title: "Shift-left on Accessibility in your Ruby webapps",
        by: "Julia Lopez"
 
-  lapsus at: 11_15,
+  lapsus at: 11_05,
          desc: "☕️ Coffee Break"
 
   talk at: 11_20,
        title: "Breaking the rules of software engineering: will it work?",
        by: "Silvano Stralla"
 
-  talk at: 11_55,
+  talk at: 12_00,
        title: "rv, a ruby manager for the future",
        by: "André Arko"
 
-  lapsus at: 12_25,
+  lapsus at: 12_40,
          desc: "🍝 Lunch Break & Networking"
 
   # We want to give everyone the chance to say/bring something for 5 minutes.
-  lightning_talks at: 13_55,
+  lightning_talks at: 13_45,
                   desc: "⚡️ 5minutes for everyone who has something to say",
                   tags: %w[ FIFO on_the_day ]
 
@@ -37,23 +37,23 @@ Rubycon::Agenda.schedule(Date.new(2026, 5, 8)) do
        title: "Semantic Image Search in Ruby: Postgres, Redis, or LLM?",
        by: "Michele Franzin"
 
-  talk at: 15_20,
+  talk at: 15_25,
        title: "My daily life on Ruby",
        by: "Akira Matsuda"
 
-  lapsus at: 15_50,
+  lapsus at: 16_05,
          desc: "☕ Coffee Break"
 
-  talk at: 16_10,
-       title: "TBD",
+  talk at: 16_20,
+       title: "HTML-Aware ERB: The Path to Reactive Rendering",
        by: "Marco Roth"
 
 
-  talk at: 16_45,
+  talk at: 17_00,
        title: "From Plato to Production: A Philosophical History of Code",
        by: "Yara Debian"
 
-  talk at: 17_30,
+  talk at: 17_40,
        title: "Piadina - It's a wrap!", # aka Piadina!
        by: "Riccardo Carlesso"
 

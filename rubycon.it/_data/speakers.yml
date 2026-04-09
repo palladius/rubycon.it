@@ -13,3 +13,28 @@
   role: Full-Stack Ruby On Rails Developer
   description: "Julia is from Barcelona and has been working with Rails for almost 15 years."
   labels: [ruby, ruby on rails]
+- avatar: "/assets/images/articles/akira_matsuda.jpg"
+  full_name: Akira Matsuda
+  role: Ruby Committer & Creator of Kaminari
+  description: Akira is a Ruby Committer, creator of Kaminari and Asakusa.rb organizer.
+  labels: [ruby, kaminari]
+- avatar: "/assets/images/articles/andre_arko.jpg"
+  full_name: André Arko
+  role: Ruby Central Board & Lead Developer of Bundler
+  description: André is the creator of Bundler and works tirelessly on RubyGems to make dependency management great.
+  labels: [ruby, bundler, rubygems]
+- avatar: "/assets/images/articles/silvano_stralla.jpeg"
+  full_name: Silvano Stralla
+  role: TBD
+  description: Silvano will hold a talk about Breaking the rules of software engineering.
+  labels: [ruby]
+- avatar: "/assets/images/articles/yara_debian.jpeg"
+  full_name: Yara Debian
+  role: TBD
+  description: Yara will present From Plato to Production, a Philosophical History of Code.
+  labels: [ruby, art, philosophy]
+- avatar: "/assets/images/articles/michele_franzin.jpg"
+  full_name: Michele Franzin
+  role: Lead Developer and Architect at SeeSaw srl
+  description: Software Engineer, struck in his youth by a ZX-Spectrum, he lives balanced between the present Ruby and a past Java Enterprise. He works as a Lead Developer and Architect at SeeSaw, a young Italian software house. Passionate about training, he never misses an opportunity to share his experiences.
+  labels: [ruby, seesaw, architecture]
