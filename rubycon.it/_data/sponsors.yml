@@ -1,9 +1,12 @@
-# - title: 'imperator'
-#   logos:
-#   - name: 'Dev Fest'
-#     img: '/assets/images/sponsors/devfest.webp'
-#     url: 'https://devfest.modena.it/'
-#     size_scale: '1'
+
+- title: 'imperator'
+  icon: '🏛️'
+  logos:
+  - name: 'Wide Group'
+    img: '/assets/images/sponsors/imperator/wide_group.png'
+    url: 'https://www.widegroup.eu/'
+    size_scale: '2'
+    description: "Wide Group is an insurance broker providing personalized insurance solutions, suitable for the most specific needs of every sector to cover different risks"
 - title: "triumvir"
   icon: "⚔️"
   logos:
