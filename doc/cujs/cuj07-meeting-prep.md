@@ -1,6 +1,6 @@
 # CUJ 07: Team Meeting Preparation
 
-As a team lead, I want Gemini to help me prepare for the daily/weekly meeting by consolidating information from across our repositories.
+As a team lead, I want Gemini to help me prepare for the daily/weekly meeting by consolidating information from across our repositories and ensuring clear ownership and accountability.
 
 ## Workflow
 
@@ -9,12 +9,14 @@ As a team lead, I want Gemini to help me prepare for the daily/weekly meeting by
 3.  **Check Public Bugs**: Use `gh issue list -L 10 --label bug` (or similar) to find major open bugs in the current repository (`palladius/rubycon.it`).
 4.  **Analyze and Consolidate**:
     *   Identify who owns what.
+    *   **Owner Accountability**: For each major topic, highlight the owner and prompt them to "explain to the team" the current status and blockers.
     *   Determine the latest status of critical items.
     *   Identify "stalled" issues (e.g., why is issue X taking so long?).
 5.  **Propose Agenda**:
     *   Create an emoji-ful and insightful agenda.
     *   Title: "Meeting of today YYYYMMDD".
-    *   Content should include: "What changed this week", "Who owns what", "Latest status", "Pressing topics", and "Action items for today".
+    *   **Structure by Owner**: Organize the "Discussion" section by owner so each person knows which topics they need to present.
+    *   Content should include: "What changed this week", "Owner Updates (explain status/blockers)", "Stalled Topics", and "New Action Items".
 6.  **Execution**:
     *   **Interactive Mode**: Present the draft MD to the user for review. Wait for confirmation before proceeding.
     *   **Headless Mode**: Automatically create the issue in `https://github.com/RubyconIT/pvt-data/issues` and assign it to `palladius@`.
@@ -27,12 +29,21 @@ As a team lead, I want Gemini to help me prepare for the daily/weekly meeting by
 *   We merged 3 commits regarding Sponsors and CUJ 07.
 *   Issue #38 and #37 were updated recently.
 
-## 🎯 Top Priorities
-*   🔴 **Issue #123**: [Sponsor Logo] - @ricc - Stalled due to lack of high-res assets.
-*   🟡 **Issue #45**: [Speaker Bio] - @palladius - Waiting for speaker confirmation.
+## 🎤 Owner Updates (Topics to be explained by owners)
 
-## 🛠️ Public Bugs (palladius/rubycon.it)
-*   🐛 **Issue #88**: [CSS Rebranding] - Ongoing.
+### 👤 @ricc (Riccardo)
+*   🔴 **Issue #123**: [Sponsor Logo] - *Please explain status of high-res assets.*
+*   🐛 **Issue #62**: [PoMo] SCSS front matter breakage.
+
+### 👤 @emilianodellacasa (Emiliano)
+*   🟡 **Issue #36**: Visita ad Hotel Ambasciatori.
+*   🐛 **Issue #13**: Broken image in newsletter.
+
+### 👤 @coorasse (Alessandro)
+*   🟡 **Issue #26**: [CFP] Manage YES and NOs.
+
+## ⚠️ Unassigned / Stalled Topics
+*   ⚪ **Issue #35**: Interview conoscitive degli speakers - *Needs owner!*
 
 ## 💡 Insights
 *   The CSS rebranding is the biggest blocker for the April milestone.
