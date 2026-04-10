@@ -3,6 +3,11 @@
 
 SEVEN_DAYS_AGO=$(date -d '7 days ago' +%Y-%m-%d)
 
+# Map GitHub usernames to real names
+JQ_ALIASES='{"palladius": "Riccardo", "coorasse": "Alessandro", "magnatorta": "Alessia", "emilianodellacasa": "Emiliano"} as $aliases'
+JQ_FMT_RECENT='.[] | " - [\(.state)] #\(.number): \(.title) (Updated: \(.updatedAt[:10]))"'
+JQ_FMT_ISSUES='.[] | " - #\(.number): \(.title) (Assignees: \(.assignees | map($aliases[.login] // .login) | join(", "))) [Updated: \(.updatedAt[:10])]"'
+
 echo "Generating Meeting Prep Data..."
 echo "====================================="
 echo "📅 Context: What changed in the last 7 days (since $SEVEN_DAYS_AGO)?"
@@ -13,17 +18,17 @@ echo " - ... (showing top 5 recent commits)"
 echo ""
 
 echo "Issues Updated/Closed in the last 7 days (Private Repo):"
-gh issue list -R RubyconIT/pvt-data --search "updated:>$SEVEN_DAYS_AGO" --limit 10 --json number,state,title,updatedAt | jq -r '.[] | " - [\(.state)] #\(.number): \(.title) (Updated: \(.updatedAt[:10]))"'
+gh issue list -R RubyconIT/pvt-data --search "updated:>$SEVEN_DAYS_AGO" --limit 10 --json number,state,title,updatedAt | jq -r "$JQ_ALIASES | $JQ_FMT_RECENT"
 echo ""
 
 echo "Issues Updated/Closed in the last 7 days (Public Repo):"
-gh issue list -R palladius/rubycon.it --search "updated:>$SEVEN_DAYS_AGO" --limit 10 --json number,state,title,updatedAt | jq -r '.[] | " - [\(.state)] #\(.number): \(.title) (Updated: \(.updatedAt[:10]))"'
+gh issue list -R palladius/rubycon.it --search "updated:>$SEVEN_DAYS_AGO" --limit 10 --json number,state,title,updatedAt | jq -r "$JQ_ALIASES | $JQ_FMT_RECENT"
 echo ""
 
 echo "====================================="
 echo "🎯 Top Priorities: Open Private AIs (RubyconIT/pvt-data):"
-gh issue list -R RubyconIT/pvt-data --state open -L 10 --json number,title,assignees,updatedAt | jq -r '.[] | " - #\(.number): \(.title) (Assignees: \(.assignees | map(.login) | join(", "))) [Updated: \(.updatedAt[:10])]"'
+gh issue list -R RubyconIT/pvt-data --state open -L 10 --json number,title,assignees,updatedAt | jq -r "$JQ_ALIASES | $JQ_FMT_ISSUES"
 
 echo ""
 echo "🛠️ Public Bugs (palladius/rubycon.it):"
-gh issue list -R palladius/rubycon.it --state open --label bug -L 10 --json number,title,assignees,updatedAt | jq -r '.[] | " - #\(.number): \(.title) (Assignees: \(.assignees | map(.login) | join(", "))) [Updated: \(.updatedAt[:10])]"'
+gh issue list -R palladius/rubycon.it --state open --label bug -L 10 --json number,title,assignees,updatedAt | jq -r "$JQ_ALIASES | $JQ_FMT_ISSUES"
