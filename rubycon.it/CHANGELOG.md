@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.18.0] - 2026-04-10
+
+### Added
+- *[ricc / Gemini]* **CUJ**: Added CUJ 07 (Meeting Preparation) to extract actionable insights from both public and private repositories, along with a helper script `bin/cuj07-meeting-prep.sh`. Ref GH Issue pvt-data#38.
+
 ## [0.17.0] - 2026-03-30
 
 ### Fixed
