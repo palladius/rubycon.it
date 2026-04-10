@@ -4,17 +4,18 @@ As a team lead, I want Gemini to help me prepare for the daily/weekly meeting by
 
 ## Workflow
 
-1.  **Check Private AIs**: Use `gh issue list -R RubyconIT/pvt-data` to find open or recently closed Action Items (AIs).
-2.  **Check Public Bugs**: Use `gh issue list -L 10 --label bug` (or similar) to find major open bugs in the current repository (`palladius/rubycon.it`).
-3.  **Analyze and Consolidate**:
+1.  **Check Context (Last 7 Days)**: Use `git log --since="7 days ago"` and `gh issue list --search "updated:>$(date -d '7 days ago' +%Y-%m-%d)"` to summarize what changed this week.
+2.  **Check Private AIs**: Use `gh issue list -R RubyconIT/pvt-data` to find open or recently closed Action Items (AIs).
+3.  **Check Public Bugs**: Use `gh issue list -L 10 --label bug` (or similar) to find major open bugs in the current repository (`palladius/rubycon.it`).
+4.  **Analyze and Consolidate**:
     *   Identify who owns what.
     *   Determine the latest status of critical items.
     *   Identify "stalled" issues (e.g., why is issue X taking so long?).
-4.  **Propose Agenda**:
+5.  **Propose Agenda**:
     *   Create an emoji-ful and insightful agenda.
     *   Title: "Meeting of today YYYYMMDD".
-    *   Content should include: "Who owns what", "Latest status", "Pressing topics", and "Action items for today".
-5.  **Execution**:
+    *   Content should include: "What changed this week", "Who owns what", "Latest status", "Pressing topics", and "Action items for today".
+6.  **Execution**:
     *   **Interactive Mode**: Present the draft MD to the user for review. Wait for confirmation before proceeding.
     *   **Headless Mode**: Automatically create the issue in `https://github.com/RubyconIT/pvt-data/issues` and assign it to `palladius@`.
 
@@ -22,16 +23,16 @@ As a team lead, I want Gemini to help me prepare for the daily/weekly meeting by
 
 # 📅 Meeting of today 2026-04-10
 
+## 🕰️ Context: What changed in the last 7 days?
+*   We merged 3 commits regarding Sponsors and CUJ 07.
+*   Issue #38 and #37 were updated recently.
+
 ## 🎯 Top Priorities
 *   🔴 **Issue #123**: [Sponsor Logo] - @ricc - Stalled due to lack of high-res assets.
 *   🟡 **Issue #45**: [Speaker Bio] - @palladius - Waiting for speaker confirmation.
 
 ## 🛠️ Public Bugs (palladius/rubycon.it)
 *   🐛 **Issue #88**: [CSS Rebranding] - Ongoing.
-
-## 📝 Private AIs (RubyconIT/pvt-data)
-*   ✅ **Issue #10**: [Budget Review] - Closed yesterday.
-*   ⏳ **Issue #11**: [Catering Contract] - Needs signature.
 
 ## 💡 Insights
 *   The CSS rebranding is the biggest blocker for the April milestone.
