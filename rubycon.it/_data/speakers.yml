@@ -9,7 +9,7 @@
   description: Creator of Herb and ReActionView, Marco brings HTML-aware tooling to Rails. He'll explore the path to reactive ERB rendering.
   labels: [ruby, herb, reactionview]
 - avatar: "/assets/images/articles/julia_lopez.png"
-  full_name: Julia Lopez
+  full_name: Julia López
   role: Full-Stack Ruby On Rails Developer
   description: A Senior Software Engineer at Harvest with nearly two decades of Rails experience, Julia champions accessibility and long-term Rails maintenance.
   labels: [ruby, ruby on rails]
@@ -31,7 +31,7 @@
 - avatar: "/assets/images/articles/yara_debian.jpeg"
   full_name: Yara Debian
   role: Software Engineer at FactorialHR
-  description: Originally from Lebanon and now Senior Engineer af FactorialHR, Yara traces a philosophical journey from ancient Greece to modern code, exploring how ideas shape the software we build.
+  description: Originally from Lebanon and now Senior Engineer at FactorialHR, Yara traces a philosophical journey from ancient Greece to modern code, exploring how ideas shape the software we build.
   labels: [ruby, art, philosophy]
 - avatar: "/assets/images/articles/michele_franzin.jpg"
   full_name: Michele Franzin
