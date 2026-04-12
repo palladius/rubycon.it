@@ -15,7 +15,7 @@
             </p>
         </div>
 
-        <div>
+        <div style="border-bottom: 1px solid #D8CFB6;">
             {% for day in site.data.schedule %}
                 {% for event in day.events %}
                 {% if rendered_events >= schedule_limit %}{% break %}{% endif %}
