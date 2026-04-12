@@ -41,18 +41,23 @@
                     </div>
                 </div>
                 <div class="lg:hidden flex items-center gap-4">
-                    <a href="{{ site.event.tickets_url }}" class="bg-[#fcf7e8] text-[#802126] px-4 py-2 rounded-sm text-xs uppercase tracking-widest font-bold transition header-btn" style="font-family: 'Noto Serif', serif; font-weight: 500;">Tickets</a>
-                    <button class="mobile-menu-button p-2 text-[#fcf7e8] focus:outline-none" id="mobile-toggle" aria-expanded="false" aria-controls="mobile-menu">
-                        <i class="fas fa-bars text-2xl"></i>
+                    <button class="mobile-menu-button p-0 text-[#fcf7e8] focus:outline-none flex items-center gap-2 px-4 py-3" id="mobile-toggle" aria-expanded="false" aria-controls="mobile-menu" style="width: 99px; height: 29px; gap: 8px; background-color: transparent;">
+                        <span style="font-family: 'Noto Serif', serif; font-weight: 500; font-size: 16px; letter-spacing: 0;">MENU</span>
+                        <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.878906 12C0.636719 12 0.429688 11.9141 0.257812 11.7422C0.0859375 11.5625 0 11.3477 0 11.0977C0 10.8555 0.0859375 10.6484 0.257812 10.4766C0.429688 10.3047 0.636719 10.2188 0.878906 10.2188H22.8164C23.0586 10.2188 23.2656 10.3047 23.4375 10.4766C23.6172 10.6484 23.707 10.8555 23.707 11.0977C23.707 11.3477 23.6172 11.5625 23.4375 11.7422C23.2656 11.9141 23.0586 12 22.8164 12H0.878906ZM0.878906 6.87891C0.636719 6.87891 0.429688 6.79297 0.257812 6.62109C0.0859375 6.44922 0 6.24219 0 6C0 5.75 0.0859375 5.53906 0.257812 5.36719C0.429688 5.1875 0.636719 5.09766 0.878906 5.09766H22.8164C23.0586 5.09766 23.2656 5.1875 23.4375 5.36719C23.6172 5.53906 23.707 5.75 23.707 6C23.707 6.24219 23.6172 6.44922 23.4375 6.62109C23.2656 6.79297 23.0586 6.87891 22.8164 6.87891H0.878906ZM0.878906 1.76953C0.636719 1.76953 0.429688 1.68359 0.257812 1.51172C0.0859375 1.33984 0 1.13281 0 0.890625C0 0.640625 0.0859375 0.429688 0.257812 0.257812C0.429688 0.0859375 0.636719 0 0.878906 0H22.8164C23.0586 0 23.2656 0.0859375 23.4375 0.257812C23.6172 0.429688 23.707 0.640625 23.707 0.890625C23.707 1.13281 23.6172 1.33984 23.4375 1.51172C23.2656 1.68359 23.0586 1.76953 22.8164 1.76953H0.878906Z" fill="#FCF7E8"/>
+                        </svg>
                     </button>
                 </div>
             </div>
         </div>
         <!-- mobile menu -->
-        <div class="mobile-menu hidden shadow-2xl absolute text-center bg-[#802126] border-t border-[#fcf7e8]/10" id="mobile-menu" style="width: 100%">
-            <div class="px-4 pt-4 pb-8 space-y-4">
+        <div class="mobile-menu hidden fixed inset-0 z-50 text-center bg-[#802126]" id="mobile-menu" style="top: 0;">
+            <div class="absolute top-6 right-6 z-50">
+                <button class="text-[#fcf7e8] text-4xl w-12 h-12 flex items-center justify-center" id="mobile-menu-close" style="font-size: 32px; line-height: 1;">×</button>
+            </div>
+            <div class="px-4 pt-24 pb-8 space-y-8 h-full overflow-y-auto">
                 {% for nav in site.data.navigation  %}
-                    <a href="{{ nav.link }}" class="block text-lg font-serif text-[#fcf7e8] opacity-80 hover:opacity-100 py-2">
+                    <a href="{{ nav.link }}" class="block text-4xl font-serif text-[#fcf7e8] opacity-90 hover:opacity-100 py-6" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 32px; line-height: 40px;" onclick="document.getElementById('mobile-toggle').style.visibility='visible'; document.getElementById('mobile-menu').classList.add('hidden');">
                         {{ nav.name }}
                     </a>
                 {% endfor %}
@@ -60,6 +65,18 @@
         </div>
     </nav>
 </header>
+
+<style>
+    #main-header.scrolled #mobile-toggle svg path {
+        fill: #802126;
+        transition: fill 0.3s ease-out;
+    }
+
+    #mobile-toggle svg path {
+        fill: #FCF7E8;
+        transition: fill 0.3s ease-out;
+    }
+</style>
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -95,8 +112,21 @@
         updateHeader(); // initial state
 
         mobileToggle?.addEventListener('click', () => {
+            const isOpen = !mobileMenu?.classList.contains('hidden');
             mobileMenu?.classList.toggle('hidden');
-            mobileToggle.setAttribute('aria-expanded', mobileMenu && !mobileMenu.classList.contains('hidden') ? 'true' : 'false');
+            mobileToggle.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+            // Nascondi il bottone quando il menu è aperto
+            if (!isOpen) {
+                mobileToggle.style.visibility = 'hidden';
+            } else {
+                mobileToggle.style.visibility = 'visible';
+            }
+        });
+
+        document.getElementById('mobile-menu-close')?.addEventListener('click', () => {
+            mobileMenu?.classList.add('hidden');
+            mobileToggle.style.visibility = 'visible';
+            mobileToggle.setAttribute('aria-expanded', 'false');
         });
     });
 </script>
