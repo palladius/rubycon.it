@@ -1,29 +1,31 @@
-{% capture description %}
-If you don't find the answer you were looking for, for specific questions, contact our
-<a href="mailto:{{ site.support_email }}" class="text-yellow-600">support team</a> or
-ask in our
+<section id="faq" class="pt-32 md:pt-40 pb-16 md:pb-24 bg-[#FAFAFA] scroll-mt-32" style="scroll-behavior: smooth;">
+    <div class="mx-auto w-full max-w-[1376px] px-6 md:px-8">
+        <div class="mb-12 md:mb-16">
+            <p class="text-[#8B2D2B] mb-4" style="font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0;">
+                Questions & Answers
+            </p>
+            <h2 class="text-[#3F3F3F] mb-6" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: clamp(40px, 4.1vw, 48px); line-height: clamp(46px, 4.8vw, 56px); letter-spacing: 0; text-transform: none;">
+                Frequently Asked Questions
+            </h2>
+            <p class="text-[#3F3F3F] max-w-[664px]" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 0;">
+                If you don't find the answer you were looking for, contact our
+                <a href="mailto:{{ site.support_email }}" style="color: #802126; font-weight: 500; text-decoration: none;">support team</a> or join our
+                <a href="{{ site.social_url.discord }}" style="color: #802126; font-weight: 500; text-decoration: none;">Discord Channel</a>.
+            </p>
+        </div>
 
-<a href="{{ site.social_url.discord }}" class="text-yellow-600">Discord Channel</a>.
-{% endcapture %}
-
-{% capture content %}
-    <div class="rounded-lg shadow-lg overflow-hidden">
-        <div class="border-b border-gray-200 text-gray-600" data-aos="fade-up">
+        <div class="mt-8 md:mt-10 border-t border-[#D8CFB6]">
             {% for data in site.data.faq %}
-                <div class="px-6 py-4 font-bold bg-gray-100">
-                    {{ data.question }}
-                </div>
-                <div class="bg-white px-6 py-4">
-                    {{ data.answer }}
-                </div>
+                <article class="py-7 md:py-8 border-t border-[#D8CFB6]">
+                    <h3 class="text-[#8B2D2B] mb-3" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 28px; line-height: 40px; letter-spacing: 0; text-transform: none;">
+                        {{ data.question }}
+                    </h3>
+                    <p class="text-[#3F3F3F]" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 0;">
+                        {{ data.answer }}
+                    </p>
+                </article>
             {% endfor %}
+            <div class="py-7 md:py-8 border-t border-b border-[#D8CFB6]"></div>
         </div>
     </div>
-{% endcapture %}
-
-{% include section.html
-    id="faq"
-    title="VI. &nbsp;Frequently Asked Questions"
-    description=description
-    content=content
-%}
+</section>

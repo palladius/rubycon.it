@@ -9,7 +9,7 @@
       They make this possible.
     </h2>
 
-    {% assign tiers = "triumvir,praetor,quaestor,community" | split: "," %}
+    {% assign tiers = "imperator,triumvir,praetor,quaestor,community" | split: "," %}
     {% for tier in tiers %}
       {% assign group = site.data.sponsors | where: "title", tier | first %}
       {% if group %}
@@ -18,7 +18,17 @@
             {{ tier }}
           </h3>
 
-          {% if tier == 'triumvir' %}
+          {% if tier == 'imperator' %}
+            <div class="flex flex-col md:flex-row md:flex-wrap gap-6">
+              {% for logo in group.logos %}
+                <a href="{{ logo.url | default: '#' }}" {% if logo.url %}target="_blank" rel="noopener noreferrer"{% endif %}
+                   class="bg-[#F7F7F7] block"
+                   style="width: 100%; max-width: 700px; height: 220px; padding: 8px;">
+                  <img src="{{ logo.img | relative_url }}" alt="{{ logo.name }}" class="w-full h-full object-contain" loading="lazy" decoding="async">
+                </a>
+              {% endfor %}
+            </div>
+          {% elsif tier == 'triumvir' %}
             <div class="flex flex-col md:flex-row md:flex-wrap gap-5">
               {% for logo in group.logos %}
                 <a href="{{ logo.url | default: '#' }}" {% if logo.url %}target="_blank" rel="noopener noreferrer"{% endif %}

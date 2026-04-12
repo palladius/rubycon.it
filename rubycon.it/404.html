@@ -3,15 +3,68 @@ layout: default
 permalink: /404.html
 ---
 
-{% capture content %}
-<div class="container text-center">
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
-{% endcapture %}
+<section class="py-16 md:py-24 bg-[#FAFAFA]">
+    <div class="mx-auto w-full max-w-[1376px] px-6 md:px-8">
+        <div class="text-center py-16 md:py-32">
+            <p class="text-[#8B2D2B] mb-6" style="font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0;">
+                404 Error
+            </p>
+            <h1 class="text-[#3F3F3F] mb-6" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: clamp(48px, 6vw, 72px); line-height: clamp(56px, 7vw, 84px); letter-spacing: 0; text-transform: none;">
+                Page not found<br>
+                <span style="color: #802126;">When in Rome...</span>
+            </h1>
+            <p class="text-[#3F3F3F] max-w-[664px] mx-auto mb-12" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 0;">
+                It seems the page you're looking for has been lost in time. But don't worry, the Rubicon is calling you back.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <a href="{{ '/' | relative_url }}" class="inline-flex items-center justify-center" style="box-sizing: border-box; width: 220px; height: 52px; padding: 16px 32px; border: 1px solid #802126; color: #FCF7E8; background-color: #802126; font-family: 'Noto Serif', serif; font-weight: 500; font-size: 16px; line-height: 16px; letter-spacing: 0; text-transform: none; text-decoration: none; transition: all 0.3s ease;">
+                    Back to Home
+                </a>
+                <a href="{{ '/schedule/' | relative_url }}" class="inline-flex items-center justify-center" style="box-sizing: border-box; width: 220px; height: 52px; padding: 16px 32px; border: 1px solid #802126; color: #802126; background-color: transparent; font-family: 'Noto Serif', serif; font-weight: 500; font-size: 16px; line-height: 16px; letter-spacing: 0; text-transform: none; text-decoration: none; transition: all 0.3s ease;">
+                    View Schedule
+                </a>
+            </div>
+        </div>
 
-{% include section.html
-    id="error" 
-    title="404" 
-    content=content
-%}
+        <div class="mt-20 md:mt-32 border-t border-[#D8CFB6]">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-12">
+                <article class="text-center">
+                    <p class="text-[#8B2D2B] mb-3" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 24px; line-height: 32px; letter-spacing: 0; text-transform: none;">
+                        🎤
+                    </p>
+                    <h3 class="text-[#3F3F3F] mb-2" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 20px; line-height: 28px; letter-spacing: 0; text-transform: none;">
+                        Talks
+                    </h3>
+                    <p class="text-[#3F3F3F]" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; letter-spacing: 0;">
+                        <a href="{{ '/schedule/' | relative_url }}" style="color: #802126; text-decoration: none; font-weight: 500;">View the full schedule</a> of deep talks by the Ruby community.
+                    </p>
+                </article>
+
+                <article class="text-center">
+                    <p class="text-[#8B2D2B] mb-3" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 24px; line-height: 32px; letter-spacing: 0; text-transform: none;">
+                        🎟️
+                    </p>
+                    <h3 class="text-[#3F3F3F] mb-2" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 20px; line-height: 28px; letter-spacing: 0; text-transform: none;">
+                        Tickets
+                    </h3>
+                    <p class="text-[#3F3F3F]" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; letter-spacing: 0;">
+                        <a href="{{ site.event.tickets_url }}" style="color: #802126; text-decoration: none; font-weight: 500;">Grab your ticket</a> for Rimini, 8 May.
+                    </p>
+                </article>
+
+                <article class="text-center">
+                    <p class="text-[#8B2D2B] mb-3" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 24px; line-height: 32px; letter-spacing: 0; text-transform: none;">
+                        ❓
+                    </p>
+                    <h3 class="text-[#3F3F3F] mb-2" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 20px; line-height: 28px; letter-spacing: 0; text-transform: none;">
+                        FAQ
+                    </h3>
+                    <p class="text-[#3F3F3F]" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; letter-spacing: 0;">
+                        <a href="{{ '/faq/' | relative_url }}" style="color: #802126; text-decoration: none; font-weight: 500;">Check our FAQs</a> for answers to common questions.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>

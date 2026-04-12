@@ -1,53 +1,7 @@
-<footer class="py-24 bg-[#802126] text-[#fcf7e8] border-t border-[#fcf7e8]/10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-12 mb-20">
-            <div>
-                <h3 class="text-sm font-bold uppercase tracking-[0.2em] mb-8 opacity-40">Conference</h3>
-                <ul class="space-y-4 font-serif italic text-lg">
-                    <li><a href="/schedule/" class="hover:opacity-60 transition">Schedule</a></li>
-                    <li><a href="/#speakers" class="hover:opacity-60 transition">Speakers</a></li>
-                    <li><a href="/#venue" class="hover:opacity-60 transition">Venue and travel</a></li>
-                    <li><a href="/#sponsors" class="hover:opacity-60 transition">Sponsors</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-sm font-bold uppercase tracking-[0.2em] mb-8 opacity-40">More</h3>
-                <ul class="space-y-4 font-serif italic text-lg">
-                    <li><a href="/articles/" class="hover:opacity-60 transition">Blog</a></li>
-                    <li><a href="/faq/" class="hover:opacity-60 transition">FAQ</a></li>
-                    <li><a href="/scholarship" class="hover:opacity-60 transition">Scholarship</a></li>
-                    <li><a href="/code-of-conduct" class="hover:opacity-60 transition">Code of Conduct</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-sm font-bold uppercase tracking-[0.2em] mb-8 opacity-40">Social</h3>
-                <ul class="space-y-4 font-serif italic text-lg">
-                    <li><a href="https://linkedin.com/company/rubycon-italy" target="_blank" class="hover:opacity-60 transition">LinkedIn</a></li>
-                    <li><a href="https://instagram.com/rubycon.it" target="_blank" class="hover:opacity-60 transition">Instagram</a></li>
-                    <li><a href="https://bsky.app/profile/rubycon.it" target="_blank" class="hover:opacity-60 transition">Bluesky</a></li>
-                    <li><a href="https://ruby.social/@rubycon" target="_blank" class="hover:opacity-60 transition">Mastodon</a></li>
-                    <li><a href="https://x.com/rubycon_it" target="_blank" class="hover:opacity-60 transition">X</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-sm font-bold uppercase tracking-[0.2em] mb-8 opacity-40">Contact</h3>
-                <ul class="space-y-4 font-serif italic text-lg">
-                    <li><a href="mailto:{{ site.info_email }}" class="hover:opacity-60 transition">{{ site.info_email }}</a></li>
-                    <li><a href="https://discord.gg/ruby-italy" target="_blank" class="hover:opacity-60 transition">Discord</a></li>
-                    <li class="pt-4 text-sm not-italic font-sans uppercase tracking-widest opacity-60">
-                        Hotel Ambasciatori<br>
-                        Rimini, Italy
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="pt-12 border-t border-[#fcf7e8]/10 flex flex-col md:flex-row justify-between items-center text-xs uppercase tracking-[0.2em] opacity-40">
-            <p>© 2026 Rubycon Italy v{{ site.site_version }}. Some rights reserved.</p>
-            <div class="flex gap-8 mt-4 md:mt-0">
-                <a href="{{ site.github.repository_url }}/blob/main/CHANGELOG.md" class="hover:opacity-100">Changelog</a>
-                <a href="/#home" class="hover:opacity-100">Back to top</a>
-            </div>
-        </div>
+<footer class="text-[#FCF7E8] relative overflow-hidden" style="background-image: url('{{ '/assets/images/marble.png' | relative_url }}'); background-size: cover; background-position: center; border-top: 1px solid #9C5E62; border-bottom: 1px solid #9C5E62;">
+    <div class="mx-auto w-full max-w-[1376px] px-6 md:px-8 min-h-[128px] flex items-center justify-center text-center relative z-10">
+        <p style="font-family: 'Inter', sans-serif; font-weight: 300; font-size: 16px; line-height: 32px; letter-spacing: 0; text-align: center; opacity: 0.95;">
+            © 2026 Rubycon Italy v{{ site.site_version }}. Some rights reserved.
+        </p>
     </div>
 </footer>

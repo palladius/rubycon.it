@@ -1,39 +1,91 @@
-<section class="py-32 bg-[#802126] text-[#fcf7e8] relative overflow-hidden">
-    <!-- Decorative texture or marble-like overlay could go here -->
-    <div class="absolute inset-0 opacity-10 bg-[url('{{ "/assets/images/ambasciatori.jpg" | relative_url }}')] bg-cover bg-center mix-blend-overlay"></div>
+<style>
+    .rubicon-newsletter-input {
+        background: transparent;
+        color: #FCF7E8 !important;
+        border-bottom: 1px solid rgba(252, 247, 232, 0.7) !important;
+    }
+    .rubicon-newsletter-input::placeholder {
+        color: rgba(252, 247, 232, 0.55);
+        opacity: 1;
+    }
+</style>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 text-center relative z-10" data-aos="zoom-in">
-        <h2 class="text-5xl md:text-8xl font-bold mb-8 tracking-tighter" style="font-family: 'Trajan Pro', 'Cinzel', serif;">
+<section class="text-[#FCF7E8] relative overflow-hidden" style="background-image: url('{{ '/assets/images/marble.png' | relative_url }}'); background-size: cover; background-position: center; border-top: 1px solid #9C5E62; border-bottom: 1px solid #9C5E62;">
+    <div class="mx-auto w-full max-w-[1376px] px-6 md:px-8 py-20 md:py-24 text-center min-h-[472px] flex flex-col items-center justify-center relative z-10" data-aos="fade-up">
+                <h2 class="mb-4 md:mb-6" style="color: #FCF7E8; font-family: 'Noto Serif', serif; font-weight: 400; font-size: 48px; line-height: 56px; letter-spacing: 0; text-transform: none;">
             Cross the Rubicon.
         </h2>
-        <p class="text-xl md:text-3xl mb-12 opacity-90 font-serif italic">
-            Rimini, 8 May. Nine talks, one stage, dinner on the beach,<br class="hidden md:block">
+                <p class="max-w-[760px] mx-auto mb-8 md:mb-10" style="color: #FCF7E8; font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 0; text-align: center;">
+            Rimini, 8 May. Nine talks, one stage, dinner on the beach,
             and the rest of the weekend in Italy.
         </p>
-        
-        <div class="flex flex-col items-center gap-6">
-            <a href="{{ site.event.tickets_url }}" class="inline-block bg-[#fcf7e8] text-[#802126] px-12 py-5 rounded-sm font-bold text-lg uppercase tracking-widest hover:bg-white transition-all duration-300 shadow-2xl">
+
+        <div class="w-[318px] min-h-[88px] flex flex-col items-center gap-4 mx-auto">
+            <a href="{{ site.event.tickets_url }}" class="inline-flex items-center justify-center" style="box-sizing: border-box; width: 254px; height: 52px; padding: 16px 32px; border: 1px solid #FCF7E8; color: #FCF7E8; font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0; text-transform: none; vertical-align: middle; white-space: nowrap;">
                 Get your ticket now
             </a>
-            <p class="text-sm opacity-60 uppercase tracking-widest font-bold">
-                Early bird from €99 &bull; Price goes up April 15
+
+            <p style="color: #FCF7E8; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 16px; line-height: 20px; letter-spacing: 0; text-align: center; opacity: 0.95;">
+                Early bird from €99 · Price goes up April 15
             </p>
         </div>
     </div>
 </section>
 
-<section class="py-24 bg-[#802126] text-[#fcf7e8] border-t border-[#fcf7e8]/10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-        <div class="flex flex-col md:flex-row justify-between items-start gap-12">
-            <div class="max-w-md">
-                <h3 class="text-2xl font-bold mb-6 uppercase tracking-widest" style="font-family: 'Trajan Pro', 'Cinzel', serif;">Stay in the loop</h3>
-                <form action="https://app.convertkit.com/forms/8a5a8f8636/subscriptions" method="post" data-sv-form="8a5a8f8636" data-uid="8a5a8f8636" class="flex flex-col sm:flex-row gap-4">
-                    <input type="email" name="email_address" placeholder="your@email.com" required
-                           class="bg-transparent border-b-2 border-[#fcf7e8]/40 px-0 py-2 text-[#fcf7e8] placeholder-[#fcf7e8]/40 focus:outline-none focus:border-[#fcf7e8] transition-colors flex-grow text-lg font-serif italic">
-                    <button type="submit" class="border-2 border-[#fcf7e8] text-[#fcf7e8] px-8 py-2 rounded-sm font-bold uppercase tracking-widest hover:bg-[#fcf7e8] hover:text-[#802126] transition-all">
-                        Subscribe
-                    </button>
-                </form>
+<section class="text-[#FCF7E8] relative overflow-hidden" style="background-image: url('{{ '/assets/images/marble.png' | relative_url }}'); background-size: cover; background-position: center; border-top: 1px solid #9C5E62; border-bottom: 1px solid #9C5E62;">
+    <div class="mx-auto w-full max-w-[1376px] px-6 md:px-8 py-12 md:py-16 min-h-[480px] flex flex-col relative z-10">
+        <div class="mb-10 md:mb-12">
+            <h3 class="mb-4" style="color: #FCF7E8; font-family: 'Noto Serif', serif; font-weight: 500; font-size: 24px; line-height: 24px; letter-spacing: 0; text-transform: none;">
+                Stay in the loop
+            </h3>
+            <form action="https://app.convertkit.com/forms/8a5a8f8636/subscriptions" method="post" data-sv-form="8a5a8f8636" data-uid="8a5a8f8636" class="flex items-center gap-4 w-full h-[40px]" style="max-width: 448px;">
+                <input type="email" name="email_address" placeholder="your@email.com" required class="rubicon-newsletter-input"
+                    style="flex: 1; min-width: 0; height: 40px; border: 0; color: #FCF7E8 !important; padding: 4px 0; font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 0;" />
+                <button type="submit" style="width: 120px; height: 40px; padding: 0 8px; border: 1px solid #FCF7E8; color: #FCF7E8; background: transparent; font-family: 'Noto Serif', serif; font-weight: 500; font-size: 16px; line-height: 16px; letter-spacing: 0; text-transform: none;">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-8 mt-2 md:mt-auto">
+            <div>
+                <h4 class="mb-4" style="color: #FCF7E8; font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0; text-transform: none;">Conference</h4>
+                <ul class="space-y-2">
+                    <li><a href="/schedule/" style="color: #FCF7E8; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 16px; line-height: 32px; letter-spacing: 0;">Schedule</a></li>
+                    <li><a href="/speakers/" style="color: #FCF7E8; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 16px; line-height: 32px; letter-spacing: 0;">Speakers</a></li>
+                    <li><a href="/logistics/" style="color: #FCF7E8; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 16px; line-height: 32px; letter-spacing: 0;">Venue and travel</a></li>
+                    <li><a href="/sponsors/" style="color: #FCF7E8; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 16px; line-height: 32px; letter-spacing: 0;">Sponsors</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="mb-4" style="color: #FCF7E8; font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0; text-transform: none;">More</h4>
+                <ul class="space-y-2">
+                    <li><a href="/articles/" style="color: #FCF7E8; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 16px; line-height: 32px; letter-spacing: 0;">Blog</a></li>
+                    <li><a href="/faq/" style="color: #FCF7E8; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 16px; line-height: 32px; letter-spacing: 0;">FAQ</a></li>
+                    <li><a href="/scholarship/" style="color: #FCF7E8; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 16px; line-height: 32px; letter-spacing: 0;">Scholarship</a></li>
+                    <li><a href="/code-of-conduct/" style="color: #FCF7E8; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 16px; line-height: 32px; letter-spacing: 0;">Code of Conduct</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="mb-4" style="color: #FCF7E8; font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0; text-transform: none;">Social</h4>
+                <ul class="space-y-2">
+                    <li><a href="https://www.linkedin.com/company/rubycon-italy" target="_blank" rel="noopener noreferrer" style="color: #FCF7E8; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 16px; line-height: 32px; letter-spacing: 0;">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/rubyconitaly/" target="_blank" rel="noopener noreferrer" style="color: #FCF7E8; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 16px; line-height: 32px; letter-spacing: 0;">Instagram</a></li>
+                    <li><a href="https://bsky.app/profile/rubyconitaly.bsky.social" target="_blank" rel="noopener noreferrer" style="color: #FCF7E8; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 16px; line-height: 32px; letter-spacing: 0;">Bluesky</a></li>
+                    <li><a href="https://mastodon.social/@rubycon" target="_blank" rel="noopener noreferrer" style="color: #FCF7E8; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 16px; line-height: 32px; letter-spacing: 0;">Mastodon</a></li>
+                    <li><a href="https://x.com/rubyconitaly" target="_blank" rel="noopener noreferrer" style="color: #FCF7E8; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 16px; line-height: 32px; letter-spacing: 0;">X</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="mb-4" style="color: #FCF7E8; font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0; text-transform: none;">Contact</h4>
+                <ul class="space-y-2">
+                    <li><a href="mailto:{{ site.info_email }}" style="color: #FCF7E8; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 16px; line-height: 32px; letter-spacing: 0;">{{ site.info_email }}</a></li>
+                    <li><a href="https://discord.gg/T43GHE6wHH" target="_blank" rel="noopener noreferrer" style="color: #FCF7E8; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 16px; line-height: 32px; letter-spacing: 0;">Discord</a></li>
+                    <li class="pt-2" style="font-family: 'Inter', sans-serif; font-weight: 300; font-size: 16px; line-height: 32px; letter-spacing: 0; opacity: 0.75;">Hotel Ambasciatori<br>Rimini, Italy</li>
+                </ul>
             </div>
         </div>
     </div>
