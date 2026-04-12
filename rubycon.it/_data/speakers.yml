@@ -1,40 +1,40 @@
 - avatar: "/assets/images/articles/carmine_paolino.jpg"
   full_name: Carmine Paolino
   role: Founder at Chat with Work
-  description: Carmine Paolino is our first announced speaker. More details soon.
+  description: Founder of Chat with Work and creator of RubyLLM, Carmine is an AI engineer pioneering Ruby for AI web apps in his keynote.
   labels: [ruby, rubyllm]
 - avatar: "/assets/images/articles/marco_roth.jpeg"
   full_name: Marco Roth
   role: Full-Stack Ruby On Rails Developer
-  description: Marco is the maintainer of Herb and ReActionView
+  description: Creator of Herb and ReActionView, Marco brings HTML-aware tooling to Rails. He'll explore the path to reactive ERB rendering.
   labels: [ruby, herb, reactionview]
 - avatar: "/assets/images/articles/julia_lopez.png"
   full_name: Julia López
   role: Full-Stack Ruby On Rails Developer
-  description: "Julia is from Barcelona and has been working with Rails for almost 15 years."
+  description: A Senior Software Engineer at Harvest with nearly two decades of Rails experience, Julia champions accessibility and long-term Rails maintenance.
   labels: [ruby, ruby on rails]
 - avatar: "/assets/images/articles/akira_matsuda.jpg"
   full_name: Akira Matsuda
   role: Ruby Committer & Creator of Kaminari
-  description: Akira is a Ruby Committer, creator of Kaminari and Asakusa.rb organizer.
+  description: Ruby and Rails committer, creator of Kaminari, and Chief Organizer of RubyKaigi. Akira shares a glimpse into his daily life with Ruby.
   labels: [ruby, kaminari]
 - avatar: "/assets/images/articles/andre_arko.jpg"
   full_name: André Arko
   role: Ruby Central Board & Lead Developer of Bundler
-  description: André is the creator of Bundler and works tirelessly on RubyGems to make dependency management great.
+  description: The creator of Bundler and founder of Ruby Together, André has shaped how every Ruby developer manages dependencies. He'll introduce rv, a new vision for Ruby version management.
   labels: [ruby, bundler, rubygems]
 - avatar: "/assets/images/articles/silvano_stralla.jpeg"
   full_name: Silvano Stralla
-  role: TBD
-  description: Silvano will hold a talk about Breaking the rules of software engineering.
+  role: Software Engineer at DatoCMS
+  description: A seasoned full-stack developer with decades of experience, Silvano challenges whether breaking the rules of software engineering can actually lead to better outcomes.
   labels: [ruby]
 - avatar: "/assets/images/articles/yara_debian.jpeg"
   full_name: Yara Debian
-  role: TBD
-  description: Yara will present From Plato to Production, a Philosophical History of Code.
+  role: Software Engineer at FactorialHR
+  description: As a Senior Software Engineer at FactorialHR, Yara traces a philosophical journey from ancient Greece to modern code, exploring how ideas shape the software we build.
   labels: [ruby, art, philosophy]
 - avatar: "/assets/images/articles/michele_franzin.jpg"
   full_name: Michele Franzin
   role: Lead Developer and Architect at SeeSaw srl
-  description: Software Engineer, struck in his youth by a ZX-Spectrum, he lives balanced between the present Ruby and a past Java Enterprise. He works as a Lead Developer and Architect at SeeSaw, a young Italian software house. Passionate about training, he never misses an opportunity to share his experiences.
+  description: Lead Developer at SeeSaw, Michele bridges Ruby and Java enterprise experience to tackle semantic image search with Postgres, Redis, and LLMs.
   labels: [ruby, seesaw, architecture]
