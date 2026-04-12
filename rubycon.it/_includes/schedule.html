@@ -1,41 +1,58 @@
-{% capture content %}
-<div class="max-w-4xl mt-16" data-aos="fade-up">
-    <div class="space-y-0 border-t border-red-800/10">
-        {% for day in site.data.schedule %}
-            {% for event in day.events %}
-            <div class="flex gap-12 py-8 border-b border-red-800/10 items-start group hover:bg-red-800/5 transition-colors px-4 -mx-4">
-                <div class="text-xl font-bold pt-1 opacity-60" style="font-family: 'Trajan Pro', 'Cinzel', serif; color: #802126; min-width: 80px;">
-                    {{ event.clock }}
-                </div>
-                <div class="flex-grow">
-                    <h3 class="text-2xl font-serif mb-2 text-gray-900 group-hover:text-[#802126] transition-colors">
-                        {{ event.description }}
-                    </h3>
-                    <div class="flex items-center gap-4">
-                        <p class="text-gray-600 italic">{{ event.full_name }}</p>
+<section id="schedule" class="py-16 md:py-24 bg-white">
+    {% assign schedule_limit = include.limit | default: 9999 | plus: 0 %}
+    {% assign show_full_link = include.show_full_link | default: 'true' %}
+    {% assign rendered_events = 0 %}
+    <div class="mx-auto w-full max-w-[1376px] px-6 md:px-8">
+        <div class="mb-12 md:mb-16">
+            <p class="text-[#8B2D2B] mb-4" style="font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0;">
+                The day
+            </p>
+            <h2 class="text-[#3F3F3F]" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 48px; line-height: 56px; letter-spacing: 0; text-transform: none;">
+                One stage. You see everything.
+            </h2>
+            <p class="text-[#3F3F3F] max-w-[664px] mt-6" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 0;">
+                We don't run parallel sessions. Sit down in the morning, leave in the evening knowing you didn't miss a thing.
+            </p>
+        </div>
+
+        <div>
+            {% for day in site.data.schedule %}
+                {% for event in day.events %}
+                {% if rendered_events >= schedule_limit %}{% break %}{% endif %}
+                <div style="display: flex; gap: 16px; padding-top: 32px; padding-bottom: 32px; border-top: 1px solid #D8CFB6; align-items: flex-start; min-height: {% if event.full_name or event.tag %}156px{% else %}96px{% endif %};">
+                    <div style="min-width: 64px; flex-shrink: 0;">
+                        <p style="font-family: 'Noto Serif', serif; font-weight: 500; font-size: 18px; line-height: 24px; color: #8B2D2B; text-align: right;">
+                            {{ event.clock }}
+                        </p>
+                    </div>
+                    <div style="flex-grow: 1;">
+                        <h3 style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 20px; line-height: 28px; color: #3F3F3F; text-transform: none; margin-bottom: 12px;">
+                            {{ event.description }}
+                        </h3>
+                        {% if event.full_name %}
+                        <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 14px; line-height: 20px; color: #3F3F3F; margin-bottom: 8px;">
+                            {{ event.full_name }}
+                        </p>
+                        {% endif %}
                         {% if event.tag %}
-                            <span class="text-[10px] uppercase tracking-widest border border-red-800/30 px-2 py-0.5 text-[#802126] font-bold rounded-sm">
-                                {{ event.tag }}
-                            </span>
+                        <span style="display: inline-flex; align-items: center; justify-content: center; width: 75px; height: 28px; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 16px; line-height: 16px; color: #8B2D2B; border: 1px solid #8B2D2B; padding: 6px; letter-spacing: 0;">
+                            {{ event.tag }}
+                        </span>
                         {% endif %}
                     </div>
                 </div>
-            </div>
+                {% assign rendered_events = rendered_events | plus: 1 %}
+                {% endfor %}
+                {% if rendered_events >= schedule_limit %}{% break %}{% endif %}
             {% endfor %}
-        {% endfor %}
-    </div>
+        </div>
 
-    <div class="mt-12">
-        <a href="/schedule/" class="inline-block text-[#802126] font-bold border-b-2 border-[#802126] pb-1 hover:opacity-70 transition">
-            Full schedule
-        </a>
+        {% if show_full_link != 'false' %}
+        <div class="mt-12 md:mt-14">
+            <a href="/schedule/" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 20px; color: #8B2D2B; text-decoration: underline;">
+                Full schedule
+            </a>
+        </div>
+        {% endif %}
     </div>
-</div>
-{% endcapture %}
-
-{% include section.html
-id="schedule"
-title="The day"
-description="One stage. You see everything."
-content=content
-%}
+</section>

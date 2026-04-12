@@ -1,7 +1,7 @@
 - name: Schedule
   link: "/schedule/"
 - name: Speakers
-  link: "/#speakers"
+  link: "/speakers/"
 - name: Venue
   link: "/#venue"
 - name: Blog

@@ -71,9 +71,10 @@
         const logoCream = logo?.dataset.logoCream;
         const logoRed = logo?.dataset.logoRed;
         const scrolledThreshold = 48;
+        const isHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html';
 
         function updateHeader() {
-            const isScrolled = window.scrollY > scrolledThreshold;
+            const isScrolled = !isHomePage || window.scrollY > scrolledThreshold;
 
             if (isScrolled) {
                 header.classList.add('scrolled');
