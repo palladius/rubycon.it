@@ -1,51 +1,51 @@
 ---
-layout: page
-title: Sponsoring Rubycon.it
+layout: default
+title: Sponsors
 permalink: /sponsors/
 ---
 
-<div class="space-y-16">
-
-  <!-- Introduction -->
-  <div class="text-center max-w-3xl mx-auto" data-aos="fade-up">
-    <p class="text-xl text-gray-600 mb-4">Thanks for considering sponsoring Rubycon Italy! 🇮🇹💎</p>
-    <p class="text-gray-600">We're a community-driven conference for Ruby and Rails folks. By supporting us, you'll connect with passionate developers and help grow the Italian Ruby scene.</p>
-  </div>
-
-  <!-- Bespoke Opportunities Section -->
-  <div data-aos="fade-up">
-    <h3 class="text-2xl font-bold mb-6 text-gray-700 text-center">💡 Something Different?</h3>
-    <p class="text-gray-600 mb-8 text-center">We're pretty flexible! Got a creative idea? Let's talk.</p>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-white p-8 rounded-lg shadow-md text-center">
-        <div class="bg-red-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-          <i class="fas fa-building text-red-800 text-2xl"></i>
-        </div>
-        <h4 class="text-xl font-bold mb-3">Extra Space</h4>
-        <p class="text-gray-600">We've got a large room next to the main hall perfect for booths, demos, or meetups. Just ask!</p>
-      </div>
-      <div class="bg-white p-8 rounded-lg shadow-md text-center">
-        <div class="bg-red-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-          <i class="fas fa-gift text-red-800 text-2xl"></i>
-        </div>
-        <h4 class="text-xl font-bold mb-3">Swag Bag</h4>
-        <p class="text-gray-600">Happy to include your goodies in our attendee bags (as long as they're not too heavy!).</p>
+<div class="pt-24 md:pt-28">
+  <section class="py-16 md:py-20" style="background-color: #FFFFFF;">
+    <div class="mx-auto w-full max-w-[1376px] px-6 md:px-8">
+      <p class="text-[#8B2D2B] mb-4" style="font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0;">
+        Sponsorship
+      </p>
+      <h1 class="text-[#3F3F3F] max-w-[920px]" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: clamp(40px, 4.2vw, 56px); line-height: clamp(46px, 4.8vw, 64px); letter-spacing: 0; text-transform: none;">
+        Support Rubycon and meet the Ruby community in Italy.
+      </h1>
+      <p class="text-[#3F3F3F] max-w-[860px] mt-6" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 0;">
+        Rubycon is a community-first conference. Sponsoring helps us keep ticket prices accessible, fund scholarships, and build a better experience for everyone in the room.
+      </p>
+      <div class="mt-8 pt-8" style="border-top: 1px solid #D8CFB6;">
+        <a href="mailto:sponsors@rubycon.it" class="text-[#8B2D2B]" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 20px; line-height: 20px; letter-spacing: 0; text-decoration: underline; text-underline-offset: 4px;">
+          Contact sponsors@rubycon.it
+        </a>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Contact Section -->
-  <div class="text-center bg-red-50 p-8 rounded-lg" data-aos="fade-up">
-    <h3 class="text-2xl font-bold text-gray-700 mb-4">📬 Get in Touch</h3>
-    <a href="mailto:sponsors@rubycon.it" class="inline-flex items-center px-6 py-3 bg-red-800 text-white font-bold rounded-lg hover:bg-red-900 transition">
-      <i class="fas fa-envelope mr-2"></i>
-      Email us at sponsors@rubycon.it
-    </a>
-  </div>
+  {% include sponsors.html show_become_link='false' %}
 
-  <!-- Current Sponsors Section -->
-  <div data-aos="fade-up">
-    <h3 class="text-2xl font-bold mb-8 text-gray-700 text-center">🏛️ Our Amazing Sponsors</h3>
-    {% include sponsors_list.html %}
-  </div>
+  <section class="py-16 md:py-20" style="background-color: #FFFFFF;">
+    <div class="mx-auto w-full max-w-[1376px] px-6 md:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+        <article class="p-8" style="border: 1px solid #D8CFB6; background-color: #FAFAFA;">
+          <h2 class="text-[#8B2D2B] mb-4" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 32px; line-height: 40px; letter-spacing: 0; text-transform: none;">
+            Something different?
+          </h2>
+          <p class="text-[#3F3F3F]" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 0;">
+            Need a custom package, workshop support, or a bigger activation area? We can shape a sponsorship plan around your goals.
+          </p>
+        </article>
+        <article class="p-8" style="border: 1px solid #D8CFB6; background-color: #FAFAFA;">
+          <h2 class="text-[#8B2D2B] mb-4" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 32px; line-height: 40px; letter-spacing: 0; text-transform: none;">
+            Sponsor benefits
+          </h2>
+          <p class="text-[#3F3F3F]" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 0;">
+            Brand visibility, direct access to Ruby and Rails engineers, and support for an independent conference rooted in technical quality.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
 </div>
