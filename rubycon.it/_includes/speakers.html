@@ -29,8 +29,11 @@
                     <h3 class="text-[#FCF7E8]" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 28px; line-height: 40px; letter-spacing: 0; margin-bottom: 8px; text-transform: none;">
                         {{ speaker.full_name }}
                     </h3>
-                    <p class="text-[#FCF7E8]" style="font-family: 'Inter', sans-serif; font-weight: 300; font-size: 14px; line-height: 14px; letter-spacing: 0; margin-bottom: 8px; opacity: 0.9;">
+                    <p class="text-[#FCF7E8]" style="font-family: 'Inter', sans-serif; font-weight: 300; font-size: 14px; line-height: 14px; letter-spacing: 0; margin-bottom: 12px; opacity: 0.9;">
                         {{ speaker.role }}
+                    </p>
+                    <p class="text-[#FCF7E8]" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; letter-spacing: 0; margin-bottom: 12px; opacity: 0.8;">
+                        {{ speaker.bio | strip }}
                     </p>
                     <p class="text-[#FCF7E8]" style="font-family: 'Inter', sans-serif; font-weight: 500; font-size: 20px; line-height: 32px; letter-spacing: 0; opacity: 0.7;">
                         {% if speaker.labels %}
