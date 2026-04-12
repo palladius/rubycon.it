@@ -2,12 +2,42 @@
 layout: default
 ---
 
-<section class="py-10">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16" data-aos="fade-up">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">{{ page.title }}</h2>
-            <div class="w-20 h-1 bg-red-800 mx-auto mb-6"></div>
+<section class="pt-[96px] md:pt-[112px] pb-16 md:pb-24 bg-[#FAFAFA]">
+    <div class="mx-auto w-full max-w-[1376px] px-6 md:px-8">
+        <div class="mb-16 md:mb-24">
+            <h1 class="text-[#3F3F3F] mb-4" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: clamp(40px, 4.1vw, 48px); line-height: clamp(46px, 4.8vw, 56px); letter-spacing: 0; text-transform: none;">
+                {{ page.title }}
+            </h1>
         </div>
-        {{ content }}
+        <div class="prose prose-lg max-w-none page-prose" style="font-family: 'Inter', sans-serif; color: #3F3F3F;">
+            {{ content }}
+        </div>
+
+        <style>
+            .page-prose h2,
+            .page-prose h3,
+            .page-prose h4 {
+                text-transform: none;
+                letter-spacing: 0;
+                font-family: 'Noto Serif', serif;
+                font-weight: 400;
+                color: #8B2D2B;
+            }
+
+            .page-prose h2 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+
+            .page-prose h3 {
+                font-size: 28px;
+                line-height: 36px;
+            }
+
+            .page-prose h4 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+        </style>
     </div>
 </section>

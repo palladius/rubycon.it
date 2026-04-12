@@ -56,12 +56,13 @@ The Scholarship Tickets Program is made possible thanks to our sponsors:
 {% endfor %}
 
 {% if scholarship_sponsors.size > 0 %}
-<div class="grid grid-cols-2 md:grid-cols-3 gap-8 items-center my-8">
+<div class="flex flex-wrap gap-8 items-center justify-center my-8">
     {% for logo in scholarship_sponsors %}
     <a href="{{ logo.url }}" target="_blank" rel="noopener noreferrer"
-        class="block hover:opacity-80 transition-opacity">
-        <img src="{{ logo.img }}" alt="{{ logo.name }}" class="max-h-24 mx-auto"
-            style="transform: scale({{ logo.size_scale }});" title="{{ logo.description | default: logo.name }}">
+        class="flex justify-center items-center p-6 overflow-hidden bg-white border border-[#D8CFB6] rounded-lg w-56 h-40 hover:shadow-md hover:scale-[1.02] transition-all"
+        {% if logo.description %}title="{{ logo.description }}"{% endif %}>
+        <img src="{{ logo.img }}" alt="{{ logo.name }}"
+            class="object-contain max-w-full max-h-full" style="transform: scale({{ logo.size_scale }}); mix-blend-mode: darken;">
     </a>
     {% endfor %}
 </div>
@@ -86,9 +87,7 @@ If you have questions or need more information, feel free to reach out at [info@
 {% assign rendered_content = content | markdownify %}
 
 {% capture styled_content %}
-<div class="prose max-w-none text-gray-700">
-    {{ rendered_content }}
-</div>
+{{ rendered_content }}
 {% endcapture %}
 
 {% include section.html
@@ -96,6 +95,7 @@ id="scholarship"
 title="Scholarship"
 description="“Great software starts by caring about the people who build it”"
 content=styled_content
+header_offset='true'
 %}
 
 <!-- Maybe add a busto of Mecenate as in https://it.wikipedia.org/wiki/Gaio_Cilnio_Mecenate 

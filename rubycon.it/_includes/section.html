@@ -1,20 +1,47 @@
-<section id="{{ include.id }}" class="py-24 border-b border-red-800/5">
-    <div class="{% unless include.wide %}max-w-7xl {% endunless %}mx-auto px-4 sm:px-6 lg:px-12">
+<section id="{{ include.id }}" class="{% if include.header_offset == 'true' %}pt-[140px] md:pt-[160px] pb-16 md:pb-24{% else %}py-16 md:py-24{% endif %} bg-[#FAFAFA] border-b border-[#D8CFB6]">
+    <div class="{% unless include.wide %}mx-auto w-full max-w-[1376px]{% endunless %} px-6 md:px-8">
         {% if include.title %}
-            <div class="mb-12" data-aos="fade-right">
-                <h2 class="text-[10px] font-bold mb-4 opacity-40 uppercase tracking-[0.3em]" style="font-family: 'Inter', sans-serif; color: #802126;">
+            <div class="mb-12 md:mb-16">
+                <h1 class="text-[#3F3F3F] mb-4" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: clamp(40px, 4.1vw, 48px); line-height: clamp(46px, 4.8vw, 56px); letter-spacing: 0; text-transform: none;">
                     {{ include.title }}
-                </h2>
+                </h1>
                 {% if include.description %}
-                    <p class="text-3xl md:text-5xl font-serif max-w-4xl leading-tight text-gray-900">
+                    <p class="text-[#3F3F3F]" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 0; max-width: 796px;">
                         {{ include.description }}
                     </p>
                 {% endif %}
             </div>
         {% endif %}
 
-        <div class="mt-12">
+        <div class="mt-12 prose prose-lg max-w-none section-prose" style="font-family: 'Inter', sans-serif; color: #3F3F3F;">
             {{ include.content }}
         </div>
+
+        <style>
+            #{{ include.id }} .section-prose h2,
+            #{{ include.id }} .section-prose h3,
+            #{{ include.id }} .section-prose h4 {
+                text-transform: none;
+                letter-spacing: 0;
+                font-family: 'Noto Serif', serif;
+                font-weight: 400;
+                color: #8B2D2B;
+            }
+
+            #{{ include.id }} .section-prose h2 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+
+            #{{ include.id }} .section-prose h3 {
+                font-size: 28px;
+                line-height: 36px;
+            }
+
+            #{{ include.id }} .section-prose h4 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+        </style>
     </div>
 </section>
