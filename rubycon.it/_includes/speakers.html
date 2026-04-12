@@ -1,34 +1,47 @@
-{% capture speakers_content %}
-<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 mt-16">
-    {% for speaker in site.data.speakers %}
-    <div class="flex gap-6 items-start" data-aos="fade-up">
-        <div class="flex-shrink-0">
-            <img src="{{ speaker.avatar | relative_url }}" alt="{{ speaker.full_name }}" class="w-32 h-32 rounded-full object-cover shadow-lg border-2 border-white">
-        </div>
+<section id="speakers" style="background-color: #802126; padding: 4rem 0;">
+    <div class="mx-auto w-full max-w-[1376px] px-6 md:px-8">
         <div>
-            <h3 class="text-2xl font-bold mb-1" style="font-family: 'Trajan Pro', 'Cinzel', serif; color: #802126;">{{ speaker.full_name }}</h3>
-            <p class="text-gray-700 text-sm mb-3 leading-relaxed">
-                {{ speaker.role }}<br>
-                <span class="opacity-60 italic">{{ speaker.labels | join: " &bull; " }}</span>
+            <p class="text-[#FCF7E8] mb-4" style="font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0; text-transform: none;">
+                Speaker
             </p>
-            <div class="text-gray-600 text-sm leading-relaxed max-w-md">
-                {{ speaker.description | strip_html | truncate: 150 }}
+            <h2 class="text-[#FCF7E8] mb-8" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: clamp(40px, 4.8vw, 48px); line-height: clamp(48px, 5.6vw, 56px); letter-spacing: 0; text-transform: none;">
+                Who's talking
+            </h2>
+            <p class="text-[#FCF7E8] mb-12" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 0; max-width: 796px;">
+                We got 40+ proposals. Here's who made the cut so far. Ruby core contributors, framework maintainers, people building real things with this language every day.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
+            {% for speaker in site.data.speakers %}
+            <div class="pb-12" style="display: flex; gap: 24px; align-items: flex-start; border-bottom: 1px solid #9C5E62;">
+                <img
+                    src="{{ speaker.avatar | relative_url }}"
+                    alt="{{ speaker.full_name }}"
+                    class="flex-shrink-0"
+                    style="width: 164px; height: 164px; border-radius: 50%; object-fit: cover;"
+                >
+                <div class="flex-1">
+                    <h3 class="text-[#FCF7E8]" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 28px; line-height: 40px; letter-spacing: 0; margin-bottom: 8px; text-transform: none;">
+                        {{ speaker.full_name }}
+                    </h3>
+                    <p class="text-[#FCF7E8]" style="font-family: 'Inter', sans-serif; font-weight: 300; font-size: 14px; line-height: 14px; letter-spacing: 0; margin-bottom: 8px; opacity: 0.9;">
+                        {{ speaker.role }}
+                    </p>
+                    <p class="text-[#FCF7E8]" style="font-family: 'Inter', sans-serif; font-weight: 500; font-size: 20px; line-height: 32px; letter-spacing: 0; opacity: 0.7;">
+                        {% if speaker.labels %}
+                            {% for label in speaker.labels %}{% if forloop.first %}#{{ label | capitalize }}{% else %} #{{ label | capitalize }}{% endif %}{% endfor %}
+                        {% endif %}
+                    </p>
+                </div>
             </div>
+            {% endfor %}
+        </div>
+
+        <div class="mt-12 md:mt-16">
+            <a href="/speakers/" class="text-[#FCF7E8]" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 20px; line-height: 20px; letter-spacing: 0; text-decoration: underline;">
+                All speakers
+            </a>
         </div>
     </div>
-    {% endfor %}
-</div>
-
-<div class="mt-16 text-center">
-    <a href="/speakers/" class="text-[#802126] font-bold border-b-2 border-[#802126] pb-1 hover:opacity-70 transition">
-        All speakers
-    </a>
-</div>
-{% endcapture %}
-
-{% include section.html
-    id="speakers"
-    title="Speakers"
-    description="Who's talking"
-    content=speakers_content
-%}
+</section>
