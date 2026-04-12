@@ -3,45 +3,53 @@
     <!-- navigation -->
     <nav class="relative">
         <div class="px-4 mx-auto lg:px-12">
-            <div class="flex justify-between h-24 items-center">
+            <div class="flex justify-between h-24 md:h-28 items-center gap-4">
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="/#home" class="flex items-center group">
-                        <span class="text-3xl font-bold tracking-tighter transition-colors duration-300" id="header-logo" style="font-family: 'Trajan Pro', 'Cinzel', serif; color: #fcf7e8 !important;">
-                            RVBYCON
-                            <span class="ml-2 opacity-80 group-hover:opacity-100 transition-opacity">I<i class="fas fa-gem text-xl mx-0.5" style="vertical-align: middle;"></i>I</span>
-                        </span>
+                    <a href="/" class="flex items-center group" aria-label="Rubycon home">
+                        <img
+                            id="header-logo"
+                            src="{{ '/assets/images/logo/Logo-Pictogram-Cream.png' | relative_url }}"
+                            data-logo-cream="{{ '/assets/images/logo/Logo-Pictogram-Cream.png' | relative_url }}"
+                            data-logo-red="{{ '/assets/images/logo/Logo-Pictogram-Red.svg' | relative_url }}"
+                            alt="Rubycon"
+                            width="188"
+                            height="32"
+                            decoding="async"
+                            fetchpriority="high"
+                            class="block h-auto w-[clamp(120px,24vw,188px)] max-w-full transition-opacity duration-300 ease-out"
+                        >
                     </a>
                 </div>
-                <div class="hidden lg:block">
-                    <div class="ml-10 flex items-center space-x-8">
+                <div class="hidden lg:block flex-1">
+                    <div class="ml-10 flex items-center justify-end gap-8">
                         {% for nav in site.data.navigation %}
                         <div class="relative group inline-block">
                             {% if nav.link %}
-                                <a href="{{ nav.link }}" class="text-[#fcf7e8] opacity-80 hover:opacity-100 px-1 py-2 text-sm uppercase tracking-[0.2em] font-bold transition-all nav-link" style="font-family: 'Inter', sans-serif;">
+                                <a href="{{ nav.link }}" class="text-[#fcf7e8] opacity-80 transition-all nav-link inline-flex items-center px-1 py-2 md:px-2 lg:px-1" data-nav-link style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 20px; line-height: 20px; letter-spacing: 0; vertical-align: middle;">
                                     {{ nav.name }}
                                 </a>
                             {% else %}
-                                <span class="text-[#fcf7e8] opacity-80 hover:opacity-100 px-1 py-2 text-sm uppercase tracking-[0.2em] font-bold cursor-pointer transition-all nav-link" style="font-family: 'Inter', sans-serif;">
+                                <span class="text-[#fcf7e8] opacity-80 transition-all nav-link inline-flex items-center px-1 py-2 md:px-2 lg:px-1 cursor-pointer" data-nav-link style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 20px; line-height: 20px; letter-spacing: 0; vertical-align: middle;">
                                     {{ nav.name }}
                                 </span>
                             {% endif %}
                         </div>
                         {% endfor %}
-                        <a href="{{ site.event.tickets_url }}" class="bg-[#fcf7e8] text-[#802126] px-6 py-2 rounded-sm text-sm uppercase tracking-widest font-bold hover:bg-white transition-all shadow-lg header-btn">
+                        <a href="{{ site.event.tickets_url }}" class="bg-[#fcf7e8] text-[#802126] rounded-none transition-all shadow-lg header-btn inline-flex items-center justify-center w-[207px] h-[52px] max-w-full px-4 text-center" style="font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0; vertical-align: middle;">
                             Get your ticket
                         </a>
                     </div>
                 </div>
                 <div class="lg:hidden flex items-center gap-4">
-                    <a href="{{ site.event.tickets_url }}" class="bg-[#fcf7e8] text-[#802126] px-4 py-2 rounded-sm text-xs uppercase tracking-widest font-bold hover:bg-white transition header-btn">Tickets</a>
-                    <button class="mobile-menu-button p-2 text-[#fcf7e8] focus:outline-none" id="mobile-toggle">
+                    <a href="{{ site.event.tickets_url }}" class="bg-[#fcf7e8] text-[#802126] px-4 py-2 rounded-sm text-xs uppercase tracking-widest font-bold transition header-btn" style="font-family: 'Noto Serif', serif; font-weight: 500;">Tickets</a>
+                    <button class="mobile-menu-button p-2 text-[#fcf7e8] focus:outline-none" id="mobile-toggle" aria-expanded="false" aria-controls="mobile-menu">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
             </div>
         </div>
         <!-- mobile menu -->
-        <div class="mobile-menu hidden shadow-2xl absolute text-center bg-[#802126] border-t border-[#fcf7e8]/10" style="width: 100%">
+        <div class="mobile-menu hidden shadow-2xl absolute text-center bg-[#802126] border-t border-[#fcf7e8]/10" id="mobile-menu" style="width: 100%">
             <div class="px-4 pt-4 pb-8 space-y-4">
                 {% for nav in site.data.navigation  %}
                     <a href="{{ nav.link }}" class="block text-lg font-serif text-[#fcf7e8] opacity-80 hover:opacity-100 py-2">
@@ -56,28 +64,38 @@
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const header = document.getElementById('main-header');
+        const logo = document.getElementById('header-logo');
         const mobileToggle = document.getElementById('mobile-toggle');
-        const mobileMenu = document.querySelector('.mobile-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelectorAll('[data-nav-link]');
+        const logoCream = logo?.dataset.logoCream;
+        const logoRed = logo?.dataset.logoRed;
+        const scrolledThreshold = 48;
 
         function updateHeader() {
-            if (window.scrollY > 50) {
+            const isScrolled = window.scrollY > scrolledThreshold;
+
+            if (isScrolled) {
                 header.classList.add('scrolled');
-                logo.style.setProperty('color', '#802126', 'important');
-                navLinks.forEach(link => link.style.setProperty('color', '#802126', 'important'));
-                mobileToggle.style.setProperty('color', '#802126', 'important');
+                if (logo && logoRed) {
+                    logo.src = logoRed;
+                }
             } else {
                 header.classList.remove('scrolled');
-                logo.style.setProperty('color', '#fcf7e8', 'important');
-                navLinks.forEach(link => link.style.setProperty('color', '#fcf7e8', 'important'));
-                mobileToggle.style.setProperty('color', '#fcf7e8', 'important');
+                if (logo && logoCream) {
+                    logo.src = logoCream;
+                }
             }
+
+            mobileToggle?.setAttribute('aria-expanded', mobileMenu && !mobileMenu.classList.contains('hidden') ? 'true' : 'false');
         }
 
         window.addEventListener('scroll', updateHeader);
         updateHeader(); // initial state
 
-        mobileToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+        mobileToggle?.addEventListener('click', () => {
+            mobileMenu?.classList.toggle('hidden');
+            mobileToggle.setAttribute('aria-expanded', mobileMenu && !mobileMenu.classList.contains('hidden') ? 'true' : 'false');
         });
     });
 </script>

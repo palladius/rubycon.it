@@ -5,30 +5,34 @@
     </div>
 {% endif %}
 
-<div id="home" class="relative min-h-screen text-[#fcf7e8] flex flex-col justify-center bg-cover bg-center" style="background-image: url('{{ "/assets/images/ambasciatori.jpg" | relative_url }}');">
-    <!-- Wine Red Overlay - slightly more opaque to match Figma -->
+<div id="home" class="relative min-h-screen text-[#fcf7e8] flex flex-col justify-center bg-cover bg-center" style="background-image: url('{{ "/assets/images/hero.jpg" | relative_url }}');">
     <div class="absolute inset-0 bg-[#802126] opacity-90"></div>
 
-    <div class="relative z-10 mx-auto px-4 sm:px-6 lg:px-12 w-full pt-24 pb-12">
-        <div data-aos="fade-up">
-            <h1 class="text-7xl md:text-[180px] font-bold leading-[0.8] mb-12 tracking-tighter hero-title" style="font-family: 'Trajan Pro', 'Cinzel', serif;">
-                RVBYCON
-            </h1>
+    <div class="relative z-10 mx-auto px-4 sm:px-6 lg:px-12 w-full pt-[23.89px] md:pt-[23.89px] pb-12">
+        <div data-aos="fade-up" class="flex flex-col items-center md:items-start">
+            <img
+                src="{{ '/assets/images/logo/Logo-Cream.svg' | relative_url }}"
+                alt="Rubycon"
+                width="750"
+                height="125"
+                class="block h-auto w-[calc(100vw-48px)] max-w-[750.288px] mx-auto md:mx-0 md:w-[min(750.288px,calc(100vw-96px))]"
+                style="aspect-ratio: 750.2882690429688 / 125.29768371582031;"
+            >
             
-            <div class="flex flex-col md:flex-row md:items-end justify-between gap-12 mt-12">
-                <div class="max-w-2xl">
-                    <div class="text-3xl md:text-5xl font-medium mb-6" style="font-family: 'Trajan Pro', 'Cinzel', serif;">
-                        {{ site.event.date }} &bull; {{ site.event.location }}
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-12 mt-10 md:mt-12 w-full">
+                <div class="text-left w-full md:w-auto">
+                    <div class="mb-6 text-[34px] md:text-[56px] leading-[34px] md:leading-[40px] max-w-[667px] whitespace-nowrap" style="font-family: 'Noto Serif', serif; font-weight: 400; letter-spacing: 0; color: #FCF7E8;">
+                        8 May 2026 &bull; Rimini &bull; Italy
                     </div>
-                    <p class="text-xl md:text-2xl mb-10 opacity-80 font-serif italic leading-relaxed">
+                    <p class="mb-10 text-[24px] md:text-[32px] leading-[32px] md:leading-[40px] max-w-[464px]" style="font-family: 'Noto Serif', serif; font-weight: 400; letter-spacing: 0; color: #FCF7E8;">
                         The premier Ruby conference<br>in the heart of Italy
                     </p>
                     
-                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
-                        <a href="{{ site.event.tickets_url }}" class="inline-block bg-[#fcf7e8] text-[#802126] px-10 py-4 rounded-sm font-bold text-sm uppercase tracking-widest hover:bg-white transition-all duration-300 text-center shadow-2xl">
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 justify-center md:justify-start">
+                        <a href="{{ site.event.tickets_url }}" class="inline-block bg-[#fcf7e8] text-[#802126] px-10 py-4 rounded-none transition-all duration-300 text-center shadow-2xl" style="font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0;">
                             Buy ticket now
                         </a>
-                        <a href="#about" class="inline-block border border-[#fcf7e8]/40 text-[#fcf7e8] px-10 py-4 rounded-sm font-bold text-sm uppercase tracking-widest hover:border-[#fcf7e8] transition-all duration-300 text-center">
+                        <a href="#about" class="inline-block border border-[#fcf7e8]/40 text-[#fcf7e8] px-10 py-4 rounded-none transition-all duration-300 text-center" style="font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0;">
                             Learn more
                         </a>
                     </div>
@@ -38,7 +42,7 @@
     </div>
 
     <!-- Decorative Down Arrow -->
-    <div class="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce opacity-40">
-        <i class="fas fa-arrow-down text-3xl"></i>
+    <div class="absolute bottom-12 left-1/2 -translate-x-1/2 opacity-40">
+        <img src="{{ '/assets/images/arrow.svg' | relative_url }}" alt="Scroll down" class="h-8 w-8 md:h-10 md:w-10" loading="lazy" decoding="async">
     </div>
 </div>
