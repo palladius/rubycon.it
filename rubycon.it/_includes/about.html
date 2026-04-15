@@ -1,21 +1,70 @@
-{% capture content %}
-<div class="grid md:grid-cols-3 gap-10">
-    {% for card in site.data.about %}
-    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition" data-aos="fade-up">
-        <div class="bg-red-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-            <i class="fas fa-{{ card.icon }} text-red-800 text-2xl"></i>
+<section id="about" class="py-16 md:py-24 bg-[#FAFAFA]">
+    <div class="mx-auto w-full max-w-[1376px] px-6 md:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
+            <div>
+                <p class="text-[#8B2D2B] mb-4" style="font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0;">
+                    Why Rubycon
+                </p>
+                <h2 class="text-[#3F3F3F]" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: clamp(40px, 4.1vw, 48px); line-height: clamp(46px, 4.8vw, 56px); letter-spacing: 0; text-transform: none;">
+                    RubyDay went away.<br>
+                    So we made our own.
+                </h2>
+            </div>
+            <div class="pt-1">
+                <p class="text-[#3F3F3F] max-w-[664px]" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 0;">
+                    Rubycon is a full day of Ruby talks in Rimini. We pick speakers for what they know, not who pays. And the whole thing falls on a Friday so you can stay for the weekend.
+                </p>
+            </div>
         </div>
-        <h3 class="text-xl font-bold mb-3">{{ card.title }}</h3>
-        <p class="text-gray-600">{{ card.description }}</p>
-    </div>
-    {% endfor %}
-</div>
-{% endcapture %}
 
-{% include section.html
-id="about"
-title="I. &nbsp;About Rubycon Italy"
-description="Join us for a full day dedicated to Ruby inspiring talks from italian and international speakers, sharing
-ideas and experiences from the Ruby world. All talks are in English."
-content=content
-%}
+        <div class="mt-8 md:mt-10 border-t border-[#D8CFB6]">
+            <article class="py-7 md:py-8 border-t border-[#D8CFB6]">
+                <h3 class="text-[#8B2D2B] mb-3" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 28px; line-height: 40px; letter-spacing: 0; text-transform: none;">
+                    Talks that go deep
+                </h3>
+                <p class="text-[#3F3F3F]" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 0;">
+                    We rejected sponsor talk slots. If it's on stage, it's there because we think you'll learn something real.
+                </p>
+            </article>
+
+            <article class="py-7 md:py-8 border-t border-[#D8CFB6]">
+                <h3 class="text-[#8B2D2B] mb-3" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 28px; line-height: 40px; letter-spacing: 0; text-transform: none;">
+                    Small enough to meet everyone
+                </h3>
+                <p class="text-[#3F3F3F]" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 0;">
+                    About 200 people. One stage. You'll run into the keynote speakers at the coffee table. That's the point.
+                </p>
+            </article>
+
+            <article class="py-7 md:py-8 border-t border-[#D8CFB6]">
+                <h3 class="text-[#8B2D2B] mb-3" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 28px; line-height: 40px; letter-spacing: 0; text-transform: none;">
+                    Stuff you can use on Monday
+                </h3>
+                <p class="text-[#3F3F3F]" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 0;">
+                    Production case studies, tooling updates, architecture decisions. The kind of talks that change how you write code next week.
+                </p>
+            </article>
+
+            <article class="py-7 md:py-8 border-t border-b border-[#D8CFB6]">
+                <h3 class="text-[#8B2D2B] mb-3" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 28px; line-height: 40px; letter-spacing: 0; text-transform: none;">
+                    Then there's Rimini
+                </h3>
+                <p class="text-[#3F3F3F]" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 0;">
+                    The Adriatic coast, the food, May weather. You came for the talks but you'll stay for the piadina and the sea.
+                </p>
+            </article>
+        </div>
+
+        <div class="mt-14 md:mt-16">
+            <div class="w-full h-[226px] md:h-[560px] overflow-hidden">
+                <img
+                    src="{{ '/assets/images/why-rubycon-image.png' | relative_url }}"
+                    alt="Rimini seaside view"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                >
+            </div>
+        </div>
+    </div>
+</section>

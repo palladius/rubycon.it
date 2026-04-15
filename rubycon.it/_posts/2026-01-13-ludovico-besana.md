@@ -3,6 +3,7 @@ layout: article
 title: "Ludovico Besana"
 date: 2026-01-13
 asset_url: /assets/images/articles/ludovico_besana.png
+card_image_position: center 20%
 published: true
 excerpt: "Ludovico, born as a Full Stack Developer, discovered his true passion for quality later in his career."
 ---

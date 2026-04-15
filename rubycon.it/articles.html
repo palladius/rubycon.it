@@ -4,35 +4,44 @@ title: Articles
 permalink: /articles/
 ---
 
-{% capture content %}
-  <div class="container mx-auto px-4">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {% for post in site.posts %}
-      <div class="bg-white rounded-lg overflow-hidden shadow-md transition duration-300 mx-auto w-full">
-        <a href="{{ post.url }}" data-aos="fade-up">
-          <div class="relative">
-              <img src="{{ post.asset_url | default: '/assets/images/logo.png' | relative_url }}" alt="{{ post.title }}" class="w-full h-64 object-cover">
-              <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
-              <div class="absolute bottom-4 left-4">
-                  <h3 class="text-white text-2xl font-bold">{{ post.title }}</h3>
-                  <p class="text-red-200">{{ post.date | date: "%B %d, %Y" }}</p>
-              </div>
-          </div>
-          <div class="p-3">
-              <div class="text-gray-600 mb-4">{{ post.excerpt }}</div>
-              <div class="flex mt-2">
-                <span class="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full">Read more</span>
-              </div>
-          </div>
-        </a>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-{% endcapture %}
+<section id="articles" class="pt-[140px] md:pt-[160px] pb-16 md:pb-24 bg-[#FAFAFA]">
+    <div class="mx-auto w-full max-w-[1376px] px-6 md:px-8">
+        <div class="mb-12 md:mb-16">
+            <p class="text-[#8B2D2B] mb-4" style="font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0;">
+                News & Updates
+            </p>
+            <h1 class="text-[#3F3F3F] mb-6" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: clamp(40px, 4.1vw, 48px); line-height: clamp(46px, 4.8vw, 56px); letter-spacing: 0; text-transform: none;">
+                Latest Articles
+            </h1>
+            <p class="text-[#3F3F3F] max-w-[664px]" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 0;">
+                Stories, updates, and insights from our community. Learn more about Rubycon and the Ruby community in Italy.
+            </p>
+        </div>
 
-{% include section.html
-    id="articles"
-    title="Latest News"
-    content=content
-%}
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+            {% for post in site.posts %}
+            <a href="{{ post.url }}" class="group" data-aos="fade-up">
+                <article style="border: 1px solid #D8CFB6; background: white; overflow: hidden; transition: all 0.3s ease; cursor: pointer;">
+                    <div class="relative overflow-hidden h-[220px]">
+                        <img src="{{ post.asset_url | default: '/assets/images/logo.png' | relative_url }}" alt="{{ post.title }}" style="width: 100%; height: 100%; object-fit: cover; object-position: {{ post.card_image_position | default: 'center center' }}; transition: transform 0.3s ease; group-hover:scale-105">
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <p class="text-[#8B2D2B] mb-3" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 14px; line-height: 20px; letter-spacing: 0;">
+                            {{ post.date | date: "%B %d, %Y" }}
+                        </p>
+                        <h3 class="text-[#3F3F3F] mb-4" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 24px; line-height: 32px; letter-spacing: 0; text-transform: none;">
+                            {{ post.title }}
+                        </h3>
+                        <p class="text-[#3F3F3F]" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; letter-spacing: 0; margin-bottom: 16px;">
+                            {{ post.excerpt | strip_html | truncatewords: 20 }}
+                        </p>
+                        <div style="color: #802126; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 16px; line-height: 20px;">
+                            Read more →
+                        </div>
+                    </div>
+                </article>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>

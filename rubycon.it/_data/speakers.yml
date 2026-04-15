@@ -2,39 +2,55 @@
   full_name: Carmine Paolino
   role: Founder at Chat with Work
   description: Founder of Chat with Work and creator of RubyLLM, Carmine is an AI engineer pioneering Ruby for AI web apps in his keynote.
+  bio: |
+    Carmine Paolino is the Founder of Chat with Work and creator of RubyLLM, a library that brings AI capabilities to Ruby developers. With a passion for making artificial intelligence accessible to the Ruby community, Carmine has been instrumental in pioneering the use of Ruby for building modern AI-powered web applications. His keynote will explore how Ruby developers can leverage AI in their projects.
   labels: [ruby, rubyllm]
 - avatar: "/assets/images/articles/marco_roth.jpeg"
   full_name: Marco Roth
   role: Full-Stack Ruby On Rails Developer
   description: Creator of Herb and ReActionView, Marco brings HTML-aware tooling to Rails. He'll explore the path to reactive ERB rendering.
+  bio: |
+    Marco Roth is a full-stack Ruby on Rails developer and creator of Herb and ReActionView, two innovative libraries that bring modern developer experience to Rails. With expertise in HTML-aware tooling and reactive rendering, Marco has been pushing the boundaries of what's possible in ERB templating. He's passionate about making Rails development more intuitive and productive.
   labels: [ruby, herb, reactionview]
 - avatar: "/assets/images/articles/julia_lopez.png"
   full_name: Julia López
   role: Full-Stack Ruby On Rails Developer
   description: A Senior Software Engineer at Harvest with nearly two decades of Rails experience, Julia champions accessibility and long-term Rails maintenance.
+  bio: |
+    Julia López is a Senior Software Engineer at Harvest and a fervent advocate for accessible, maintainable Ruby on Rails applications. With nearly two decades of experience building Rails applications, she has become a respected voice in the community, championing best practices in code quality, accessibility standards, and long-term application maintenance. Her work has helped countless teams build better Rails applications.
   labels: [ruby, ruby on rails]
 - avatar: "/assets/images/articles/akira_matsuda.jpg"
   full_name: Akira Matsuda
   role: Ruby Committer & Creator of Kaminari
   description: Ruby and Rails committer, creator of Kaminari, and Chief Organizer of RubyKaigi. Akira shares a glimpse into his daily life with Ruby.
+  bio: |
+    Akira Matsuda is a Ruby and Rails committer with a tremendous impact on the Ruby ecosystem. As the creator of Kaminari, one of the most popular Rails pagination gems, and Chief Organizer of RubyKaigi, Japan's largest Ruby conference, Akira has been instrumental in shaping the Ruby community. His contributions to Rails internals and his leadership in the Japanese Ruby community have made him one of the most influential figures in the language's development.
   labels: [ruby, kaminari]
 - avatar: "/assets/images/articles/andre_arko.jpg"
   full_name: André Arko
-  role: Ruby Central Board & Lead Developer of Bundler
+  role: Co-Founder & CEO at Spinel Cooperative
   description: The creator of Bundler and founder of Ruby Together, André has shaped how every Ruby developer manages dependencies. He'll introduce rv, a new vision for Ruby version management.
+  bio: |
+    André Arko is the creator of Bundler, the dependency management tool that has become an essential part of every Ruby developer's workflow. As a member of the Ruby Central Board and founder of Ruby Together, an organization dedicated to supporting open source Ruby infrastructure, André has been crucial in maintaining and improving the tools that millions of Ruby developers rely on daily. His work on version management continues to shape the future of the Ruby ecosystem.
   labels: [ruby, bundler, rubygems]
 - avatar: "/assets/images/articles/silvano_stralla.jpeg"
   full_name: Silvano Stralla
   role: Software Engineer at DatoCMS
   description: A seasoned full-stack developer with decades of experience, Silvano challenges whether breaking the rules of software engineering can actually lead to better outcomes.
+  bio: |
+    Silvano Stralla is a seasoned full-stack developer with decades of experience building complex applications across multiple technologies. Currently at DatoCMS, Silvano brings a pragmatic and thoughtful approach to software engineering. Known for questioning conventional wisdom and exploring unconventional solutions, he challenges the software development community to think critically about established best practices and whether rules are meant to be broken.
   labels: [ruby]
 - avatar: "/assets/images/articles/yara_debian.jpeg"
   full_name: Yara Debian
   role: Software Engineer at FactorialHR
   description: As a Senior Software Engineer at FactorialHR, Yara traces a philosophical journey from ancient Greece to modern code, exploring how ideas shape the software we build.
+  bio: |
+    Yara Debian is a Senior Software Engineer at FactorialHR with a unique perspective that bridges philosophy and software development. With a deep interest in how philosophical concepts apply to modern programming, Yara explores the connections between ancient ideas and contemporary code practices. Her talks and writing reveal how understanding philosophy can lead to better software architecture and more thoughtful engineering decisions.
   labels: [ruby, art, philosophy]
 - avatar: "/assets/images/articles/michele_franzin.jpg"
   full_name: Michele Franzin
   role: Lead Developer and Architect at SeeSaw srl
   description: Lead Developer at SeeSaw, Michele bridges Ruby and Java enterprise experience to tackle semantic image search with Postgres, Redis, and LLMs.
+  bio: |
+    Michele Franzin is the Lead Developer and Architect at SeeSaw srl, where he combines his extensive experience in both Ruby and Java ecosystems to build innovative solutions. With expertise spanning from traditional enterprise architectures to modern machine learning applications, Michele brings a unique perspective to tackling complex problems like semantic image search. His work integrating Postgres, Redis, and large language models demonstrates how Ruby can play a crucial role in cutting-edge AI applications.
   labels: [ruby, seesaw, architecture]

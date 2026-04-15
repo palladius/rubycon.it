@@ -1,22 +1,9 @@
-- name: Home
-  link: "/#home"
 - name: Schedule
   link: "/schedule/"
-- name: Info
-  submenu:
-    # Nota: questi dovrebbero linkare tutti e soli i subpages della home - cioe' dovrebbero essere tutti LOCALU a / come #qualcosa.
-    #       Le sotto pagine dovrebbero avere un link relativo in BASSO dove ci sono MOLTI link.
-    #       Perche' direte? Se no l'header si appesantisce un botto.
-    - name: About
-      link: "/#about"
-    - name: Speakers
-      link: "/#speakers"
-    - name: Venue
-      link: "/#venue"
-    - name: Sponsors
-      link: "/#sponsors"
-    - name: Logistics
-      link: "/logistics/"
+- name: Speakers
+  link: "/speakers/"
+- name: Venue
+  link: "/#venue"
 - name: Blog
   link: "/articles/"
 - name: FAQ

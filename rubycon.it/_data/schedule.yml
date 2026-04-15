@@ -1,3 +1,71 @@
-# This is redundant: schedule is in _includes/dsl/content.rb and can be ascertained by running `just schedule`.
-# We keep this file as a placeholder to avoid breaking potential Jekyll references, 
-# but the Ruby code is the single source of truth!
+- date: 2026-05-08
+  events:
+    - clock: "8:30"
+      description: "Check-in & Welcome Coffee"
+
+    - clock: "9:30"
+      description: "Welcome to Rubycon"
+      full_name: "Riccardo Carlesso"
+      tag: "Intro"
+
+    - clock: "9:45"
+      description: "Ruby Is the Best Language for Building AI Web Apps"
+      full_name: "Carmine Paolino"
+      tag: "Keynote"
+
+    - clock: "10:25"
+      description: "Shift-left on Accessibility in your Ruby webapps"
+      full_name: "Julia López"
+
+    - clock: "11:05"
+      description: "Coffee Break"
+      tag: "Break"
+
+    - clock: "11:20"
+      description: "Breaking the rules of software engineering: will it work?"
+      full_name: "Silvano Stralla"
+
+    - clock: "12:00"
+      description: "rv, a ruby manager for the future"
+      full_name: "André Arko"
+
+    - clock: "12:40"
+      description: "Lunch Break & Networking"
+      tag: "Break"
+
+    - clock: "13:45"
+      description: "5minutes for everyone who has something to say"
+      full_name: "Many speakers (FIFO)"
+      tag: "FIFO"
+
+    - clock: "14:45"
+      description: "Semantic Image Search in Ruby: Postgres, Redis, or LLM?"
+      full_name: "Michele Franzin"
+
+    - clock: "15:25"
+      description: "My daily life on Ruby"
+      full_name: "Akira Matsuda"
+
+    - clock: "16:05"
+      description: "Coffee Break"
+      tag: "Break"
+
+    - clock: "16:20"
+      description: "HTML-Aware ERB: The Path to Reactive Rendering"
+      full_name: "Marco Roth"
+
+    - clock: "17:00"
+      description: "From Plato to Production: A Philosophical History of Code"
+      full_name: "Yara Debian"
+
+    - clock: "17:40"
+      description: "Piadina - It's a wrap!"
+      full_name: "Riccardo Carlesso"
+
+    - clock: "18:00"
+      description: "Drinks or Shower or Nap"
+      tag: "optional"
+
+    - clock: "20:00"
+      description: "Dinner + Toga Party! @ Bagno 46"
+      tag: "Dinner"

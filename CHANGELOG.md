@@ -1,8 +1,16 @@
 # Changelog
 
-## 0.16.5
+## 0.17.0
 
-* [Antigravity/Gemini] feat(agenda): 🗣️ Add Marco Roth abstract and title (Fixes #74).
+* [gemini] feat(ui): 🎨 Massive UI refactoring based on Figma design (#88).
+    * Implemented "Roman" theme with Wine Red (#802126) and Cream (#fcf7e8) color palette.
+    * Refined logotype to match PDF specifications, including the "I♦I" pictogram.
+    * Completely redesigned Hero section with full-viewport background, transparent header, and improved CTAs.
+    * Updated all sections (About, Speakers, Schedule, Sponsors, Venue) to match the minimalist, left-aligned design from Figma mockups.
+    * Fixed invisible "RVBYCON" hero title by adding cream color override.
+    * Implemented dynamic sticky header that transitions from transparent to cream on scroll for better visibility.
+    * Simplified footer with refined link columns and social icons.
+    * Integrated "Trajan Pro" as the primary serif font, with "Cinzel" as a high-fidelity fallback.
 
 ## 0.16.3
 

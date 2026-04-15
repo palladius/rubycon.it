@@ -1,30 +1,111 @@
 ---
 layout: default
 ---
-{% capture title %}
-    {{ page.title }}
-{% endcapture %}
 
-{% capture date %}
-    Published on {{ page.date | date: "%B %d, %Y" }}
-    {% if page.asset_url %}
-        <img src="{{ page.asset_url }}" alt="Featured image for {{ page.title }}" class="rounded-lg mb-4" style="width: 100%; height: 300px; object-fit: contain;">
-    {% endif %}
-{% endcapture %}
-
-{% capture content %}
-    <article class="prose">
-        <div class="content" data-aos="fade-down" data-aos-once="true">
-            {{ content }}
+<section id="post" class="pt-[96px] md:pt-[112px] pb-16 md:pb-24 bg-[#FAFAFA]">
+    <div class="mx-auto w-full max-w-[900px] px-6 md:px-8">
+        <div class="mb-12 md:mb-16">
+            <h1 class="text-[#3F3F3F] mb-6" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: clamp(40px, 5vw, 56px); line-height: clamp(48px, 6vw, 64px); letter-spacing: 0; text-transform: none;">
+                {{ page.title }}
+            </h1>
+            <p class="text-[#8B2D2B]" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; letter-spacing: 0;">
+                Published on {{ page.date | date: "%B %d, %Y" }}
+            </p>
         </div>
 
-        <a href="https://ti.to/rubycon/rubycon-2026/" class="block text-xl mt-16">Get your ticket for Rubycon 2026 now!</a>
-    </article>
-{% endcapture %}
+        {% if page.asset_url %}
+            <div class="mb-12 md:mb-16 overflow-hidden rounded-lg">
+                <img src="{{ page.asset_url }}" alt="Featured image for {{ page.title }}" style="width: 100%; height: auto; object-fit: cover;">
+            </div>
+        {% endif %}
 
-{% include section.html
-    id="post" 
-    title=title 
-    description=date
-    content=content
-%}
+        <article class="prose prose-lg" style="max-width: 100%;">
+            <div class="content" data-aos="fade-down" data-aos-once="true">
+                <div style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 18px; line-height: 32px; color: #3F3F3F; letter-spacing: 0;">
+                    {{ content }}
+                </div>
+            </div>
+        </article>
+
+        <div class="mt-16 md:mt-20 pt-12 md:pt-16 border-t border-[#D8CFB6]">
+            <a href="{{ site.event.tickets_url }}" class="inline-flex items-center justify-center" style="box-sizing: border-box; width: 240px; height: 52px; padding: 16px 32px; border: 1px solid #802126; color: #FCF7E8; background-color: #802126; font-family: 'Noto Serif', serif; font-weight: 500; font-size: 16px; line-height: 16px; letter-spacing: 0; text-transform: none; text-decoration: none; transition: all 0.3s ease;">
+                Get your ticket for Rubycon 2026
+            </a>
+        </div>
+    </div>
+</section>
+
+<style>
+    .prose {
+        all: revert;
+    }
+    
+    .prose h2, .prose h3, .prose h4 {
+        font-family: 'Noto Serif', serif;
+        font-weight: 400;
+        color: #8B2D2B;
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+    
+    .prose h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .prose h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .prose a {
+        color: #802126;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    .prose a:hover {
+        text-decoration: underline;
+    }
+    
+    .prose p {
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        color: #3F3F3F;
+        margin-bottom: 16px;
+    }
+    
+    .prose li {
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        color: #3F3F3F;
+        margin-bottom: 8px;
+    }
+    
+    .prose blockquote {
+        border-left: 4px solid #802126;
+        padding-left: 16px;
+        color: #8B2D2B;
+        font-style: italic;
+        margin: 24px 0;
+    }
+    
+    .prose code {
+        background-color: #F5F5F5;
+        color: #3F3F3F;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: 'Monaco', 'Courier New', monospace;
+        font-size: 14px;
+    }
+    
+    .prose pre {
+        background-color: #F5F5F5;
+        border: 1px solid #D8CFB6;
+        border-radius: 6px;
+        padding: 16px;
+        overflow-x: auto;
+    }
+</style>
