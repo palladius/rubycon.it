@@ -1,6 +1,8 @@
 <section id="speakers" style="background-color: #802126; padding: 4rem 0;">
     {% assign speakers_limit = include.limit | default: 9999 | plus: 0 %}
     {% assign show_all_link = include.show_all_link | default: 'true' %}
+    {% assign show_bio = include.show_bio | default: 'true' %}
+    {% assign show_all_link_label = include.show_all_link_label | default: 'All speakers' %}
     {% assign rendered_speakers = 0 %}
     <div class="mx-auto w-full max-w-[1376px] px-6 md:px-8">
         <div>
@@ -32,7 +34,7 @@
                     <p class="text-[#FCF7E8]" style="font-family: 'Inter', sans-serif; font-weight: 300; font-size: 14px; line-height: 14px; letter-spacing: 0; margin-bottom: 12px; opacity: 0.9;">
                         {{ speaker.role }}
                     </p>
-                    {% if speaker.bio %}
+                    {% if speaker.bio and show_bio != 'false' %}
                     <p class="hidden md:block text-[#FCF7E8]" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; letter-spacing: 0; margin-bottom: 12px; opacity: 0.8;">
                         {{ speaker.bio | strip }}
                     </p>
@@ -59,7 +61,7 @@
         {% if show_all_link != 'false' %}
         <div class="mt-12 md:mt-16">
             <a href="/speakers/" class="text-[#FCF7E8]" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 20px; line-height: 20px; letter-spacing: 0; text-decoration: underline;">
-                All speakers
+                {{ show_all_link_label }}
             </a>
         </div>
         {% endif %}

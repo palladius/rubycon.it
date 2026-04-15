@@ -17,8 +17,8 @@ permalink: /sponsors/
         Rubycon is a community-first conference. Sponsoring helps us keep ticket prices accessible, fund scholarships, and build a better experience for everyone in the room.
       </p>
       <div class="mt-8 pt-8" style="border-top: 1px solid #D8CFB6;">
-        <a href="mailto:sponsors@rubycon.it" class="text-[#8B2D2B]" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 20px; line-height: 20px; letter-spacing: 0; text-decoration: underline; text-underline-offset: 4px;">
-          Contact sponsors@rubycon.it
+        <a href="mailto:info@rubycon.it" class="text-[#8B2D2B]" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: 20px; line-height: 20px; letter-spacing: 0; text-decoration: underline; text-underline-offset: 4px;">
+          Contact info@rubycon.it
         </a>
       </div>
     </div>

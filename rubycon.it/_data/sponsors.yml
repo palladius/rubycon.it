@@ -9,7 +9,7 @@
   logos:
     - name: 'Imperator'
       img: '/assets/images/sponsors/imperator/wide_group.png'
-      url: ''
+      url: 'https://www.widegroup.eu/'
       size_scale: '1'
       description: 'Primary sponsor'
 - title: "triumvir"
@@ -114,6 +114,10 @@
     - name: "Avo"
       img: "/assets/images/sponsors/community/Avo.png"
       url: "https://avohq.io/"
+    - name: "Arkemis"
+      img: "/assets/images/sponsors/community/arkemis.png"
+      url: "https://arkemis.it/"
+      size_scale: "0.8"
 - title: 'quaestor'
   icon: '📜'
   logos:
@@ -177,5 +181,9 @@
       url: "https://avohq.io/"
       size_scale: "0.8"
       description: "The Rails Framework for Internal Tools"
+    - name: "Arkemis"
+      img: "/assets/images/sponsors/community/arkemis.png"
+      url: "https://arkemis.it/"
+      size_scale: "0.8"
 
 
