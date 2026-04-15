@@ -28,7 +28,7 @@
   labels: [ruby, kaminari]
 - avatar: "/assets/images/articles/andre_arko.jpg"
   full_name: André Arko
-  role: Ruby Central Board & Lead Developer of Bundler
+  role: Co-Founder & CEO at Spinel Cooperative
   description: The creator of Bundler and founder of Ruby Together, André has shaped how every Ruby developer manages dependencies. He'll introduce rv, a new vision for Ruby version management.
   bio: |
     André Arko is the creator of Bundler, the dependency management tool that has become an essential part of every Ruby developer's workflow. As a member of the Ruby Central Board and founder of Ruby Together, an organization dedicated to supporting open source Ruby infrastructure, André has been crucial in maintaining and improving the tools that millions of Ruby developers rely on daily. His work on version management continues to shape the future of the Ruby ecosystem.
