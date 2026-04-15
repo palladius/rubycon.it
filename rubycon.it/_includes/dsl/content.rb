@@ -12,7 +12,7 @@ Rubycon::Agenda.schedule(Date.new(2026, 5, 8)) do
 
   talk at: 10_25,
        title: "Shift-left on Accessibility in your Ruby webapps",
-       by: "Julia Lopez"
+       by: "Julia López"
 
   lapsus at: 11_05,
          desc: "☕️ Coffee Break"
@@ -45,7 +45,7 @@ Rubycon::Agenda.schedule(Date.new(2026, 5, 8)) do
          desc: "☕ Coffee Break"
 
   talk at: 16_20,
-       title: "TBD",
+       title: "HTML-Aware ERB: The Path to Reactive Rendering",
        by: "Marco Roth"
 
 
