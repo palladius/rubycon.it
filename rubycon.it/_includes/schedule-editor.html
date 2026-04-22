@@ -1,0 +1,653 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
+
+<style>
+  .schedule-lab {
+    background: transparent;
+  }
+
+  .schedule-lab__wrap {
+    position: relative;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .schedule-lab__panel {
+    border: 1px solid rgba(139, 45, 43, 0.18);
+    background: rgba(255, 250, 243, 0.8);
+    box-shadow: 0 24px 60px rgba(63, 63, 63, 0.08);
+    overflow: hidden;
+    min-width: 0;
+  }
+
+  .schedule-lab__bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(139, 45, 43, 0.14);
+    padding: 14px 16px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.82) 0%, rgba(248,242,232,0.86) 100%);
+  }
+
+  .schedule-lab__bar > * {
+    min-width: 0;
+  }
+
+  .schedule-lab__tabs {
+    display: inline-flex;
+    border: 1px solid rgba(139, 45, 43, 0.18);
+    background: rgba(255,255,255,0.8);
+  }
+
+  .schedule-lab__tab {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: #3f3f3f;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 10px 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .schedule-lab__tab.is-active {
+    background: #8b2d2b;
+    color: #faf6ee;
+  }
+
+  .schedule-lab__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .schedule-lab__button {
+    appearance: none;
+    border: 1px solid rgba(139, 45, 43, 0.2);
+    background: #ffffff;
+    color: #8b2d2b;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 10px 14px;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+  }
+
+  .schedule-lab__button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(139, 45, 43, 0.08);
+  }
+
+  .schedule-lab__button--primary {
+    background: #8b2d2b;
+    color: #faf6ee;
+  }
+
+  @media (hover: hover) {
+    .schedule-lab__button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(139, 45, 43, 0.08);
+    }
+  }
+
+  .schedule-lab__content {
+    padding: 18px;
+  }
+
+  @media (min-width: 768px) {
+    .schedule-lab__content {
+      padding: 24px;
+    }
+  }
+
+  .schedule-lab__tabPanel[hidden] {
+    display: none;
+  }
+
+  .schedule-lab__tabPanel {
+    margin: 0;
+  }
+
+  .schedule-lab__editorShell {
+    border: 1px solid rgba(139, 45, 43, 0.14);
+    background: #fbf7ef;
+    overflow: hidden;
+  }
+
+  .schedule-lab__editorHint {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(139, 45, 43, 0.12);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #8b2d2b;
+    background: rgba(255,255,255,0.55);
+    min-width: 0;
+  }
+
+  .schedule-lab__editorHintActions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    min-width: 0;
+  }
+
+  .schedule-lab__editorFrame {
+    min-height: 0;
+  }
+
+  .CodeMirror {
+    height: auto;
+    background: transparent;
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-size: 15px;
+    line-height: 1.58;
+    color: #3f3f3f;
+  }
+
+  .CodeMirror-scroll {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .CodeMirror-gutters {
+    background: rgba(255, 255, 255, 0.45);
+    border-right: 1px solid rgba(139, 45, 43, 0.12);
+  }
+
+  .CodeMirror-linenumber {
+    color: rgba(139, 45, 43, 0.45);
+  }
+
+  .cm-s-rubycon .cm-comment {
+    color: #9a9080;
+    font-style: italic;
+  }
+
+  .cm-s-rubycon .cm-string {
+    color: #dc2626;
+    font-weight: 600;
+  }
+
+  .cm-s-rubycon .cm-keyword,
+  .cm-s-rubycon .cm-atom,
+  .cm-s-rubycon .cm-operator {
+    color: #00b0ff;
+    font-weight: 700;
+  }
+
+  .cm-s-rubycon .cm-number {
+    color: #00b0ff;
+    font-weight: 700;
+  }
+
+  .cm-s-rubycon .cm-def,
+  .cm-s-rubycon .cm-variable-2,
+  .cm-s-rubycon .cm-variable-3,
+  .cm-s-rubycon .cm-builtin {
+    color: #3f3f3f;
+  }
+
+  .schedule-lab__terminal {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 620px;
+    background: #2b0b01;
+    color: #fcf7e8;
+    border: 1px solid rgba(139, 45, 43, 0.22);
+  }
+
+  .schedule-lab__terminalHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(252, 247, 232, 0.12);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(252, 247, 232, 0.9);
+    background: rgba(18, 6, 3, 0.72);
+  }
+
+  .schedule-lab__terminalBody {
+    padding: 18px 16px 24px;
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    overflow: auto;
+  }
+
+  .schedule-lab__terminalPrompt {
+    color: #00b0ff;
+    margin-bottom: 8px;
+  }
+
+  .schedule-lab__terminalError {
+    color: #ff8a8a;
+  }
+
+  .schedule-lab__terminalMuted {
+    color: rgba(252, 247, 232, 0.68);
+  }
+
+  @media (max-width: 767px) {
+    .schedule-lab__bar {
+      align-items: stretch;
+      gap: 10px;
+      padding: 12px;
+    }
+
+    .schedule-lab__tabs,
+    .schedule-lab__actions {
+      width: 100%;
+    }
+
+    .schedule-lab__tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .schedule-lab__tab {
+      width: 100%;
+      text-align: center;
+      padding: 11px 10px;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+    }
+
+    .schedule-lab__actions {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+
+    .schedule-lab__button {
+      width: 100%;
+      text-align: center;
+      padding: 11px 12px;
+    }
+
+    .schedule-lab__content {
+      padding: 12px;
+    }
+
+    .schedule-lab__editorHint {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 10px 12px;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+    }
+
+    .schedule-lab__editorHint > span,
+    .schedule-lab__editorHintActions > span {
+      word-break: break-word;
+    }
+
+    .schedule-lab__editorHintActions {
+      width: 100%;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .schedule-lab__editorHintActions .schedule-lab__button {
+      width: auto;
+      min-width: 120px;
+      padding: 9px 10px;
+    }
+
+    .CodeMirror {
+      font-size: 13.5px;
+      line-height: 1.5;
+    }
+
+    .schedule-lab__terminal {
+      min-height: 420px;
+    }
+
+    .schedule-lab__terminalHeader {
+      padding: 10px 12px;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+    }
+
+    .schedule-lab__terminalBody {
+      padding: 12px;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+  }
+</style>
+
+<div class="schedule-lab">
+  <div class="schedule-lab__wrap">
+
+    <div class="schedule-lab__panel">
+      <div class="schedule-lab__bar">
+        <div class="schedule-lab__tabs" role="tablist" aria-label="Schedule editor tabs">
+          <button id="schedule-editor-tab" class="schedule-lab__tab is-active" type="button" role="tab" aria-selected="true" aria-controls="schedule-editor-panel" data-tab="editor">Editor</button>
+          <button id="schedule-terminal-tab" class="schedule-lab__tab" type="button" role="tab" aria-selected="false" aria-controls="schedule-terminal-panel" data-tab="terminal">Terminal</button>
+        </div>
+        <div class="schedule-lab__actions">
+          <button class="schedule-lab__button schedule-lab__button--primary" id="schedule-run" type="button">Run in browser</button>
+        </div>
+      </div>
+
+      <div class="schedule-lab__content">
+        <section id="schedule-editor-panel" class="schedule-lab__tabPanel" role="tabpanel" aria-labelledby="schedule-editor-tab">
+          <div class="schedule-lab__editorShell">
+            <div class="schedule-lab__editorHint">
+              <span>includes/dsl/content.rb</span>
+              <div class="schedule-lab__editorHintActions">
+                <span>Cmd/Ctrl + Enter to run</span>
+                <button class="schedule-lab__button" id="schedule-reset" type="button">Reset code</button>
+              </div>
+            </div>
+            <div class="schedule-lab__editorFrame">
+              <textarea id="schedule-editor" spellcheck="false"></textarea>
+            </div>
+          </div>
+        </section>
+
+        <section id="schedule-terminal-panel" class="schedule-lab__tabPanel" role="tabpanel" aria-labelledby="schedule-terminal-tab" hidden>
+          <div class="schedule-lab__terminal">
+            <div class="schedule-lab__terminalHeader">
+              <span>Terminal</span>
+              <span class="schedule-lab__terminalMuted">ruby schedule.rb</span>
+            </div>
+            <div id="schedule-output" class="schedule-lab__terminalBody"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/ruby/ruby.min.js"></script>
+  <script>
+    window.__rubyconScheduleSource = {{ include.source | jsonify }};
+
+    (function() {
+      const source = window.__rubyconScheduleSource;
+      const editorElement = document.getElementById('schedule-editor');
+      const outputElement = document.getElementById('schedule-output');
+      const runButton = document.getElementById('schedule-run');
+      const resetButton = document.getElementById('schedule-reset');
+      const tabButtons = Array.from(document.querySelectorAll('.schedule-lab__tab'));
+      const editorPanel = document.getElementById('schedule-editor-panel');
+      const terminalPanel = document.getElementById('schedule-terminal-panel');
+
+      const methodRe = /^\s*(check_in|intro|keynote|talk|lapsus|lightning_talks|dinner)\s+at:\s*([0-9_]+)/m;
+
+      const editor = CodeMirror.fromTextArea(editorElement, {
+        lineNumbers: true,
+        mode: 'ruby',
+        theme: 'rubycon',
+        indentUnit: 2,
+        tabSize: 2,
+        lineWrapping: true,
+        autofocus: false,
+        viewportMargin: Infinity,
+      });
+
+      editor.setValue(source.trim() + '\n');
+      editor.setSize(null, 'auto');
+
+      function setActiveTab(name) {
+        const showEditor = name === 'editor';
+        editorPanel.hidden = !showEditor;
+        terminalPanel.hidden = showEditor;
+
+        tabButtons.forEach((button) => {
+          const isActive = button.dataset.tab === name;
+          button.classList.toggle('is-active', isActive);
+          button.setAttribute('aria-selected', String(isActive));
+        });
+
+        if (showEditor) {
+          editor.refresh();
+        }
+      }
+
+      function formatTime(rawTime) {
+        const digits = String(rawTime).replace(/_/g, '');
+        const hours = digits.slice(0, -2) || '0';
+        const minutes = digits.slice(-2).padStart(2, '0');
+        return `${hours.padStart(2, '0')}:${minutes}`;
+      }
+
+      function minutesSinceMidnight(rawTime) {
+        const digits = String(rawTime).replace(/_/g, '');
+        const hours = Number(digits.slice(0, -2) || '0');
+        const minutes = Number(digits.slice(-2) || '0');
+        return (hours * 60) + minutes;
+      }
+
+      function extractValue(block, key) {
+        const match = block.match(new RegExp(`${key}:\\s*"([^"]*)"`, 'm'));
+        return match ? match[1] : null;
+      }
+
+      function extractTags(block) {
+        const match = block.match(/tags:\s*%w\[([^\]]*)\]/m);
+        if (!match) {
+          return [];
+        }
+
+        return match[1].trim().split(/\s+/).filter(Boolean);
+      }
+
+      function parseEvent(block) {
+        const header = block.match(methodRe);
+        if (!header) {
+          throw new Error(`Cannot parse schedule event:\n${block}`);
+        }
+
+        const method = header[1];
+        const time = header[2];
+        const desc = extractValue(block, 'desc');
+        const title = extractValue(block, 'title');
+        const by = extractValue(block, 'by');
+        const where = extractValue(block, 'where');
+        const tags = extractTags(block);
+
+        if (method === 'check_in') {
+          return { time, desc: desc || 'TBD', speaker: '', tags: ['Check-in'] };
+        }
+
+        if (method === 'intro') {
+          return { time, desc: desc || 'TBD', speaker: by || 'TBD', tags: ['Intro'] };
+        }
+
+        if (method === 'keynote') {
+          const label = title || 'TBD';
+          return { time, desc: label.startsWith('🎤') ? label : `🎤 ${label}`, speaker: by || 'TBD', tags: ['Keynote'] };
+        }
+
+        if (method === 'talk') {
+          const label = title || desc || 'TBD';
+          return { time, desc: label.startsWith('🎤') ? label : `🎤 ${label}`, speaker: by || 'TBD', tags };
+        }
+
+        if (method === 'lapsus') {
+          return { time, desc: desc || 'TBD', speaker: '', tags: ['Break'] };
+        }
+
+        if (method === 'lightning_talks') {
+          return { time, desc: desc || 'TBD', speaker: 'Many speakers (FIFO)', tags };
+        }
+
+        if (method === 'dinner') {
+          const label = desc || 'TBD';
+          const description = where ? `${label} @ ${where}` : label;
+          return { time, desc: description, speaker: by || '', tags: ['Dinner'] };
+        }
+
+        throw new Error(`Unsupported schedule method: ${method}`);
+      }
+
+      function parseAgenda(sourceText) {
+        const lines = sourceText.split('\n');
+        const header = lines.find((line) => line.trim().length > 0);
+
+        if (!header) {
+          throw new Error('The schedule source is empty.');
+        }
+
+        const dateMatch = header.match(/Rubycon::Agenda\.schedule\(Date\.new\((\d{4}),\s*(\d+),\s*(\d+)\)\)\s+do/);
+        if (!dateMatch) {
+          throw new Error('The schedule header does not look like Rubycon::Agenda.schedule(Date.new(...)).');
+        }
+
+        const date = `${dateMatch[1]}-${dateMatch[2].padStart(2, '0')}-${dateMatch[3].padStart(2, '0')}`;
+        const events = [];
+        const eventStart = /^\s*(check_in|intro|keynote|talk|lapsus|lightning_talks|dinner)\s+at:/;
+        let block = [];
+        let inBlock = false;
+
+        function flushBlock() {
+          if (!block.length) {
+            return;
+          }
+
+          const text = block.join('\n');
+          events.push(parseEvent(text));
+          block = [];
+        }
+
+        for (let index = 1; index < lines.length; index += 1) {
+          const line = lines[index];
+          const trimmed = line.trim();
+
+          if (!inBlock) {
+            if (eventStart.test(line)) {
+              block = [line];
+              inBlock = true;
+            }
+            continue;
+          }
+
+          if (trimmed === 'end') {
+            flushBlock();
+            break;
+          }
+
+          if (eventStart.test(line)) {
+            flushBlock();
+            block = [line];
+            continue;
+          }
+
+          block.push(line);
+        }
+
+        flushBlock();
+        return { date, events };
+      }
+
+      function renderAgenda(sourceText) {
+        const agenda = parseAgenda(sourceText);
+        const lines = [`# Agenda for ${agenda.date}`];
+
+        agenda.events.forEach((event, index) => {
+          const timeStr = formatTime(event.time).padEnd(8, ' ');
+          let deltaStr = '';
+
+          if (index < agenda.events.length - 1) {
+            const currentMinutes = minutesSinceMidnight(event.time);
+            const nextMinutes = minutesSinceMidnight(agenda.events[index + 1].time);
+            let diff = nextMinutes - currentMinutes;
+            if (diff < 0) {
+              diff += 24 * 60;
+            }
+
+            if (diff > 0) {
+              deltaStr = `(${diff}m)`;
+            }
+          }
+
+          const speakerStr = event.speaker ? `(${event.speaker})` : '';
+          lines.push(`  ${timeStr} | ${deltaStr.padEnd(6, ' ')} | ${event.desc.padEnd(40, ' ')} ${speakerStr}`.trimEnd());
+        });
+
+        return lines.join('\n');
+      }
+
+      function escapeHtml(text) {
+        return text
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+      }
+
+      function runAgenda({ focusTerminal = false } = {}) {
+        try {
+          const output = renderAgenda(editor.getValue());
+          outputElement.innerHTML = `
+            <div class="schedule-lab__terminalPrompt">$ ruby schedule.rb</div>
+            <div>${escapeHtml(output).replace(/\n/g, '<br>')}</div>
+          `;
+          if (focusTerminal) {
+            setActiveTab('terminal');
+          }
+        } catch (error) {
+          outputElement.innerHTML = `
+            <div class="schedule-lab__terminalPrompt">$ ruby schedule.rb</div>
+            <div class="schedule-lab__terminalError">${escapeHtml(String(error.message || error))}</div>
+          `;
+          setActiveTab('terminal');
+        }
+      }
+
+      function clearTerminal() {
+        outputElement.innerHTML = `
+          <div class="schedule-lab__terminalPrompt">$ ruby schedule.rb</div>
+          <div class="schedule-lab__terminalMuted">Click \"Run in browser\" to execute the schedule.</div>
+        `;
+      }
+
+      tabButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          setActiveTab(button.dataset.tab);
+        });
+      });
+
+      runButton.addEventListener('click', () => {
+        runAgenda({ focusTerminal: true });
+      });
+
+      resetButton.addEventListener('click', () => {
+        editor.setValue(source.trim() + '\n');
+        editor.setSize(null, 'auto');
+        setActiveTab('editor');
+        clearTerminal();
+      });
+
+      editor.addKeyMap({
+        'Cmd-Enter': () => runAgenda({ focusTerminal: true }),
+        'Ctrl-Enter': () => runAgenda({ focusTerminal: true }),
+      });
+
+      clearTerminal();
+      setActiveTab('editor');
+    })();
+  </script>
+</div>
