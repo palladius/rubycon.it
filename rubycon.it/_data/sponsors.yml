@@ -29,8 +29,7 @@
     size_scale: '1'
     description: 'Application Performance Monitoring (APM) offering error tracking, performance monitoring, dashboards, host metrics, and alerts for Ruby, Elixir, Node.js, Python, and JavaScript.'
   - name: 'weLaika'
-    img: '/assets/images/sponsors/praetor/weLaika.png'
-    # LinkedIn: https://www.linkedin.com/company/welaika/
+    img: '/assets/images/sponsors/praetor/welaika.svg'
     url: 'https://welaika.com/'
     size_scale: '1'
     scholarship_tickets: 2
