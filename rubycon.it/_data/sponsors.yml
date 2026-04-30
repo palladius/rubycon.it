@@ -35,7 +35,7 @@
     scholarship_tickets: 2
     description: 'An Italian cooperative based in Turin specializing in web & mobile development and advertising. They build web solutions, mobile apps, e-commerce platforms, and integrated digital solutions.'
   - name: "Seesaw"
-    img: "/assets/images/sponsors/praetor/seesaw.svg fill.png"
+    img: "/assets/images/sponsors/praetor/seesaw.svg"
     url: "https://seesaw.it/"
     size_scale: "1"
     scholarship_tickets: 2
