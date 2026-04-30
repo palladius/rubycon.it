@@ -24,7 +24,7 @@
   icon: '🦅'
   logos:
   - name: 'Appsignal'
-    img: '/assets/images/sponsors/praetor/Link.png'
+    img: '/assets/images/sponsors/praetor/appsignal.svg'
     url: 'https://appsignal.com'
     size_scale: '1'
     description: 'Application Performance Monitoring (APM) offering error tracking, performance monitoring, dashboards, host metrics, and alerts for Ruby, Elixir, Node.js, Python, and JavaScript.'
