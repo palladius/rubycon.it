@@ -10,7 +10,7 @@
   icon: "⚔️"
   logos:
     - name: "TypeSense"
-      img: "/assets/images/sponsors/triumvir/typesense.svg fill.png"
+      img: "/assets/images/sponsors/triumvir/typesense.svg"
       url: "https://typesense.org/"
       size_scale: "1"
       scholarship_tickets: 2
