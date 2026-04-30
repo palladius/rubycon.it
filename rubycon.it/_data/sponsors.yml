@@ -50,15 +50,15 @@
   icon: '📜'
   logos:
   - name: 'Netframe'
-    img: '/assets/images/sponsors/quaestor/Netframe.png'
+    img: '/assets/images/sponsors/quaestor/netframe.png'
     url: 'https://netframe.it/'
     size_scale: '1'
   - name: 'Engim'
-    img: '/assets/images/sponsors/quaestor/Engim.png'
+    img: '/assets/images/sponsors/quaestor/engim.jpeg'
     url: 'https://www.engim.eu/'
     size_scale: '1'
   - name: 'Deploio'
-    img: '/assets/images/sponsors/quaestor/Deploio.png'
+    img: '/assets/images/sponsors/quaestor/deploio.svg'
     url: 'https://www.deplo.io/'
     size_scale: '1'
   - name: 'Google Cloud'
@@ -73,47 +73,47 @@
   icon: "🤝"
   logos:
     - name: "Dev Fest"
-      img: "/assets/images/sponsors/community/Dev Fest.png"
+      img: "/assets/images/sponsors/community/devfest.webp"
       url: "https://devfest.modena.it/"
       size_scale: "0.7"
       description: "An annual technology conference dedicated to developers, IT professionals, students, and tech enthusiasts, organized by the Google Developer Group (GDG) Cloud of Modena."
     - name: "Grusp"
-      img: "/assets/images/sponsors/community/Grusp.png"
+      img: "/assets/images/sponsors/community/grusp.png"
       url: "https://www.grusp.org/"
       size_scale: "0.8"
       description: "GrUSP è una associazione no-profit che ha come scopo il miglioramento dell’ecosistema del mondo dello sviluppo web in Italia"
     - name: "Helvetic Ruby"
-      img: "/assets/images/sponsors/community/helvetic-ruby-logo.svg fill.png"
+      img: "/assets/images/sponsors/community/helvetic-ruby-logo.svg"
       url: "https://helvetic-ruby.ch/"
       size_scale: "0.8"
       description: "A single-day, single-track event designed for Ruby programming language enthusiasts and professionals from Switzerland and internationally."
     - name: "Modena.rb"
-      img: "/assets/images/sponsors/community/Modena.rb.png"
+      img: "/assets/images/sponsors/community/modenarb.avif"
       url: "https://t.me/+0HSZ-Bv4-A1iODk0"
       size_scale: "1.4"
       description: "A Meetup group for individuals in the Modena area who are passionate about Ruby on Rails, aiming to improve members' skills through networking and education."
     - name: "RubyConf Austria"
-      img: "/assets/images/sponsors/community/RubyConf Austria.png"
+      img: "/assets/images/sponsors/community/rubyconfat.png"
       url: "https://rubyconf.at/"
       size_scale: "0.8"
       description: "A community-driven, single-track conference dedicated to the Ruby programming language, aiming to support and expand the Ruby community in Austria."
     - name: "SheTech"
-      img: "/assets/images/sponsors/community/SheTech.png"
+      img: "/assets/images/sponsors/community/shetech.png"
       url: "https://shetechitaly.org/"
       size_scale: "0.9"
       description: "La community che unisce persone e aziende per portare la parità di genere nel tech e digital"
     - name: "Tito"
-      img: "/assets/images/sponsors/community/Tito.png"
+      img: "/assets/images/sponsors/community/tito.png"
       url: "https://ti.to/home"
       size_scale: "0.5"
       description: "A robust, cloud-based event registration and ticketing software designed to simplify the planning, promotion, and management of events."
     - name: "Wroclove.rb"
-      img: "/assets/images/sponsors/community/Wroclove.rb.png"
+      img: "/assets/images/sponsors/community/wroclove.png"
       url: "https://wrocloverb.com/"
       size_scale: "0.8"
       description: "An annual, not-for-profit event held in Wrocław, Poland, organized by the local Ruby community since 2012."
     - name: "Avo"
-      img: "/assets/images/sponsors/community/Avo.png"
+      img: "/assets/images/sponsors/community/avo.png"
       url: "https://avohq.io/"
     - name: "Arkemis"
       img: "/assets/images/sponsors/community/arkemis.png"
