@@ -21,56 +21,55 @@
           {% if tier == 'imperator' %}
             <div class="flex flex-col md:flex-row md:flex-wrap gap-6">
               {% for logo in group.logos %}
+                {% assign scale = logo.size_scale | default: 1 %}
                 <a href="{{ logo.url | default: '#' }}" {% if logo.url %}target="_blank" rel="noopener noreferrer"{% endif %}
                    class="bg-[#F7F7F7] block"
                    style="width: 100%; max-width: 500px; height: 180px; padding: 20px;">
-                  <img src="{{ logo.img | relative_url }}" alt="{{ logo.name }}" class="w-full h-full object-contain" loading="lazy" decoding="async">
+                  <img src="{{ logo.img | relative_url }}" alt="{{ logo.name }}" class="w-full h-full object-contain" loading="lazy" decoding="async" style="transform: scale({{ scale }});">
                 </a>
               {% endfor %}
             </div>
           {% elsif tier == 'triumvir' %}
             <div class="flex flex-col md:flex-row md:flex-wrap gap-5">
               {% for logo in group.logos %}
+                {% assign scale = logo.size_scale | default: 1 %}
                 <a href="{{ logo.url | default: '#' }}" {% if logo.url %}target="_blank" rel="noopener noreferrer"{% endif %}
                    class="bg-[#F7F7F7] block"
-                   style="width: 300px; height: 130px; {% if logo.name == 'DatoCMS' %}padding: 10.57px 8px;{% else %}padding: 8px 8px 0 8px;{% endif %}">
-                  {% if logo.name == 'DatoCMS' %}
-                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
-                      <img src="{{ logo.img | relative_url }}" alt="{{ logo.name }}" loading="lazy" decoding="async" style="width: 227.2px; height: 91.2px; object-fit: contain;">
-                    </div>
-                  {% else %}
-                    <img src="{{ logo.img | relative_url }}" alt="{{ logo.name }}" class="w-full h-full object-contain" loading="lazy" decoding="async">
-                  {% endif %}
+                   style="width: 300px; height: 130px; padding: 8px 8px 0 8px;">
+                  <img src="{{ logo.img | relative_url }}" alt="{{ logo.name }}" class="w-full h-full object-contain" loading="lazy" decoding="async" style="transform: scale({{ scale }});">
                 </a>
               {% endfor %}
             </div>
           {% elsif tier == 'praetor' %}
             <div class="flex flex-col md:flex-row md:flex-wrap gap-5">
               {% for logo in group.logos %}
+                {% assign scale = logo.size_scale | default: 1 %}
                 <a href="{{ logo.url | default: '#' }}" {% if logo.url %}target="_blank" rel="noopener noreferrer"{% endif %}
                    class="bg-[#F7F7F7] block"
                    style="width: 200px; height: 110px; padding: 8px;">
-                  <img src="{{ logo.img | relative_url }}" alt="{{ logo.name }}" class="w-full h-full object-contain" loading="lazy" decoding="async">
+                  <img src="{{ logo.img | relative_url }}" alt="{{ logo.name }}" class="w-full h-full object-contain" loading="lazy" decoding="async" style="transform: scale({{ scale }});">
                 </a>
               {% endfor %}
             </div>
           {% elsif tier == 'quaestor' %}
             <div class="flex flex-col md:flex-row md:flex-wrap gap-5">
               {% for logo in group.logos %}
+                {% assign scale = logo.size_scale | default: 1 %}
                 <a href="{{ logo.url | default: '#' }}" {% if logo.url %}target="_blank" rel="noopener noreferrer"{% endif %}
                    class="bg-[#F7F7F7] block"
                    style="width: 150px; height: 90px; padding: 8px;">
-                  <img src="{{ logo.img | relative_url }}" alt="{{ logo.name }}" class="w-full h-full object-contain" loading="lazy" decoding="async">
+                  <img src="{{ logo.img | relative_url }}" alt="{{ logo.name }}" class="w-full h-full object-contain" loading="lazy" decoding="async" style="transform: scale({{ scale }});">
                 </a>
               {% endfor %}
             </div>
           {% else %}
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-wrap gap-3 md:gap-2">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-wrap gap-3 md:gap-2 md:max-w-[760px]">
               {% for logo in group.logos %}
+                {% assign scale = logo.size_scale | default: 1 %}
                 <a href="{{ logo.url | default: '#' }}" {% if logo.url %}target="_blank" rel="noopener noreferrer"{% endif %}
                    class="bg-[#F7F7F7] block"
                    style="width: 120px; height: 65px; padding: 12.9px 8px;">
-                  <img src="{{ logo.img | relative_url }}" alt="{{ logo.name }}" class="w-full h-full object-contain" loading="lazy" decoding="async">
+                  <img src="{{ logo.img | relative_url }}" alt="{{ logo.name }}" class="w-full h-full object-contain" loading="lazy" decoding="async" style="transform: scale({{ scale }});">
                 </a>
               {% endfor %}
             </div>

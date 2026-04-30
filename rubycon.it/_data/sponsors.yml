@@ -119,3 +119,8 @@
       img: "/assets/images/sponsors/community/arkemis.png"
       url: "https://arkemis.it/"
       size_scale: "0.8"
+    - name: "Ruby Triathlon"
+      img: "/assets/images/sponsors/community/rubytriathlon.png"
+      url: "https://rubytriathlon.com/"
+      size_scale: "1"
+      description: "An informal initiative celebrating Ruby community members who attend three Ruby conferences in a year."
