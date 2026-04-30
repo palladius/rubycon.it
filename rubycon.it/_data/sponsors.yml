@@ -16,7 +16,7 @@
       scholarship_tickets: 2
       description: "TypeSense is a fast, open-source, and distributed search engine that provides a fast and efficient way to search through large datasets."
     - name: "DatoCMS"
-      img: "/assets/images/sponsors/triumvir/datocms.svg fill.png"
+      img: "/assets/images/sponsors/triumvir/datocms.svg"
       url: "https://datocms.com/"
       size_scale: "0.8"
       description: "Simply put, the most complete, user-friendly and performant Headless CMS"
