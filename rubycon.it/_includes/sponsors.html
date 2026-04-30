@@ -23,7 +23,7 @@
               {% for logo in group.logos %}
                 <a href="{{ logo.url | default: '#' }}" {% if logo.url %}target="_blank" rel="noopener noreferrer"{% endif %}
                    class="bg-[#F7F7F7] block"
-                   style="width: 100%; max-width: 700px; height: 220px; padding: 8px;">
+                   style="width: 100%; max-width: 500px; height: 180px; padding: 20px;">
                   <img src="{{ logo.img | relative_url }}" alt="{{ logo.name }}" class="w-full h-full object-contain" loading="lazy" decoding="async">
                 </a>
               {% endfor %}
