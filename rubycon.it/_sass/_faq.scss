@@ -1,0 +1,125 @@
+@use "variables";
+
+$faq-bg: #FAFAFA;
+$faq-accent: #8B2D2B;
+$faq-text: #3F3F3F;
+$faq-border: #D8CFB6;
+$faq-link: variables.$ruby-wine-red;
+
+$faq-breakpoint-md: 768px;
+
+.faq {
+  background-color: $faq-bg;
+  padding: 8rem 0 4rem;
+  scroll-margin-top: 8rem;
+
+  @media (min-width: $faq-breakpoint-md) {
+    padding: 10rem 0 6rem;
+  }
+
+  &__container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1376px;
+    padding: 0 1.5rem;
+
+    @media (min-width: $faq-breakpoint-md) {
+      padding: 0 2rem;
+    }
+  }
+
+  &__header {
+    margin-bottom: 3rem;
+
+    @media (min-width: $faq-breakpoint-md) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__eyebrow {
+    color: $faq-accent;
+    margin-bottom: 1rem;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+
+  &__title {
+    color: $faq-text;
+    margin-bottom: 1.5rem;
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    font-size: clamp(40px, 4.1vw, 48px);
+    line-height: clamp(46px, 4.8vw, 56px);
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  &__intro {
+    color: $faq-text;
+    max-width: 664px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__list {
+    margin-top: 2rem;
+    border-top: 1px solid $faq-border;
+
+    @media (min-width: $faq-breakpoint-md) {
+      margin-top: 2.5rem;
+    }
+  }
+
+  &__item {
+    padding: 1.75rem 0;
+    border-top: 1px solid $faq-border;
+
+    @media (min-width: $faq-breakpoint-md) {
+      padding: 2rem 0;
+    }
+  }
+
+  &__question {
+    color: $faq-accent;
+    margin-bottom: 0.75rem;
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  &__answer {
+    color: $faq-text;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0;
+
+    a {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  a {
+    color: $faq-link;
+    font-weight: 500;
+  }
+}

@@ -3,6 +3,7 @@
 
 @use "variables";
 @use "syntax";
+@use "faq";
 
 * {
   margin: 0;
@@ -58,7 +59,7 @@ section,
 
 section {
   background-color: variables.$ruby-cream;
-  color: variables.$text-color-dark;
+  color: variables.$body-text-color;
 }
 
 // Alternate sections
