@@ -1,3 +1,64 @@
+{% include call_to_action.html %}
+
+<section class="marble-banner">
+    <div class="mx-auto w-full max-w-[1376px] px-6 md:px-8 py-12 md:py-16 min-h-[480px] flex flex-col relative z-10">
+        <div class="mb-10 md:mb-12">
+            <h3 class="site-footer__heading mb-4">
+                Stay in the loop
+            </h3>
+            <form action="https://app.convertkit.com/forms/8a5a8f8636/subscriptions" method="post" data-sv-form="8a5a8f8636" data-uid="8a5a8f8636" class="flex items-center gap-4 w-full h-[40px]" style="max-width: 448px;">
+                <input type="email" name="email_address" placeholder="your@email.com" required class="newsletter-form__input" />
+                <button type="submit" class="newsletter-form__submit">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-8 mt-2 md:mt-auto">
+            <div>
+                <h4 class="site-footer__column-title mb-4">Conference</h4>
+                <ul class="space-y-2">
+                    <li><a href="/schedule/" class="site-footer__link">Schedule</a></li>
+                    <li><a href="/speakers/" class="site-footer__link">Speakers</a></li>
+                    <li><a href="/logistics/" class="site-footer__link">Venue and travel</a></li>
+                    <li><a href="/sponsors/" class="site-footer__link">Sponsors</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="site-footer__column-title mb-4">More</h4>
+                <ul class="space-y-2">
+                    <li><a href="/articles/" class="site-footer__link">Blog</a></li>
+                    <li><a href="/faq/" class="site-footer__link">FAQ</a></li>
+                    <li><a href="/scholarship/" class="site-footer__link">Scholarship</a></li>
+                    <li><a href="/code-of-conduct/" class="site-footer__link">Code of Conduct</a></li>
+                    <li><a href="https://rubytriathlon.com/" target="_blank" rel="noopener noreferrer" class="site-footer__link">Ruby Triathlon</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="site-footer__column-title mb-4">Social</h4>
+                <ul class="space-y-2">
+                    <li><a href="https://www.linkedin.com/company/rubycon-italy" target="_blank" rel="noopener noreferrer" class="site-footer__link">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/rubyconitaly/" target="_blank" rel="noopener noreferrer" class="site-footer__link">Instagram</a></li>
+                    <li><a href="https://bsky.app/profile/rubyconitaly.bsky.social" target="_blank" rel="noopener noreferrer" class="site-footer__link">Bluesky</a></li>
+                    <li><a href="https://mastodon.social/@rubycon" target="_blank" rel="noopener noreferrer" class="site-footer__link">Mastodon</a></li>
+                    <li><a href="https://x.com/rubyconitaly" target="_blank" rel="noopener noreferrer" class="site-footer__link">X</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="site-footer__column-title mb-4">Contact</h4>
+                <ul class="space-y-2">
+                    <li><a href="mailto:{{ site.info_email }}" class="site-footer__link">{{ site.info_email }}</a></li>
+                    <li><a href="https://discord.gg/T43GHE6wHH" target="_blank" rel="noopener noreferrer" class="site-footer__link">Discord</a></li>
+                    <li class="site-footer__meta pt-2">Hotel Ambasciatori<br>Rimini, Italy</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
 <footer class="text-[#FCF7E8] relative overflow-hidden" style="background-image: url('{{ '/assets/images/marble.png' | relative_url }}'); background-size: cover; background-position: center; border-top: 1px solid #9C5E62; border-bottom: 1px solid #9C5E62;">
     <div class="mx-auto w-full max-w-[1376px] px-6 md:px-8 min-h-[128px] flex items-center justify-center text-center relative z-10">
         <p style="font-family: 'Inter', sans-serif; font-weight: 300; font-size: 16px; line-height: 32px; letter-spacing: 0; text-align: center; opacity: 0.95;">

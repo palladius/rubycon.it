@@ -31,7 +31,7 @@
   - name: 'weLaika'
     img: '/assets/images/sponsors/praetor/welaika.svg'
     url: 'https://welaika.com/'
-    size_scale: '1'
+    size_scale: '0.8'
     scholarship_tickets: 2
     description: 'An Italian cooperative based in Turin specializing in web & mobile development and advertising. They build web solutions, mobile apps, e-commerce platforms, and integrated digital solutions.'
   - name: "Seesaw"
@@ -60,7 +60,7 @@
   - name: 'Deploio'
     img: '/assets/images/sponsors/quaestor/deploio.svg'
     url: 'https://www.deplo.io/'
-    size_scale: '1'
+    size_scale: '0.8'
   - name: 'Google Cloud'
     img: '/assets/images/sponsors/quaestor/google_cloud.png'
     url: 'https://cloud.google.com/'
@@ -100,7 +100,7 @@
     - name: "SheTech"
       img: "/assets/images/sponsors/community/shetech.png"
       url: "https://shetechitaly.org/"
-      size_scale: "0.9"
+      size_scale: "1.2"
       description: "La community che unisce persone e aziende per portare la parità di genere nel tech e digital"
     - name: "Tito"
       img: "/assets/images/sponsors/community/tito.png"

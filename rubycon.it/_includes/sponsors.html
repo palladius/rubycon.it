@@ -5,8 +5,9 @@
       Sponsors
     </p>
 
-    <h2 class="text-[#3F3F3F] mb-12 md:mb-14" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: clamp(40px, 4.1vw, 56px); line-height: clamp(46px, 4.8vw, 56px); letter-spacing: 0; text-transform: none;">
-      They make this possible.
+    <h2 class="text-[#3F3F3F] mb-12 md:mb-14 text-2xl" style="font-family: 'Noto Serif', serif; text-transform: none;">
+      It is only thanks to the support of these companies that we were able to organize Rubycon.
+      Their contribution is essential, so please take five minutes to visit their websites and thank them if you see them at the event.
     </h2>
 
     {% assign tiers = "imperator,triumvir,praetor,quaestor,community" | split: "," %}
@@ -14,8 +15,8 @@
       {% assign group = site.data.sponsors | where: "title", tier | first %}
       {% if group %}
         <div class="mb-12 md:mb-14">
-          <h3 class="text-[#8B2D2B] mb-4" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 14px; line-height: 20px; letter-spacing: 0; text-transform: capitalize;">
-            {{ tier }}
+          <h3 class="text-[#8B2D2B] mb-4" style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 24px; line-height: 20px; letter-spacing: 0; text-transform: capitalize;">
+            {{ group.icon }} {{ tier }}
           </h3>
 
           {% if tier == 'imperator' %}
