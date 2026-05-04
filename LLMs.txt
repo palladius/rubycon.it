@@ -17,7 +17,7 @@ Rubycon is a Ruby conference held in Rimini, Italy. It is dedicated to the Ruby 
     *   A full day of talks on various Ruby-related topics.
     *   Evening activities including a conference dinner and a "Toga Party".
 *   **May 9, 2026 (Social Event):**
-    *   A guided tour to the Mouth of the Rubicon.
+    *   A guided tour of Rimini and a walk to the Mouth of the Rubicon, where the river meets the sea.
 
 ## Goal
 
