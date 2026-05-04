@@ -47,6 +47,10 @@ module Rubycon
       row(at, desc, by, "Dinner")
     end
 
+    def social(at:, desc:, by: nil)
+      row(at, desc, by, "Social")
+    end
+
     def print_agenda
       @rows.each_with_index do |row, i|
         time = row[:time]
