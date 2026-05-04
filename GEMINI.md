@@ -11,19 +11,19 @@ The event will take place on May 8th 2026 in rimini, italy.
 
 The website needs to be static, and to have a minimal set of information for:
 
-* Sponsors
-* Speakers (CfP)
-* Schedule
-* some marketing material, loogistics, ..
+- Sponsors
+- Speakers (CfP)
+- Schedule
+- some marketing material, logistics, ..
 
 ## Schedule
 
 Program is designed around a Friday, probably 8 may 2026, but could change. We created this event to be family-friendly, for people travelling with kids and for single people to enjoy the famous Rimini nightlife. Rimini is just in front the famous "Isola delle Rose" and is the capital of the famous "Riviera Romagnola", which used to be the Copacabana of Europe in the 1970s.
 
-* Thursday afternoon: Workshops
-* Friday: big day. Single track.
-* friday evening: Toga party in a disco in the lively city of Rimini, full of joie de vivre!
-* Saturday morning (optional): trip to the mouths of the Rubicon, close to where Caesar said the famous words "alea iacta est".
+- Thursday afternoon: Workshops
+- Friday: big day. Single track.
+- friday evening: Toga party in a disco in the lively city of Rimini, full of joie de vivre!
+- Saturday morning (optional): guided tour of Rimini and a walk to the Mouth of the Rubicon, where the river meets the sea (close to where Caesar said the famous words "alea iacta est").
 
 ## Graphics
 
@@ -32,24 +32,24 @@ Ideally text will be in black or white, depending on CSS color, and have bold in
 
 ## Feedback loop
 
-* Before executing, create a plan as `doc/plans/YYYYMMDD-SOME_SENSIBLE_NAME.md`, ask user to confirm, and then re-read that plan, and execute upon it.
-* Use GitHub issues to track things to do, and complex activities. Use `gh` to create and update issues. Sign yourself so people know who is working on what (and probably you'll use the same login as a user, eg `palladius`) as "Gemini" or "Antigravity" or whatever suits best.
-* Use meaningful commits. Use `gitmoji` for commits.
-* Do NOT run the server yourself. all long-running events will be run by user. If you need to check log, note that `just run..` logs under `rubycon.it/log/*.log`. When you do a change on UI, check if someone is running a server, and if so observe the logs and check for recent errors. You can trigger it with a quick `curl https://localhost:4002/path/to/page`. Error should be in `rubycon.it/log/last-run.log`
-* you tend to make errors on CSS; when working on CSS, please see `doc/CSS_ERRORS.md`.
+- Before executing, create a plan as `doc/plans/YYYYMMDD-SOME_SENSIBLE_NAME.md`, ask user to confirm, and then re-read that plan, and execute upon it.
+- Use GitHub issues to track things to do, and complex activities. Use `gh` to create and update issues. Sign yourself so people know who is working on what (and probably you'll use the same login as a user, eg `palladius`) as "Gemini" or "Antigravity" or whatever suits best.
+- Use meaningful commits. Use `gitmoji` for commits.
+- Do NOT run the server yourself. all long-running events will be run by user. If you need to check log, note that `just run..` logs under `rubycon.it/log/*.log`. When you do a change on UI, check if someone is running a server, and if so observe the logs and check for recent errors. You can trigger it with a quick `curl https://localhost:4002/path/to/page`. Error should be in `rubycon.it/log/last-run.log`
+- you tend to make errors on CSS; when working on CSS, please see `doc/CSS_ERRORS.md`.
 
 ## Push to prod
 
-* A `git commit` results in a Netlify push and deploy.
-* You can check the deployment if successful or not, by curling/diffing the new changes on https://rubycon.netlify.app
-* Deployment takes around 5min. Deployment logs are available if you ask me. There's also an MCP server I havent configured yet.
-* DO NOT `git push` before running `just test` and confirming with user its ok to push.
+- A `git commit` results in a Netlify push and deploy.
+- You can check the deployment if successful or not, by curling/diffing the new changes on https://rubycon.netlify.app
+- Deployment takes around 5min. Deployment logs are available if you ask me. There's also an MCP server I havent configured yet.
+- DO NOT `git push` before running `just test` and confirming with user its ok to push.
 
 ## Documentation
 
-* Whenever you do a change to the file, please update the `version:` field in `rubycon.it/_config.yml` (with semantic versioning) and `CHANGELOG.md`.
-* Since we're a few people, add the name of the coder to the changelog, like "* [riccardo] blah blah". Make usre to know the current developer's name, by checking `$USER`, `whoami`, and such. In unsure, ask the usre and remember until the end of the session cos its their computers.
-* if Unsure, use `just version` to retrieve current version.
+- Whenever you do a change to the file, please update the `version:` field in `rubycon.it/_config.yml` (with semantic versioning) and `CHANGELOG.md`.
+- Since we're a few people, add the name of the coder to the changelog, like "* [riccardo] blah blah". Make sure to know the current developer's name, by checking `$USER`, `whoami`, and such. If unsure, ask the user and remember until the end of the session cos its their computers.
+- if Unsure, use `just version` to retrieve current version.
 
 ## Testing
 
@@ -59,8 +59,9 @@ is up and running. Tests should be partially deterministic (from DNS assert www.
 ## UI
 
 If you change something about the UI, for instance testing a new skin, or the blue green banner is too high, ... please use `playwright` MCP to navigate to pages.
-* Local pages are in localhost on port 4002 as seen in the `justfile`.
-* Always confirm with user if they're satisfied before committing and pushing, as LLMs are not great at UI feedback as of today.
+
+- Local pages are in localhost on port 4002 as seen in the `justfile`.
+- Always confirm with user if they're satisfied before committing and pushing, as LLMs are not great at UI feedback as of today.
 
 ## Implementation
 
@@ -75,8 +76,8 @@ For any non-trivial task you are given, do NOT jump to implementation. Instead, 
 
 ## Commits
 
-* Before committing, increment site_version in `rubycon.it/_config.yml` and add the changes to `CHANGELOG.md`.
-* Use proper emojis in Roman theme. Also use semantics from `gitmoji`.
-* If an issue is mentioned, update the GH issue after commit, and add the commit hash to the comment, so its beautifully linked.
-* Github repo is `github.com/palladius/rubycon.it`. Use this repo for PRs and Issues.
-* If pointed to work on issue 12, or https://github.com/palladius/rubycon.it/issues/12, use `gh` to do it.
+- Before committing, increment site_version in `rubycon.it/_config.yml` and add the changes to `CHANGELOG.md`.
+- Use proper emojis in Roman theme. Also use semantics from `gitmoji`.
+- If an issue is mentioned, update the GH issue after commit, and add the commit hash to the comment, so its beautifully linked.
+- Github repo is `github.com/palladius/rubycon.it`. Use this repo for PRs and Issues.
+- If pointed to work on issue 12, or https://github.com/palladius/rubycon.it/issues/12, use `gh` to do it.

@@ -1,15 +1,15 @@
-- question: '✨ Why are you doing this?'
+- question: "✨ Why are you doing this?"
   answer: |
     When RubyDay was cancelled in 2024, a number of aficionados decided to take this into their own hands and make it happen.
     So here we are! And by speaking to devs and sponsors, it looks like they appreciate what we're trying to do, which motivates us to do more!
 - question: "🎟️ What's included in the ticket?"
   answer: |
-    Everything for the day, and a bit more: the full day of talks and coffee breaks, lunch on conference day, dinner and the Toga Party in the evening, plus a guided tour of Rimini the day after (Saturday). No hidden extras — hotel and travel are the only things you arrange yourself.
-- question: '✈️ How do I travel to Rubycon / 🇮🇹 Rimini?'
+    Everything for the day, and a bit more: the full day of talks and coffee breaks, lunch on conference day, dinner and the Toga Party in the evening, plus a guided tour of Rimini and a walk to the Mouth of the Rubicon on the day after (Saturday). No hidden extras — hotel and travel are the only things you arrange yourself.
+- question: "✈️ How do I travel to Rubycon / 🇮🇹 Rimini?"
   answer: |
     The biggest international airport is Bologna Marconi Airport (BLQ). The railway system is very rich and efficient and connects Rimini to Bologna > Milan, Ravenna > Ferrara > Venezia, Ancona > south. So you can also fly to Florence, Milan and Venice.
     Check our <a href="/logistics/">Logistics page</a> for detailed travel info including airports, trains, and driving directions.
-- question: '🏨 Any updates on Hotels?'
+- question: "🏨 Any updates on Hotels?"
   answer: |
     Yes! We have negotiated discounted rates at several hotels near the venue.
     Head over to our <a href="/logistics/">Logistics page</a> for the full list of recommended hotels with prices and booking links.
@@ -21,7 +21,7 @@
     1. A great day of technical talks, plus lunch, dinner and the Toga Party in the evening — all included in the ticket. Make the most out of Friday.
     2. We planned the event on a Friday (usually conferences are Tue-Thu), conveniently to attach the weekend to it. You can have a long weekend in Italy,
        and May is considered the best month (not too hot/touristy yet, but good weather). On Saturday we're organizing a guided tour of Rimini (also included
-       in your ticket) and a morning trip to the Rubicon mouths. Meaning: if you come and don't know what to do - WE GOT YOUR BACK (for the whole Saturday at least).
+       in your ticket) and a walk to the Mouth of the Rubicon on Saturday morning. Meaning: if you come and don't know what to do - WE GOT YOUR BACK (for the whole Saturday at least).
 - question: "🛂 Are you going to have Ruby Passports?"
   answer: |
     Yes! We're talking to Adrian and our Community friends to bring you the Ruby Passport experience.
