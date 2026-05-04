@@ -14,7 +14,7 @@ The website needs to be static, and to have a minimal set of information for:
 - Sponsors
 - Speakers (CfP)
 - Schedule
-- some marketing material, loogistics, ..
+- some marketing material, logistics, ..
 
 ## Schedule
 
