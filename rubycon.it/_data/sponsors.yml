@@ -64,11 +64,15 @@
   - name: 'Google Cloud'
     img: '/assets/images/sponsors/quaestor/google_cloud.png'
     url: 'https://cloud.google.com/'
-    size_scale: '1'
+    size_scale: '1.1'
   - name: 'Renuo'
     img: '/assets/images/sponsors/quaestor/renuo.png'
     url: 'https://renuo.ch/'
     size_scale: '1'
+  - name: 'Corsidia'
+    img: '/assets/images/sponsors/quaestor/corsidia.png'
+    url: 'https://corsidia.com/'
+    size_scale: '0.9'
 - title: "community"
   icon: "🤝"
   logos:
