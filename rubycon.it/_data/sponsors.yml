@@ -128,3 +128,7 @@
       url: "https://rubytriathlon.com/"
       size_scale: "1"
       description: "An informal initiative celebrating Ruby community members who attend three Ruby conferences in a year."
+    - name: "Rubyconf Africa"
+      img: "/assets/images/sponsors/community/rubyconf-africa.png"
+      url: "https://rubyconf.africa/"
+      size_scale: "1"
