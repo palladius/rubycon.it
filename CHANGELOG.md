@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.18.1
+
+* [emiliano] 🎟️ Replace header CTA button: "Get your ticket" → "THANK YOU", link → homepage
+
 ## 0.18.0
 
 * [emiliano] 🖼️ Add sponsor social cards: post_sponsor_quaestor.jpeg and post_sponsor_community.jpeg (header/footer ritagliati dall'originale, loghi autocropped)
