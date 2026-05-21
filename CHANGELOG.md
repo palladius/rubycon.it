@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.18.1
+
+* [emiliano] 🎟️ Replace header CTA button: "Get your ticket" → "THANK YOU", link → homepage
+
+## 0.18.0
+
+* [emiliano] 🖼️ Add sponsor social cards: post_sponsor_quaestor.jpeg and post_sponsor_community.jpeg (header/footer ritagliati dall'originale, loghi autocropped)
+* [emiliano] ➕ Add Rubycon Africa as community sponsor (logo + sponsors.yml)
+* [emiliano] ➕ Add deploio.png (converted from SVG by user)
+* [emiliano] 📝 Add CLAUDE.md with project guidance for Claude Code
+
 ## 0.17.0
 
 * [gemini] feat(ui): 🎨 Massive UI refactoring based on Figma design (#88).

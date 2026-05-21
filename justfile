@@ -23,7 +23,7 @@ version:
 
 # Print conference agenda to STDOUT using the Ruby DSL
 agenda:
-    @cd rubycon.it/ && ruby -I _includes -r schedule_dsl -e ''
+    cd rubycon.it/ && ruby -I _includes -r schedule_dsl -e ''
 
 schedule: agenda
 
