@@ -1,45 +1,72 @@
-{% if site.event.sold_out_banner %}
-    <div class="bg-red-800 text-white text-center py-3 px-4 font-semibold tracking-wide animate-pulse relative z-50">
-        {{ site.event.sold_out_banner }}
-        <a href="{{ site.event.ticket_url }}" class="underline hover:text-yellow-300 ml-2">Get yours now →</a>
-    </div>
-{% endif %}
+<!-- Post-event hero: Thanks + collage + video placeholder -->
+<div id="home" class="relative min-h-screen text-[#fcf7e8] flex flex-col justify-center bg-cover bg-center" style="background-image: linear-gradient(rgba(8,6,7,0.48), rgba(8,6,7,0.48)), url('{{ "/assets/images/group-photo.jpg" | relative_url }}');">
+    <div class="relative z-10 mx-auto px-4 sm:px-6 lg:px-12 w-full pt-8 pb-12">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="mb-6" data-aos="fade-up">
+                <!-- Animated handwritten heading -->
+                <div class="grazie-wrapper inline-block">
+                    <svg viewBox="0 0 800 160" class="mx-auto block max-w-full h-auto" aria-hidden="true" role="img">
+                        <defs>
+                            <linearGradient id="g1" x1="0" x2="1">
+                                <stop offset="0%" stop-color="#fff" stop-opacity="0.95" />
+                                <stop offset="100%" stop-color="#f7e9d6" stop-opacity="0.95" />
+                            </linearGradient>
+                        </defs>
+                        <text x="50%" y="64" text-anchor="middle" class="grazie-text" style="font-family: 'Pacifico', 'Noto Serif', cursive; font-size:96px; fill: url(#g1);">
+                            Grazie
+                        </text>
+                        <path class="grazie-underline" d="M120 100 C220 140 580 140 680 100" fill="none" stroke="#f7e9d6" stroke-width="6" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
 
-<div id="home" class="relative min-h-screen text-[#fcf7e8] flex flex-col justify-center bg-cover bg-center" style="background-image: url('{{ "/assets/images/hero.jpg" | relative_url }}');">
-    <div class="absolute inset-0 bg-[#802126] opacity-90"></div>
+            <div class="mb-6 text-[20px] md:text-[22px] leading-[28px] text-[#fcf7e8]" data-aos="fade-up" data-aos-delay="150">
+                <p class="max-w-3xl mx-auto">Thanks for being part of Rubycon Italy 2026. Rewatch sessions, explore talks, and relive the event on RubyEvents.</p>
+            </div>
 
-    <div class="relative z-10 mx-auto px-4 sm:px-6 lg:px-12 w-full pt-[23.89px] md:pt-[23.89px] pb-12">
-        <div data-aos="fade-up" class="flex flex-col items-center md:items-start">
-            <img
-                src="{{ '/assets/images/logo/Logo-Cream.svg' | relative_url }}"
-                alt="Rubycon"
-                width="750"
-                height="125"
-                class="block h-auto w-[calc(100vw-48px)] max-w-[750.288px] mx-auto md:mx-0 md:w-[min(750.288px,calc(100vw-96px))]"
-                style="aspect-ratio: 750.2882690429688 / 125.29768371582031;"
-            >
-            
-            <div class="flex flex-col md:flex-row md:items-end justify-between gap-12 mt-10 md:mt-12 w-full">
-                <div class="text-left w-full md:w-auto">
-                    <div class="mb-6 text-[34px] md:text-[56px] leading-[34px] md:leading-[40px] max-w-[667px] whitespace-normal md:whitespace-nowrap" style="font-family: 'Noto Serif', serif; font-weight: 400; letter-spacing: 0; color: #FCF7E8;">
-                        8 May 2026 &bull; Rimini &bull; Italy
+            <div class="flex justify-center gap-6 items-center mb-10" data-aos="fade-up" data-aos-delay="250">
+                <a href="{{ site.rubyevents_url | default: 'https://ruby.events/' }}" target="_blank" rel="noopener" class="inline-block bg-white/10 hover:bg-white/20 border border-white/30 text-white px-6 py-3 rounded-md transition">Watch the sessions</a>
+                <a href="/articles.html" class="inline-block border border-white/30 text-white px-6 py-3 rounded-md transition">Explore talks</a>
+            </div>
+
+            <!-- Collage + vertical video placeholder -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-start" data-aos="fade-up" data-aos-delay="350">
+                <div class="sm:col-span-2 flex flex-wrap gap-4 justify-center sm:justify-start">
+                    <img src="{{ '/assets/images/group-photo.jpg' | relative_url }}" alt="Community photo" class="w-[calc(100%-8px)] sm:w-[60%] md:w-[48%] object-cover shadow-lg transform rotate-[-2deg]" loading="lazy">
+                    <img src="{{ '/assets/images/hero.jpg' | relative_url }}" alt="Moments" class="w-[48%] md:w-[40%] object-cover shadow-lg transform rotate-[3deg]" loading="lazy">
+                </div>
+
+                <div class="flex flex-col gap-4 items-center">
+                    <div class="w-full bg-[#00000055] aspect-[9/16] flex items-center justify-center overflow-hidden shadow-lg" style="min-height:240px;">
+                        <img src="{{ '/assets/images/group-photo.jpg' | relative_url }}" alt="Aftermovie coming soon" class="object-cover w-full h-full opacity-80" loading="lazy">
+                        <div class="absolute text-center p-4">
+                            <div class="text-lg font-semibold">Vertical aftermovie</div>
+                            <div class="text-sm opacity-80">Aftermovie coming soon</div>
+                        </div>
                     </div>
-                    <p class="mb-10 text-[24px] md:text-[32px] leading-[32px] md:leading-[40px] max-w-[464px]" style="font-family: 'Noto Serif', serif; font-weight: 400; letter-spacing: 0; color: #FCF7E8;">
-                        The premier Ruby conference in the heart of Italy
-                    </p>
-                    
-                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 justify-center md:justify-start">
-                        <a href="#about" class="inline-block border border-[#fcf7e8]/40 text-[#fcf7e8] px-10 py-4 rounded-none transition-all duration-300 text-center" style="font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0;">
-                            Learn more
-                        </a>
-                    </div>
+                    <a href="{{ site.rubyevents_url | default: 'https://ruby.events/' }}" target="_blank" rel="noopener" class="text-sm underline">See all sessions on RubyEvents</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Decorative Down Arrow -->
-    <div class="absolute bottom-12 left-1/2 -translate-x-1/2 opacity-40">
+    <style>
+        .grazie-text { opacity: 0; transform: translateY(6px); transition: opacity .6s ease, transform .6s ease; }
+        .grazie-underline { stroke-dasharray: 480; stroke-dashoffset: 480; transition: stroke-dashoffset 1s ease .6s, opacity .6s ease; opacity: 0; }
+        [data-aos] .grazie-text, [data-aos] .grazie-underline { /* no-op placeholder for AOS */ }
+        /* Trigger animation when JS loads; fallback CSS animation for reduced motion */
+        @media (prefers-reduced-motion: no-preference) {
+            .grazie-text { opacity: 1; transform: translateY(0); }
+            .grazie-underline { stroke-dashoffset: 0; opacity: 1; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .grazie-text { opacity: 1; transform: none; }
+            .grazie-underline { opacity: 1; stroke-dashoffset: 0; transition: none; }
+        }
+    </style>
+
+    <!-- Decorative Down Arrow (kept minimal) -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-40">
         <img src="{{ '/assets/images/arrow.svg' | relative_url }}" alt="Scroll down" class="h-8 w-8 md:h-10 md:w-10" loading="lazy" decoding="async">
     </div>
 </div>
