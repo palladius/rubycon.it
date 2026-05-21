@@ -33,7 +33,7 @@ event:
   tickets_url: "https://ti.to/rubycon/rubycon-2026/"
   # sold_out_banner: ⏳ Early Bird tickets almost sold out!
   # Post-event destination for session recordings
-  rubyevents_url: "https://ruby.events/"
+  rubyevents_url: "https://www.rubyevents.org/events/rubycon-2026/talks"
 
 # Adding social URLs.. to dry them out a bit.
 social_url:
