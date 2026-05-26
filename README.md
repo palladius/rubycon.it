@@ -35,3 +35,8 @@ Auto-pushed by netlify on `staging` branch.
 ## Thanks
 
 * thanks to [Heather of tourissimo](https://www.tourissimo.travel/blog/crossing-the-rubicon) for letting us use the Rubicon picture.
+
+## Architecture Diagram
+
+![Architecture Diagram](architecture_diagram.png)
+
