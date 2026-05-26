@@ -1,12 +1,6 @@
-{% if site.event.sold_out_banner %}
-    <div class="bg-red-800 text-white text-center py-3 px-4 font-semibold tracking-wide animate-pulse relative z-50">
-        {{ site.event.sold_out_banner }}
-        <a href="{{ site.event.ticket_url }}" class="underline hover:text-yellow-300 ml-2">Get yours now →</a>
-    </div>
-{% endif %}
-
-<div id="home" class="relative min-h-screen text-[#fcf7e8] flex flex-col justify-center bg-cover bg-center" style="background-image: url('{{ "/assets/images/hero.jpg" | relative_url }}');">
-    <div class="absolute inset-0 bg-[#802126] opacity-90"></div>
+{% comment %} Restored original hero layout but using post-event background photo and adjusted CTAs {% endcomment %}
+<div id="home" class="relative min-h-screen text-[#fcf7e8] flex flex-col justify-center bg-cover bg-center" style="background-image: url('{{ "/assets/images/group-photo.jpg" | relative_url }}');">
+    <div class="absolute inset-0 bg-[#802126] opacity-10"></div>
 
     <div class="relative z-10 mx-auto px-4 sm:px-6 lg:px-12 w-full pt-[23.89px] md:pt-[23.89px] pb-12">
         <div data-aos="fade-up" class="flex flex-col items-center md:items-start">
@@ -22,19 +16,17 @@
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-12 mt-10 md:mt-12 w-full">
                 <div class="text-left w-full md:w-auto">
                     <div class="mb-6 text-[34px] md:text-[56px] leading-[34px] md:leading-[40px] max-w-[667px] whitespace-normal md:whitespace-nowrap" style="font-family: 'Noto Serif', serif; font-weight: 400; letter-spacing: 0; color: #FCF7E8;">
-                        8 May 2026 &bull; Rimini &bull; Italy
+                        Rubycon Italy 2026 &bull; Rimini
                     </div>
                     <p class="mb-10 text-[24px] md:text-[32px] leading-[32px] md:leading-[40px] max-w-[464px]" style="font-family: 'Noto Serif', serif; font-weight: 400; letter-spacing: 0; color: #FCF7E8;">
-                        The premier Ruby conference in the heart of Italy
+                        <i>Thanks</i> for being part of the community. Relive talks and highlights.
                     </p>
                     
                     <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 justify-center md:justify-start">
-                        <a href="{{ site.event.tickets_url }}" class="inline-block bg-[#fcf7e8] text-[#802126] px-10 py-4 rounded-none transition-all duration-300 text-center shadow-2xl" style="font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0;">
-                            Buy ticket now
-                        </a>
                         <a href="#about" class="inline-block border border-[#fcf7e8]/40 text-[#fcf7e8] px-10 py-4 rounded-none transition-all duration-300 text-center" style="font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0;">
                             Learn more
                         </a>
+                        <a href="{{ site.event.rubyevents_url }}" target="_blank" rel="noopener" class="inline-block bg-white/10 hover:bg-white/20 border border-white/30 text-white px-8 py-4 rounded-none transition-all duration-300">Watch the sessions</a>
                     </div>
                 </div>
             </div>

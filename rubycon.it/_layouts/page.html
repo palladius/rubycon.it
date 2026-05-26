@@ -2,12 +2,25 @@
 layout: default
 ---
 
-<section class="pt-[96px] md:pt-[112px] pb-16 md:pb-24 bg-[#FAFAFA]">
+{% assign page_top_padding = page.page_top_padding | default: 'pt-[96px] md:pt-[112px]' %}
+{% assign page_header_margin = page.page_header_margin | default: 'mb-16 md:mb-24' %}
+
+<section class="{{ page_top_padding }} pb-16 md:pb-24 bg-[#FAFAFA]">
     <div class="mx-auto w-full max-w-[1376px] px-6 md:px-8">
-        <div class="mb-16 md:mb-24">
+        <div class="{{ page_header_margin }}">
+            {% if page.eyebrow %}
+            <p class="text-[#8B2D2B] mb-4" style="font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0; text-transform: none;">
+                {{ page.eyebrow }}
+            </p>
+            {% endif %}
             <h1 class="text-[#3F3F3F] mb-4" style="font-family: 'Noto Serif', serif; font-weight: 400; font-size: clamp(40px, 4.1vw, 48px); line-height: clamp(46px, 4.8vw, 56px); letter-spacing: 0; text-transform: none;">
                 {{ page.title }}
             </h1>
+            {% if page.subtitle %}
+            <p class="text-[#3F3F3F]" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 0; max-width: 796px; margin: 0;">
+                {{ page.subtitle }}
+            </p>
+            {% endif %}
         </div>
         <div class="prose prose-lg max-w-none page-prose" style="font-family: 'Inter', sans-serif; color: #3F3F3F;">
             {{ content }}
