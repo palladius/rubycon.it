@@ -22,7 +22,7 @@ title: RubyCon - The Ruby Conference in Italy
 # When we have the email for the domain:
 info_email: info@rubycon.it
 cfp_email: info@rubycon.it
-site_version: "0.18.2"
+site_version: "0.19.0"
 support_email: info@rubycon.it
 
 event:

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.19.0
+
+* [alessandro] 📣 Announce on the homepage that Rubycon 2027 will be Euruko 2027 in Modena
+* [alessandro] 🏛️ Homepage refinements from the Claude Design proposal: hero copy and buttons, legibility scrim, working header CTA, pictogram hidden on the unscrolled homepage, About in past tense
+
 ## 0.18.1
 
 * [emiliano] 🎟️ Replace header CTA button: "Get your ticket" → "THANK YOU", link → homepage

@@ -391,3 +391,115 @@ $marble-border: #9c5e62;
     text-transform: none;
   }
 }
+
+// =============================================================================
+// Announcement banner (announcement.html) - Rubycon 2027 = Euruko 2027 in Modena
+// =============================================================================
+
+.announcement-banner {
+  &__kicker {
+    @extend %cream-text;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    font-style: italic;
+    opacity: 0.85;
+  }
+
+  &__title {
+    @extend %cream-text;
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    font-size: clamp(34px, 4.1vw, 48px);
+    line-height: 1.15;
+    text-transform: none;
+    text-wrap: pretty;
+  }
+
+  &__highlight {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+  }
+
+  &__lead {
+    @extend %cream-text;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    max-width: 520px;
+    text-wrap: pretty;
+  }
+}
+
+// =============================================================================
+// Hero (hero.html) - darkens top and bottom of the photo so cream text stays legible
+// =============================================================================
+
+.hero-scrim {
+  background: linear-gradient(180deg, rgba(60, 10, 12, 0.55) 0%, rgba(60, 10, 12, 0.15) 40%, rgba(60, 10, 12, 0.55) 100%);
+}
+
+.hero-copy {
+  &__kicker {
+    @extend %cream-text;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    opacity: 0.85;
+  }
+
+  &__title {
+    @extend %cream-text;
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    font-size: clamp(34px, 4.2vw, 56px);
+    line-height: 1.1;
+    text-transform: none;
+    text-wrap: pretty;
+  }
+
+  &__lead {
+    @extend %cream-text;
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    font-size: clamp(22px, 2.2vw, 28px);
+    line-height: 1.4;
+    max-width: 600px;
+    text-wrap: pretty;
+  }
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 16px 40px;
+  font-family: "Noto Serif", serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+
+  &--primary {
+    background: $cream;
+    color: variables.$ruby-wine-red;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &--secondary {
+    border: 1px solid rgba($cream, 0.6);
+    color: $cream;
+
+    &:hover {
+      background: rgba($cream, 0.1);
+    }
+  }
+}

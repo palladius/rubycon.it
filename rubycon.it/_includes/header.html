@@ -35,9 +35,9 @@
                             {% endif %}
                         </div>
                         {% endfor %}
-                        <span aria-disabled="true" tabindex="-1" class="bg-[#fcf7e8] text-[#802126] rounded-none transition-all shadow-lg header-btn inline-flex items-center justify-center w-[207px] h-[52px] max-w-full px-4 text-center" style="font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0; vertical-align: middle;">
-                            THANK YOU
-                        </span>
+                        <a href="{{ site.event.rubyevents_url }}" target="_blank" rel="noopener" class="bg-[#fcf7e8] text-[#802126] rounded-none transition-all shadow-lg header-btn inline-flex items-center justify-center min-w-[207px] h-[52px] max-w-full px-6 text-center whitespace-nowrap" style="font-family: 'Noto Serif', serif; font-weight: 500; font-size: 20px; line-height: 20px; letter-spacing: 0; vertical-align: middle;">
+                            Watch the sessions
+                        </a>
                     </div>
                 </div>
                 <div class="lg:hidden flex items-center gap-4">
@@ -139,6 +139,10 @@
                     logo.src = logoCream;
                 }
             }
+
+            // On the unscrolled homepage the big hero logo sits right below the header, so hide the pictogram
+            logo?.classList.toggle('opacity-0', !isScrolled);
+            logo?.classList.toggle('pointer-events-none', !isScrolled);
 
             mobileToggle?.setAttribute('aria-expanded', mobileMenu && !mobileMenu.classList.contains('hidden') ? 'true' : 'false');
         }
