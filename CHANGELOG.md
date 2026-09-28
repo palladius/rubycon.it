@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.19.1
+
+* [alessandro] 📝 Reword the announcement: Rubycon returns in 2028, the team organises Euruko 2027 in Modena
+
 ## 0.19.0
 
 * [alessandro] 📣 Announce on the homepage that Rubycon 2027 will be Euruko 2027 in Modena
