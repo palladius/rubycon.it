@@ -1,0 +1,31 @@
+---
+layout: page
+title: Team
+permalink: /team/
+---
+
+<div class="team-grid">
+  {% for member in site.team %}
+  <div class="team-card">
+    <img src="{{ member.avatar }}" alt="{{ member.name }}" class="team-avatar">
+    <h3>{{ member.name }}</h3>
+    <p class="role">{{ member.role }}</p>
+    <p class="bio">{{ member.bio }}</p>
+    <div class="links">
+      {% if member.github %}<a href="{{ member.github }}">GitHub</a>{% endif %}
+      {% if member.twitter %}<a href="{{ member.twitter }}">Twitter</a>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<style>
+.team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; padding: 2rem; }
+.team-card { background: var(--card-bg); border-radius: 12px; padding: 1.5rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s; }
+.team-card:hover { transform: translateY(-4px); }
+.team-avatar { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; }
+.team-card h3 { margin: 0.5rem 0; color: var(--heading-color); }
+.role { color: var(--accent-color); font-weight: 600; font-size: 0.9rem; margin: 0.5rem 0; }
+.bio { color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; }
+.links a { margin: 0 0.5rem; color: var(--link-color); text-decoration: none; }
+</style>
