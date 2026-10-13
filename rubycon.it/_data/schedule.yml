@@ -69,3 +69,12 @@
     - clock: "20:00"
       description: "Dinner + Toga Party! @ Bagno 46"
       tag: "Dinner"
+- date: 2026-05-09
+  events:
+    - clock: "10:00"
+      description: "🚶 Guided tour of Rimini old town"
+      tag: "Social"
+
+    - clock: "11:30"
+      description: "🌊 Walk to the Mouth of the Rubicon, where the river meets the sea"
+      tag: "Social"

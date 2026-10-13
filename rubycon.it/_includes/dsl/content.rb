@@ -70,3 +70,14 @@ Rubycon::Agenda.schedule(Date.new(2026, 5, 8)) do
         where: "🏖️ Bagno 46"
         #  url: "https://www.bagno46rimini.com/"
 end
+
+# ── Saturday ──────────────────────────────────────────
+# Social activities (included in the ticket)
+
+Rubycon::Agenda.schedule(Date.new(2026, 5, 9)) do
+  social at: 10_00,
+         desc: "🚶 Guided tour of Rimini old town"
+
+  social at: 11_30,
+         desc: "🌊 Walk to the Mouth of the Rubicon, where the river meets the sea"
+end
